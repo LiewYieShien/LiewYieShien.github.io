@@ -3,7 +3,7 @@
 
 <head>
     <title>
-        Exercise 2 - Navigation Bar 2
+        Exercise 4 - Navigation Bar 4
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
@@ -33,7 +33,7 @@
 
         header {
             display: flex;
-            background-color: aliceblue;
+            background-color: #292f47;
             justify-content: space-between;
             align-items: center;
             padding: 30px;
@@ -42,7 +42,7 @@
 
         .nav-button {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: black;
+            color: white;
             text-align: center;
             font-size: 15px;
             margin: 20px;
@@ -53,18 +53,29 @@
             cursor: pointer
         }
 
-        button.callnow {
+        button.orderonline {
             display: inline-block;
-            background-color: #a044fc;
+            background-color: black;
             color: white;
             font-weight: lighter;
-            border: 1px solid #a044fc;
-            border-radius: 20px;
+            border: 1px solid black;
+            border-radius: 0px;
             padding: 12px;
             padding-left: 25px;
             padding-right: 25px;
             cursor: pointer;
 
+        }
+
+        img.user {
+            height: 20px;
+            margin-right: -10px;
+
+        }
+
+        button.icon {
+            background-color: transparent;
+            border: 0px;
         }
     </style>
 
@@ -72,31 +83,40 @@
 
 <body>
     <header>
-        <div id="navbarimg"><img alt="Logo" src="images/linkedin.png" height="50px" /></div>
+        <div id="navbarimg"><img alt="Logo" src="images/coffee.png" height="50px" /></div>
         <div id="nav">
 
             <div>
-                <a href="#" class="nav-button">Home</a>
-            </div>
-            <div>
-                <a href="#" class="nav-button">Services</a>
+                <a href="#" class="nav-button">Services and Pricing</a>
             </div>
             <div>
                 <a href="#" class="nav-button">About</a>
-            </div>
-            <div>
-                <a href="#" class="nav-button">Testimonials</a>
-            </div>
-            <div>
-                <a href="#" class="nav-button">Clients</a>
             </div>
             <div>
                 <a href="#" class="nav-button">Contact</a>
             </div>
 
 
+            <img alt="Login" src="images/user-red.png" class="user" />
+            <div>
+                <a href="#" class="nav-button">Log In</a>
+            </div>
+
+            <button class="icon">
+                <img src="images/facebook-1.png" alt="Facebook" height="20" />
+            </button>
+            </a>
+            <a href="#">
+                <button class="icon">
+                    <img src="images/instagram-1.png" alt="Instagram" height="20" />
+                </button>
+            </a>
+            <a href="#">
+                <button class="icon">
+                    <img src="images/linkedin-1.png" alt="linkedin" height="20" />
+                </button>
+            </a>
         </div>
-        <button class="callnow">Call Now</button>
 
     </header>
 
