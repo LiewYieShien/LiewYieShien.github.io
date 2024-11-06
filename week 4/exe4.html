@@ -6,7 +6,7 @@
         Exercise 4 - Navigation Bar 4
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
+
     <style>
         * {
             box-sizing: border-box;
@@ -15,7 +15,67 @@
             background-color: transperant;
         }
 
-        #nav {
+        .box {
+            width: 200px;
+            padding: 5px;
+            padding-left: 15px;
+            margin-top: -15px;
+            height: 40px;
+            position: relative;
+            display: block;
+            text-align: left;
+        }
+
+        .box-button-double {
+            width: 200px;
+            padding: 25px;
+            padding-left: 30px;
+            margin-top: 150px;
+            height: 30px;
+            position: relative;
+            display: block;
+            text-align: center;
+        }
+
+        .box-button-single {
+            width: 100px;
+            padding: 25px;
+            padding-left: 10px;
+            margin-top: 150px;
+            height: 30px;
+            position: relative;
+            display: block;
+            text-align: center;
+        }
+
+        .box-icon {
+            width: 25px;
+            padding: 5px;
+            padding-left: 15px;
+            margin-top: 200px;
+            height: 90px;
+            position: relative;
+            display: block;
+            text-align: center;
+
+        }
+
+
+        .box-login {
+            width: 100px;
+            padding: 5px;
+            padding-left: 15px;
+            margin-top: -50px;
+            height: 30px;
+            position: relative;
+            display: block;
+            text-align: center;
+            align-items: center;
+
+
+        }
+
+        .nav {
             display: flex;
 
         }
@@ -27,7 +87,6 @@
 
         a:hover {
             text-decoration: underline;
-            color: #a044fc;
 
         }
 
@@ -37,7 +96,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 30px;
-            height: 70px
+            height: 70px;
         }
 
         .nav-button {
@@ -45,7 +104,23 @@
             color: white;
             text-align: center;
             font-size: 15px;
-            margin: 20px;
+            margin: 10px;
+
+
+        }
+
+        .nav-button-contact {
+            margin-right: 50px;
+        }
+
+        .nav-button-login {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #e97065;
+            text-align: center;
+            font-size: 15px;
+            margin: 30px;
+            padding-right: 30px;
+            padding-left: 15px;
 
         }
 
@@ -53,23 +128,13 @@
             cursor: pointer
         }
 
-        button.orderonline {
-            display: inline-block;
-            background-color: black;
-            color: white;
-            font-weight: lighter;
-            border: 1px solid black;
-            border-radius: 0px;
-            padding: 12px;
-            padding-left: 25px;
-            padding-right: 25px;
-            cursor: pointer;
 
-        }
+
 
         img.user {
-            height: 20px;
-            margin-right: -10px;
+            height: 35px;
+            width: 45px;
+            margin-top: -60px;
 
         }
 
@@ -77,45 +142,106 @@
             background-color: transparent;
             border: 0px;
         }
+
+
+
+        .icon-margin {
+            margin: 3px;
+        }
+
+
+
+
+        .circle {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            border-radius: 50%;
+            background-color: #e97065;
+        }
+
+        .circle-text {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 25px;
+            text-align: center;
+            color: #292f47;
+            padding-left: 13.85px;
+            padding-bottom: 2px;
+
+        }
+
+        .brand {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            font-family: Futura Round Regular;
+            font-weight: thin;
+            padding-left: 10px;
+        }
+
+        .name {
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+        }
+
+        .position {
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: lighter;
+            font-size: 15px;
+        }
     </style>
 
 </head>
 
 <body>
     <header>
-        <div id="navbarimg"><img alt="Logo" src="images/coffee.png" height="50px" /></div>
-        <div id="nav">
 
-            <div>
-                <a href="#" class="nav-button">Services and Pricing</a>
-            </div>
-            <div>
-                <a href="#" class="nav-button">About</a>
-            </div>
-            <div>
-                <a href="#" class="nav-button">Contact</a>
-            </div>
+        <div class="nav circle circle-text">M
 
-
-            <img alt="Login" src="images/user-red.png" class="user" />
-            <div>
-                <a href="#" class="nav-button">Log In</a>
-            </div>
-
-            <button class="icon">
-                <img src="images/facebook-1.png" alt="Facebook" height="20" />
-            </button>
+            <a class="brand" href="#">
+                <div class="name box"> Maggie Brightstone </div>
+                <div class="position box"> Virtual Assistant </div>
             </a>
-            <a href="#">
-                <button class="icon">
-                    <img src="images/instagram-1.png" alt="Instagram" height="20" />
-                </button>
-            </a>
-            <a href="#">
-                <button class="icon">
-                    <img src="images/linkedin-1.png" alt="linkedin" height="20" />
-                </button>
-            </a>
+        </div>
+
+        <div class="nav">
+
+            <div>
+                <a href="#" class="box-button-double nav-button">Services and Pricing</a>
+            </div>
+            <div>
+                <a href="#" class="box-button-single nav-button">About</a>
+            </div>
+            <div>
+                <a href="#" class="box-button-single nav-button nav-button-contact">Contact</a>
+            </div>
+
+            <div class="nav">
+                <div>
+                    <a href="#" class="box-login nav-button-login">Log In</a>
+                    <img alt="Login" src="images/user-red.png" class="box-login user" />
+                </div>
+            </div>
+
+            <div class="nav">
+                <a href="#">
+                    <button class="box-icon icon icon-margin">
+                        <img src="images/facebook-1.png" alt="Facebook" height="15" />
+                    </button>
+                </a>
+                <a href="#">
+                    <button class="box-icon icon icon-margin">
+                        <img src="images/instagram-1.png" alt="Instagram" height="15" />
+                    </button>
+                </a>
+                <a href="#">
+                    <button class="box-icon icon icon-margin">
+                        <img src="images/linkedin-1.png" alt="linkedin" height="15" />
+                    </button>
+                </a>
+            </div>
         </div>
 
     </header>
