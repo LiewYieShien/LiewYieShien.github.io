@@ -14,9 +14,7 @@
 
         a {
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
+
             background-color: black;
             color: white;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -28,12 +26,12 @@
             padding-left: 25px;
             padding-right: 25px;
             text-decoration: none;
+            margin-right: 10px;
+            margin-left: 20px;
         }
 
         a:hover {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+
             background-color: white;
             color: black;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -45,6 +43,8 @@
             padding-left: 25px;
             padding-right: 25px;
             text-decoration: none;
+            margin-right: 10px;
+            margin-left: 20px;
         }
 
         header {
@@ -65,13 +65,20 @@
         }
 
         #navbarimg {
-            padding-left: 10px;
+            margin-left: 10px;
         }
 
         .alignment {
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+
+        .logotext {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            font-weight: bold;
+            margin-left: 20px;
         }
     </style>
 
@@ -80,9 +87,10 @@
 <body>
 
     <header>
-        <div id="navbarimg"><img alt="Logo" src="images/fish" height="50px" /></div>
+        <div class="logotext">A U T O N O</div>
 
-        <div id="nav">
+
+        <div id="nav" class="alignment">
             <div>
                 <div class="nav-button">Technology</div>
             </div>
@@ -93,7 +101,7 @@
                 <div class="nav-button">Careers</div>
             </div>
             <div>
-                <a href="#" class="alignment">Subscribe</a>
+                <a href="#">Subscribe</a>
             </div>
         </div>
     </header>
