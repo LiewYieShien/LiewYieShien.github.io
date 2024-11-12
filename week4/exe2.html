@@ -3,10 +3,10 @@
 
 <head>
     <title>
-        Exercise 3 - Navigation Bar 3
+        Exercise 2 - Navigation Bar 2
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
+
     <style>
         * {
             box-sizing: border-box;
@@ -15,7 +15,7 @@
             background-color: transperant;
         }
 
-        .nav {
+        #nav {
             display: flex;
 
         }
@@ -27,13 +27,13 @@
 
         a:hover {
             text-decoration: underline;
-            color: rgb(116, 75, 9);
+            color: #a044fc;
 
         }
 
         header {
             display: flex;
-            background-color: #fff7d8;
+            background-color: aliceblue;
             justify-content: space-between;
             align-items: center;
             padding: 30px;
@@ -53,23 +53,17 @@
             cursor: pointer
         }
 
-        button.orderonline {
+        button.callnow {
             display: inline-block;
-            background-color: black;
+            background-color: #a044fc;
             color: white;
             font-weight: lighter;
-            border: 1px solid black;
-            border-radius: 0px;
+            border: 1px solid #a044fc;
+            border-radius: 20px;
             padding: 12px;
             padding-left: 25px;
             padding-right: 25px;
             cursor: pointer;
-
-        }
-
-        img.user {
-            height: 20px;
-            margin-right: -10px;
 
         }
     </style>
@@ -78,34 +72,31 @@
 
 <body>
     <header>
-        <div id="navbarimg"><img alt="Logo" src="images/coffee.png" height="50px" /></div>
-        <div class="nav">
+        <div id="navbarimg"><img alt="Logo" src="images/linkedin.png" height="50px" /></div>
+        <div id="nav">
 
             <div>
-                <a href="#" class="nav-button">Shop</a>
+                <a href="#" class="nav-button">Home</a>
+            </div>
+            <div>
+                <a href="#" class="nav-button">Services</a>
             </div>
             <div>
                 <a href="#" class="nav-button">About</a>
             </div>
             <div>
-                <a href="#" class="nav-button">Location & Hours</a>
+                <a href="#" class="nav-button">Testimonials</a>
+            </div>
+            <div>
+                <a href="#" class="nav-button">Clients</a>
+            </div>
+            <div>
+                <a href="#" class="nav-button">Contact</a>
             </div>
 
 
         </div>
-        <div class="nav">
-            <img alt="Login" src="images/user.png" class="user" />
-            <div>
-                <a href="#" class="nav-button">Log In</a>
-            </div>
-            <div>
-                <a href="#" class="nav-button">Cart (0)</a>
-            </div>
-
-
-
-        </div>
-        <button class="orderonline">Order Online</button>
+        <button class="callnow">Call Now</button>
 
     </header>
 

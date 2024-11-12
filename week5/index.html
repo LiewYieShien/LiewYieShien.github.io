@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lesson 5 - Two Column Layout</title>
+    <style>
+        #nav {
+            display: flex;
+
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        a:hover {
+            text-decoration: underline;
+
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #4CAF50;
+            height: 70px;
+        }
+
+        .nav-button {
+            color: white;
+            text-align: center;
+            font-size: 18px;
+            margin: 20px;
+
+        }
+
+        #navbarimg {
+            padding-left: 10px;
+        }
+
+        a.underline {
+            text-decoration: underline;
+
+        }
+    </style>
+    <style>
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+
+
+        .container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .column {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .column1 {
+            background-color: lightblue;
+
+        }
+
+        .column2 {
+            flex: 2;
+            background-color: lightgreen;
+        }
+
+
+        .footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .section_margin {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="header section_margin">
+        <div>
+            <header class="section_margin">
+                <div id="navbarimg"><img alt="Logo" src="images/logo.png" height="50px" /></div>
+
+                <div id="nav">
+                    <div>
+                        <a href="#" class="nav-button underline">Home</a>
+                    </div>
+                    <div>
+                        <a href="#" class="nav-button">About</a>
+                    </div>
+                    <div>
+                        <a href="#" class="nav-button">Services</a>
+                    </div>
+                    <div>
+                        <a href="#" class="nav-button">Team</a>
+                    </div>
+                    <div>
+                        <a href="#" class="nav-button">Contact</a>
+                    </div>
+                </div>
+
+
+            </header>
+            <h1>Header</h1>
+        </div>
+    </div>
+
+    <div class="container section_margin">
+        <div class="column column1">
+            <h2>Column 1</h2>
+            <p>This is the first column.</p>
+        </div>
+        <div class="column column2">
+            <h2>Column 2</h2>
+            <p>This is the second column.</p>
+        </div>
+    </div>
+
+    <div class="container section_margin">
+        <div class="column column2">
+            <h2>Column 3</h2>
+            <p>This is the third column.</p>
+        </div>
+        <div class="column column1">
+            <h2>Column 4</h2>
+            <p>This is the fourth column.</p>
+        </div>
+    </div>
+
+    <div class="footer section_margin">
+        <div>
+            <p>Footer</p>
+        </div>
+    </div>
+</body>
+
+</html>
