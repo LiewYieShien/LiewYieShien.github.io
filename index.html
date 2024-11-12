@@ -19,7 +19,7 @@
         }
 
         a:hover {
-            text-decoration: underline;
+            text-decoration: none;
 
         }
 
@@ -27,7 +27,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #2c8eec;
+            background-color: #4CAF50;
             height: 70px;
         }
 
@@ -48,6 +48,11 @@
             text-decoration: underline;
 
         }
+
+        button.icon {
+            background-color: transparent;
+            border: 0px;
+        }
     </style>
 
 </head>
@@ -55,24 +60,24 @@
 <body>
 
     <header>
-        <div id="navbarimg"><img alt="Logo" src="images/linkedin.png" height="50px" /></div>
+        <div id="navbarimg"><img alt="Logo" src="images/kitty.png" height="50px" /></div>
 
-        <div id="nav">
-            <div>
-                <a href="#" class="nav-button underline">Home</a>
-            </div>
-            <div>
-                <a href="#" class="nav-button">About</a>
-            </div>
-            <div>
-                <a href="#" class="nav-button">Services</a>
-            </div>
-            <div>
-                <a href="#" class="nav-button">Team</a>
-            </div>
-            <div>
-                <a href="#" class="nav-button">Contact</a>
-            </div>
+        <div class="nav">
+            <a href="#">
+                <button class="box-icon icon icon-margin">
+                    <img src="images/twitter.png" alt="Twitter" height="15" />
+                </button>
+            </a>
+            <a href="#">
+                <button class="box-icon icon icon-margin">
+                    <img src="images/linkedin.png" alt="Linkedin" height="15" />
+                </button>
+            </a>
+            <a href="#">
+                <button class="box-icon icon icon-margin">
+                    <img src="images/github.png" alt="Github" height="15" />
+                </button>
+            </a>
         </div>
     </header>
 
