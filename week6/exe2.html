@@ -3,7 +3,7 @@
 
 <head>
     <title>
-        Exercise 1 - Responsive
+        Exercise 2 - Responsive
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -23,6 +23,11 @@
             .menu a {
                 text-align: center;
             }
+
+            .home-icon {
+                display: none !important;
+            }
+
         }
 
         /* Navigation Bar */
@@ -44,6 +49,12 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            position: sticky;
+            /* Offset from the top of the viewport */
+            top: 0;
+            /* Ensure it stays above other elements */
+            z-index: 1000;
+
         }
 
         .logo {
@@ -92,6 +103,15 @@
             /* Adds space to the right of Contact */
         }
 
+        .home {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+
+        }
+
+
         .menu-about-services {
             position: relative;
         }
@@ -137,6 +157,11 @@
         img.spacing {
             margin-left: 3px;
         }
+
+        .home-icon {
+            display: inline-block;
+            margin-right: -25px;
+        }
     </style>
 
 </head>
@@ -151,7 +176,14 @@
 
         <div class="info">
 
-            <a href="#" class="contact">Home</a>
+            <div>
+                <img src=" images/home.png" height="25px" class="home-icon">
+            </div>
+            <div>
+                <a href="#" class="home">
+                    Home
+                </a>
+            </div>
 
             <div class="menu-about-services about-services-container">
                 <a href="#">About</a>
@@ -174,9 +206,10 @@
             </div>
 
             <a href="#" class="contact">Contact</a>
-        </div>
-    </header>
 
+        </div>
+
+    </header>
 </body>
 
 </html>
