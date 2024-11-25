@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Exercise 3 - Responsive Banner 1</title>
+    <title>Exercise 4 - Responsive Banner 2</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Font -->
@@ -12,30 +12,6 @@
         rel="stylesheet">
 
     <style>
-        body {
-            font-family: 'Neuron Angled Black', sans-serif;
-        }
-
-        h1,
-        h2,
-        h3,
-        button {
-            font-family: 'Neuron Angled Black', sans-serif;
-        }
-
-        .bold-word {
-            font-weight: 800;
-            /* Bold */
-            color: white;
-            /* Optional: Adjust color if needed */
-        }
-
-        .setbg {
-            background-image: url(images/roofers.jpg);
-            background-size: cover;
-        }
-
-
         /* Reset box-sizing */
         * {
             box-sizing: border-box;
@@ -43,7 +19,13 @@
             padding: 0;
         }
 
+
         /* General Styles */
+        .setbg {
+            background-image: url(images/roofers.jpg);
+            background-size: cover;
+        }
+
         .container {
             display: flex;
             flex-wrap: wrap;
@@ -57,6 +39,7 @@
         }
 
         .column1 {
+            position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -64,59 +47,85 @@
         }
 
         .small-column {
-            display: grid;
-            grid-template-rows: repeat(3, auto);
-            /* Create rows for each box */
-            flex-direction: column;
-            /* Arrange items in a column */
-            gap: 10px;
-            /* Spacing between boxes */
-            justify-items: start;
-            height: 100px;
-            width: 100px;
-            padding: 200px;
-
-        }
-
-        .column2 {
-            width: 100px;
-            /* Set the width of the box */
-            aspect-ratio: 1;
-            /* Ensure the height matches the width (1:1 ratio) */
-            background: rgba(255, 255, 255, 0.2);
+            position: absolute;
+            left: 5%;
+            /* Adjust the left position to move it on the left */
+            top: 22%;
+            /* Adjust the top position as needed */
             display: flex;
+            flex-direction: column;
+            gap: 10px;
             align-items: center;
-            justify-content: center;
+            /* Align items to center */
+            padding: 50px;
+            width: 400px;
+            height: 350px;
+            background: rgba(255, 255, 255, 0.1);
             border-radius: 10px;
         }
 
         @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-            .column2 {
+            .small-column {
                 -webkit-backdrop-filter: blur(10px);
                 backdrop-filter: blur(10px);
             }
         }
 
+        img.logo {
+            position: absolute;
+            left: 38%;
+            top: -13%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            padding: 25px;
+        }
+
+        body {
+            font-family: 'Neuron Angled Black', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        button {
+            font-family: 'Neuron Angled Black', sans-serif;
+        }
+
 
         h1 {
-            font-size: 40px;
-            margin-bottom: 20px;
+            font-size: 30px;
+            margin-bottom: 15px;
             color: white;
+            text-align: center;
+            margin-top: 10px;
         }
 
         p {
+            font-size: small;
             font-family: Arial, Helvetica, sans-serif;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             color: white;
             font-weight: lighter;
+            text-align: center;
+        }
+
+        .bold-word {
+            font-weight: 800;
+            /* Bold */
+            color: white;
+            /* Optional: Adjust color if needed */
         }
 
         button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             background-color: white;
             border-radius: 5px;
             border: none;
             color: black;
-            font-family: ;
             font-size: 18px;
             padding: 10px 30px;
             cursor: pointer;
@@ -124,41 +133,69 @@
 
         button:hover {
             background-color: black;
-            border-radius: 5px;
-            border: none;
             color: white;
-            font-family: ;
-            font-size: 18px;
-            padding: 10px 30px;
             cursor: pointer;
         }
 
+
         /* Mobile Styles */
         @media screen and (max-width: 600px) {
-            .container {
-                flex-direction: column;
+            .setbg {
+                background-position: top center;
+                height: auto;
+                /* Allow the height to adjust dynamically */
             }
 
+            .column1 {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 500px;
 
+            }
+
+            .small-column {
+                position: static;
+                /* Remove absolute positioning for mobile */
+                margin-top: 50px;
+                padding: 30px;
+                width: 85%;
+                /* Adjust the width to fit within the mobile screen */
+                height: auto;
+                /* Allow height to adjust based on content */
+                gap: 5px;
+            }
+
+            h1 {
+                margin-top: 30px;
+            }
+
+            img.logo {
+                position: absolute;
+                top: -14%;
+                left: 36.5%;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div class="container section_margin">
+    <div class="container">
         <div class="column column1 setbg">
-            <div class="small-column">
-                <div class="column2">
-                    <h1>Build Your Dream Home with Solid Structures Builders!</h1>
 
-                    <p>
-                        Looking for a reliable and experienced building company to bring your vision to life?
-                        <span class="bold-word">Solid Structures Builders</span> is here to make your dream home a
-                        reality.
-                    </p>
+            <div class=" small-column">
+                <img src="images/roofers-logo.png" alt="Logo" class="logo" height="90px">
+                <h1>Build Your Dream Home with Solid Structures Builders!</h1>
 
-                    <button>LEARN MORE</button>
-                </div>
+                <p>
+                    Looking for a reliable and experienced building company to bring your vision to life?
+                    <br />
+                    <span class="bold-word">Solid Structures Builders</span> is here to make your dream home a
+                    reality.
+                </p>
+
+                <button>LEARN MORE</button>
             </div>
 
         </div>
