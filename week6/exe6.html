@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercise 3 - Responsive Banner 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* Reset box-sizing */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* General Styles */
+        .setbg {
+            background-image: url(images/roofers.jpg);
+            background-size: cover;
+            position: relative;
+            /* Make the parent container relative */
+            height: 500px;
+            /* Set a height for the container */
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            height: auto;
+        }
+
+        .column {
+            flex: 1;
+            min-height: 100%;
+            /* Ensure the columns are of equal height */
+        }
+
+        .column1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            position: relative;
+            /* Added this to make absolute positioning work within this container */
+        }
+
+        .small-column1 {
+            position: absolute;
+            left: 20%;
+            /* Adjust the left position to move it on the left */
+            top: 20px;
+            /* Adjust the top position as needed */
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: flex-start;
+            /* Align items to the left */
+            padding: 50px;
+            width: 400px;
+            height: 350px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+
+        h1,
+        h2,
+        h3,
+        button {
+            font-family: 'Neuron Angled Black', sans-serif;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        p {
+            font-size: small;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 20px;
+            color: white;
+            font-weight: lighter;
+            text-align: center;
+        }
+
+        .bold-word {
+            font-weight: 800;
+            /* Bold */
+            color: white;
+            /* Optional: Adjust color if needed */
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            border-radius: 5px;
+            border: none;
+            color: black;
+            font-size: 18px;
+            padding: 10px 30px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Mobile Styles */
+        @media screen and (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="column column1 setbg">
+            <div class="small-column1">
+                <h1>Build Your Dream Home with Solid Structures Builders!</h1>
+                <p>
+                    Looking for a reliable and experienced building company to bring your vision to life?
+                    <br />
+                    <span class="bold-word">Solid Structures Builders</span> is here to make your dream home a
+                    reality.
+                </p>
+                <button>LEARN MORE</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
