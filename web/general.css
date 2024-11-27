@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'Sweet Sans Pro';
+    src: url('fonts/SweetSansProMedium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Navigation Bar */
+#nav {
+    padding: 5px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #AAA297;
+}
+
+
+/* Header Styles */
+header {
+    padding: 15px;
+    background-color: #020C16;
+    display: flex;
+    align-items: center
+}
+
+.logo {
+    margin-left: 20px;
+    height: 40px;
+    width: auto;
+}
+
+
+/* Info Section Styling */
+.info {
+    font-family: 'Sweet Sans Pro', sans-serif;
+    font-weight: 500;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    position: relative;
+}
+
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* Space between the text and the icon */
+}
+
+
+.icon {
+    align-items: center;
+    height: 15px;
+    position: relative;
+    top: 3px;
+
+}
+
+
+
+.blogs {
+    margin-right: 20px;
+    /* Adds space to the right of blogshare */
+}
+
+.menu-ptg {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-pyt {
+    position: relative;
+    display: inline-block;
+}
+
+.submenu {
+    font-size: 15px;
+    display: none;
+    position: absolute;
+    background-color: #333333;
+    color: white;
+    min-width: 150px;
+    z-index: 10;
+    top: 100%;
+    left: 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    overflow: hidden;
+    /* To ensure items are clipped */
+    opacity: 0;
+    transform: translateY(-10px);
+    /* Initial position for slide-in effect */
+    transition: all 0.3s ease-in-out;
+
+}
+
+.submenu a {
+    min-height: 30px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 10px 15px;
+    color: white;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.submenu a:hover {
+    background-color: #555;
+    /* Highlight color */
+    color: #ffd700;
+    /* Gold color for hover text */
+    transform: scale(1.02);
+    /* Slight zoom effect */
+    transition: all 0.3s ease-in-out;
+    /* Add smooth animation for hover effects */
+}
+
+.menu-ptg:hover .submenu {
+    display: block;
+    opacity: 1;
+    /* Fully opaque */
+    transform: translateY(0);
+    /* Slide to the normal position */
+}
+
+.menu-pyt:hover .submenu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+
+}
