@@ -54,31 +54,40 @@
             font-weight: lighter;
         }
 
-        .destination {
+        .destination-container {
             margin-top: -20px;
+            display: flex;
             background-color: #CEC2B1;
             font-family: 'Sweet Sans Pro', sans-serif;
-            display: flex;
         }
 
-        .destination-container {
-            display: column;
-        }
-
-        .column {
+        .destination-column1 {
             flex: 1;
             padding: 10px;
+            margin-left: 50px;
+            margin-top: 70px;
         }
 
-        .destination h1 {
-            font-size: 40px;
+        .destination-column2 {
+            flex: 1;
+            padding: 10px;
+            margin-right: -200px;
+            margin-top: 95px;
         }
 
-        .destination p {
-            font-size: 20px;
+        .destination-container h1 {
+            font-size: 50px;
+        }
+
+        .destination-container p {
+            font-size: 25px;
             margin-top: -30px;
             letter-spacing: 2px;
             font-weight: 300;
+        }
+
+        .destination-column2 img {
+            margin-bottom: 8px;
         }
     </style>
 </head>
@@ -133,11 +142,20 @@
     </section>
 
     <section>
-        <div class="destination">
-            <div class="destination-container">
+        <div class="destination-container">
+            <div class="destination-column1">
                 <h1>Choose Your Destination</h1>
                 <p>Find the fastest route – your journey made simple.</p>
             </div>
+
+            <div class="destination-column2">
+                <img src="images-transportation/black-circle.png" alt="Black Circle" height="45" />
+                <br />
+                <img src="images-transportation/black-dots.png" alt="Black Dots" height="45" />
+                <br />
+                <img src="images-transportation/black-location.png" alt="Black Location" height="45" />
+            </div>
+
         </div>
     </section>
 

@@ -19,6 +19,8 @@ a {
 
 /* Header Styles */
 header {
+    position: sticky;
+    top: 0;
     padding: 15px;
     background-color: #020C16;
     display: flex;
