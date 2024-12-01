@@ -55,6 +55,10 @@
             font-weight: lighter;
         }
 
+        .destination-section-background {
+            background-color: #CEC2B1;
+        }
+
         .destination-container {
             margin-top: -20px;
             padding-left: 120px;
@@ -123,6 +127,31 @@
             color: #AAA297;
             /* Custom font weight and color for the second box */
         }
+
+        .states-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        button.states {
+            display: block;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 325px;
+            width: 275px;
+            background-color: #E6DFD5;
+            border: 0px;
+            border-radius: 10px;
+        }
+
+        button.states img {
+            border-radius: 10px;
+            display: block;
+            justify-content: center;
+            align-items: start;
+
+        }
     </style>
 </head>
 
@@ -174,7 +203,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="destination-section-background">
         <div class="destination-container">
             <div class="destination-column1">
                 <h1>Choose Your Destination</h1>
@@ -202,8 +231,12 @@
             </div>
         </div>
 
-        <div>
-            <button>Malacca</button>
+        <div class="states-container">
+            <a href="#">
+                <button class="states">
+                    <img src="images-transportation/malacca button.jpg" alt="Malacca" height="275px" />
+                </button>
+            </a>
         </div>
 
     </section>
