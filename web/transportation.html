@@ -55,25 +55,36 @@
             font-weight: lighter;
         }
 
+        .destination-section-background {
+            background-color: #CEC2B1;
+        }
+
         .destination-container {
             margin-top: -20px;
+            padding-left: 120px;
             display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
             background-color: #CEC2B1;
             font-family: 'Sweet Sans Pro', sans-serif;
+            color: #020C16;
         }
 
         .destination-column1 {
             flex: 1;
             padding: 10px;
-            margin-left: 50px;
             margin-top: 70px;
         }
 
         .destination-column2 {
             flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             padding: 10px;
-            margin-right: -200px;
-            margin-top: 95px;
+            padding-top: 30px;
+            margin-top: 80px;
         }
 
         .destination-container h1 {
@@ -81,14 +92,180 @@
         }
 
         .destination-container p {
-            font-size: 25px;
+            font-size: 23px;
             margin-top: -30px;
             letter-spacing: 2px;
             font-weight: 300;
         }
 
         .destination-column2 img {
-            margin-bottom: 8px;
+            display: block;
+            flex-direction: column;
+            margin-bottom: -18px;
+            padding-right: 30px;
+            padding-bottom: 5px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            width: 300px;
+            height: 35px;
+            background-color: #E6DFD5;
+            border: 0px;
+            border-radius: 10px;
+            font-family: 'Sweet Sans Pro', sans-serif;
+            color: #020C16;
+            padding: 20px;
+            margin: 40px 10px 30px 0;
+            /* Vertical margin between boxes */
+        }
+
+        .box:nth-child(2) h2 {
+            font-weight: 400;
+            color: #AAA297;
+            /* Custom font weight and color for the second box */
+        }
+
+        .states-container {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            padding-top: 50px;
+            padding-bottom: 130px;
+        }
+
+        button.malacca {
+            background:
+                linear-gradient(rgba(230, 223, 213, 0.2), rgba(230, 223, 213, 0.2)), url('images-transportation/malacca\ button.jpg');
+            background-size: cover;
+            background-color: #E6DFD5;
+            border: 0px;
+            border-radius: 10px;
+            height: 275px;
+            width: 275px;
+            color: transparent;
+        }
+
+        button.malacca:hover {
+            background:
+                linear-gradient(rgba(2, 12, 22, 0.1), rgba(255, 255, 255, 0.9)), url('images-transportation/malacca\ button.jpg');
+            background-size: cover;
+            background-color: #E6DFD5;
+            border: 0px;
+            border-radius: 10px;
+            height: 275px;
+            width: 275px;
+            font-family: 'Sweet Sans Pro', sans-serif;
+            font-size: 30px;
+            font-weight: 600;
+            color: #020C16;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            /* Vertically aligns text to the bottom */
+            padding-bottom: 20px;
+            cursor: pointer;
+        }
+
+        button.pahang {
+            background:
+                linear-gradient(rgba(230, 223, 213, 0.2), rgba(230, 223, 213, 0.2)), url('images-transportation/pahang\ button.jpg');
+            background-size: cover;
+            background-color: #E6DFD5;
+            border: 0px;
+            border-radius: 10px;
+            height: 275px;
+            width: 275px;
+            color: transparent;
+        }
+
+        button.pahang:hover {
+            background:
+                linear-gradient(rgba(2, 12, 22, 0.1), rgba(255, 255, 255, 0.9)), url('images-transportation/pahang\ button.jpg');
+            background-size: cover;
+            background-color: #E6DFD5;
+            border: 0px;
+            border-radius: 10px;
+            height: 275px;
+            width: 275px;
+            font-family: 'Sweet Sans Pro', sans-serif;
+            font-size: 30px;
+            font-weight: 600;
+            color: #020C16;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            /* Vertically aligns text to the bottom */
+            padding-bottom: 20px;
+            cursor: pointer;
+        }
+
+        button.penang {
+            background:
+                linear-gradient(rgba(230, 223, 213, 0.2), rgba(230, 223, 213, 0.2)), url('images-transportation/penang\ button.jpg');
+            background-size: cover;
+            background-color: #E6DFD5;
+            border: 0px;
+            border-radius: 10px;
+            height: 275px;
+            width: 275px;
+            color: transparent;
+        }
+
+        button.penang:hover {
+            background:
+                linear-gradient(rgba(2, 12, 22, 0.1), rgba(255, 255, 255, 0.9)), url('images-transportation/penang\ button.jpg');
+            background-size: cover;
+            background-color: #E6DFD5;
+            border: 0px;
+            border-radius: 10px;
+            height: 275px;
+            width: 275px;
+            font-family: 'Sweet Sans Pro', sans-serif;
+            font-size: 30px;
+            font-weight: 600;
+            color: #020C16;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            /* Vertically aligns text to the bottom */
+            padding-bottom: 20px;
+            cursor: pointer;
+        }
+
+        button.perak {
+            background:
+                linear-gradient(rgba(230, 223, 213, 0.2), rgba(230, 223, 213, 0.2)), url('images-transportation/perak\ button.jpg');
+            background-size: cover;
+            background-color: #E6DFD5;
+            border: 0px;
+            border-radius: 10px;
+            height: 275px;
+            width: 275px;
+            color: transparent;
+        }
+
+        button.perak:hover {
+            background:
+                linear-gradient(rgba(2, 12, 22, 0.1), rgba(255, 255, 255, 0.9)), url('images-transportation/perak\ button.jpg');
+            background-size: cover;
+            background-color: #E6DFD5;
+            border: 0px;
+            border-radius: 10px;
+            height: 275px;
+            width: 275px;
+            font-family: 'Sweet Sans Pro', sans-serif;
+            font-size: 30px;
+            font-weight: 600;
+            color: #020C16;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            /* Vertically aligns text to the bottom */
+            padding-bottom: 20px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -112,7 +289,6 @@
                 <div class="submenu">
                     <a href="#">Transportation</a>
                     <a href="#">Accommodation</a>
-
                 </div>
             </div>
 
@@ -142,7 +318,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="destination-section-background">
         <div class="destination-container">
             <div class="destination-column1">
                 <h1>Choose Your Destination</h1>
@@ -150,14 +326,44 @@
             </div>
 
             <div class="destination-column2">
-                <img src="images-transportation/black-circle.png" alt="Black Circle" height="45" />
-                <br />
-                <img src="images-transportation/black-dots.png" alt="Black Dots" height="45" />
-                <br />
-                <img src="images-transportation/black-location.png" alt="Black Location" height="45" />
-            </div>
+                <div>
+                    <img src="images-transportation/black-circle.png" alt="Black Circle" height="45" />
+                    <br />
+                    <img src="images-transportation/black-dots.png" alt="Black Dots" height="45" />
+                    <br />
+                    <img src="images-transportation/black-location.png" alt="Black Location" height="45" />
+                </div>
 
+
+                <div>
+                    <div class="box">
+                        <h2>Kuala Lumpur</h2>
+                    </div>
+                    <div class="box">
+                        <h2>Your Destination</h2>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <div class="states-container">
+            <a href="#">
+                <button class="malacca">Malacca</button>
+            </a>
+
+            <a href="#">
+                <button class="pahang">Pahang</button>
+            </a>
+
+            <a href="#">
+                <button class="penang">Penang</button>
+            </a>
+
+            <a href="#">
+                <button class="perak">Perak</button>
+            </a>
+        </div>
+
     </section>
 
 </body>
