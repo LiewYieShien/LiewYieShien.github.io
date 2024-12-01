@@ -10,7 +10,6 @@
     padding: 5px;
 }
 
-
 a {
     text-decoration: none;
     color: #AAA297;
@@ -19,12 +18,14 @@ a {
 
 /* Header Styles */
 header {
-    position: sticky;
+    position: fixed;
+    width: 96.999%;
     top: 0;
     padding: 15px;
     background-color: #020C16;
     display: flex;
-    align-items: center
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
