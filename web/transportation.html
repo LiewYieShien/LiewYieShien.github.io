@@ -131,26 +131,137 @@
         .states-container {
             display: flex;
             justify-content: center;
+            gap: 60px;
+            padding-top: 50px;
+            padding-bottom: 130px;
         }
 
-        button.states {
-            display: block;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 325px;
-            width: 275px;
+        button.malacca {
+            background:
+                linear-gradient(rgba(230, 223, 213, 0.2), rgba(230, 223, 213, 0.2)), url('images-transportation/malacca\ button.jpg');
+            background-size: cover;
             background-color: #E6DFD5;
             border: 0px;
             border-radius: 10px;
+            height: 275px;
+            width: 275px;
+            color: transparent;
         }
 
-        button.states img {
+        button.malacca:hover {
+            background:
+                linear-gradient(rgba(2, 12, 22, 0.1), rgba(255, 255, 255, 0.9)), url('images-transportation/malacca\ button.jpg');
+            background-size: cover;
+            background-color: #E6DFD5;
+            border: 0px;
             border-radius: 10px;
-            display: block;
+            height: 275px;
+            width: 275px;
+            font-family: 'Sweet Sans Pro', sans-serif;
+            font-size: 30px;
+            font-weight: 600;
+            color: #020C16;
+            display: flex;
             justify-content: center;
-            align-items: start;
+            align-items: flex-end;
+            /* Vertically aligns text to the bottom */
+            padding-bottom: 20px;
+        }
 
+        button.pahang {
+            background:
+                linear-gradient(rgba(230, 223, 213, 0.2), rgba(230, 223, 213, 0.2)), url('images-transportation/pahang\ button.jpg');
+            background-size: cover;
+            background-color: #E6DFD5;
+            border: 0px;
+            border-radius: 10px;
+            height: 275px;
+            width: 275px;
+            color: transparent;
+        }
+
+        button.pahang:hover {
+            background:
+                linear-gradient(rgba(2, 12, 22, 0.1), rgba(255, 255, 255, 0.9)), url('images-transportation/pahang\ button.jpg');
+            background-size: cover;
+            background-color: #E6DFD5;
+            border: 0px;
+            border-radius: 10px;
+            height: 275px;
+            width: 275px;
+            font-family: 'Sweet Sans Pro', sans-serif;
+            font-size: 30px;
+            font-weight: 600;
+            color: #020C16;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            /* Vertically aligns text to the bottom */
+            padding-bottom: 20px;
+        }
+
+        button.penang {
+            background:
+                linear-gradient(rgba(230, 223, 213, 0.2), rgba(230, 223, 213, 0.2)), url('images-transportation/penang\ button.jpg');
+            background-size: cover;
+            background-color: #E6DFD5;
+            border: 0px;
+            border-radius: 10px;
+            height: 275px;
+            width: 275px;
+            color: transparent;
+        }
+
+        button.penang:hover {
+            background:
+                linear-gradient(rgba(2, 12, 22, 0.1), rgba(255, 255, 255, 0.9)), url('images-transportation/penang\ button.jpg');
+            background-size: cover;
+            background-color: #E6DFD5;
+            border: 0px;
+            border-radius: 10px;
+            height: 275px;
+            width: 275px;
+            font-family: 'Sweet Sans Pro', sans-serif;
+            font-size: 30px;
+            font-weight: 600;
+            color: #020C16;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            /* Vertically aligns text to the bottom */
+            padding-bottom: 20px;
+        }
+
+        button.perak {
+            background:
+                linear-gradient(rgba(230, 223, 213, 0.2), rgba(230, 223, 213, 0.2)), url('images-transportation/perak\ button.jpg');
+            background-size: cover;
+            background-color: #E6DFD5;
+            border: 0px;
+            border-radius: 10px;
+            height: 275px;
+            width: 275px;
+            color: transparent;
+        }
+
+        button.perak:hover {
+            background:
+                linear-gradient(rgba(2, 12, 22, 0.1), rgba(255, 255, 255, 0.9)), url('images-transportation/perak\ button.jpg');
+            background-size: cover;
+            background-color: #E6DFD5;
+            border: 0px;
+            border-radius: 10px;
+            height: 275px;
+            width: 275px;
+            font-family: 'Sweet Sans Pro', sans-serif;
+            font-size: 30px;
+            font-weight: 600;
+            color: #020C16;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            /* Vertically aligns text to the bottom */
+            padding-bottom: 20px;
         }
     </style>
 </head>
@@ -233,9 +344,19 @@
 
         <div class="states-container">
             <a href="#">
-                <button class="states">
-                    <img src="images-transportation/malacca button.jpg" alt="Malacca" height="275px" />
-                </button>
+                <button class="malacca">Malacca</button>
+            </a>
+
+            <a href="#">
+                <button class="pahang">Pahang</button>
+            </a>
+
+            <a href="#">
+                <button class="penang">Penang</button>
+            </a>
+
+            <a href="#">
+                <button class="perak">Perak</button>
             </a>
         </div>
 
