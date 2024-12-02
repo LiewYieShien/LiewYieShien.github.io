@@ -75,7 +75,7 @@
         .destination-column1 {
             flex: 1;
             padding: 10px;
-            margin-top: 70px;
+            margin-top: 60px;
         }
 
         .destination-column2 {
@@ -85,15 +85,15 @@
             align-items: center;
             padding: 10px;
             padding-top: 30px;
-            margin-top: 80px;
+            margin-top: 70px;
         }
 
         .destination-container h1 {
-            font-size: 50px;
+            font-size: 42px;
         }
 
         .destination-container p {
-            font-size: 23px;
+            font-size: 20px;
             margin-top: -30px;
             letter-spacing: 2px;
             font-weight: 300;
@@ -344,7 +344,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 140px;
+            gap: 70px;
         }
 
         .socialmedia {
@@ -376,6 +376,41 @@
             font-weight: 200;
             color: #AAA297;
             margin-top: 42.5px;
+        }
+
+        /* ---------------------------------------------Back To Top Button Section Styles----------------------------------------------- */
+        .backtotop-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .circle {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            border-radius: 50%;
+            background-color: #F6F6F6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            position: absolute;
+            right: 85px;
+            bottom: 210px
+        }
+
+        .backtotop-align {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button.backtotop {
+            background-color: transparent;
+            border: 0px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -530,6 +565,16 @@
         </div>
     </section>
 
+    <!--------------------------------------------------- Back To Top Section -------------------------------------------------->
+    <section>
+        <div class="backtotop-container">
+            <a class="circle backtotop-align" href="#">
+                <button class="backtotop">
+                    <img src="images/top.png" alt="Back To Top" height="25" />
+                </button>
+            </a>
+        </div>
+    </section>
 </body>
 
 </html>
