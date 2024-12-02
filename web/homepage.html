@@ -5,6 +5,7 @@
     <title>Homepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="footer.css">
 
 
     <!-- Font -->
@@ -279,6 +280,97 @@
             object-fit: cover;
             /* Ensures the image covers the circle */
         }
+
+
+        /* ---------------------------------------------Footer Section Styles----------------------------------------------- */
+        .footer {
+            display: block;
+            justify-content: center;
+            align-items: center;
+            background-color: #5C3922;
+            color: white;
+            text-align: center;
+            padding: 80px;
+        }
+
+        .explore {
+            display: flex;
+            justify-content: center;
+            /* Horizontally center the button */
+            align-items: center;
+            /* Vertically center the button */
+            margin-top: 20px;
+            /* Optional: Adjust the spacing if needed */
+        }
+
+        .footer h1 {
+            font-family: 'Sweet Sans Pro', sans-serif;
+            font-size: 40px;
+            color: #E6DFD5;
+        }
+
+        .footer p {
+            font-family: 'Sweet Sans Pro', sans-serif;
+            font-size: 20px;
+            font-weight: 200;
+            color: #AAA297;
+            margin-top: -15px;
+        }
+
+        .footer hr {
+            border: none;
+            height: 1px;
+            background-color: #816E60;
+            width: 100%;
+            /* Line width */
+            margin-top: 90px;
+            /* Center alignment */
+        }
+
+        /* Icon Styles */
+        .explore .search {
+            margin-left: 10px;
+            width: 20px;
+            height: auto;
+        }
+
+        .footer-menu-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 140px;
+        }
+
+        .socialmedia {
+            background-color: transparent;
+            border: none;
+            height: 45px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .footer-menu-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            font-family: 'Sweet Sans Pro', sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            color: #AAA297;
+            margin-top: 18px;
+        }
+
+        .footer-menu-container p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Sweet Sans Pro', sans-serif;
+            font-size: 20px;
+            font-weight: 200;
+            color: #AAA297;
+            margin-top: 42.5px;
+        }
     </style>
 </head>
 
@@ -404,6 +496,62 @@
         </section>
     </div>
 
+
+    <!--------------------------------------------------- Footer Section -------------------------------------------------->
+
+    <section class="footer">
+        <div>
+            <h1>
+                Wishing you memorable journeys in Malaysia!
+            </h1>
+            <p>
+                Making Malaysian travel easy and accessible.
+            </p>
+        </div>
+
+        <div>
+            <button class="explore">
+                <span>Start exploring</span>
+                <img class="search" src="images/search.png" alt="Search">
+            </button>
+        </div>
+
+        <hr />
+
+        <div class="footer-menu-container">
+            <div>
+                <a href="#">
+                    <button class="socialmedia">
+                        <img src="images/facebook.png" alt="Facebook" height="25" />
+                    </button>
+                </a>
+                <a href="#">
+                    <button class="socialmedia">
+                        <img src="images/instagram.png" alt="Instagram" height="25" />
+                    </button>
+                </a>
+                <a href="#">
+                    <button class="socialmedia">
+                        <img src="images/youtube.png" alt="YouTube" height="25" />
+                    </button>
+                </a>
+            </div>
+
+            <div class="footer-menu-bar">
+                <a href="#">Home</a>
+                <a href="#">Explore & Tips</a>
+                <a href="#">Plan Your Trip</a>
+                <a href="#">Places To Go</a>
+                <a href="#">Blog Sharing</a>
+            </div>
+
+            <div>
+                <p>
+                    © 2024 Explore.my
+                </p>
+            </div>
+        </div>
+    </section>
 
 </body>
 
