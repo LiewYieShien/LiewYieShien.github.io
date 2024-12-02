@@ -284,7 +284,8 @@
 
         /* ---------------------------------------------Footer Section Styles----------------------------------------------- */
         .footer {
-            display: block;
+            display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             background-color: #5C3922;
@@ -293,14 +294,34 @@
             padding: 80px;
         }
 
-        .explore {
+        .fexplore {
             display: flex;
+            font-size: 20px;
             justify-content: center;
-            /* Horizontally center the button */
             align-items: center;
-            /* Vertically center the button */
             margin-top: 20px;
-            /* Optional: Adjust the spacing if needed */
+            padding: 10px 20px;
+            background-color: #EBE9E6;
+            border-radius: 25px;
+            cursor: pointer;
+            border: none;
+            position: relative;
+            bottom: 20px;
+            z-index: 20;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        /* Icon Styles */
+        .fexplore .search {
+            margin-left: 10px;
+            width: 20px;
+            height: auto;
+        }
+
+        /* Hover Effect */
+        .fexplore:hover {
+            background-color: #f5c400;
+            transform: scale(1.1);
         }
 
         .footer h1 {
@@ -327,12 +348,7 @@
             /* Center alignment */
         }
 
-        /* Icon Styles */
-        .explore .search {
-            margin-left: 10px;
-            width: 20px;
-            height: auto;
-        }
+
 
         .footer-menu-container {
             display: flex;
@@ -504,7 +520,7 @@
         </div>
 
         <div>
-            <button class="explore">
+            <button class="fexplore">
                 <span>Start exploring</span>
                 <img class="search" src="images/search.png" alt="Search">
             </button>
