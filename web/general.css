@@ -5,7 +5,7 @@
     font-style: normal;
 }
 
-/* Navigation Bar */
+/* ---------------------------------------------Navigation Bar Styles----------------------------------------------- */
 #nav {
     padding: 5px;
 }
@@ -138,4 +138,148 @@ header {
     opacity: 1;
     transform: translateY(0);
 
+}
+
+
+/* ---------------------------------------------Footer Styles----------------------------------------------- */
+.footer {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: #5C3922;
+    color: white;
+    text-align: center;
+    padding: 80px;
+}
+
+.footer h1 {
+    font-family: 'Sweet Sans Pro', sans-serif;
+    font-size: 40px;
+    color: #E6DFD5;
+}
+
+.footer p {
+    font-family: 'Sweet Sans Pro', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    color: #AAA297;
+    margin-top: -15px;
+}
+
+.footer hr {
+    border: none;
+    height: 1px;
+    background-color: #816E60;
+    width: 100%;
+    /* Line width */
+    margin-top: 90px;
+    /* Center alignment */
+}
+
+/* Button Styles */
+.explore {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #AAA297;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    margin-top: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Icon Styles */
+.explore .search {
+    margin-left: 10px;
+    width: 20px;
+    height: auto;
+}
+
+/* Text Styles */
+.explore span {
+    margin-left: 10px;
+    color: #31312E;
+    font-size: 20px;
+
+}
+
+/* Hover Effect */
+.explore:hover {
+    background-color: #f5c400;
+    /* Change to orange on hover */
+    transform: scale(1.1);
+    /* Slightly enlarge on hover */
+}
+
+.footer-menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.socialmedia {
+    background-color: transparent;
+    border: none;
+    height: 45px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.footer-menu-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-family: 'Sweet Sans Pro', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #AAA297;
+    margin-top: 18px;
+}
+
+.footer-menu-container p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Sweet Sans Pro', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    color: #AAA297;
+    margin-top: 42.5px;
+}
+
+/* ---------------------------------------------Back To Top Button Styles----------------------------------------------- */
+.backtotop-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    right: 85px;
+    bottom: 210px
+}
+
+.backtotop-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button.backtotop {
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
 }

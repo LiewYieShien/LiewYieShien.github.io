@@ -270,153 +270,86 @@
             cursor: pointer;
         }
 
-        /* ---------------------------------------------Footer Section Styles----------------------------------------------- */
-        .footer {
-            display: block;
-            justify-content: center;
-            align-items: center;
-            background-color: #5C3922;
-            color: white;
-            text-align: center;
-            padding: 80px;
-        }
 
-        .footer h1 {
-            font-family: 'Sweet Sans Pro', sans-serif;
-            font-size: 40px;
-            color: #E6DFD5;
-        }
+        /* ---------------------------------------------Mobile Styles----------------------------------------------- */
+        @media screen and (max-width: 600px) {
+            .destination-section-background {
+                background-color: #CEC2B1;
+            }
 
-        .footer p {
-            font-family: 'Sweet Sans Pro', sans-serif;
-            font-size: 20px;
-            font-weight: 200;
-            color: #AAA297;
-            margin-top: -15px;
-        }
+            .destination-container {
+                margin-top: -60px;
+                padding-left: 120px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
 
-        .footer hr {
-            border: none;
-            height: 1px;
-            background-color: #816E60;
-            width: 100%;
-            /* Line width */
-            margin-top: 90px;
-            /* Center alignment */
-        }
+            .destination-column1 {
+                padding: 10px;
+                padding-top: 60px;
+                margin-top: 60px;
+            }
 
-        /* Button Styles */
-        .explore {
-            width: auto;
-            padding: 10px 20px;
-            background-color: #AAA297;
-            border-radius: 25px;
-            cursor: pointer;
-            border: none;
-            margin-top: 30px;
-            transition: background-color 0.3s, transform 0.3s;
-        }
+            .destination-column2 {
+                padding: 10px;
+                margin-top: 10px;
+            }
 
-        /* Icon Styles */
-        .explore .search {
-            margin-left: 10px;
-            width: 20px;
-            height: auto;
-        }
+            .destination-container h1 {
+                font-size: 32px;
+            }
 
-        /* Text Styles */
-        .explore span {
-            margin-left: 10px;
-            color: #31312E;
-            font-size: 20px;
+            .destination-container p {
+                font-size: 16px;
+                margin-top: -20px;
+                letter-spacing: 2px;
+                font-weight: 300;
+            }
 
-        }
+            .destination-column2 img {
+                display: block;
+                flex-direction: column;
+                margin-bottom: -18px;
+                padding-right: 30px;
+                padding-bottom: 5px;
+                height: 40px;
+            }
 
-        /* Hover Effect */
-        .explore:hover {
-            background-color: #f5c400;
-            /* Change to orange on hover */
-            transform: scale(1.1);
-            /* Slightly enlarge on hover */
-        }
+            .box {
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                width: 230px;
+                height: 35px;
+                background-color: #E6DFD5;
+                border: 0px;
+                border-radius: 10px;
+                font-family: 'Sweet Sans Pro', sans-serif;
+                color: #020C16;
+                padding: 15px;
+                margin: 40px 10px 30px 0;
+                /* Vertical margin between boxes */
+            }
 
-        .footer-menu-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 70px;
-        }
+            .box:nth-child(2) h2 {
+                font-weight: 400;
+                color: #AAA297;
+                /* Custom font weight and color for the second box */
+            }
 
-        .socialmedia {
-            background-color: transparent;
-            border: none;
-            height: 45px;
-            margin-top: 20px;
-            cursor: pointer;
-        }
-
-        .footer-menu-bar {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 40px;
-            font-family: 'Sweet Sans Pro', sans-serif;
-            font-size: 20px;
-            font-weight: 500;
-            color: #AAA297;
-            margin-top: 18px;
-        }
-
-        .footer-menu-container p {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: 'Sweet Sans Pro', sans-serif;
-            font-size: 20px;
-            font-weight: 200;
-            color: #AAA297;
-            margin-top: 42.5px;
-        }
-
-        /* ---------------------------------------------Back To Top Button Section Styles----------------------------------------------- */
-        .backtotop-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-        }
-
-        .circle {
-            width: 50px;
-            height: 50px;
-            line-height: 50px;
-            border-radius: 50%;
-            background-color: #F6F6F6;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            position: absolute;
-            right: 85px;
-            bottom: 210px
-        }
-
-        .backtotop-align {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        button.backtotop {
-            background-color: transparent;
-            border: 0px;
-            cursor: pointer;
+            .states-container {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
         }
     </style>
 </head>
 
 <body>
     <header>
+        <!--------------------------------------------------- Navigation Bar -------------------------------------------------->
         <div id="nav">
             <img src="images/logo.png" height="70px" class="logo">
         </div>
@@ -565,7 +498,7 @@
         </div>
     </section>
 
-    <!--------------------------------------------------- Back To Top Section -------------------------------------------------->
+    <!--------------------------------------------------- Back To Top Button -------------------------------------------------->
     <section>
         <div class="backtotop-container">
             <a class="circle backtotop-align" href="#">
