@@ -387,6 +387,95 @@
             color: #AAA297;
             margin-top: 42.5px;
         }
+
+
+        /* -------------------------------------------------------Mobile------------------------------------------------------- */
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 60px;
+                margin-left: 50px;
+                top: 30px;
+            }
+
+            .hero p {
+                font-size: 24px;
+                margin-left: 51px;
+                top: -100px;
+            }
+
+            .button-container {
+                position: fixed;
+                bottom: 70px;
+                left: 50%;
+                transform: translateX(-50%);
+                /* Adjust for perfect horizontal centering */
+                display: flex;
+                flex-direction: row;
+                gap: 220px;
+                justify-content: center;
+                align-items: center;
+                z-index: 100;
+            }
+
+            .circle-btn {
+                left: auto;
+            }
+
+            .circle-btn img {
+                width: 75%;
+            }
+
+            .map-content {
+                top: 10px;
+            }
+
+            .map-content p {
+                font-size: 32px;
+            }
+
+            .explore {
+                font-size: 16px;
+                padding: 10px;
+                width: auto;
+            }
+
+            .circle-container {
+                flex-wrap: wrap;
+                gap: 20px;
+                /* Reduced gap for smaller screens */
+            }
+
+            .circle {
+                width: 100px;
+                height: 100px;
+                /* Reduced size for mobile */
+            }
+
+            .footer-menu-container {
+                flex-direction: column;
+                gap: 20px;
+                /* Adjust spacing for smaller layout */
+            }
+
+            .footer-menu-bar {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .footer h1 {
+                font-size: 24px;
+                /* Smaller heading size */
+            }
+
+            .footer p {
+                font-size: 16px;
+            }
+
+            .fexplore {
+                font-size: 16px;
+            }
+        }
     </style>
 </head>
 
