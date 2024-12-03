@@ -24,138 +24,6 @@
             font-style: normal;
         }
 
-        /* Navigation Bar */
-        #nav {
-            padding: 5px;
-        }
-
-
-        a {
-            text-decoration: none;
-            color: #AAA297;
-        }
-
-
-        /* Header Styles */
-        header {
-            padding: 15px;
-            background-color: #020C16;
-            display: flex;
-            align-items: center
-        }
-
-        .logo {
-            margin-left: 20px;
-            height: 40px;
-            width: auto;
-        }
-
-
-        /* Info Section Styling */
-        .info {
-            font-family: 'Sweet Sans Pro', sans-serif;
-            font-weight: 500;
-            gap: 30px;
-            display: flex;
-            align-items: center;
-            margin-left: auto;
-            position: relative;
-        }
-
-
-        .icon-container {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            /* Space between the text and the icon */
-        }
-
-
-        .icon {
-            align-items: center;
-            height: 15px;
-            position: relative;
-            top: 3px;
-
-        }
-
-
-
-        .blogs {
-            margin-right: 20px;
-            /* Adds space to the right of blogshare */
-        }
-
-        .menu-ptg {
-            position: relative;
-            display: inline-block;
-        }
-
-        .menu-pyt {
-            position: relative;
-            display: inline-block;
-        }
-
-        .submenu {
-            font-size: 15px;
-            display: none;
-            position: absolute;
-            background-color: #333333;
-            color: white;
-            min-width: 150px;
-            z-index: 10;
-            top: 100%;
-            left: 0;
-            box-sizing: border-box;
-            border-radius: 5px;
-            overflow: hidden;
-            /* To ensure items are clipped */
-            opacity: 0;
-            transform: translateY(-10px);
-            /* Initial position for slide-in effect */
-            transition: all 0.3s ease-in-out;
-
-        }
-
-        .submenu a {
-            min-height: 30px;
-            font-size: 14px;
-            display: flex;
-            align-items: center;
-            text-align: left;
-            padding: 10px 15px;
-            color: white;
-            background-color: transparent;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-
-        .submenu a:hover {
-            background-color: #555;
-            /* Highlight color */
-            color: #ffd700;
-            /* Gold color for hover text */
-            transform: scale(1.02);
-            /* Slight zoom effect */
-            transition: all 0.3s ease-in-out;
-            /* Add smooth animation for hover effects */
-        }
-
-        .menu-ptg:hover .submenu {
-            display: block;
-            opacity: 1;
-            /* Fully opaque */
-            transform: translateY(0);
-            /* Slide to the normal position */
-        }
-
-        .menu-pyt:hover .submenu {
-            display: block;
-            opacity: 1;
-            transform: translateY(0);
-
-        }
-
         /* Hero Section Styles */
         .hero {
             font-family: 'Sweet Sans Pro', sans-serif;
@@ -165,11 +33,11 @@
             background-size: cover;
             /* covers the entire section */
             display: flex;
-            justify-content: left;
+            justify-content: center;
             align-items: center;
-            text-align: left;
+            text-align: center;
             color: #E6DFD5;
-            position: relative;
+
             padding-top: 0;
             /* For overlay effects */
         }
@@ -192,21 +60,11 @@
         /* Hero Content */
         .hero-content {
             font-family: 'Sweet Sans Pro';
-            position: relative;
+
             z-index: 2;
             display: flex;
             flex-direction: column;
             /* 讓 h1 和 p 垂直排列 */
-            justify-content: center;
-            /* 垂直居中 */
-            align-items: center;
-            /* 水平居中 */
-            height: 100%;
-            /* 繼承 Hero 的高度 */
-            text-align: center;
-            margin-left: 340px;
-
-
         }
 
         .hero h1 {
@@ -219,6 +77,8 @@
             margin-top: -70px;
             letter-spacing: 2px;
             font-weight: lighter;
+
+
         }
 
 
@@ -366,13 +226,13 @@
             font-family: 'Sweet Sans Pro', sans-serif;
             background-color: #CEC2B1;
             display: flex;
-            /* 确保子元素并排 */
+
             justify-content: start;
             /* 子元素靠左排列 */
             gap: 20px;
             /* 图片和文本之间的间距 */
             padding: 20px;
-            /* 添加内边距，避免内容贴边 */
+
 
         }
 
@@ -385,8 +245,9 @@
 
             border-radius: 9.39px;
             /* 图片圆角 */
-            object-fit: cover;
+
             /* 确保图片适应容器 */
+            flex: 1;
         }
 
         .text3 {
@@ -395,6 +256,7 @@
             margin-left: 70px;
 
             margin-bottom: 70px;
+
         }
 
         .text3 h2 {
@@ -413,116 +275,56 @@
             text-align: justify;
             /* 段落对齐 */
             margin-top: 20px;
+            flex: 1;
         }
 
 
-        /*footer*/
-        .footer {
-            display: block;
-            justify-content: center;
-            align-items: center;
-            background-color: #5C3922;
-            color: white;
-            text-align: center;
-            padding: 80px;
+
+
+
+        @media screen and (max-width: 600px) {
+
+            .hero {
+                background-image: url(image-exploretips/explore.png);
+                background-size: cover;
+                /* covers the entire section */
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                text-align: left;
+                color: #E6DFD5;
+                position: relative;
+                padding-top: 0;
+                /* For overlay effects */
+
+            }
+
+            .hero-content {
+                font-family: 'Sweet Sans Pro', sans-serif;
+                display: flex;
+                flex-direction: column;
+                /* 讓 h1 和 p 垂直排列 */
+                justify-content: center;
+                /* 垂直居中 */
+                align-items: center;
+                /* 水平居中 */
+
+                /* 繼承 Hero 的高度 */
+                text-align: center;
+                margin-left: 40px;
+
+            }
+
+            .hero h1 {
+                font-size: 40px;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+
+            }
         }
 
-        .footer h1 {
-            font-family: 'Sweet Sans Pro', sans-serif;
-            font-size: 40px;
-            color: #E6DFD5;
-        }
 
-        .footer p {
-            font-family: 'Sweet Sans Pro', sans-serif;
-            font-size: 20px;
-            font-weight: 200;
-            color: #AAA297;
-            margin-top: -15px;
-        }
 
-        .footer hr {
-            border: none;
-            height: 1px;
-            background-color: #816E60;
-            width: 100%;
-            /* Line width */
-            margin-top: 90px;
-            /* Center alignment */
-        }
-
-        /* Button Styles */
-        .explore {
-            width: auto;
-            padding: 10px 20px;
-            background-color: #AAA297;
-            border-radius: 25px;
-            cursor: pointer;
-            border: none;
-            margin-top: 30px;
-            transition: background-color 0.3s, transform 0.3s;
-        }
-
-        /* Icon Styles */
-        .explore .search {
-            margin-left: 10px;
-            width: 20px;
-            height: auto;
-        }
-
-        /* Text Styles */
-        .explore span {
-            margin-left: 10px;
-            color: #31312E;
-            font-size: 20px;
-
-        }
-
-        /* Hover Effect */
-        .explore:hover {
-            background-color: #f5c400;
-            /* Change to orange on hover */
-            transform: scale(1.1);
-            /* Slightly enlarge on hover */
-        }
-
-        .footer-menu-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 140px;
-        }
-
-        .socialmedia {
-            background-color: transparent;
-            border: none;
-            height: 45px;
-            margin-top: 20px;
-            cursor: pointer;
-        }
-
-        .footer-menu-bar {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 40px;
-            font-family: 'Sweet Sans Pro', sans-serif;
-            font-size: 20px;
-            font-weight: 500;
-            color: #AAA297;
-            margin-top: 18px;
-        }
-
-        .footer-menu-container p {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: 'Sweet Sans Pro', sans-serif;
-            font-size: 20px;
-            font-weight: 200;
-            color: #AAA297;
-            margin-top: 42.5px;
-        }
+        .picturetraveltips {}
     </style>
 </head>
 
