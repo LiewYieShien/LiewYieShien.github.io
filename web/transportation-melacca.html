@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html>
+
 <head>
     <title>Transportation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -164,6 +167,53 @@
                 /* Custom font weight and color for the second box */
             }
         }
+
+        /* ---------------------------------------------Transportation Section Styles----------------------------------------------- */
+        .spacing {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .transportation-option-container {
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+            background-color: #E6D5D5;
+            border-radius: 15px;
+            width: 1000px;
+            height: 350px;
+            padding: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .transportation-column {
+            padding: 40px;
+            font-family: 'Sweet Sans Pro', sans-serif;
+            color: #5F241E;
+        }
+
+        .transportation-column h1 {
+            font-size: 30px;
+            font-weight: 900;
+        }
+
+        .transportation-column p {
+            font-size: 13px;
+            font-weight: 200;
+            font-style: italic;
+        }
+
+        .bus {
+            background:
+                linear-gradient(rgba(177, 109, 99, 0.2), rgba(177, 109, 99, 0.2)), url('images-transportation/bus.jpg');
+            background-size: cover;
+            background-color: #E6DFD5;
+            color: transparent;
+            border: 0px;
+            border-radius: 15px;
+            height: 350px;
+            width: 350px;
+        }
     </style>
 </head>
 
@@ -234,3 +284,22 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="spacing">
+        <div class="transportation-option-container">
+            <div class="bus">bus</div>
+            <div class="transportation-column">
+                <h1>Terminal Bersepadu Selatan (TBS)</h1>
+                <h3>Enter via KL Sentral - South Entrance/Exit</h3>
+                <h2>Melaka Sentral</h2>
+                <p>Price range</p>
+                <h3>RM 12</h3>
+                <p>Approx.</p>
+                <h3>2h</h3>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
