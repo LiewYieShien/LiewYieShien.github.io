@@ -1,76 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Homepage</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="general.css" />
-    <link rel="stylesheet" href="footer.css">
-
-
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
+    <title>Image Slider</title>
     <style>
-        .container {
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
             display: flex;
+            justify-content: center;
             align-items: center;
-            /* Vertically centers the content */
-            justify-content: space-between;
-            /* Spreads the items to the left and right */
             height: 100vh;
-            /* Full screen height */
-            padding: 0 20px;
-            /* Adds padding on left and right */
+            background-color: #f0f0f0;
         }
 
-        .left-side {
-            flex: 1;
-            /* Takes up 50% of the available space */
+        .slider-container {
+            width: 1150px;
+            /* Set container width */
+            height: 414px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
         }
 
-        .left-side img {
-            width: 100%;
-            /* Ensures image takes up the full width of its container */
-            height: auto;
-            /* Maintains the aspect ratio */
+        .slider {
+            display: flex;
+            transition: transform 1s ease-in-out;
         }
 
-        .right-side {
-            flex: 1;
-            /* Takes up 50% of the available space */
-            padding-left: 20px;
-            /* Adds some space between the content and image */
+        .slider img {
+            width: 287px;
+            height: 414px;
+            object-fit: cover;
+            margin-right: 20px;
+            /* Gap between the images */
         }
 
-        .right-side h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-
-        .right-side p {
-            font-size: 18px;
-            line-height: 1.6;
+        /* Optional: Add some border styling */
+        .slider-container:before {
+            content: " ";
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            border: 5px solid rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
         }
     </style>
 </head>
 
-
 <body>
 
-    <section class="container">
-        <div class="left-side">
-            <img src="your-image.jpg" alt="Image" />
+    <div class="slider-container">
+        <div class="slider">
+            <img src="images/accommodation/melaka1.png" alt="Image 1">
+            <img src="images/accommodation/melaka2.png" alt="Image 2">
+            <img src="images/accommodation/melaka3.png" alt="Image 3">
+            <img src="images/accommodation/melaka4.png" alt="Image 4">
         </div>
-        <div class="right-side">
-            <h1>Your Content Title</h1>
-            <p>Your content goes here. Add more text or elements as needed.</p>
-        </div>
-    </section>
+    </div>
 
+    <script>
+        let currentIndex = 0;
+        const slider = document.querySelector('.slider');
+        const images = document.querySelectorAll('.slider img');
+        const totalImages = images.length;
+
+        // Function to clone images
+        function cloneImages() {
+            const imageArray = Array.from(images);
+            imageArray.forEach((img) => {
+                const clonedImage = img.cloneNode(true);
+                slider.appendChild(clonedImage); // Append clone at the end
+            });
+        }
+
+        // Function to shift images
+        function shiftImages() {
+            currentIndex = (currentIndex + 1) % totalImages;
+
+            // Apply the transformation to shift images in a circular manner
+            slider.style.transform = `translateX(-${currentIndex * (287 + 20)}px)`; // 287px is the width of the images + 20px margin
+
+            // If we reach the last image, reset the position
+            if (currentIndex === totalImages) {
+                setTimeout(() => {
+                    slider.style.transition = 'none'; // Disable transition
+                    slider.style.transform = `translateX(0)`; // Jump back to the start
+                    currentIndex = 0;
+
+                    // Enable transition again after reset
+                    setTimeout(() => {
+                        slider.style.transition = 'transform 1s ease-in-out';
+                    }, 50);
+                }, 1000); // Wait for the transition to finish before resetting
+            }
+        }
+
+        // Start by cloning the images to repeat them
+        cloneImages();
+
+        // Start the image shift every 2 seconds
+        setInterval(shiftImages, 2000);
+    </script>
 
 </body>
 
