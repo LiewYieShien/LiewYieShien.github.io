@@ -88,18 +88,21 @@
             background-color: #CEC2B1;
             display: flex;
             /* 确保子元素并排 */
-            justify-content: start;
+            justify-content: center;
             /* 子元素靠左排列 */
             gap: 20px;
             /* 图片和文本之间的间距 */
             padding: 20px;
             /* 添加内边距，避免内容贴边 */
 
+            align-items: center;
+            /* 垂直对齐 */
+
         }
 
         .picturetraveltips img {
             margin-top: 100px;
-            margin-left: 120px;
+            margin-left: 20 px;
             width: 450px;
             /* 图片宽度 */
             height: 550px;
@@ -186,14 +189,18 @@
         }
 
         .content2 {
-            display: flex;
-            /* 启用 Flexbox 布局 */
-            justify-content: space-between;
-            /* 使文字和图片两端对齐 */
-            align-items: center;
-            /* 垂直居中对齐 */
+
             z-index: 2;
             /* Ensure content is above the overlay */
+            display: flex;
+            justify-content: center;
+            /* 居中对齐 */
+            align-items: center;
+            /* 垂直对齐 */
+            gap: 20px;
+            /* 设置图片和文本间距 */
+            padding: 20px;
+
         }
 
         .text2 {
@@ -226,56 +233,52 @@
             font-family: 'Sweet Sans Pro', sans-serif;
             background-color: #CEC2B1;
             display: flex;
-
-            justify-content: start;
+            /* 确保子元素并排 */
+            justify-content: center;
             /* 子元素靠左排列 */
             gap: 20px;
             /* 图片和文本之间的间距 */
             padding: 20px;
+            /* 添加内边距，避免内容贴边 */
 
-
+            align-items: center;
+            /* 垂直对齐 */
         }
 
         .picclimate img {
             margin-top: 100px;
-            margin-left: 120px;
+            margin-left: 20 px;
             width: 450px;
-
+            /* 图片宽度 */
             height: 550px;
-
+            /* 图片高度 */
             border-radius: 9.39px;
             /* 图片圆角 */
-
+            object-fit: cover;
             /* 确保图片适应容器 */
-            flex: 1;
+            margin-bottom: 70px;
         }
 
         .text3 {
             max-width: 600px;
             /* 文本最大宽度 */
             margin-left: 70px;
-
-            margin-bottom: 70px;
-
+            margin-top: 60px;
         }
 
         .text3 h2 {
-            margin-top: 90px;
             font-size: 50px;
             /* 标题字体大小 */
-            margin-bottom: 10px;
-            /* 标题和段落的间距 */
         }
 
         .text3 p {
             font-size: 20px;
             /* 段落字体大小 */
-            line-height: 1.5;
+            line-height: 1.6;
             /* 段落行高 */
             text-align: justify;
             /* 段落对齐 */
-            margin-top: 20px;
-            flex: 1;
+
         }
 
 
