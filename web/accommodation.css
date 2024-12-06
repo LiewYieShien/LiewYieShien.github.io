@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'Sweet Sans Pro';
+    src: url('fonts/SweetSansProMedium.otf') format('opentype');
+}
+
+.page {
+    font-family: 'Sweet Sans Pro', sans-serif;
+}
+
+
+/* ----------------------------------------Hero Section Styles----------------------------------------------- */
+.hero {
+    z-index: 15;
+    font-family: 'Sweet Sans Pro', sans-serif;
+    height: 100vh;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(2, 12, 22, 0.2)), url('images/accommodation/cover.png');
+    background-size: cover;
+    /* covers the entire section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Hero Content */
+.hero-content {
+    color: #ffffff;
+    position: relative;
+    z-index: 500;
+    top: 30px;
+    font-family: 'Sweet Sans Pro';
+}
+
+.hero h1 {
+    font-size: 80px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+
+.sec2 {
+    z-index: 15;
+    font-family: 'Sweet Sans Pro', sans-serif;
+    height: 100vh;
+    background-color: #ECEDEE;
+    background: url('images/accommodation/mobilebg.png');
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    /* Aligns the content left and right */
+    align-items: center;
+    /* Vertically center the content */
+    position: relative;
+    padding: 0 20px;
+}
+
+.findingstay-content {
+    margin-top: 100px;
+    margin-left: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    gap: 10px;
+    width: 50%;
+    /* This takes up 50% of the section's width */
+}
+
+.findingstay-content h1 {
+    font-size: 42px;
+}
+
+.findingstay-content p {
+    position: relative;
+    top: -50px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+}
+
+.iphone {
+
+    width: 40%;
+    /* Adjusts the width of the iPhone image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 110px;
+    margin-right: 180px;
+
+}
+
+.iphone img {
+    width: 100%;
+    max-width: 400px;
+    /* Limit the width of the image */
+    height: auto;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    position: relative;
+    top: -40px;
+}
+
+.btn {
+    padding: 12px 24px;
+    font-family: 'Sweet Sans Pro';
+    font-size: 18px;
+    background-color: #d3d3d3;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    flex: 0 0 45%;
+    /* Ensures buttons don't stretch too much */
+}
+
+.btn:hover {
+    background-color: #b0b0b0;
+    transform: scale(1.05);
+}
+
+.btn:focus {
+    outline: none;
+}
