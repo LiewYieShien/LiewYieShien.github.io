@@ -539,27 +539,28 @@
     </section>
 
     <!--------------------------------------------------- Back To Top Button -------------------------------------------------->
-
     <button class="back-to-top" onclick="scrollToTop()">
         <img class="bttimg" src="images/top.png" alt="Back to Top">
     </button>
 
     <script>
-        // Function to show the "Back to Top" button when scrolled to the bottom
-        window.onscroll = function () {
-            var button = document.querySelector('.back-to-top');
-            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-                button.style.display = 'flex'; // Show the button when scrolled to bottom
+        // Show or hide the "Back to Top" button based on scroll position
+        window.addEventListener('scroll', function () {
+            const button = document.querySelector('.back-to-top');
+            if (window.scrollY > 100) { // Show after 100px of scrolling
+                button.style.display = 'flex';
             } else {
-                button.style.display = 'none'; // Hide the button when not at bottom
+                button.style.display = 'none';
             }
-        };
+        });
 
-        // Scroll to top function
+        // Smooth scroll to top functionality
         function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         }
-
     </script>
 
 </body>
