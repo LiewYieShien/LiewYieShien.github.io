@@ -169,6 +169,10 @@
         }
 
         /* ---------------------------------------------Transportation Section Styles----------------------------------------------- */
+        .alignment {
+            flex-direction: column;
+        }
+
         .spacing {
             display: flex;
             justify-content: space-evenly;
@@ -197,6 +201,23 @@
             font-weight: 900;
         }
 
+        .transportation-column h2 {
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        .transportation-column h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: -10px;
+        }
+
+        .transportation-column h4 {
+            font-size: 18px;
+            font-weight: 300;
+            font-style: italic;
+        }
+
         .transportation-column p {
             font-size: 13px;
             font-weight: 200;
@@ -213,6 +234,94 @@
             border-radius: 15px;
             height: 350px;
             width: 350px;
+        }
+
+        .charterservice {
+            background:
+                linear-gradient(rgba(177, 109, 99, 0.2), rgba(177, 109, 99, 0.2)), url('images-transportation/charter\ service.jpg');
+            background-size: cover;
+            background-color: #E6DFD5;
+            color: transparent;
+            border: 0px;
+            border-radius: 15px;
+            height: 350px;
+            width: 350px;
+        }
+
+        /* Button Styles */
+        .booknow1 {
+            width: auto;
+            padding: 10px 20px;
+            background-color: white;
+            border-radius: 25px;
+            cursor: pointer;
+            border: none;
+            margin-top: 30px;
+            transition: background-color 0.3s, transform 0.3s;
+            position: absolute;
+            right: 380px;
+            top: 730px;
+        }
+
+        /* Icon Styles */
+        .booknow1 .search {
+            margin-left: 10px;
+            width: 20px;
+            height: auto;
+        }
+
+        /* Text Styles */
+        .booknow1 span {
+            margin-left: 10px;
+            color: 020C16;
+            font-size: 20px;
+
+        }
+
+        /* Hover Effect */
+        .booknow1:hover {
+            background-color: #f5c400;
+            /* Change to orange on hover */
+            transform: scale(1.1);
+            /* Slightly enlarge on hover */
+        }
+
+        /* Button Styles */
+        .booknow2 {
+            width: auto;
+            padding: 10px 20px;
+            background-color: white;
+            border-radius: 25px;
+            cursor: pointer;
+            border: none;
+            margin-top: 30px;
+            transition: background-color 0.3s, transform 0.3s;
+            position: absolute;
+            right: 380px;
+            top: 1135px;
+        }
+
+        /* Icon Styles */
+        .booknow2 .search {
+            margin-left: 10px;
+            width: 20px;
+            height: auto;
+        }
+
+        /* Text Styles */
+        .booknow2 span {
+            margin-left: 10px;
+            color: 020C16;
+            font-size: 20px;
+
+        }
+
+        /* Hover Effect */
+        .booknow2:hover {
+            background-color: #f5c400;
+            /* Change to orange on hover */
+            transform: scale(1.1);
+            /* Slightly enlarge on hover */
         }
     </style>
 </head>
@@ -286,17 +395,45 @@
         </div>
     </section>
 
-    <section class="spacing">
-        <div class="transportation-option-container">
-            <div class="bus">bus</div>
-            <div class="transportation-column">
-                <h1>Terminal Bersepadu Selatan (TBS)</h1>
-                <h3>Enter via KL Sentral - South Entrance/Exit</h3>
-                <h2>Melaka Sentral</h2>
-                <p>Price range</p>
-                <h3>RM 12</h3>
-                <p>Approx.</p>
-                <h3>2h</h3>
+    <section class="alignment">
+        <div class="spacing">
+            <div class="transportation-option-container">
+                <div class="bus">bus</div>
+                <div class="transportation-column">
+                    <h1>Terminal Bersepadu Selatan (TBS)</h1>
+                    <h4>Enter via KL Sentral - South Entrance/Exit</h4>
+                    <h2>Melaka Sentral</h2>
+                    <p>Price range</p>
+                    <h3>RM 12</h3>
+                    <p>Approx.</p>
+                    <h3>2h</h3>
+                    <div>
+                        <button class="booknow1">
+                            <span>Book Now</span>
+                            <img class="search" src="images/search.png" alt="Search">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="spacing">
+            <div class="transportation-option-container">
+                <div class="charterservice">charter service</div>
+                <div class="transportation-column">
+                    <h1>Cars / Vans / Buses</h1>
+                    <h4>Private charter - Customizable schedules</h4>
+                    <h2>161km</h2>
+                    <p>Price range</p>
+                    <h3>Depends on distance, time, vehicle, and services.</h3>
+                    <p>Approx.</p>
+                    <h3>2h 11m</h3>
+                    <div>
+                        <button class="booknow2">
+                            <span>Book Now</span>
+                            <img class="search" src="images/search.png" alt="Search">
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
