@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="accommodation.css">
 
-
-
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,16 +15,13 @@
 
 </head>
 
-
 <body>
     <header>
-
         <div id="nav">
             <img src="images/logo.png" height="70px" class="logo">
         </div>
 
         <div class="info">
-
             <a href="#">Explore & Tips</a>
 
             <div class="menu-pyt">
@@ -37,10 +32,8 @@
                 <div class="submenu">
                     <a href="transportation.html">Transportation</a>
                     <a href="#">Accommodation</a>
-
                 </div>
             </div>
-
 
             <div class="menu-ptg">
                 <div class="icon-container">
@@ -57,42 +50,107 @@
 
             <a href="#" class="blogs">Blog Sharing</a>
         </div>
-
     </header>
-</body>
 
-<!--------------------------------------------------- Hero Section -------------------------------------------------->
-<div class="page">
-
-    <section class="hero">
-
-        <div class="hero-content">
-            <h1>ACCOMMODATION</h1>
-            <p>Find Your Perfect Stay</p>
-        </div>
-
-    </section>
-
-    <!----------------------------------------------------  Section 2 --------------------------------------------------->
-
-    <section class="sec2">
-        <div class="findingstay-content">
-            <h1>Find Your Perfect Stay</h1>
-            <p>A place to rest, recharge, and create memories that make<br>every journey worth it.</p>
-
-
-            <div class="buttons">
-                <button class="btn">Melaka</button>
-                <button class="btn">Pahang</button>
-                <button class="btn">Perak</button>
-                <button class="btn">Penang</button>
+    <!--------------------------------------------------- Hero Section -------------------------------------------------->
+    <div class="page">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>ACCOMMODATION</h1>
+                <p>Find Your Perfect Stay</p>
             </div>
-        </div>
+        </section>
 
-        <div class="iphone">
-            <img src="images/accommodation/ipmockup.png" alt="iPhone Mockup">
-        </div>
-    </section>
-</div>
+        <!----------------------------------------------------  Section 2 --------------------------------------------------->
+        <section class="sec2">
+            <div class="findingstay-content">
+                <h1>Find Your Perfect Stay</h1>
+                <p>A place to rest, recharge, and create memories that make<br>every journey worth it.</p>
+
+                <div class="buttons">
+                    <button class="btn">Melaka</button>
+                    <button class="btn">Pahang</button>
+                    <button class="btn">Perak</button>
+                    <button class="btn">Penang</button>
+                </div>
+            </div>
+
+            <div class="iphone">
+                <img src="images/accommodation/ipmockup.png" alt="iPhone Mockup">
+            </div>
+        </section>
+
+        <!------------------------------------------------------  Melaka ----------------------------------------------------->
+        <section class="sec3melaka">
+            <div class="left-melaka">
+                <img src="images/accommodation/melakaaccomo.png" alt="Melaka Image" />
+            </div>
+            <div class="right-melaka">
+                <div class="text-section">
+                    <p class="p1">Your Perfect Getaway Awaits in</p>
+                    <h1>Melaka</h1>
+                    <p class="p2">Melaka offers a range of accommodations, from heritage guesthouses to modern hotels,
+                        catering to every traveler.</p>
+                </div>
+
+                <div class="slidermelaka">
+                    <div class="slider-container">
+                        <div class="slider">
+                            <img src="images/accommodation/melaka1.png" alt="Image 1">
+                            <img src="images/accommodation/melaka2.png" alt="Image 2">
+                            <img src="images/accommodation/melaka3.png" alt="Image 3">
+                            <img src="images/accommodation/melaka4.png" alt="Image 4">
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    let currentIndex = 0;
+                    const slider = document.querySelector('.slider');
+                    const images = document.querySelectorAll('.slider img');
+                    const totalImages = images.length;
+
+                    // Function to clone images
+                    function cloneImages() {
+                        const imageArray = Array.from(images);
+                        imageArray.forEach((img) => {
+                            const clonedImage = img.cloneNode(true);
+                            slider.appendChild(clonedImage); // Append clone at the end
+                        });
+                    }
+
+                    // Function to shift images
+                    function shiftImages() {
+                        currentIndex = (currentIndex + 1) % totalImages;
+
+                        // Apply the transformation to shift images in a circular manner
+                        slider.style.transform = `translateX(-${currentIndex * (287 + 20)}px)`; // 287px is the width of the images + 20px margin
+
+                        // If we reach the last image, reset the position
+                        if (currentIndex === totalImages) {
+                            setTimeout(() => {
+                                slider.style.transition = 'none'; // Disable transition
+                                slider.style.transform = 'translateX(0)'; // Jump back to the start
+                                currentIndex = 0;
+
+                                // Enable transition again after reset
+                                setTimeout(() => {
+                                    slider.style.transition = 'transform 1s ease-in-out';
+                                }, 50);
+                            }, 1000); // Wait for the transition to finish before resetting
+                        }
+                    }
+
+                    // Start by cloning the images to repeat them
+                    cloneImages();
+
+                    // Start the image shift every 2 seconds
+                    setInterval(shiftImages, 2000);
+                </script>
+            </div>
+        </section>
+    </div>
+
+</body>
 
 </html>

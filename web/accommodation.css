@@ -44,10 +44,12 @@
     font-weight: lighter;
 }
 
+
+/* ------------------------------------------------------------Section 2-------------------------------------------------------------------- */
+
 .sec2 {
     z-index: 15;
     font-family: 'Sweet Sans Pro', sans-serif;
-    height: 100vh;
     background-color: #ECEDEE;
     background: url('images/accommodation/mobilebg.png');
     height: 100vh;
@@ -85,6 +87,8 @@
     font-size: 20px;
 }
 
+/* -------------------------Phone */
+
 .iphone {
 
     width: 40%;
@@ -94,7 +98,6 @@
     align-items: center;
     margin-top: 110px;
     margin-right: 180px;
-
 }
 
 .iphone img {
@@ -103,6 +106,8 @@
     /* Limit the width of the image */
     height: auto;
 }
+
+/* -------------------------button */
 
 .buttons {
     display: flex;
@@ -135,4 +140,114 @@
 
 .btn:focus {
     outline: none;
+}
+
+
+/* ------------------------------------------------------------Section 3-------------------------------------------------------------------- */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sec3melaka {
+    background-color: #49100B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.left-melaka {
+    height: 100vh;
+    width: 45%;
+    display: flex;
+}
+
+.left-melaka img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right-melaka {
+    margin-top: 120px;
+    width: 55%;
+    /* You can adjust this to fit the layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.text-section {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.text-section h1,
+.text-section p {
+    text-align: left;
+    margin: 0;
+}
+
+.text-section h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.text-section .p1 {
+    color: #C0B9AF;
+    font-family: 'Sweet Sans Pro', sans-serif;
+    font-weight: 100;
+    font-size: 22px;
+}
+
+.text-section .p2 {
+    color: #C0B9AF;
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+}
+
+
+
+/* ------------------------------------------------------------Slider-------------------------------------------------------------------- */
+
+.slidermeleka {
+    position: relative;
+}
+
+.slider-container {
+    width: 1021px;
+    /* Set container width */
+    height: 414px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.slider img {
+    width: 287px;
+    height: 414px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+/* Optional: Add some border styling */
+.slider-container:before {
+    content: " ";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 10px;
 }
