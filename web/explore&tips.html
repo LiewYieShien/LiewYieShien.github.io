@@ -8,6 +8,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="explore&tips.css" />
 
 
     <!-- Font -->
@@ -16,319 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <style>
-        @font-face {
-            font-family: 'Sweet Sans Pro';
-            src: url('fonts/SweetSansProMedium.otf') format('opentype');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        /* Hero Section Styles */
-        .hero {
-            font-family: 'Sweet Sans Pro', sans-serif;
-            height: 100vh;
-            /* Full screen height */
-            background: url('image.leqian/image-exploretips/explore.png') no-repeat center center;
-            background-size: cover;
-            /* covers the entire section */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: #E6DFD5;
-
-            padding-top: 0;
-            /* For overlay effects */
-        }
 
 
-        /* Optional: Add a dark overlay to make text stand out */
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.4);
-            z-index: 1;
-        }
-
-
-
-        /* Hero Content */
-        .hero-content {
-            font-family: 'Sweet Sans Pro';
-
-            z-index: 2;
-            display: flex;
-            flex-direction: column;
-            /* 讓 h1 和 p 垂直排列 */
-        }
-
-        .hero h1 {
-            font-size: 80px;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-        }
-
-        .hero p {
-            font-size: 25px;
-            margin-top: -70px;
-            letter-spacing: 2px;
-            font-weight: lighter;
-
-
-        }
-
-
-        .content1 {
-            position: relative;
-            font-family: 'Sweet Sans Pro', sans-serif;
-            background-color: #CEC2B1;
-            display: flex;
-            /* 确保子元素并排 */
-            justify-content: center;
-            /* 子元素靠左排列 */
-            gap: 20px;
-            /* 图片和文本之间的间距 */
-            padding: 20px;
-            /* 添加内边距，避免内容贴边 */
-
-            align-items: center;
-            /* 垂直对齐 */
-
-        }
-
-        .picturetraveltips img {
-            margin-top: 100px;
-            margin-left: 20 px;
-            width: 450px;
-            /* 图片宽度 */
-            height: 550px;
-            /* 图片高度 */
-            border-radius: 9.39px;
-            /* 图片圆角 */
-            object-fit: cover;
-            /* 确保图片适应容器 */
-            margin-bottom: 70px;
-        }
-
-        .text {
-            max-width: 600px;
-            /* 文本最大宽度 */
-            margin-left: 70px;
-            margin-top: 60px;
-        }
-
-        .text h2 {
-            font-size: 50px;
-            /* 标题字体大小 */
-            margin-bottom: 50px;
-            /* 标题和段落的间距 */
-        }
-
-        .text p {
-            font-size: 20px;
-            /* 段落字体大小 */
-            line-height: 1.6;
-            /* 段落行高 */
-            text-align: justify;
-            /* 段落对齐 */
-
-        }
-
-        /*local */
-        .localetiquette {
-            font-family: 'Sweet Sans Pro', sans-serif;
-            background-image: url('image.leqian/image-exploretips/mosque.jpg');
-            background-repeat: no-repeat;
-            background-position: center center;
-            /* Center the background image */
-            background-size: cover;
-            /* Ensure the image covers the section */
-            display: flex;
-            justify-content: center;
-            /* Center horizontally */
-            align-items: center;
-            /* Center vertically */
-            height: 100vh;
-            /* Full viewport height */
-            padding: 20px;
-            /* Optional padding */
-            width: 100%;
-            position: relative;
-        }
-
-        .localetiquette::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(255, 255, 255, 0.6);
-            /* Light white overlay with 60% opacity */
-            z-index: 1;
-            /* Place the overlay below the text */
-        }
-
-        .picmosque img {
-            width: 450px;
-            /* 图片宽度 */
-            height: 550px;
-            /* 图片高度 */
-            border-radius: 9.39px;
-            object-fit: cover;
-            display: block;
-            /* Ensure the image behaves as a block-level element */
-            margin-right: 120px;
-
-
-
-        }
-
-        .content2 {
-
-            z-index: 2;
-            /* Ensure content is above the overlay */
-            display: flex;
-            justify-content: center;
-            /* 居中对齐 */
-            align-items: center;
-            /* 垂直对齐 */
-            gap: 20px;
-            /* 设置图片和文本间距 */
-            padding: 20px;
-
-        }
-
-        .text2 {
-            margin-left: 70px;
-            max-width: 600px;
-
-
-        }
-
-        .text2 h2 {
-            font-size: 50px;
-            margin-top: -150px;
-            margin-bottom: 50px;
-        }
-
-        .text2 p {
-            font-size: 20px;
-            /* 段落字体大小 */
-            line-height: 1.6;
-            /* 段落行高 */
-            text-align: justify;
-            /* 段落对齐 */
-            margin-right: 70px;
-
-        }
-
-        /*Climate guide*/
-        .content3 {
-            position: relative;
-            font-family: 'Sweet Sans Pro', sans-serif;
-            background-color: #CEC2B1;
-            display: flex;
-            /* 确保子元素并排 */
-            justify-content: center;
-            /* 子元素靠左排列 */
-            gap: 20px;
-            /* 图片和文本之间的间距 */
-            padding: 20px;
-            /* 添加内边距，避免内容贴边 */
-
-            align-items: center;
-            /* 垂直对齐 */
-        }
-
-        .picclimate img {
-            margin-top: 100px;
-            margin-left: 20 px;
-            width: 450px;
-            /* 图片宽度 */
-            height: 550px;
-            /* 图片高度 */
-            border-radius: 9.39px;
-            /* 图片圆角 */
-            object-fit: cover;
-            /* 确保图片适应容器 */
-            margin-bottom: 70px;
-        }
-
-        .text3 {
-            max-width: 600px;
-            /* 文本最大宽度 */
-            margin-left: 70px;
-            margin-top: 60px;
-        }
-
-        .text3 h2 {
-            font-size: 50px;
-            /* 标题字体大小 */
-        }
-
-        .text3 p {
-            font-size: 20px;
-            /* 段落字体大小 */
-            line-height: 1.6;
-            /* 段落行高 */
-            text-align: justify;
-            /* 段落对齐 */
-
-        }
-
-
-
-
-
-        @media screen and (max-width: 600px) {
-
-            .hero {
-                background-image: url(image-exploretips/explore.png);
-                background-size: cover;
-                /* covers the entire section */
-                display: flex;
-                justify-content: left;
-                align-items: center;
-                text-align: left;
-                color: #E6DFD5;
-                position: relative;
-                padding-top: 0;
-                /* For overlay effects */
-
-            }
-
-            .hero-content {
-                font-family: 'Sweet Sans Pro', sans-serif;
-                display: flex;
-                flex-direction: column;
-                /* 讓 h1 和 p 垂直排列 */
-                justify-content: center;
-                /* 垂直居中 */
-                align-items: center;
-                /* 水平居中 */
-
-                /* 繼承 Hero 的高度 */
-                text-align: center;
-                margin-left: 40px;
-
-            }
-
-            .hero h1 {
-                font-size: 40px;
-                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-
-            }
-        }
-
-
-
-        .picturetraveltips {}
-    </style>
 </head>
 
 
@@ -509,7 +199,30 @@
             </div>
         </div>
     </section>
+    <!--------------------------------------------------- Back To Top Button -------------------------------------------------->
+    <button class="back-to-top" onclick="scrollToTop()">
+        <img class="bttimg" src="images/top.png" alt="Back to Top">
+    </button>
 
+    <script>
+        // Show or hide the "Back to Top" button based on scroll position
+        window.addEventListener('scroll', function () {
+            const button = document.querySelector('.back-to-top');
+            if (window.scrollY > 100) { // Show after 100px of scrolling
+                button.style.display = 'flex';
+            } else {
+                button.style.display = 'none';
+            }
+        });
+
+        // Smooth scroll to top functionality
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
 
 
 </body>
