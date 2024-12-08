@@ -198,8 +198,10 @@
             margin-top: 30px;
             transition: background-color 0.3s, transform 0.3s;
             position: absolute;
-            right: 220px;
+            right: 280px;
             top: 730px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            /* Add shadow */
         }
 
         /* Icon Styles */
@@ -212,7 +214,7 @@
         /* Text Styles */
         .booknow1 span {
             margin-left: 10px;
-            color: 020C16;
+            color: #020C16;
             font-size: 20px;
 
         }
@@ -223,6 +225,8 @@
             /* Change to orange on hover */
             transform: scale(1.1);
             /* Slightly enlarge on hover */
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+            /* Enhance shadow on hover */
         }
 
         /* Button Styles */
@@ -236,8 +240,10 @@
             margin-top: 30px;
             transition: background-color 0.3s, transform 0.3s;
             position: absolute;
-            right: 220px;
+            right: 280px;
             top: 1135px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            /* Add shadow */
         }
 
         /* Icon Styles */
@@ -261,10 +267,18 @@
             /* Change to orange on hover */
             transform: scale(1.1);
             /* Slightly enlarge on hover */
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+            /* Enhance shadow on hover */
         }
 
         /* ---------------------------------------------Mobile Styles----------------------------------------------- */
         @media screen and (max-width: 600px) {
+
+            /* Background Styles */
+            body.setbackground {
+                background-size: cover;
+                background-position: top center;
+            }
 
             /* ---------------------------------------------Destination Section Styles----------------------------------------------- */
             .destination-container {
@@ -330,6 +344,86 @@
                 font-weight: 400;
                 color: #A04F47;
                 /* Custom font weight and color for the second box */
+            }
+
+            /* ---------------------------------------------Transportation Section Styles----------------------------------------------- */
+            .spacing {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 35px;
+            }
+
+            .transportation-option-container {
+                display: flex;
+                flex-direction: column;
+                /* Stack items vertically */
+                align-items: center;
+                width: 80%;
+                /* Adjust width for mobile screens */
+                height: auto;
+                padding: 10px;
+                margin: 10px 0;
+                /* Add spacing between containers */
+                background-color: #E6D5D5;
+                border-radius: 15px;
+                box-shadow: none;
+                /* Simplify styling for smaller screens */
+            }
+
+            .bus,
+            .charterservice {
+                width: 98%;
+                /* Ensure it stays a square */
+                height: auto;
+                aspect-ratio: 1/1;
+                /* Maintain square shape */
+                margin-top: 4px;
+                /* Add spacing above image */
+                border-radius: 10px;
+            }
+
+            .transportation-column {
+                display: flex;
+                flex-direction: column;
+                /* Stack text and button */
+                justify-content: space-between;
+                /* Space items evenly */
+                align-items: flex-start;
+                /* Align text to the left */
+                width: 80%;
+                padding: 10px;
+            }
+
+            .transportation-column h1,
+            .transportation-column h2,
+            .transportation-column h3,
+            .transportation-column h4,
+            .transportation-column p {
+                text-align: left;
+                /* Align text to the left */
+                margin-bottom: 15px;
+            }
+
+            .booknow1,
+            .booknow2 {
+                position: static;
+                /* Adjust positioning */
+                margin-top: 30px;
+                /* Add spacing above button */
+                margin-bottom: 30px;
+                width: auto;
+                /* Keep button size */
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+                /* Add shadow */
+            }
+
+            .booknow1:hover,
+            .booknow2:hover {
+                transform: none;
+                /* Disable scaling for hover on mobile */
+                box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+                /* Enhance shadow on hover */
             }
         }
     </style>
