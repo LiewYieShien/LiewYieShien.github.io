@@ -61,29 +61,15 @@
 
 /*------------------------malacca blog---------------------------*/
 .malaccablog {
-    background-image: url(image.leqian/melakariver.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url(image.leqian/melakariver.png);
+    height: 100vh;
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
-    position: relative;
-
-
 }
-
-.malaccablog::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 1;
-}
-
-
 
 .content1 {
     font-family: 'Sweet Sans Pro', sans-serif;
@@ -94,8 +80,7 @@
     max-width: 1200px;
     margin: 0 auto;
     gap: 20px;
-    z-index: 2;
-    position: relative;
+
 
 }
 
@@ -106,17 +91,18 @@
 }
 
 .text1 h2 {
-    font-size: 50px;
-    margin-bottom: 20px;
+    font-size: 48px;
+    margin-bottom: 30px;
+    padding-top: 25px;
     color: #F6F6F6;
 }
 
 .text1 p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
     text-align: justify;
     margin: 0;
-    color: #DDDCDB;
+    color: #F6F6F6;
 }
 
 .malaccapic {
@@ -127,8 +113,8 @@
 }
 
 .malaccapic img {
-    width: 500px;
-    height: 600px;
+    width: 480px;
+    height: 580px;
     border-radius: 10px;
     object-fit: cover;
     display: block;
@@ -139,6 +125,7 @@
 .penangblog {
     background-color: #E2D5CA;
     background-size: cover;
+    height: 100vh;
     /* covers the entire section */
 }
 
@@ -153,7 +140,7 @@
     margin: 0 auto;
     gap: 20px;
     background-color: #E2D5CA;
-    position: relative;
+
 
 
 }
@@ -162,16 +149,18 @@
     flex: 1;
     max-width: 50%;
     text-align: left;
+
 }
 
 .text2 h2 {
-    font-size: 50px;
+    font-size: 48px;
+    margin-top: 60px;
     margin-bottom: 20px;
     color: #020C16;
 }
 
-.text1 p {
-    font-size: 18px;
+.text2 p {
+    font-size: 16px;
     line-height: 1.6;
     text-align: justify;
     margin: 0;
@@ -185,8 +174,8 @@
 }
 
 .penangpic img {
-    width: 500px;
-    height: 600px;
+    width: 480px;
+    height: 580px;
     border-radius: 10px;
     object-fit: cover;
     display: block;
@@ -195,28 +184,20 @@
 
 /*-------------------pahang blog-----------------------------------*/
 .pahangblog {
-    background-image: url(image.leqian/genting.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(image.leqian/genting.png);
 
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-: center center;
     width: 100%;
-    position: relative;
+
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
-.pahangblog::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 1;
-}
+
 
 .content3 {
     font-family: 'Sweet Sans Pro', sans-serif;
@@ -228,7 +209,6 @@
     margin: 0 auto;
     gap: 20px;
     z-index: 2;
-    position: relative;
     margin-bottom: 60px;
 
 }
@@ -237,36 +217,40 @@
     flex: 1;
     max-width: 50%;
     text-align: left;
+    margin-left: 30px;
 }
 
 .text3 h2 {
-    font-size: 50px;
+    font-size: 48px;
     margin-bottom: 20px;
     color: #F6F6F6;
 }
 
 .text3 p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
     text-align: justify;
     margin: 0;
     color: #DDDCDB;
+    max-width: 550px;
 }
 
 .pahangpic {
 
     max-width: 50%;
     margin-top: 60px;
+    margin-right: 50px;
 
 }
 
 .pahangpic img {
-    width: 500px;
-    height: 600px;
+    width: 480px;
+    height: 580px;
     border-radius: 10px;
     object-fit: cover;
     display: block;
     justify-content: center;
+    flex: 1;
 }
 
 /*-------------------perak blog-----------------------------------*/
@@ -274,6 +258,7 @@
     background-color: #E2D5CA;
     background-size: cover;
     /* covers the entire section */
+    height: 100vh;
 }
 
 .content4 {
@@ -286,19 +271,19 @@
     margin: 0 auto;
     gap: 20px;
     z-index: 2;
-    position: relative;
 
 }
 
 .perakpic {
+    flex: 1;
     max-width: 50%;
     margin-top: 60px;
 
 }
 
 .perakpic img {
-    width: 500px;
-    height: 600px;
+    width: 480px;
+    height: 580px;
     border-radius: 10px;
     object-fit: cover;
     display: block;
@@ -309,18 +294,142 @@
     flex: 1;
     max-width: 50%;
     text-align: left;
+    margin-top: 30px;
 }
 
 .text4 h2 {
-    font-size: 50px;
-    margin-bottom: 20px;
+    font-size: 48px;
+    margin-bottom: 30px;
+    margin-top: 30px;
     color: #020C16;
 }
 
 .text4 p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
     text-align: justify;
     margin: 0;
     color: #020C16;
+    max-width: 550px;
+
+}
+
+@media screen and (max-width: 600px) {
+
+
+    .hero {
+        background-position: center;
+        background-size: cover;
+        padding: 20px;
+        /* Add padding for breathing space */
+    }
+
+    .hero h1 {
+        font-size: 58px;
+        /* Smaller hero heading */
+    }
+
+    .hero p {
+        font-size: 20px;
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+
+    /* 父容器統一設置 */
+    .malaccablog,
+    .penangblog,
+    .pahangblog,
+    .perakblog {
+        text-align: center;
+        /* 文字置中 */
+        align-items: center;
+        /* 增加區塊內邊距 */
+        height: 1400px;
+        /* 背景至少 1000px 高 */
+        flex-direction: column;
+
+    }
+
+    /* 確保內容不重疊的子容器 */
+    .content1,
+    .content2,
+    .content3,
+    .content4 {
+        display: flex;
+        /* 圖片與文字垂直排列 */
+        width: 100%;
+        /* 確保子容器寬度填滿父容器 */
+        /* 適當限制寬度，防止過大 */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    /* 圖片設置，防止跑位 */
+    .malaccapic img,
+    .penangpic img,
+    .perakpic img {
+        width: 100%;
+        /* 圖片寬度填滿容器 */
+        height: auto;
+        /* 保持比例 */
+        margin: 0 auto 20px;
+        /* 圖片居中，並與文字留空隙 */
+        display: block;
+        /* 保證圖片為塊級元素，避免與其他內容並列 */
+    }
+
+    .pahangpic img {
+        width: 100%;
+        /* 圖片寬度填滿容器 */
+        height: auto;
+        /* 保持比例 */
+        margin: 0 auto 20px;
+        /* 圖片居中，並與文字留空隙 */
+        display: block;
+        /* 保證圖片為塊級元素，避免與其他內容並列 */
+        margin-left: 20px;
+    }
+
+    /* 文字容器 */
+    .text1,
+    .text2,
+    .text3,
+    .text4 {
+
+        width: 100%;
+        /* 確保文字容器寬度填滿父容器 */
+        margin: 0;
+        /* 移除多餘外邊距 */
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* 標題文字 */
+    .text1 h2,
+    .text2 h2,
+    .text3 h2,
+    .text4 h2 {
+        font-size: 25px;
+        /* 合適的標題字體 */
+        margin-bottom: 15px;
+        /* 與段落文字留距 */
+    }
+
+    /* 段落文字 */
+    .text1 p,
+    .text2 p,
+    .text3 p,
+    .text4 p {
+        font-size: 16px;
+        /* 合適的段落文字字體 */
+        line-height: 1.6;
+        /* 提高行間距，增強閱讀性 */
+
+    }
 }
