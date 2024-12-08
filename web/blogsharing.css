@@ -1,0 +1,326 @@
+@font-face {
+    font-family: 'Sweet Sans Pro';
+    src: url('fonts/SweetSansProMedium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Hero Section Styles */
+.hero {
+    font-family: 'Sweet Sans Pro', sans-serif;
+    height: 100vh;
+    /* Full screen height */
+    background: url('image.leqian/bloghero.png') no-repeat center center;
+    background-size: cover;
+    /* covers the entire section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #F6F6F6;
+
+    padding-top: 0;
+    /* For overlay effects */
+}
+
+/* Optional: Add a dark overlay to make text stand out */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+
+
+/* Hero Content */
+.hero-content {
+    font-family: 'Sweet Sans Pro';
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* 讓 h1 和 p 垂直排列 */
+}
+
+.hero h1 {
+    font-size: 80px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+    font-size: 25px;
+    margin-top: -70px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+
+/*------------------------malacca blog---------------------------*/
+.malaccablog {
+    background-image: url(image.leqian/melakariver.png);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    position: relative;
+
+
+}
+
+.malaccablog::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+
+
+.content1 {
+    font-family: 'Sweet Sans Pro', sans-serif;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+    z-index: 2;
+    position: relative;
+
+}
+
+.text1 {
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
+}
+
+.text1 h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #F6F6F6;
+}
+
+.text1 p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0;
+    color: #DDDCDB;
+}
+
+.malaccapic {
+
+    max-width: 50%;
+    margin-top: 60px;
+
+}
+
+.malaccapic img {
+    width: 500px;
+    height: 600px;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+    justify-content: center;
+}
+
+/*-------------------penang blog-----------------------------------*/
+.penangblog {
+    background-color: #E2D5CA;
+    background-size: cover;
+    /* covers the entire section */
+}
+
+.content2 {
+    font-family: 'Sweet Sans Pro', sans-serif;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+    background-color: #E2D5CA;
+    position: relative;
+
+
+}
+
+.text2 {
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
+}
+
+.text2 h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #020C16;
+}
+
+.text1 p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0;
+    color: #020C16;
+}
+
+.penangpic {
+    max-width: 50%;
+    margin-top: 60px;
+
+}
+
+.penangpic img {
+    width: 500px;
+    height: 600px;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+    justify-content: center;
+}
+
+/*-------------------pahang blog-----------------------------------*/
+.pahangblog {
+    background-image: url(image.leqian/genting.png);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pahangblog::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.content3 {
+    font-family: 'Sweet Sans Pro', sans-serif;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+    z-index: 2;
+    position: relative;
+    margin-bottom: 60px;
+
+}
+
+.text3 {
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
+}
+
+.text3 h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #F6F6F6;
+}
+
+.text3 p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0;
+    color: #DDDCDB;
+}
+
+.pahangpic {
+
+    max-width: 50%;
+    margin-top: 60px;
+
+}
+
+.pahangpic img {
+    width: 500px;
+    height: 600px;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+    justify-content: center;
+}
+
+/*-------------------perak blog-----------------------------------*/
+.perakblog {
+    background-color: #E2D5CA;
+    background-size: cover;
+    /* covers the entire section */
+}
+
+.content4 {
+    font-family: 'Sweet Sans Pro', sans-serif;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+    z-index: 2;
+    position: relative;
+
+}
+
+.perakpic {
+    max-width: 50%;
+    margin-top: 60px;
+
+}
+
+.perakpic img {
+    width: 500px;
+    height: 600px;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+    justify-content: center;
+}
+
+.text4 {
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
+}
+
+.text4 h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #020C16;
+}
+
+.text4 p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0;
+    color: #020C16;
+}
