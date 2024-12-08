@@ -6,112 +6,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Slider</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        /* General Reset */
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        .promo-container {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-        }
-
-        .slider-container {
-            width: 1150px;
-            /* Set container width */
-            height: 414px;
-            position: relative;
-            overflow: hidden;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .slider {
-            display: flex;
-            transition: transform 1s ease-in-out;
-        }
-
-        .slider img {
-            width: 287px;
-            height: 414px;
-            object-fit: cover;
-            margin-right: 20px;
-            /* Gap between the images */
-        }
-
-        /* Optional: Add some border styling */
-        .slider-container:before {
-            content: " ";
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            right: 10px;
-            bottom: 10px;
-            border: 5px solid rgba(255, 255, 255, 0.5);
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 50px auto;
+            background-color: #fff;
             border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .text-section {
+            flex: 1;
+            padding: 40px;
+            background-color: #e6e2dd;
+        }
+
+        .text-section h4 {
+            font-size: 18px;
+            color: #7d7d7d;
+            margin-bottom: 10px;
+        }
+
+        .text-section h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .text-section p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .text-section .highlight {
+            font-weight: bold;
+            color: #000;
+        }
+
+        .hoteldetails {
+            padding: 20px;
+            background-color: #f9f4f0;
+            border: 1px solid #d3cfc9;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+
+        .hoteldetails p {
+            margin: 10px 0;
+        }
+
+        .hoteldetails .icon {
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        .book-now {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #8b2c2f;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .book-now:hover {
+            background-color: #6f2225;
+        }
+
+        .image-section {
+            flex: 1;
+        }
+
+        .image-section img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="slider-container">
-        <div class="slider">
-            <img src="images/accommodation/melaka1.png" alt="Image 1">
-            <img src="images/accommodation/melaka2.png" alt="Image 2">
-            <img src="images/accommodation/melaka3.png" alt="Image 3">
-            <img src="images/accommodation/melaka4.png" alt="Image 4">
+    <div class="promo-container">
+        <div class="text-section">
+            <h4>Your Perfect Getaway Awaits in</h4>
+            <h1>DoubleTree By Hilton Melaka</h1>
+            <p>
+                This hotel is perfect for travelers who appreciate a blend of
+                <span class="highlight">modern luxury</span> and convenient amenities.
+            </p>
+            <div class="details">
+                <p><span class="icon">📍</span> Christ Church Malacca: ~ <strong>1.5 km</strong><br>
+                    Baba & Nyonya Heritage Museum: ~ <strong>2.2 km</strong></p>
+                <p><span class="icon">💰</span> From <strong>RM 380/night</strong>.</p>
+                <p><span class="icon">🏨</span> Panoramic views, outdoor pool, fitness center, dining options.</p>
+            </div>
+            <button class="book-now">Book now &rarr;</button>
+        </div>
+        <div class="image-section">
+            <img src="hotel-image.jpg" alt="Hotel Bathroom">
         </div>
     </div>
 
-    <script>
-        let currentIndex = 0;
-        const slider = document.querySelector('.slider');
-        const images = document.querySelectorAll('.slider img');
-        const totalImages = images.length;
-
-        // Function to clone images
-        function cloneImages() {
-            const imageArray = Array.from(images);
-            imageArray.forEach((img) => {
-                const clonedImage = img.cloneNode(true);
-                slider.appendChild(clonedImage); // Append clone at the end
-            });
-        }
-
-        // Function to shift images
-        function shiftImages() {
-            currentIndex = (currentIndex + 1) % totalImages;
-
-            // Apply the transformation to shift images in a circular manner
-            slider.style.transform = `translateX(-${currentIndex * (287 + 20)}px)`; // 287px is the width of the images + 20px margin
-
-            // If we reach the last image, reset the position
-            if (currentIndex === totalImages) {
-                setTimeout(() => {
-                    slider.style.transition = 'none'; // Disable transition
-                    slider.style.transform = `translateX(0)`; // Jump back to the start
-                    currentIndex = 0;
-
-                    // Enable transition again after reset
-                    setTimeout(() => {
-                        slider.style.transition = 'transform 1s ease-in-out';
-                    }, 50);
-                }, 1000); // Wait for the transition to finish before resetting
-            }
-        }
-
-        // Start by cloning the images to repeat them
-        cloneImages();
-
-        // Start the image shift every 2 seconds
-        setInterval(shiftImages, 2000);
-    </script>
 
 </body>
 
