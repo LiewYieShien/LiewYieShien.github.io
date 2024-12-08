@@ -144,12 +144,6 @@
 
 
 /* ------------------------------------------------------------Section 3-------------------------------------------------------------------- */
-html,
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 .sec3melaka {
     background-color: #49100B;
@@ -181,30 +175,30 @@ body {
     align-items: flex-start;
 }
 
-.text-section {
+.text-melaka {
     color: white;
     margin-bottom: 20px;
 }
 
-.text-section h1,
-.text-section p {
+.text-melaka h1,
+.text-melaka p {
     text-align: left;
     margin: 0;
 }
 
-.text-section h1 {
+.text-melaka h1 {
     font-size: 45px;
     margin-bottom: 10px;
 }
 
-.text-section .p1 {
+.text-melaka .p1 {
     color: #C0B9AF;
     font-family: 'Sweet Sans Pro', sans-serif;
     font-weight: 100;
     font-size: 22px;
 }
 
-.text-section .p2 {
+.text-melaka .p2 {
     color: #C0B9AF;
     font-family: 'Quicksand', sans-serif;
     font-style: normal;
@@ -250,4 +244,111 @@ body {
     right: 10px;
     bottom: 10px;
     border-radius: 10px;
+}
+
+/* --------------------------------------------section 4---hotel 1------------------------------------------- */
+
+.sec4hotel1 {
+    z-index: 15;
+    font-family: 'Sweet Sans Pro', sans-serif;
+    height: 100vh;
+    background: #C1B9AD url('images/accommodation/hotelmelekabg1.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    /* Aligns the content left and right */
+    align-items: center;
+    /* Vertically center the content */
+    position: relative;
+}
+
+.promo-container {
+    gap: 30px;
+    position: relative;
+    left: -20px;
+    bottom: -60px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.text4hotel {
+    flex: 1;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.0);
+    /* Fully transparent */
+}
+
+.text4hotel h4 {
+    font-size: 18px;
+    color: #7d7d7d;
+    margin-bottom: 10px;
+}
+
+.text4hotel h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.text4hotel p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.text4hotel .highlight {
+    font-weight: bold;
+    color: #000;
+}
+
+.hoteldetails {
+    padding: 20px;
+    background-color: #f9f4f0;
+    border: 1px solid #d3cfc9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+
+.hoteldetails p {
+    margin: 10px 0;
+}
+
+.hoteldetails .icon {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.book-now {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #8b2c2f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.book-now:hover {
+    background-color: #6f2225;
+}
+
+.image-section {
+    padding-top: 30px;
+    width: 25px;
+    height: 55px;
+    flex: 1;
+}
+
+.image-section img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
