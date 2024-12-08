@@ -206,39 +206,40 @@
 }
 
 
-
-
 /* Button Styles */
-.explore {
-    font-size: 10px;
+.exploremore {
+    z-index: 10;
     width: auto;
     padding: 10px 20px;
-    background-color: #EBE9E6;
+    background-color: #E6DFD5;
     border-radius: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     cursor: pointer;
     border: none;
-    position: relative;
-    top: -50px;
-    z-index: 5;
+    margin-top: 30px;
     transition: background-color 0.3s, transform 0.3s;
 }
 
+/* Icon Styles */
+.exploremore .right {
+    margin-left: 10px;
+    width: 20px;
+    height: auto;
+}
 
 /* Text Styles */
-.explore span {
+.exploremore span {
     margin-left: 10px;
     color: #31312E;
-
+    font-size: 20px;
 
 }
 
 /* Hover Effect */
-.explore:hover {
+.exploremore:hover {
     background-color: #f5c400;
+    /* Change to orange on hover */
     transform: scale(1.1);
+    /* Slightly enlarge on hover */
 }
 
 
@@ -274,40 +275,87 @@
 
 /* -----------------------------------------------3 Circle------------------------------------------------- */
 
-.circle-section {
-    z-index: 15;
-    width: 100%;
-    height: 100%;
+.interest {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.interest-content {
+    position: absolute;
+    top: 100px;
+}
+
+.circle-section {
+    position: relative;
+    width: 1153px;
+    height: 400px;
+    /* Adjust height to accommodate text */
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
 .circle-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 180px;
+    justify-content: space-between;
+    gap: 60px;
+    width: 100%;
 }
 
 .circle {
     width: 200px;
     height: 200px;
-    /* Circle size */
     border-radius: 50%;
     overflow: hidden;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    /* Stack text below image */
+    transition: transform 0.3s ease;
+    z-index: 1;
 }
 
 .circle img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* Ensures the image covers the circle */
+    transition: opacity 0.3s ease;
+}
+
+.circle:hover {
+    transform: scale(1.1);
+}
+
+.circle:hover img {
+    opacity: 0.8;
+}
+
+/* Text section in a row */
+.cirtextbyrow {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 235px;
+    position: relative;
+    bottom: 90px;
+}
+
+.cirtextbyrow div {
+    text-align: center;
+}
+
+.cirtextbyrow h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.cirtextbyrow p {
+    font-size: 16px;
+    color: #7d7b7b;
 }
 
 
@@ -456,6 +504,8 @@
         width: 75%;
     }
 
+    /* -------------------------------------------------------Map------------------------------------------------------- */
+
     .map-content {
         top: 10px;
     }
@@ -470,11 +520,90 @@
         width: auto;
     }
 
-    .circle {
-        width: 100px;
-        height: 100px;
-        /* Reduced size for mobile */
+
+
+    .map-container {
+        width: 100%;
+        /* Full width for mobile */
+        height: auto;
+        /* Auto height to maintain aspect ratio */
     }
+
+    .dashcurve {
+        width: 100%;
+        /* Adjust image width to fill container */
+        height: auto;
+        left: 0;
+        /* Center the image */
+        bottom: 20px;
+        /* Adjust bottom positioning */
+    }
+
+    .location {
+        font-size: 20px;
+        /* Smaller text for mobile */
+        transform: translate(-50%, -50%) scale(0.8);
+        /* Adjust scale for mobile */
+    }
+
+    /* Adjust locations' positioning for mobile */
+    .location:nth-child(1) {
+        top: 40%;
+        left: 20%;
+    }
+
+    .location:nth-child(2) {
+        top: 60%;
+        left: 40%;
+    }
+
+    .location:nth-child(3) {
+        top: 70%;
+        left: 80%;
+    }
+
+    .location:nth-child(4) {
+        top: 50%;
+        left: 110%;
+    }
+
+
+
+
+
+    /* -------------------------------------------------------3 Circle------------------------------------------------------- */
+
+    .circle-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 0px;
+    }
+
+    .circle {
+        width: 280px;
+        height: 280px;
+    }
+
+    .circle:nth-child(2),
+    .circle:nth-child(3) {
+        display: none;
+        /* Hide second and third circles on mobile */
+    }
+
+    .interest-content p {
+        font-size: 32px;
+    }
+
+    .cirtextbyrow {
+        flex-direction: column;
+        gap: 20px;
+        bottom: 50px;
+    }
+
+
+
+
+    /* -------------------------------------------------------Footer------------------------------------------------------- */
 
     .footer-menu-container {
         flex-direction: column;
