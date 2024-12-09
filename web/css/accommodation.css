@@ -366,7 +366,7 @@
     border: none;
     position: relative;
     bottom: -25px;
-    z-index: 5;
+    z-index: 20;
     transition: background-color 0.3s, transform 0.3s;
 }
 
@@ -749,16 +749,29 @@
 
     }
 
-    /* Section 3 */
+    /* ---------------------------------------Section 3 melakaaa---------------------------- */
     .sec3melaka {
+        height: 1000px;
         flex-direction: column;
         align-items: center;
     }
 
-    .left-melaka,
-    .right-melaka {
+    .left-melaka {
+        height: 300px;
         width: 100%;
-        height: auto;
+        display: flex;
+    }
+
+    .right-melaka {
+        height: 700px;
+        width: 100%;
+        display: flex;
+    }
+
+    .text-melaka {
+        color: white;
+        margin-left: 20px;
+        margin-bottom: 380px;
     }
 
     .text-melaka h1 {
@@ -770,9 +783,12 @@
         font-size: 18px;
     }
 
-    /* Slider */
+    /* -------------------------------------Slider*/
     .slider-container {
-        width: 100%;
+        bottom: 340px;
+        margin-left: 100px;
+        width: 290px;
+        height: 414px;
     }
 
     .slider img {
@@ -780,15 +796,27 @@
         height: auto;
     }
 
-    /* Section 4 */
+    /* -----------------------------------------------------Section 4 ------------------------------------------------*/
     .sec4hotel1 {
-        height: auto;
+        height: 100vh;
         flex-direction: column;
         align-items: center;
         padding: 20px;
     }
 
     .promo-container {
+        overflow: visible;
+        height: 100vh;
+    }
+
+    .hoteldetails p {
+        margin-left: 0px;
+    }
+
+
+    .promo-container {
+        bottom: 50px;
+        margin-left: 40px;
         flex-direction: column;
         align-items: center;
     }
@@ -799,53 +827,186 @@
         margin-bottom: 20px;
     }
 
+    .text4hotel .p1 {
+        font-size: 23px;
+    }
+
+
     .book {
         width: 100%;
         text-align: center;
-        padding: 10px;
     }
 
     .image-section {
-        width: 100%;
-        margin-top: 20px;
+        display: none;
     }
 
-    .image-section img {
-        width: 100%;
-        border-radius: 10px;
-    }
 
-    /* Section 5 */
+    /* -----------------------------------------Section 5------------------------------ */
     .sec5hotel2 {
         flex-direction: column;
+        height: 100vh;
+        padding: 0px;
     }
 
-    .imagetwo-section,
+    /* Content Wrapper */
+    .coverleftnright {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Image Section */
+    .imagetwo-section {
+        margin: 0;
+        max-width: 100%;
+    }
+
     .promotwo-container {
-        width: 100%;
-        margin-top: 20px;
+        background-color: #7d7d7d;
+        top: -150px;
+        width: 445px;
+        margin: 0 0;
+        padding: 20px;
     }
 
-    /* Button Styles */
-    .book2,
+    /* Text Section */
+    .text2hotel {
+        position: relative;
+        left: -30px;
+        max-width: 600px;
+        margin-bottom: 50px;
+        text-align: left;
+    }
+
+    .text2hotel h1 {
+        font-size: 28px;
+    }
+
+    .text2hotel .p1 {
+        font-size: 18px;
+    }
+
+    .text2hotel .p2 {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    /* Hotel Details */
+    .r-hoteldetails {
+        position: relative;
+        bottom: 70px;
+        left: 0px;
+        padding: 0px;
+        background-color: #db8b89;
+        width: 100%;
+        margin: 0px 0;
+        padding-top: 10px;
+    }
+
+    .r-hoteldetails p {
+        text-align: left;
+        font-size: 14px;
+        /* Smaller font for mobile */
+    }
+
+    .r-hoteldetails .icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    /* Book Now Button */
+    .book2 {
+        padding: 15px 0px;
+        width: 109%;
+        bottom: 550px;
+        left: -20px;
+        margin: 0px auto 0;
+        border-radius: 0px;
+        font-size: 16px;
+    }
+
+    .book2 span {
+        padding-left: 350px;
+    }
+
+    .book2:hover {
+        background-color: #E6DFD5;
+        transform: scale(1);
+    }
+
+
+
+    /* -----------------------------------------Section 6------------------------------ */
+
+    .sec6hotel3 {
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    /* -----------------------------------------Section 7------------------------------ */
+
+    .sec7hotel4 {
+        background-size: 300%;
+        display: flex;
+        flex-direction: column;
+        /* Stack content vertically */
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+        /* Adds spacing between elements */
+    }
+
+    /* Cover Left and Right Container */
+    .coverleftnright {
+        display: flex;
+        flex-direction: column;
+        /* Stack the image and promo section */
+        align-items: center;
+        /* Center content horizontally */
+        width: 100%;
+        /* Full width on mobile */
+    }
+
+    /* Image Section */
+    .sec7hotel4 .imagetwo-section {
+        width: 100%;
+        margin-top: -18px;
+    }
+
+
+    /* Button */
     .book4 {
         width: 100%;
+        /* Full width for mobile */
+        padding: 12px 20px;
+        /* Adjusted padding for touch devices */
+        background-color: #8C5A42;
+        color: white;
+        font-size: 16px;
         text-align: center;
-        padding: 10px;
+        border: none;
+        border-radius: 20px;
+        /* Rounded corners for a modern look */
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
-    .r-hoteldetails {
-        width: 100%;
-        margin-top: 20px;
+    .book4:hover {
+        background-color: #DAB69D;
+        transform: scale(1.05);
+        /* Subtle hover effect */
     }
 
-    .text2hotel {
-        width: 100%;
-        text-align: center;
+    .book4 img.right {
+        margin-left: 8px;
+        /* Space between text and icon */
+        width: 16px;
+        height: auto;
     }
 
-    .book2 span,
-    .book4 span {
-        padding-left: 5px;
-    }
 }
