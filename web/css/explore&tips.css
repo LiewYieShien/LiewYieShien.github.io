@@ -60,9 +60,6 @@
     padding: 20px;
     /* 添加内边距，避免内容贴边 */
 
-
-    /* 垂直对齐 */
-
 }
 
 .picturetraveltips img {
@@ -107,10 +104,9 @@
 }
 
 /*local */
-.localetiquette {
+.content2 {
     font-family: 'Sweet Sans Pro', sans-serif;
     background-color: #d6cbbbe3;
-
     display: flex;
     justify-content: center;
     /* Center horizontally */
@@ -120,7 +116,10 @@
     padding: 20px;
     /* Optional padding */
     gap: 20px;
+    height: 100vh;
 }
+
+
 
 
 
@@ -134,6 +133,10 @@
     display: block;
     /* Ensure the image behaves as a block-level element */
     margin-right: 120px;
+    margin-top: 100px;
+    margin-bottom: 70px;
+    flex: 1;
+
 }
 
 .picmosquemobile img {
@@ -145,21 +148,6 @@
     border-radius: 9.39px;
     object-fit: cover;
     display: block;
-}
-
-.content2 {
-
-    z-index: 2;
-    /* Ensure content is above the overlay */
-    display: flex;
-    justify-content: center;
-    /* 居中对齐 */
-    align-items: center;
-    /* 垂直对齐 */
-    gap: 20px;
-    /* 设置图片和文本间距 */
-    padding: 20px;
-
 }
 
 .text2 {
@@ -278,8 +266,7 @@
         font-weight: lighter;
     }
 
-    .content1,
-    .content3 {
+    .content1 {
         flex-direction: column;
         text-align: center;
         align-items: center;
@@ -288,14 +275,21 @@
 
     }
 
+
     .content2 {
         flex-direction: column;
         text-align: center;
         align-items: center;
         height: 800px;
         justify-content: center;
-        margin-top: 40px;
-        margin-left: 50px;
+    }
+
+    .content3 {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        height: 900px;
+        justify-content: center;
 
     }
 
@@ -337,7 +331,8 @@
         margin-right: 55px;
         flex-direction: column;
         padding-bottom: 120px;
-
+        margin-left: 30px;
+        margin-top: 20px;
     }
 
     .picmosque img {
@@ -361,7 +356,7 @@
     .text h2,
     .text2 h2,
     .text3 h2 {
-        font-size: 25px;
+        font-size: 35px;
         text-align: center;
     }
 
@@ -369,7 +364,7 @@
         align-items: center;
         text-align: center;
         justify-content: center;
-        margin-right: 50px;
+
         padding-top: 40px;
 
     }
@@ -378,8 +373,21 @@
     .text2 p,
     .text3 p {
         font-size: 16px;
-        /* 合適的段落文字字體 */
         line-height: 1.6;
-        /* 提高行間距，增強閱讀性 */
+
     }
+
+    .text2 p {
+        margin-left: 50px;
+        width: 100%;
+        /* 確保文字容器寬度填滿父容器 */
+        margin: 0;
+        /* 移除多餘外邊距 */
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+        max-width: 350px;
+    }
+
+
 }

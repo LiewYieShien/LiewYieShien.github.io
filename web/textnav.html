@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blog Sharing</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/blogsharing.css" />
+
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        @media screen and (max-width: 600px) {
+
+            /* General Reset */
+            a {
+                text-decoration: none;
+                color: #AAA297;
+            }
+
+            header {
+                position: fixed;
+                width: 100%;
+                top: 0;
+                padding: 15px;
+                background-color: #020C16;
+                display: flex;
+                align-items: center;
+                z-index: 1000;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            }
+
+            .logo {
+                margin-left: 30px;
+                height: 40px;
+                width: auto;
+            }
+
+            .hamburger-menu {
+                margin-left: auto;
+                margin-right: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 20px;
+                width: 30px;
+                cursor: pointer;
+
+            }
+
+            .hamburger-menu .bar {
+                height: 3px;
+                width: 100%;
+                background-color: #AAA297;
+                border-radius: 2px;
+                transition: all 0.3s ease-in-out;
+            }
+
+            .info {
+                display: none;
+                flex-direction: column;
+                align-items: start;
+                background-color: #020C16;
+                position: absolute;
+                top: 100%;
+                left: 200px;
+                width: 100%;
+                z-index: 999;
+            }
+
+            .info a {
+                margin-left: 30px;
+                margin-bottom: 20px;
+            }
+
+            .submenu {
+                display: none;
+                flex-direction: column;
+                background-color: #333333;
+                padding: 0;
+            }
+
+            .submenu a {
+                padding: 10px 20px;
+            }
+
+            .icon-container {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+                width: 100%;
+
+                cursor: pointer;
+            }
+
+            .icon {
+                height: 15px;
+                margin-bottom: 15px;
+            }
+
+            .info .submenu a:hover {
+                background-color: #555;
+                color: #ffd700;
+
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <a href="http://127.0.0.1:5500/web/index.html">
+            <div id="nav">
+                <img src="images/general/logo.png" height="70px" class="logo">
+            </div>
+        </a>
+        <div class="info">
+
+            <a href="http://127.0.0.1:5500/web/explore&tips.html">Explore & Tips</a>
+
+            <div class="menu-pyt">
+                <div class="icon-container">
+                    <a href="#">Plan Your Trip</a>
+                    <img src="images/general/arrow.png" height="15px" class="icon">
+                </div>
+                <div class="submenu">
+                    <a href="http://127.0.0.1:5500/web/transportation.html">Transportation</a>
+                    <a href="http://127.0.0.1:5500/web/accommodation.html">Accommodation</a>
+                </div>
+            </div>
+
+
+            <div class="menu-ptg">
+                <div class="icon-container">
+                    <a href="#">Places To Go</a>
+                    <img src="images/general/arrow.png" height="15px" class="icon">
+                </div>
+                <div class="submenu">
+                    <a href="#">Penang</a>
+                    <a href="#">Perak</a>
+                    <a href="#">Pahang</a>
+                    <a href="#">Malacca</a>
+                </div>
+            </div>
+
+            <a href="http://127.0.0.1:5500/web/BlogSharing.html" class="blogs">Blog Sharing</a>
+        </div>
+
+    </header>
+    <!---------------------hamburger menu--------------------------->
+    <header>
+        <a href="http://127.0.0.1:5500/web/index.html">
+            <div id="nav">
+                <img src="images/general/logo.png" height="70px" class="logo">
+            </div>
+        </a>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="info" id="menu">
+            <a href="http://127.0.0.1:5500/web/explore&tips.html">Explore & Tips</a>
+
+            <div class="menu-pyt">
+                <div class="icon-container" onclick="toggleSubmenu('submenu-pyt')">
+                    <a href="#">Plan Your Trip</a>
+                    <img src="images/general/arrow.png" height="15px" class="icon">
+                </div>
+                <div class="submenu" id="submenu-pyt">
+                    <a href="http://127.0.0.1:5500/web/transportation.html">Transportation</a>
+                    <a href="http://127.0.0.1:5500/web/accommodation.html">Accommodation</a>
+                </div>
+            </div>
+
+            <div class="menu-ptg">
+                <div class="icon-container" onclick="toggleSubmenu('submenu-ptg')">
+                    <a href="#">Places To Go</a>
+                    <img src="images/general/arrow.png" height="15px" class="icon">
+                </div>
+                <div class="submenu" id="submenu-ptg">
+                    <a href="#">Penang</a>
+                    <a href="#">Perak</a>
+                    <a href="#">Pahang</a>
+                    <a href="#">Malacca</a>
+                </div>
+            </div>
+
+            <a href="http://127.0.0.1:5500/web/BlogSharing.html" class="blogs">Blog Sharing</a>
+        </div>
+    </header>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        }
+
+        function toggleSubmenu(submenuId) {
+            const submenu = document.getElementById(submenuId);
+            submenu.style.display = submenu.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
+
+
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>BLOG SHARING </h1>
+            <p>Wander, discover, and savor the moment.</p>
+        </div>
+    </section>

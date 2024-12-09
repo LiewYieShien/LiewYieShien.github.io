@@ -9,7 +9,7 @@
 /* ---------------------------------------------Background Styles----------------------------------------------- */
 body.setbackground {
     background-size: 100%;
-    background: linear-gradient(rgba(57, 21, 18, 0.8), rgba(57, 21, 18, 0.2)), url(../images/transportation/malacca.webp);
+    background: linear-gradient(rgba(6, 17, 13, 0.8), rgba(6, 17, 13, 0.2)), url(../images/transportation/pahang.jpg);
     background-repeat: no-repeat;
     background-position: center;
     height: fit-content;
@@ -23,7 +23,7 @@ body.setbackground {
     align-items: center;
     gap: 120px;
     font-family: 'Sweet Sans Pro', sans-serif;
-    color: #E6D5D5;
+    color: #E9F0E0;
     padding-top: 80px;
 }
 
@@ -68,11 +68,11 @@ body.setbackground {
     align-items: center;
     width: 300px;
     height: 35px;
-    background-color: #E6D5D5;
+    background-color: #E9F0E0;
     border: 0px;
     border-radius: 10px;
     font-family: 'Sweet Sans Pro', sans-serif;
-    color: #A04F47;
+    color: #72893C;
     padding: 20px;
     margin: 40px 10px 30px 0;
     /* Vertical margin between boxes */
@@ -80,7 +80,7 @@ body.setbackground {
 
 .box:nth-child(1) h2 {
     font-weight: 400;
-    color: #A04F47;
+    color: #72893C;
     /* Custom font weight and color for the second box */
 }
 
@@ -99,7 +99,7 @@ body.setbackground {
     display: flex;
     align-items: center;
     margin-top: 30px;
-    background-color: #E6D5D5;
+    background-color: #E9F0E0;
     border-radius: 15px;
     width: 1000px;
     height: 350px;
@@ -110,7 +110,7 @@ body.setbackground {
 .transportation-column {
     padding: 40px;
     font-family: 'Sweet Sans Pro', sans-serif;
-    color: #5F241E;
+    color: #394626;
 }
 
 .transportation-column h1 {
@@ -149,9 +149,9 @@ body.setbackground {
 
 .bus {
     background:
-        linear-gradient(rgba(177, 109, 99, 0.2), rgba(177, 109, 99, 0.2)), url('../images/transportation/bus.jpg');
+        linear-gradient(rgba(114, 137, 60, 0.2), rgba(114, 137, 60, 0.2)), url('../images/transportation/bus.jpg');
     background-size: cover;
-    background-color: #E6DFD5;
+    background-color: #E9F0E0;
     color: transparent;
     border: 0px;
     border-radius: 15px;
@@ -161,9 +161,9 @@ body.setbackground {
 
 .charterservice {
     background:
-        linear-gradient(rgba(177, 109, 99, 0.2), rgba(177, 109, 99, 0.2)), url('../images/transportation/charter\ service.jpg');
+        linear-gradient(rgba(114, 137, 60, 0.2), rgba(114, 137, 60, 0.2)), url('../images/transportation/charter\ service.jpg');
     background-size: cover;
-    background-color: #E6DFD5;
+    background-color: #E9F0E0;
     color: transparent;
     border: 0px;
     border-radius: 15px;
@@ -205,7 +205,7 @@ body.setbackground {
 
 /* Hover Effect */
 .booknow1:hover {
-    background-color: #e8a8a2;
+    background-color: #c5e184;
     /* Change to orange on hover */
     transform: scale(1.1);
     /* Slightly enlarge on hover */
@@ -247,7 +247,7 @@ body.setbackground {
 
 /* Hover Effect */
 .booknow2:hover {
-    background-color: #e8a8a2;
+    background-color: #c5e184;
     /* Change to orange on hover */
     transform: scale(1.1);
     /* Slightly enlarge on hover */
@@ -316,11 +316,11 @@ body.setbackground {
         align-items: center;
         width: 230px;
         height: 35px;
-        background-color: #E6D5D5;
+        background-color: #E9F0E0;
         border: 0px;
         border-radius: 10px;
         font-family: 'Sweet Sans Pro', sans-serif;
-        color: #A04F47;
+        color: #72893C;
         padding: 15px;
         margin: 40px 10px 30px 0;
         /* Vertical margin between boxes */
@@ -328,7 +328,7 @@ body.setbackground {
 
     .box:nth-child(1) h2 {
         font-weight: 400;
-        color: #A04F47;
+        color: #72893C;
         /* Custom font weight and color for the second box */
     }
 
@@ -351,7 +351,7 @@ body.setbackground {
         padding: 10px;
         margin: 10px 0;
         /* Add spacing between containers */
-        background-color: #E6D5D5;
+        background-color: #E9F0E0;
         border-radius: 15px;
         box-shadow: none;
         /* Simplify styling for smaller screens */

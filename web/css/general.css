@@ -219,9 +219,8 @@ header {
 
 .footer-menu-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 70px;
 }
 
 .socialmedia {
@@ -230,18 +229,6 @@ header {
     height: 45px;
     margin-top: 20px;
     cursor: pointer;
-}
-
-.footer-menu-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    font-family: 'Sweet Sans Pro', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    color: #AAA297;
-    margin-top: 18px;
 }
 
 .footer-menu-container p {
@@ -327,9 +314,8 @@ header {
 
 .footer-menu-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 70px;
 }
 
 .socialmedia {
@@ -338,18 +324,6 @@ header {
     height: 45px;
     margin-top: 20px;
     cursor: pointer;
-}
-
-.footer-menu-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    font-family: 'Sweet Sans Pro', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    color: #AAA297;
-    margin-top: 18px;
 }
 
 .footer-menu-container p {
