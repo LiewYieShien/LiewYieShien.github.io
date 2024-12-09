@@ -205,7 +205,7 @@ body.setbackground {
 
 /* Hover Effect */
 .booknow1:hover {
-    background-color: #f5c400;
+    background-color: #e8a8a2;
     /* Change to orange on hover */
     transform: scale(1.1);
     /* Slightly enlarge on hover */
@@ -247,7 +247,7 @@ body.setbackground {
 
 /* Hover Effect */
 .booknow2:hover {
-    background-color: #f5c400;
+    background-color: #e8a8a2;
     /* Change to orange on hover */
     transform: scale(1.1);
     /* Slightly enlarge on hover */
