@@ -143,6 +143,12 @@
 }
 
 
+.white-rectangle {
+    display: none;
+    /* Hidden by default */
+}
+
+
 /* ------------------------------------------------------------Section 3-------------------------------------------------------------------- */
 
 .sec3melaka {
@@ -653,4 +659,193 @@
 
 .book4:hover span {
     color: #9f0d08;
+}
+
+/* --------------------------------------------Mobile Styles ------------------------------------------ */
+@media screen and (max-width: 767px) {
+
+    /* Hero Section */
+    .hero {
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+        /* Smaller heading size */
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    /* Section 2 */
+    .sec2 {
+        background-color: #DBDCDD;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: left;
+        padding: 20px;
+    }
+
+    .findingstay-content {
+        z-index: 7;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        gap: 10px;
+        width: 80%;
+        background-color: white;
+        position: relative;
+        left: -110px;
+        top: 293px;
+        padding: 90px 64px;
+        box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.2);
+        /* Add box shadow */
+
+    }
+
+    .findingstay-content br {
+        display: none;
+    }
+
+    .findingstay-content h1 {
+        font-size: 22px;
+    }
+
+    .findingstay-content p {
+        position: relative;
+        top: -40px;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 16px;
+    }
+
+    .iphone {
+        z-index: 5;
+        position: relative;
+        bottom: 650px;
+        left: 15px;
+        margin-right: 0;
+        width: 80%;
+        /* Make image smaller */
+    }
+
+
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-family: 'Sweet Sans Pro';
+        font-size: 18px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+
+    }
+
+    /* Section 3 */
+    .sec3melaka {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-melaka,
+    .right-melaka {
+        width: 100%;
+        height: auto;
+    }
+
+    .text-melaka h1 {
+        font-size: 28px;
+        /* Smaller text size */
+    }
+
+    .text-melaka p {
+        font-size: 18px;
+    }
+
+    /* Slider */
+    .slider-container {
+        width: 100%;
+    }
+
+    .slider img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Section 4 */
+    .sec4hotel1 {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .promo-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text4hotel {
+        max-width: 100%;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .book {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .image-section {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .image-section img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    /* Section 5 */
+    .sec5hotel2 {
+        flex-direction: column;
+    }
+
+    .imagetwo-section,
+    .promotwo-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /* Button Styles */
+    .book2,
+    .book4 {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .r-hoteldetails {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .text2hotel {
+        width: 100%;
+        text-align: center;
+    }
+
+    .book2 span,
+    .book4 span {
+        padding-left: 5px;
+    }
 }
