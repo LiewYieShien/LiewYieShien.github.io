@@ -340,6 +340,10 @@
 
     }
 
+    .picmosque img {
+        display: none;
+    }
+
     .text,
     .text2,
     .text3 {
