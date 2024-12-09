@@ -10,7 +10,7 @@
     font-family: 'Sweet Sans Pro', sans-serif;
     height: 100vh;
     /* Full screen height */
-    background: url('images/blogsharing/bloghero.png') no-repeat center center;
+    background: url('../images/blogsharing/bloghero.png') no-repeat center center;
     background-size: cover;
     /* covers the entire section */
     display: flex;
@@ -62,7 +62,7 @@
 /*------------------------malacca blog---------------------------*/
 .malaccablog {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url(images/blogsharing/melakariver.png);
+        url(../images/blogsharing/melakariver.png);
     height: 100vh;
     height: 100vh;
     background-size: cover;
@@ -184,7 +184,7 @@
 
 /*-------------------pahang blog-----------------------------------*/
 .pahangblog {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/blogsharing/genting.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/blogsharing/genting.png);
 
     background-size: cover;
     background-repeat: no-repeat;
