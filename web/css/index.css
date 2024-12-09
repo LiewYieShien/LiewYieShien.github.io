@@ -118,7 +118,7 @@
     position: relative;
 }
 
-/* Dark overlay*/
+/* Dark overlay */
 .map::before {
     content: '';
     position: absolute;
@@ -128,7 +128,7 @@
     z-index: 4;
 }
 
-/* Tittle */
+/* Title */
 .map-content {
     display: flex;
     align-items: center;
@@ -143,7 +143,7 @@
     font-size: 45px;
 }
 
-
+/* Image container styles */
 .imagecontainer {
     z-index: 5;
 }
@@ -156,13 +156,13 @@
 
 .dashcurve {
     position: absolute;
-    position: absolute;
     width: 1216px;
     height: 80px;
     bottom: 300px;
     left: calc(50% - 1216px/2);
 }
 
+/* Base styles for all locations */
 .location {
     position: absolute;
     color: #fff;
@@ -171,7 +171,6 @@
     cursor: pointer;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in-out;
     transform-origin: center;
-    /* Ensures smooth scaling from the center */
 }
 
 .location::before {
@@ -179,7 +178,6 @@
     width: 15px;
     height: 15px;
     background: #fff;
-    /* White dots */
     border-radius: 50%;
     display: block;
     position: absolute;
@@ -194,7 +192,6 @@
     transform: translate(-50%, -50%) scale(1.2);
     background-color: #ff6f61;
     opacity: 1;
-    /* Ensure visibility */
 }
 
 /* Hover effect on the text */
@@ -203,6 +200,30 @@
     color: #ff6f61;
     opacity: 1;
 }
+
+/* Specific positions for each location */
+.location.penang {
+    top: 72%;
+    left: -20%;
+}
+
+.location.perak {
+    top: 53%;
+    left: 26%;
+}
+
+.location.pahang {
+    top: 72%;
+    left: 72%;
+}
+
+.location.malacca {
+    top: 53%;
+    left: 113%;
+}
+
+/* ------------------------------------------------------loactionnnnnnnnn----------------------------------------------- */
+
 
 
 /* Button Styles */
@@ -295,11 +316,14 @@
     align-items: center;
 }
 
+/* Default styles for larger screens */
 .circle-container {
     display: flex;
-    justify-content: space-between;
-    gap: 60px;
-    width: 100%;
+    justify-content: center;
+    gap: 278px;
+    align-items: center;
+    margin: 0 auto;
+    /* Centers the container */
 }
 
 .circle {
@@ -308,20 +332,12 @@
     border-radius: 50%;
     overflow: hidden;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* Stack text below image */
-    transition: transform 0.3s ease;
-    z-index: 1;
 }
 
 .circle img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: opacity 0.3s ease;
 }
 
 .circle:hover {
@@ -337,7 +353,7 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    gap: 235px;
+    gap: 80px;
     position: relative;
     bottom: 90px;
 }
@@ -356,6 +372,12 @@
     font-size: 16px;
     color: #7d7b7b;
 }
+
+
+.cirsmallest {
+    width: 400px;
+}
+
 
 
 /* ---------------------------------------------Footer Section Styles----------------------------------------------- */
@@ -481,16 +503,11 @@
     }
 
     .button-container {
-        position: fixed;
-        bottom: 70px;
-        left: 50%;
-        transform: translateX(-50%);
-        /* Adjust for perfect horizontal centering */
-        display: flex;
+        position: relative;
+        right: 305px;
+        top: 310px;
         flex-direction: row;
         gap: 220px;
-        justify-content: center;
-        align-items: center;
         z-index: 100;
     }
 
@@ -506,7 +523,7 @@
     /* -------------------------------------------------------Map------------------------------------------------------- */
 
     .map-content {
-        top: 10px;
+        top: 20px;
     }
 
     .map-content p {
@@ -519,86 +536,91 @@
         width: auto;
     }
 
-
+    .exploremore {
+        margin-top: 500px;
+    }
 
     .map-container {
         width: 100%;
-        /* Full width for mobile */
         height: auto;
-        /* Auto height to maintain aspect ratio */
     }
+
 
     .dashcurve {
         width: 100%;
-        /* Adjust image width to fill container */
         height: auto;
         left: 0;
         /* Center the image */
-        bottom: 20px;
-        /* Adjust bottom positioning */
+        bottom: 370px;
+        transform: rotate(90deg);
     }
 
     .location {
         font-size: 20px;
-        /* Smaller text for mobile */
         transform: translate(-50%, -50%) scale(0.8);
-        /* Adjust scale for mobile */
     }
 
-    /* Adjust locations' positioning for mobile */
-    .location:nth-child(1) {
-        top: 40%;
-        left: 20%;
+    .location.penang {
+        left: -15px;
+        top: 90px;
     }
 
-    .location:nth-child(2) {
-        top: 60%;
-        left: 40%;
+    .location.perak {
+        left: 17px;
+        top: 200px;
     }
 
-    .location:nth-child(3) {
-        top: 70%;
-        left: 80%;
+    .location.pahang {
+        left: -15px;
+        top: 310px;
     }
 
-    .location:nth-child(4) {
-        top: 50%;
-        left: 110%;
+    .location.malacca {
+        left: 17px;
+        top: 420px;
     }
 
-
+    /* dottt */
+    .location:hover::before {
+        transform: translate(-50%, -50%) scale(1);
+    }
 
 
 
     /* -------------------------------------------------------3 Circle------------------------------------------------------- */
 
-    .circle-container {
-        display: flex;
-        justify-content: space-between;
-        gap: 0px;
-    }
-
-    .circle {
-        width: 280px;
-        height: 280px;
-    }
-
-    .circle:nth-child(2),
-    .circle:nth-child(3) {
-        display: none;
-        /* Hide second and third circles on mobile */
-    }
-
     .interest-content p {
         font-size: 32px;
     }
 
-    .cirtextbyrow {
-        flex-direction: column;
-        gap: 20px;
-        bottom: 50px;
+
+    .circle-container {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        /* Enable horizontal scrolling */
+        gap: 150px;
+        padding: 10px;
     }
 
+    .circle {
+        width: 50vw;
+        height: 50vw;
+    }
+
+
+    .cirsmallest {
+        width: 400px;
+    }
+
+    .cirtextbyrow {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 80px;
+        position: relative;
+        bottom: 50px;
+    }
 
 
 
