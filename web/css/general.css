@@ -389,6 +389,10 @@ header {
         gap: 50px;
     }
 
+    .footer-menu-bar {
+        display: none;
+    }
+
     .footer-menu-container p {
         font-size: 15px;
         margin-top: 30px;
