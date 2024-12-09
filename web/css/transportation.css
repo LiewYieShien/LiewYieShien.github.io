@@ -33,7 +33,7 @@
     height: 100vh;
     /* Full screen height */
     background:
-        linear-gradient(rgba(0, 0, 0, 0.8), rgba(2, 12, 22, 0.2)), url('images/transportation/transportation.jpeg');
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(2, 12, 22, 0.2)), url('../images/transportation/transportation.jpeg');
     background-size: cover;
     /* covers the entire section */
     display: flex;
@@ -144,7 +144,7 @@
 
 button.malacca {
     background:
-        linear-gradient(rgba(230, 223, 213, 0.2), rgba(230, 223, 213, 0.2)), url('images/transportation/malacca\ button.jpg');
+        linear-gradient(rgba(230, 223, 213, 0.2), rgba(230, 223, 213, 0.2)), url('../images/transportation/malacca\ button.jpg');
     background-size: cover;
     background-color: #E6DFD5;
     border: 0px;
@@ -156,7 +156,7 @@ button.malacca {
 
 button.malacca:hover {
     background:
-        linear-gradient(rgba(2, 12, 22, 0.1), rgba(255, 255, 255, 0.9)), url('images/transportation/malacca\ button.jpg');
+        linear-gradient(rgba(2, 12, 22, 0.1), rgba(255, 255, 255, 0.9)), url('../images/transportation/malacca\ button.jpg');
     background-size: cover;
     background-color: #E6DFD5;
     border: 0px;
@@ -177,7 +177,7 @@ button.malacca:hover {
 
 button.pahang {
     background:
-        linear-gradient(rgba(230, 223, 213, 0.2), rgba(230, 223, 213, 0.2)), url('images/transportation/pahang\ button.jpg');
+        linear-gradient(rgba(230, 223, 213, 0.2), rgba(230, 223, 213, 0.2)), url('../images/transportation/pahang\ button.jpg');
     background-size: cover;
     background-color: #E6DFD5;
     border: 0px;
@@ -189,7 +189,7 @@ button.pahang {
 
 button.pahang:hover {
     background:
-        linear-gradient(rgba(2, 12, 22, 0.1), rgba(255, 255, 255, 0.9)), url('images/transportation/pahang\ button.jpg');
+        linear-gradient(rgba(2, 12, 22, 0.1), rgba(255, 255, 255, 0.9)), url('../images/transportation/pahang\ button.jpg');
     background-size: cover;
     background-color: #E6DFD5;
     border: 0px;
@@ -210,7 +210,7 @@ button.pahang:hover {
 
 button.penang {
     background:
-        linear-gradient(rgba(230, 223, 213, 0.2), rgba(230, 223, 213, 0.2)), url('images/transportation/penang\ button.jpg');
+        linear-gradient(rgba(230, 223, 213, 0.2), rgba(230, 223, 213, 0.2)), url('../images/transportation/penang\ button.jpg');
     background-size: cover;
     background-color: #E6DFD5;
     border: 0px;
@@ -222,7 +222,7 @@ button.penang {
 
 button.penang:hover {
     background:
-        linear-gradient(rgba(2, 12, 22, 0.1), rgba(255, 255, 255, 0.9)), url('images/transportation/penang\ button.jpg');
+        linear-gradient(rgba(2, 12, 22, 0.1), rgba(255, 255, 255, 0.9)), url('../images/transportation/penang\ button.jpg');
     background-size: cover;
     background-color: #E6DFD5;
     border: 0px;
@@ -243,7 +243,7 @@ button.penang:hover {
 
 button.perak {
     background:
-        linear-gradient(rgba(230, 223, 213, 0.2), rgba(230, 223, 213, 0.2)), url('images/transportation/perak\ button.jpg');
+        linear-gradient(rgba(230, 223, 213, 0.2), rgba(230, 223, 213, 0.2)), url('../images/transportation/perak\ button.jpg');
     background-size: cover;
     background-color: #E6DFD5;
     border: 0px;
@@ -255,7 +255,7 @@ button.perak {
 
 button.perak:hover {
     background:
-        linear-gradient(rgba(2, 12, 22, 0.1), rgba(255, 255, 255, 0.9)), url('images/transportation/perak\ button.jpg');
+        linear-gradient(rgba(2, 12, 22, 0.1), rgba(255, 255, 255, 0.9)), url('../images/transportation/perak\ button.jpg');
     background-size: cover;
     background-color: #E6DFD5;
     border: 0px;
@@ -302,7 +302,7 @@ button.perak:hover {
         height: 100vh;
         /* Full screen height */
         background:
-            linear-gradient(rgba(0, 0, 0, 0.8), rgba(2, 12, 22, 0.2)), url('images/transportation/transportation.jpeg');
+            linear-gradient(rgba(0, 0, 0, 0.8), rgba(2, 12, 22, 0.2)), url('../images/transportation/transportation.jpeg');
         background-size: cover;
         /* covers the entire section */
         display: flex;
