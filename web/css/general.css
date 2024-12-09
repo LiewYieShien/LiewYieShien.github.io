@@ -378,6 +378,103 @@ header {
 }
 
 /* ---------------------------------------------Mobile Styles----------------------------------------------- */
+
+
+@media screen and (max-width: 600px) {
+    /*--------------------hamburger menu*----------------------*/
+
+    a {
+        text-decoration: none;
+        color: #AAA297;
+    }
+
+    header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        padding: 15px;
+        background-color: #020C16;
+        display: flex;
+        align-items: center;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo {
+        margin-left: 30px;
+        height: 40px;
+        width: auto;
+    }
+
+    .hamburger-menu {
+        margin-left: auto;
+        margin-right: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 20px;
+        width: 30px;
+        cursor: pointer;
+
+    }
+
+    .hamburger-menu .bar {
+        height: 3px;
+        width: 100%;
+        background-color: #AAA297;
+        border-radius: 2px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .info {
+        display: none;
+        flex-direction: column;
+        align-items: start;
+        background-color: #020C16;
+        position: absolute;
+        top: 100%;
+        left: 200px;
+        width: 100%;
+        z-index: 999;
+    }
+
+    .info a {
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+
+    .submenu {
+        display: none;
+        flex-direction: column;
+        background-color: #333333;
+        padding: 0;
+    }
+
+    .submenu a {
+        padding: 10px 20px;
+    }
+
+    .icon-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        width: 100%;
+
+        cursor: pointer;
+    }
+
+    .icon {
+        height: 15px;
+        margin-bottom: 15px;
+    }
+
+    .info .submenu a:hover {
+        background-color: #555;
+        color: #ffd700;
+
+    }
+}
+
 @media screen and (max-width: 600px) {
 
     /*Footer & Transport Footer*/
