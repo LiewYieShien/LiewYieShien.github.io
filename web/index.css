@@ -14,7 +14,7 @@
 .hero {
     height: 100vh;
     /* Full screen height */
-    background: url('images/herosection.jpg');
+    background: url('images/homepage/herosection.jpg');
     background-size: cover;
     /* covers the entire section */
     display: flex;
