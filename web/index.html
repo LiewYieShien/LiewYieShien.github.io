@@ -5,7 +5,6 @@
     <title>Homepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="css/index.css">
 
 
@@ -22,12 +21,14 @@
     <header>
         <!----------------------------------------------------- Nav----------------------------------------------------->
         <div id="nav">
-            <img src="images/general/logo.png" height="70px" class="logo">
+            <a href="index.html">
+                <img src="images/general/logo.png" height="70px" class="logo" alt="Logo">
+            </a>
         </div>
 
         <div class="info">
 
-            <a href="#">Explore & Tips</a>
+            <a href="explore&tips.html">Explore & Tips</a>
 
             <div class="menu-pyt">
                 <div class="icon-container">
@@ -35,8 +36,8 @@
                     <img src="images/general/arrow.png" height="15px" class="icon">
                 </div>
                 <div class="submenu">
-                    <a href="#">Transportation</a>
-                    <a href="#">Accommodation</a>
+                    <a href="transportation.html">Transportation</a>
+                    <a href="accommodation.html">Accommodation</a>
                 </div>
             </div>
 
@@ -54,7 +55,7 @@
                 </div>
             </div>
 
-            <a href="#" class="blogs">Blog Sharing</a>
+            <a href="BlogSharing.html" class="blogs">Blog Sharing</a>
         </div>
 
     </header>
@@ -71,13 +72,18 @@
 
             <!-- Button -->
             <div class="button-container">
-                <button class="circle-btn transport">
-                    <img src="images/homepage/b-publictransport.png" alt="Transport Icon" />
-                </button>
+                <a href="transportation.html">
+                    <button class="circle-btn transport">
+                        <img src="images/homepage/b-publictransport.png" alt="Transport Icon" />
+                    </button>
+                </a>
 
-                <button class="circle-btn hotel">
-                    <img src="images/homepage/b-hotel.png" alt="Hotel Icon" />
-                </button>
+                <a href="accommodation.html">
+                    <button class="circle-btn hotel">
+                        <img src="images/homepage/b-hotel.png" alt="Hotel Icon" />
+                    </button>
+                </a>
+
             </div>
 
 
