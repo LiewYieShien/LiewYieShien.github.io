@@ -9,7 +9,7 @@
 /* ---------------------------------------------Background Styles----------------------------------------------- */
 body.setbackground {
     background-size: 100%;
-    background: linear-gradient(rgba(57, 21, 18, 0.8), rgba(57, 21, 18, 0.2)), url(images/transportation/malacca.webp);
+    background: linear-gradient(rgba(57, 21, 18, 0.8), rgba(57, 21, 18, 0.2)), url(../images/transportation/malacca.webp);
     background-repeat: no-repeat;
     background-position: center;
     height: fit-content;
@@ -149,7 +149,7 @@ body.setbackground {
 
 .bus {
     background:
-        linear-gradient(rgba(177, 109, 99, 0.2), rgba(177, 109, 99, 0.2)), url('images/transportation/bus.jpg');
+        linear-gradient(rgba(177, 109, 99, 0.2), rgba(177, 109, 99, 0.2)), url('../images/transportation/bus.jpg');
     background-size: cover;
     background-color: #E6DFD5;
     color: transparent;
@@ -161,7 +161,7 @@ body.setbackground {
 
 .charterservice {
     background:
-        linear-gradient(rgba(177, 109, 99, 0.2), rgba(177, 109, 99, 0.2)), url('images/transportation/charter\ service.jpg');
+        linear-gradient(rgba(177, 109, 99, 0.2), rgba(177, 109, 99, 0.2)), url('../images/transportation/charter\ service.jpg');
     background-size: cover;
     background-color: #E6DFD5;
     color: transparent;
