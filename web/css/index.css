@@ -14,7 +14,7 @@
 .hero {
     height: 100vh;
     /* Full screen height */
-    background: url('images/homepage/herosection.jpg');
+    background: url('../images/homepage/herosection.jpg');
     background-size: cover;
     /* covers the entire section */
     display: flex;
@@ -109,7 +109,7 @@
 .map {
     flex-direction: column;
     height: 100vh;
-    background: url('images-homepage/Penang\ Street.jpg');
+    background: url('../images/homepage/street.jpg');
     background-size: cover;
     display: flex;
     justify-content: center;
