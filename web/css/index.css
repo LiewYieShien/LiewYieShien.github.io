@@ -1,0 +1,631 @@
+@font-face {
+    font-family: 'Sweet Sans Pro';
+    src: url('fonts/SweetSansProMedium.otf') format('opentype');
+    font-weight: lighter;
+    font-style: light;
+}
+
+.page {
+    font-family: 'Sweet Sans Pro', sans-serif;
+}
+
+
+/* ----------------------------------------Hero Section Styles----------------------------------------------- */
+.hero {
+    height: 100vh;
+    /* Full screen height */
+    background: url('../images/homepage/herosection.jpg');
+    background-size: cover;
+    /* covers the entire section */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    color: white;
+    /* For overlay effects */
+}
+
+/* Optional: Add a dark overlay to make text stand out */
+.hero::before {
+    content: '';
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 4;
+}
+
+/* Hero Content */
+.hero-content {
+    font-family: 'Sweet Sans Pro';
+    position: relative;
+    z-index: 15;
+    /* Ensure text appears above overlay */
+}
+
+.hero h1 {
+    position: relative;
+    top: 90px;
+    margin-left: 92px;
+    font-size: 120px;
+    margin-bottom: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+    position: relative;
+    margin-left: 100px;
+    top: -135px;
+    font-size: 35px;
+}
+
+
+
+/* --------------------------------------------------Button-------------------------------------------------------- */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    /* Aligns the buttons vertically */
+    justify-content: center;
+    /* Centers buttons vertically */
+    gap: 30px;
+
+}
+
+.circle-btn {
+    left: 600px;
+    position: relative;
+    z-index: 5;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    /* Removes default border */
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.circle-btn img {
+    width: 75%;
+    height: auto;
+}
+
+/* Hover effect for button */
+.circle-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/* ---------------------------------------------Map Section Styles----------------------------------------------- */
+.map {
+    flex-direction: column;
+    height: 100vh;
+    background: url('../images/homepage/street.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+/* Dark overlay*/
+.map::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 8, 11, 0.7);
+    z-index: 4;
+}
+
+/* Tittle */
+.map-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    z-index: 15;
+}
+
+.map-content p {
+    font-size: 45px;
+}
+
+
+.imagecontainer {
+    z-index: 5;
+}
+
+.map-container {
+    position: relative;
+    width: 600px;
+    height: 400px;
+}
+
+.dashcurve {
+    position: absolute;
+    position: absolute;
+    width: 1216px;
+    height: 80px;
+    bottom: 300px;
+    left: calc(50% - 1216px/2);
+}
+
+.location {
+    position: absolute;
+    color: #fff;
+    font-size: 26px;
+    transform: translate(-50%, -50%) scale(1);
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    transform-origin: center;
+    /* Ensures smooth scaling from the center */
+}
+
+.location::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    /* White dots */
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* Hover effect on the dot */
+.location:hover::before {
+    transform: translate(-50%, -50%) scale(1.2);
+    background-color: #ff6f61;
+    opacity: 1;
+    /* Ensure visibility */
+}
+
+/* Hover effect on the text */
+.location:hover {
+    transform: translate(-50%, -50%) scale(1.4);
+    color: #ff6f61;
+    opacity: 1;
+}
+
+
+/* Button Styles */
+.exploremore {
+    z-index: 10;
+    width: auto;
+    padding: 10px 20px;
+    background-color: #E6DFD5;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    margin-top: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Icon Styles */
+.exploremore .right {
+    margin-left: 10px;
+    width: 20px;
+    height: auto;
+}
+
+/* Text Styles */
+.exploremore span {
+    margin-left: 10px;
+    color: #31312E;
+    font-size: 20px;
+
+}
+
+/* Hover Effect */
+.exploremore:hover {
+    background-color: #f5c400;
+    /* Change to orange on hover */
+    transform: scale(1.1);
+    /* Slightly enlarge on hover */
+}
+
+
+/* --------------------------------------------Interest Section Styles----------------------------------------------- */
+
+.interest {
+    flex-direction: column;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #020C16;
+    color: #E6DFD5;
+    position: relative;
+}
+
+.interest-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 160px;
+    z-index: 15;
+}
+
+.interest-content p {
+    font-size: 45px;
+    margin: 0;
+}
+
+
+/* -----------------------------------------------3 Circle------------------------------------------------- */
+
+.interest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interest-content {
+    position: absolute;
+    top: 100px;
+}
+
+.circle-section {
+    position: relative;
+    width: 1153px;
+    height: 400px;
+    /* Adjust height to accommodate text */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.circle-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    width: 100%;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* Stack text below image */
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.circle:hover {
+    transform: scale(1.1);
+}
+
+.circle:hover img {
+    opacity: 0.8;
+}
+
+/* Text section in a row */
+.cirtextbyrow {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 235px;
+    position: relative;
+    bottom: 90px;
+}
+
+.cirtextbyrow div {
+    text-align: center;
+}
+
+.cirtextbyrow h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.cirtextbyrow p {
+    font-size: 16px;
+    color: #7d7b7b;
+}
+
+
+/* ---------------------------------------------Footer Section Styles----------------------------------------------- */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #5C3922;
+    color: white;
+    text-align: center;
+    padding: 80px;
+}
+
+.fexplore {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #EBE9E6;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    bottom: 20px;
+    z-index: 20;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Icon Styles */
+.fexplore .search {
+    margin-left: 10px;
+    width: 20px;
+    height: auto;
+}
+
+/* Hover Effect */
+.fexplore:hover {
+    background-color: #f5c400;
+    transform: scale(1.1);
+}
+
+.footer h1 {
+    font-family: 'Sweet Sans Pro', sans-serif;
+    font-size: 40px;
+    color: #E6DFD5;
+}
+
+.footer p {
+    font-family: 'Sweet Sans Pro', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    color: #AAA297;
+    margin-top: -15px;
+}
+
+.footer hr {
+    border: none;
+    height: 1px;
+    background-color: #816E60;
+    width: 100%;
+    /* Line width */
+    margin-top: 90px;
+    /* Center alignment */
+}
+
+
+
+.footer-menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+}
+
+.socialmedia {
+    background-color: transparent;
+    border: none;
+    height: 45px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.footer-menu-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-family: 'Sweet Sans Pro', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #AAA297;
+    margin-top: 18px;
+}
+
+.footer-menu-container p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Sweet Sans Pro', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    color: #AAA297;
+    margin-top: 42.5px;
+}
+
+
+/* -------------------------------------------------------Mobile------------------------------------------------------- */
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 60px;
+        margin-left: 50px;
+        top: 30px;
+    }
+
+    .hero p {
+        font-size: 24px;
+        margin-left: 51px;
+        top: -100px;
+    }
+
+    .button-container {
+        position: fixed;
+        bottom: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+        /* Adjust for perfect horizontal centering */
+        display: flex;
+        flex-direction: row;
+        gap: 220px;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+    }
+
+
+    .circle-btn {
+        left: auto;
+    }
+
+    .circle-btn img {
+        width: 75%;
+    }
+
+    /* -------------------------------------------------------Map------------------------------------------------------- */
+
+    .map-content {
+        top: 10px;
+    }
+
+    .map-content p {
+        font-size: 32px;
+    }
+
+    .explore {
+        font-size: 16px;
+        padding: 10px;
+        width: auto;
+    }
+
+
+
+    .map-container {
+        width: 100%;
+        /* Full width for mobile */
+        height: auto;
+        /* Auto height to maintain aspect ratio */
+    }
+
+    .dashcurve {
+        width: 100%;
+        /* Adjust image width to fill container */
+        height: auto;
+        left: 0;
+        /* Center the image */
+        bottom: 20px;
+        /* Adjust bottom positioning */
+    }
+
+    .location {
+        font-size: 20px;
+        /* Smaller text for mobile */
+        transform: translate(-50%, -50%) scale(0.8);
+        /* Adjust scale for mobile */
+    }
+
+    /* Adjust locations' positioning for mobile */
+    .location:nth-child(1) {
+        top: 40%;
+        left: 20%;
+    }
+
+    .location:nth-child(2) {
+        top: 60%;
+        left: 40%;
+    }
+
+    .location:nth-child(3) {
+        top: 70%;
+        left: 80%;
+    }
+
+    .location:nth-child(4) {
+        top: 50%;
+        left: 110%;
+    }
+
+
+
+
+
+    /* -------------------------------------------------------3 Circle------------------------------------------------------- */
+
+    .circle-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 0px;
+    }
+
+    .circle {
+        width: 280px;
+        height: 280px;
+    }
+
+    .circle:nth-child(2),
+    .circle:nth-child(3) {
+        display: none;
+        /* Hide second and third circles on mobile */
+    }
+
+    .interest-content p {
+        font-size: 32px;
+    }
+
+    .cirtextbyrow {
+        flex-direction: column;
+        gap: 20px;
+        bottom: 50px;
+    }
+
+
+
+
+    /* -------------------------------------------------------Footer------------------------------------------------------- */
+
+    .footer-menu-container {
+        flex-direction: column;
+        gap: 20px;
+        /* Adjust spacing for smaller layout */
+    }
+
+    .footer-menu-bar {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .footer h1 {
+        font-size: 24px;
+        /* Smaller heading size */
+    }
+
+    .footer p {
+        font-size: 16px;
+    }
+
+    .fexplore {
+        font-size: 16px;
+    }
+}

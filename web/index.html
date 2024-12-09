@@ -4,9 +4,9 @@
 <head>
     <title>Homepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
 
 
 
@@ -20,9 +20,9 @@
 
 <body>
     <header>
-
+        <!----------------------------------------------------- Nav----------------------------------------------------->
         <div id="nav">
-            <img src="images/logo.png" height="70px" class="logo">
+            <img src="images/general/logo.png" height="70px" class="logo">
         </div>
 
         <div class="info">
@@ -32,12 +32,11 @@
             <div class="menu-pyt">
                 <div class="icon-container">
                     <a href="#">Plan Your Trip</a>
-                    <img src="images/arrow.png" height="15px" class="icon">
+                    <img src="images/general/arrow.png" height="15px" class="icon">
                 </div>
                 <div class="submenu">
-                    <a href="transportation.html">Transportation</a>
+                    <a href="#">Transportation</a>
                     <a href="#">Accommodation</a>
-
                 </div>
             </div>
 
@@ -45,7 +44,7 @@
             <div class="menu-ptg">
                 <div class="icon-container">
                     <a href="#">Places To Go</a>
-                    <img src="images/arrow.png" height="15px" class="icon">
+                    <img src="images/general/arrow.png" height="15px" class="icon">
                 </div>
                 <div class="submenu">
                     <a href="#">Penang</a>
@@ -73,11 +72,11 @@
             <!-- Button -->
             <div class="button-container">
                 <button class="circle-btn transport">
-                    <img src="images-homepage/b-publictransport.png" alt="Transport Icon" />
+                    <img src="images/homepage/b-publictransport.png" alt="Transport Icon" />
                 </button>
 
                 <button class="circle-btn hotel">
-                    <img src="images-homepage/b-hotel.png" alt="Hotel Icon" />
+                    <img src="images/homepage/b-hotel.png" alt="Hotel Icon" />
                 </button>
             </div>
 
@@ -108,9 +107,9 @@
 
 
             <!-- Button with Text and Icon -->
-            <button class="explore">
+            <button class="exploremore">
                 <span>Explore more</span>
-                <img class="right" src="images-homepage/b-rightarrow.png" alt="Right arrow">
+                <img class="right" src="images/homepage/b-rightarrow.png" alt="Right arrow">
             </button>
         </section>
     </div>
@@ -128,22 +127,38 @@
             <section class="circle-section">
                 <div class="circle-container">
                     <div class="circle">
-                        <img src="images-homepage/adventure.avif" alt="Image 1">
+                        <img src="images/homepage/adventure.avif" alt="Image 1">
+
                     </div>
                     <div class="circle">
-                        <img src="images-homepage/city.jpg" alt="Image 2">
+                        <img src="images/homepage/city.jpg" alt="Image 2">
                     </div>
                     <div class="circle">
-                        <img src="images-homepage/nature.jpg" alt="Image 3">
+                        <img src="images/homepage/nature.jpg" alt="Image 3">
                     </div>
                 </div>
             </section>
+
+            <div class="cirtextbyrow">
+                <div>
+                    <h1>Adventure</h1>
+                    <p>Where Every Journey Reveals a <br> New World of Wonders</p>
+                </div>
+                <div>
+                    <h1>Cityscape</h1>
+                    <p>Immerse Yourself in the Thriving <br> Heartbeat of Urban Life</p>
+                </div>
+                <div>
+                    <h1>Nature</h1>
+                    <p>Let the Wild Landscapes Ignite <br> Your Sense of Discovery</p>
+                </div>
+            </div>
+
         </section>
     </div>
 
 
     <!--------------------------------------------------- Footer Section -------------------------------------------------->
-
     <section class="footer">
         <div>
             <h1>
@@ -155,29 +170,31 @@
         </div>
 
         <div>
-            <button class="fexplore">
-                <span>Start exploring</span>
-                <img class="search" src="images/search.png" alt="Search">
-            </button>
+            <a href="#">
+                <button class="explore">
+                    <span>Start exploring</span>
+                    <img class="search" src="images/general/search.png" alt="Search">
+                </button>
+            </a>
         </div>
 
         <hr />
 
         <div class="footer-menu-container">
             <div>
-                <a href="#">
+                <a href="https://www.facebook.com/MalaysiaFoodandTravel">
                     <button class="socialmedia">
-                        <img src="images/facebook.png" alt="Facebook" height="25" />
+                        <img src="images/general/facebook.png" alt="Facebook" height="25" />
                     </button>
                 </a>
-                <a href="#">
+                <a href="https://www.instagram.com/malaysiafoodandtravel/">
                     <button class="socialmedia">
-                        <img src="images/instagram.png" alt="Instagram" height="25" />
+                        <img src="images/general/instagram.png" alt="Instagram" height="25" />
                     </button>
                 </a>
-                <a href="#">
+                <a href="https://www.tiktok.com/@malaysiafoodandtravel">
                     <button class="socialmedia">
-                        <img src="images/youtube.png" alt="YouTube" height="25" />
+                        <img src="images/general/tiktok.png" alt="TikTok" height="25" />
                     </button>
                 </a>
             </div>
@@ -197,6 +214,31 @@
             </div>
         </div>
     </section>
+
+    <!--------------------------------------------------- Back To Top Button -------------------------------------------------->
+    <button class="back-to-top" onclick="scrollToTop()">
+        <img class="bttimg" src="images/general/top.png" alt="Back to Top">
+    </button>
+
+    <script>
+        // Show or hide the "Back to Top" button based on scroll position
+        window.addEventListener('scroll', function () {
+            const button = document.querySelector('.back-to-top');
+            if (window.scrollY > 100) { // Show after 100px of scrolling
+                button.style.display = 'flex';
+            } else {
+                button.style.display = 'none';
+            }
+        });
+
+        // Smooth scroll to top functionality
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
 
 </body>
 

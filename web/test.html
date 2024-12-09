@@ -1,130 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
+    <title>Accommodation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Slider</title>
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="footer.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+
     <style>
-        /* General Reset */
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            color: #333;
-        }
-
-        .promo-container {
+        .sec5hotel2 {
             display: flex;
-            flex-wrap: wrap;
-            max-width: 1200px;
-            margin: 50px auto;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
-
-        .text-section {
-            flex: 1;
-            padding: 40px;
-            background-color: #e6e2dd;
-        }
-
-        .text-section h4 {
-            font-size: 18px;
-            color: #7d7d7d;
-            margin-bottom: 10px;
-        }
-
-        .text-section h1 {
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
-
-        .text-section p {
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-
-        .text-section .highlight {
-            font-weight: bold;
-            color: #000;
-        }
-
-        .hoteldetails {
+            align-items: center;
             padding: 20px;
-            background-color: #f9f4f0;
-            border: 1px solid #d3cfc9;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
+            gap: 40px;
+            justify-content: space-between;
+            background-color: #F4E6D5;
         }
 
-
-        .hoteldetails p {
-            margin: 10px 0;
-        }
-
-        .hoteldetails .icon {
-            font-size: 16px;
-            margin-right: 10px;
-        }
-
-        .book-now {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #8b2c2f;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            text-decoration: none;
-        }
-
-        .book-now:hover {
-            background-color: #6f2225;
-        }
-
-        .image-section {
-            flex: 1;
-        }
-
-        .image-section img {
+        .coverleftnright {
+            display: flex;
             width: 100%;
+            gap: 30px;
+        }
+
+        .imagetwo-section img {
+            width: 100%;
+            max-width: 500px;
             height: auto;
-            display: block;
-            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .promotwo-container {
+            flex: 1;
+            border-radius: 10px;
+            padding: 20px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .text2hotel {
+            text-align: right;
+            /* Align text to the right */
+            margin-bottom: 20px;
+            /* Add space between text and hotel details */
+        }
+
+        .r-hoteldetails {
+            background-color: #910b7d;
+            border-radius: 10px;
+            padding: 20px 20px;
+            text-align: left;
+            flex-grow: 1;
+        }
+
+        .r-hoteldetails p {
+            margin: 15px 0;
+        }
+
+        .r-hoteldetails strong {
+            color: #49100B;
+        }
+
+        .hotel-facilities p {
+            margin-top: 5px;
+        }
+
+        .book {
+            background-color: #49100B;
+            color: #FFF;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            /* Align the button to the right */
+        }
+
+        .book img.right {
+            margin-left: 10px;
         }
     </style>
 </head>
 
 <body>
-
-    <div class="promo-container">
-        <div class="text-section">
-            <h4>Your Perfect Getaway Awaits in</h4>
-            <h1>DoubleTree By Hilton Melaka</h1>
-            <p>
-                This hotel is perfect for travelers who appreciate a blend of
-                <span class="highlight">modern luxury</span> and convenient amenities.
-            </p>
-            <div class="details">
-                <p><span class="icon">📍</span> Christ Church Malacca: ~ <strong>1.5 km</strong><br>
-                    Baba & Nyonya Heritage Museum: ~ <strong>2.2 km</strong></p>
-                <p><span class="icon">💰</span> From <strong>RM 380/night</strong>.</p>
-                <p><span class="icon">🏨</span> Panoramic views, outdoor pool, fitness center, dining options.</p>
+    <section class="sec5hotel2">
+        <div class="coverleftnright">
+            <!-- Left Image Section -->
+            <div class="imagetwo-section">
+                <img src="images/accommodation/hotelmelaka2.png" alt="Hotel Room Image">
             </div>
-            <button class="book-now">Book now &rarr;</button>
-        </div>
-        <div class="image-section">
-            <img src="hotel-image.jpg" alt="Hotel Bathroom">
-        </div>
-    </div>
 
+            <!-- Right Promo Container Section -->
+            <div class="promotwo-container">
+                <!-- Right Aligned Text Section -->
+                <div class="text2hotel">
+                    <p class="p1">Your Perfect Getaway Awaits in</p>
+                    <h1>Moty Hotel</h1>
+                    <p class="p2">
+                        With <span class="highlight">kid-friendly</span> amenities like a children's pool, Moty Hotel is
+                        an ideal choice for families seeking a comfortable stay.
+                    </p>
+                </div>
 
+                <!-- Left Aligned Hotel Details Section -->
+                <div class="r-hoteldetails">
+                    <p>
+                        <img class="icon" src="images/accommodation/hotellocation.png" alt="Location">
+                        Jonker Street: ~ <strong>1.2 km</strong><br>
+                    </p>
+                    <p class="baba">
+                        Baba & Nyonya Heritage Museum: ~ <strong>1.2 km</strong>
+                    </p>
+
+                    <!-- Price and Facilities Details -->
+                    <div>
+                        <p class="secondhoteldetails">
+                            <img class="icon" src="images/accommodation/hotelprice.png" alt="Price">
+                            From <strong>RM 200/night</strong>.
+                        </p>
+                        <p class="secondhoteldetails">
+                            <img class="icon" src="images/accommodation/hotelfacility.png" alt="Facilities">
+                            Kid-friendly amenities, pool, fitness center.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Book Button Aligned Right -->
+
+            </div>
+            <div>
+                <button class="book">
+                    <span>Book now</span>
+                    <img class="right" src="images/accommodation/rightarrow.png" alt="Right arrow">
+                </button>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>

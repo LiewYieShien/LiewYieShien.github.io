@@ -4,7 +4,7 @@
 <head>
     <title>Accommodation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="accommodation.css">
 
@@ -18,27 +18,29 @@
 <body>
     <header>
         <div id="nav">
-            <img src="images/logo.png" height="70px" class="logo">
+            <img src="images/general/logo.png" height="70px" class="logo">
         </div>
 
         <div class="info">
+
             <a href="#">Explore & Tips</a>
 
             <div class="menu-pyt">
                 <div class="icon-container">
                     <a href="#">Plan Your Trip</a>
-                    <img src="images/arrow.png" height="15px" class="icon">
+                    <img src="images/general/arrow.png" height="15px" class="icon">
                 </div>
                 <div class="submenu">
-                    <a href="transportation.html">Transportation</a>
+                    <a href="#">Transportation</a>
                     <a href="#">Accommodation</a>
                 </div>
             </div>
 
+
             <div class="menu-ptg">
                 <div class="icon-container">
                     <a href="#">Places To Go</a>
-                    <img src="images/arrow.png" height="15px" class="icon">
+                    <img src="images/general/arrow.png" height="15px" class="icon">
                 </div>
                 <div class="submenu">
                     <a href="#">Penang</a>
@@ -104,70 +106,56 @@
                     </div>
                 </div>
 
-                <script>
-                    let currentIndex = 0;
-                    const slider = document.querySelector('.slider');
-                    const images = document.querySelectorAll('.slider img');
-                    const totalImages = images.length;
+                <script src="slider.js"></script>
 
-                    // Function to clone images
-                    function cloneImages() {
-                        const imageArray = Array.from(images);
-                        imageArray.forEach((img) => {
-                            const clonedImage = img.cloneNode(true);
-                            slider.appendChild(clonedImage); // Append clone at the end
-                        });
-                    }
-
-                    // Function to shift images
-                    function shiftImages() {
-                        currentIndex = (currentIndex + 1) % totalImages;
-
-                        // Apply the transformation to shift images in a circular manner
-                        slider.style.transform = `translateX(-${currentIndex * (287 + 20)}px)`; // 287px is the width of the images + 20px margin
-
-                        // If we reach the last image, reset the position
-                        if (currentIndex === totalImages) {
-                            setTimeout(() => {
-                                slider.style.transition = 'none'; // Disable transition
-                                slider.style.transform = 'translateX(0)'; // Jump back to the start
-                                currentIndex = 0;
-
-                                // Enable transition again after reset
-                                setTimeout(() => {
-                                    slider.style.transition = 'transform 1s ease-in-out';
-                                }, 50);
-                            }, 1000); // Wait for the transition to finish before resetting
-                        }
-                    }
-
-                    // Start by cloning the images to repeat them
-                    cloneImages();
-
-                    // Start the image shift every 2 seconds
-                    setInterval(shiftImages, 2000);
-                </script>
             </div>
         </section>
+
+        <!-------------------------------------------------------------- right-------------------------------------------------------------------->
 
         <section class="sec4hotel1">
 
             <div class="promo-container">
                 <div class="text4hotel">
-                    <h4>Your Perfect Getaway Awaits in</h4>
+                    <p class="p1">Your Perfect Getaway Awaits in</p>
                     <h1>DoubleTree By Hilton Melaka</h1>
-                    <p>
+                    <p class="p2">
                         This hotel is perfect for travelers who appreciate a blend of
                         <span class="highlight">modern luxury</span> and convenient amenities.
                     </p>
+
+
                     <div class="hoteldetails">
-                        <p><span class="icon">📍</span> Christ Church Malacca: ~ <strong>1.5 km</strong><br>
-                            Baba & Nyonya Heritage Museum: ~ <strong>2.2 km</strong></p>
-                        <p><span class="icon">💰</span> From <strong>RM 380/night</strong>.</p>
-                        <p><span class="icon">🏨</span> Panoramic views, outdoor pool, fitness center, dining options.
+                        <p>
+                            <img class="icon" src="images/accommodation/hotellocation.png" alt="Location">
+                            Christ Church Malacca: ~ <strong>1.5 km</strong><br>
                         </p>
+                        <p class="baba">
+                            Baba & Nyonya Heritage Museum: ~ <strong>2.2 km</strong>
+                        </p>
+                        <!-- 3rd n 4 row -->
+                        <div class="adjustmargintop">
+                            <p class="secondhoteldetails"><img class="icon" src="images/accommodation/hotelprice.png"
+                                    alt="Location">
+                                From
+                                <strong>RM
+                                    380/night</strong>.
+                            </p>
+                            <p class="secondhoteldetails"><img class="icon" src="images/accommodation/hotelfacility.png"
+                                    alt="Location">
+                                Panoramic views, outdoor pool,
+                            </p>
+                            <p class="baba">
+                                fitness center, dining options. <strong>2.2 km</strong>
+                            </p>
+                        </div>
+
                     </div>
-                    <button class="book-now">Book now &rarr;</button>
+
+                    <button class="book">
+                        <span>Book now</span>
+                        <img class="right" src="images/accommodation/rightarrow.png" alt="Right arrow">
+                    </button>
                 </div>
                 <div class="image-section">
                     <img src="images/accommodation/hotelmelaka1.png" alt="Hotel Bathroom">
@@ -176,7 +164,116 @@
 
         </section>
 
+
+        <!-------------------------------------------------------------- left-------------------------------------------------------------------->
+        <section class="sec5hotel2">
+
+            <div class="coverleftnright">
+                <div class="imagetwo-section">
+                    <img src="images/accommodation/hotelmelaka2.png">
+                </div>
+
+
+                <div class="promotwo-container">
+                    <div class="text2hotel">
+                        <p class="p1">Your Perfect Getaway Awaits in</p>
+                        <h1>Moty Hotel</h1>
+                        <p class="p2">
+                            With <span class="highlight">kid-friendly</span> amenities like a children's
+                            pool, Moty Hotel is an ideal choice for
+                            families seeking a comfortable stay.​
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="r-hoteldetails">
+                            <p>
+                                <img class="icon" src="images/accommodation/hotellocation.png" alt="Location">
+                                Jonker Street: ~ <strong>1.2 km</strong><br>
+                            </p>
+                            <p class="baba">
+                                Baba & Nyonya Heritage Museum: ~ <strong>1.2 km</strong>
+                            </p>
+                            <!-- 3rd n 4 row -->
+                            <div>
+                                <p class="secondhoteldetails"><img class="icon"
+                                        src="images/accommodation/hotelprice.png" alt="Price">
+                                    From
+                                    <strong>RM
+                                        200/night</strong>.
+                                </p>
+                                <p class="secondhoteldetails"><img class="icon"
+                                        src="images/accommodation/hotelfacility.png" alt="Facilities">
+                                    Spacious rooms, indoor pool, sauna, on-site </p>
+                                <p class="baba">
+                                    restaurant.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <button class="book2">
+                            <span>Book now</span>
+                            <img class="right" src="images/accommodation/rightarrow.png" alt="Right arrow">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
     </div>
+
+    <section class="sec6hotel3">
+
+        <div class="promo-container">
+            <div class="text4hotel">
+                <p class="p1">Your Perfect Getaway Awaits in</p>
+                <h1>DoubleTree By Hilton Melaka</h1>
+                <p class="p2">
+                    This hotel is perfect for travelers who appreciate a blend of
+                    <span class="highlight">modern luxury</span> and convenient amenities.
+                </p>
+
+
+                <div class="hoteldetails">
+                    <p>
+                        <img class="icon" src="images/accommodation/hotellocation.png" alt="Location">
+                        Christ Church Malacca: ~ <strong>1.5 km</strong><br>
+                    </p>
+                    <p class="baba">
+                        Baba & Nyonya Heritage Museum: ~ <strong>2.2 km</strong>
+                    </p>
+                    <!-- 3rd n 4 row -->
+                    <div class="adjustmargintop">
+                        <p class="secondhoteldetails"><img class="icon" src="images/accommodation/hotelprice.png"
+                                alt="Location">
+                            From
+                            <strong>RM
+                                380/night</strong>.
+                        </p>
+                        <p class="secondhoteldetails"><img class="icon" src="images/accommodation/hotelfacility.png"
+                                alt="Location">
+                            Panoramic views, outdoor pool,
+                        </p>
+                        <p class="baba">
+                            fitness center, dining options. <strong>2.2 km</strong>
+                        </p>
+                    </div>
+
+                </div>
+
+                <button class="book">
+                    <span>Book now</span>
+                    <img class="right" src="images/accommodation/rightarrow.png" alt="Right arrow">
+                </button>
+            </div>
+            <div class="image-section">
+                <img src="images/accommodation/hotelmelaka1.png" alt="Hotel Bathroom">
+            </div>
+        </div>
+
+    </section>
 
 </body>
 
