@@ -84,6 +84,7 @@
 
 }
 
+
 .text1 {
     flex: 1;
     max-width: 50%;
@@ -154,7 +155,7 @@
 
 .text2 h2 {
     font-size: 48px;
-    margin-top: 60px;
+
     margin-bottom: 20px;
     color: #020C16;
 }
@@ -338,8 +339,9 @@
     }
 
 
-    /* 父容器統一設置 */
-    .malaccablog .penangblog,
+    /***** content **********/
+    .malaccablog,
+    .penangblog,
     .pahangblog,
     .perakblog {
         text-align: center;
@@ -358,15 +360,15 @@
         width: 100%;
         /* 確保子容器寬度填滿父容器 */
         /* 適當限制寬度，防止過大 */
-        flex-direction: column;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         flex-direction: column-reverse;
+
     }
 
     /* 確保內容不重疊的子容器 */
-    .content1,
+
     .content2,
     .content3,
     .content4 {
@@ -404,7 +406,20 @@
         /* 圖片居中，並與文字留空隙 */
         display: block;
         /* 保證圖片為塊級元素，避免與其他內容並列 */
-        margin-left: 2px;
+        margin-left: 20px;
+    }
+
+    .content3 {
+        display: flex;
+        /* 圖片與文字垂直排列 */
+        width: 100%;
+        /* 確保子容器寬度填滿父容器 */
+        /* 適當限制寬度，防止過大 */
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-direction: column-reverse;
+
     }
 
     /* 文字容器 */
@@ -417,7 +432,7 @@
         /* 確保文字容器寬度填滿父容器 */
         margin: 0;
         /* 移除多餘外邊距 */
-        text-align: left;
+
         align-items: center;
         justify-content: center;
     }
@@ -430,7 +445,10 @@
         font-size: 25px;
         /* 合適的標題字體 */
         margin-bottom: 15px;
+        text-align: center;
+        display: flex;
         /* 與段落文字留距 */
+        margin-top: 0px;
     }
 
     /* 段落文字 */
@@ -442,6 +460,42 @@
         /* 合適的段落文字字體 */
         line-height: 1.6;
         /* 提高行間距，增強閱讀性 */
+        text-align: left;
 
     }
+
+    /* reverse picture malacca*/
+    .text1 h2 {
+        order: 1;
+        /* 標題在第一位 */
+        display: flex;
+    }
+
+    .content1 .malaccapic {
+        order: 2;
+        /* 圖片在第二位 */
+    }
+
+    .content1 p {
+        order: 3;
+        /* 文字段落在第三位 */
+    }
+
+    /*pahangmobile reverse pic*/
+    .text3 h2 {
+        order: 1;
+        /* 標題在第一位 */
+        display: flex;
+    }
+
+    .content3 .pahangpic {
+        order: 2;
+        /* 圖片在第二位 */
+    }
+
+    .content3 p {
+        order: 3;
+        /* 文字段落在第三位 */
+    }
+
 }
