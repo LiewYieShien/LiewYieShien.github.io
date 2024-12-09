@@ -64,7 +64,6 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
         url(../images/blogsharing/melakariver.png);
     height: 100vh;
-    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -80,14 +79,11 @@
     max-width: 1200px;
     margin: 0 auto;
     gap: 20px;
-
-
 }
 
 
 .text1 {
     flex: 1;
-    max-width: 50%;
     text-align: left;
 }
 
@@ -104,6 +100,7 @@
     text-align: justify;
     margin: 0;
     color: #F6F6F6;
+    max-width: 600px;
 }
 
 .malaccapic {
@@ -119,7 +116,7 @@
     border-radius: 10px;
     object-fit: cover;
     display: block;
-    justify-content: center;
+
 }
 
 /*-------------------penang blog-----------------------------------*/
@@ -127,8 +124,13 @@
     background-color: #E2D5CA;
     background-size: cover;
     height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
     /* covers the entire section */
 }
+
+
 
 .content2 {
     font-family: 'Sweet Sans Pro', sans-serif;
@@ -136,29 +138,27 @@
     justify-content: space-between;
     display: flex;
     width: 100%;
-    height: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    gap: 20px;
+    gap: 80px;
     background-color: #E2D5CA;
-
-
-
 }
 
 .text2 {
     flex: 1;
-    max-width: 50%;
     text-align: left;
+
 
 }
 
 .text2 h2 {
     font-size: 48px;
 
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: #020C16;
 }
+
+
 
 .text2 p {
     font-size: 16px;
@@ -166,12 +166,12 @@
     text-align: justify;
     margin: 0;
     color: #020C16;
+    max-width: 600px;
 }
 
 .penangpic {
     max-width: 50%;
     margin-top: 60px;
-
 }
 
 .penangpic img {
@@ -191,14 +191,8 @@
     background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
 }
-
-
 
 .content3 {
     font-family: 'Sweet Sans Pro', sans-serif;
@@ -209,16 +203,14 @@
     max-width: 1200px;
     margin: 0 auto;
     gap: 20px;
-    z-index: 2;
     margin-bottom: 60px;
 
 }
 
 .text3 {
     flex: 1;
-    max-width: 50%;
     text-align: left;
-    margin-left: 30px;
+
 }
 
 .text3 h2 {
@@ -233,13 +225,14 @@
     text-align: justify;
     margin: 0;
     color: #DDDCDB;
-    max-width: 550px;
+    max-width: 600px;
+    margin-bottom: 20px;
 }
 
 .pahangpic {
 
     max-width: 50%;
-    margin-top: 60px;
+    margin-top: 70px;
     margin-right: 50px;
 
 }
@@ -250,7 +243,6 @@
     border-radius: 10px;
     object-fit: cover;
     display: block;
-    justify-content: center;
     flex: 1;
 }
 
@@ -260,7 +252,11 @@
     background-size: cover;
     /* covers the entire section */
     height: 100vh;
+    width: 100%;
 }
+
+
+
 
 .content4 {
     font-family: 'Sweet Sans Pro', sans-serif;
@@ -271,9 +267,8 @@
     max-width: 1200px;
     margin: 0 auto;
     gap: 20px;
-    z-index: 2;
-
 }
+
 
 .perakpic {
     flex: 1;
@@ -291,19 +286,21 @@
     justify-content: center;
 }
 
+
 .text4 {
     flex: 1;
-    max-width: 50%;
     text-align: left;
-    margin-top: 30px;
+
 }
+
 
 .text4 h2 {
     font-size: 48px;
     margin-bottom: 30px;
-    margin-top: 30px;
     color: #020C16;
 }
+
+
 
 .text4 p {
     font-size: 16px;
@@ -311,7 +308,7 @@
     text-align: justify;
     margin: 0;
     color: #020C16;
-    max-width: 550px;
+    max-width: 600px;
 
 }
 
@@ -339,16 +336,45 @@
     }
 
 
-    /***** content **********/
-    .malaccablog,
-    .penangblog,
-    .pahangblog,
+    /************** content **********/
+
+
+    .malaccablog {
+        text-align: center;
+        /* 文字置中 */
+        align-items: center;
+        /* 增加區塊內邊距 */
+        height: 1150px;
+        /* 背景至少 1000px 高 */
+        flex-direction: column;
+    }
+
+    .penangblog {
+        text-align: center;
+        /* 文字置中 */
+        align-items: center;
+        /* 增加區塊內邊距 */
+        height: 1150px;
+        /* 背景至少 1000px 高 */
+        flex-direction: column;
+    }
+
+    .pahangblog {
+        text-align: center;
+        /* 文字置中 */
+        align-items: center;
+        /* 增加區塊內邊距 */
+        height: 1150px;
+        /* 背景至少 1000px 高 */
+        flex-direction: column;
+    }
+
     .perakblog {
         text-align: center;
         /* 文字置中 */
         align-items: center;
         /* 增加區塊內邊距 */
-        height: 1400px;
+        height: 1150px;
         /* 背景至少 1000px 高 */
         flex-direction: column;
 
@@ -367,20 +393,41 @@
 
     }
 
-    /* 確保內容不重疊的子容器 */
+    .content2 {
+        display: flex;
+        /* 圖片與文字垂直排列 */
+        width: 100%;
+        /* 確保子容器寬度填滿父容器 */
+        /* 適當限制寬度，防止過大 */
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0px;
+    }
 
-    .content2,
-    .content3,
+    .content3 {
+        display: flex;
+        /* 圖片與文字垂直排列 */
+        width: 100%;
+        /* 確保子容器寬度填滿父容器 */
+        /* 適當限制寬度，防止過大 */
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-direction: column-reverse;
+
+    }
+
     .content4 {
         display: flex;
         /* 圖片與文字垂直排列 */
         width: 100%;
         /* 確保子容器寬度填滿父容器 */
         /* 適當限制寬度，防止過大 */
-        flex-direction: column;
         justify-content: center;
         align-items: center;
-
+        flex-direction: column;
+        gap: 0px;
     }
 
     /* 圖片設置，防止跑位 */
@@ -409,58 +456,27 @@
         margin-left: 20px;
     }
 
-    .content3 {
-        display: flex;
-        /* 圖片與文字垂直排列 */
-        width: 100%;
-        /* 確保子容器寬度填滿父容器 */
-        /* 適當限制寬度，防止過大 */
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        flex-direction: column-reverse;
-
-    }
-
-    /* 文字容器 */
     .text1,
     .text2,
     .text3,
     .text4 {
-
         width: 100%;
         /* 確保文字容器寬度填滿父容器 */
         margin: 0;
         /* 移除多餘外邊距 */
-
         align-items: center;
         justify-content: center;
     }
 
     /* 標題文字 */
-    .text1 h2,
-    .text2 h2,
-    .text3 h2,
-    .text4 h2 {
-        font-size: 25px;
-        /* 合適的標題字體 */
-        margin-bottom: 15px;
-        text-align: center;
-        display: flex;
-        /* 與段落文字留距 */
-        margin-top: 0px;
-    }
 
-    /* 段落文字 */
-    .text1 p,
-    .text2 p,
-    .text3 p,
-    .text4 p {
+    .text1 p {
         font-size: 16px;
         /* 合適的段落文字字體 */
         line-height: 1.6;
         /* 提高行間距，增強閱讀性 */
         text-align: left;
+        margin: 40px;
 
     }
 
@@ -469,6 +485,94 @@
         order: 1;
         /* 標題在第一位 */
         display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 30px;
+        font-size: 30px;
+        /* 合適的標題字體 */
+        text-align: center;
+        display: flex;
+        /* 與段落文字留距 */
+        margin-top: 0px;
+
+    }
+
+    .text2 h2 {
+        order: 1;
+        /* 標題在第一位 */
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 30px;
+        font-size: 30px;
+        /* 合適的標題字體 */
+        text-align: center;
+        display: flex;
+        /* 與段落文字留距 */
+        margin-top: 0px;
+
+    }
+
+    .text2 p {
+        font-size: 16px;
+        /* 合適的段落文字字體 */
+        line-height: 1.6;
+        /* 提高行間距，增強閱讀性 */
+        text-align: left;
+        margin: 40px;
+
+    }
+
+    .text3 h2 {
+        order: 1;
+        /* 標題在第一位 */
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 30px;
+        font-size: 30px;
+        /* 合適的標題字體 */
+        text-align: center;
+        display: flex;
+        /* 與段落文字留距 */
+        margin-top: 0px;
+
+    }
+
+    .text3 p {
+        font-size: 16px;
+        /* 合適的段落文字字體 */
+        line-height: 1.6;
+        /* 提高行間距，增強閱讀性 */
+        text-align: left;
+        margin: 40px;
+    }
+
+    .text4 h2 {
+
+        order: 1;
+        /* 標題在第一位 */
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 30px;
+        font-size: 30px;
+        /* 合適的標題字體 */
+        text-align: center;
+        display: flex;
+        /* 與段落文字留距 */
+        margin-top: 0px;
+
+    }
+
+    .text4 p {
+
+        font-size: 16px;
+        /* 合適的段落文字字體 */
+        line-height: 1.6;
+        /* 提高行間距，增強閱讀性 */
+        text-align: left;
+        margin: 40px;
     }
 
     .content1 .malaccapic {
@@ -481,12 +585,8 @@
         /* 文字段落在第三位 */
     }
 
-    /*pahangmobile reverse pic*/
-    .text3 h2 {
-        order: 1;
-        /* 標題在第一位 */
-        display: flex;
-    }
+    /*--------------------pahangmobile reverse pic*----------------------*/
+
 
     .content3 .pahangpic {
         order: 2;
@@ -497,5 +597,4 @@
         order: 3;
         /* 文字段落在第三位 */
     }
-
 }
