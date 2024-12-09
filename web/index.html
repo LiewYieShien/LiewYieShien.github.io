@@ -95,7 +95,6 @@
     <!---------------------------------------------------------- Map------------------------------------------------------------>
     <div class="page">
         <section class="map">
-
             <div class="map-content">
                 <p>Discover Malaysia</p>
             </div>
@@ -104,13 +103,12 @@
                 <img class="dashcurve" src="images/homepage/image.png">
                 <div class="map-container">
                     <!-- Dots for locations -->
-                    <div class="location" style="top: 72%; left: -20%;">Penang</div>
-                    <div class="location" style="top: 53%; left: 26%;">Perak</div>
-                    <div class="location" style="top: 72%; left: 72%;">Pahang</div>
-                    <div class="location" style="top: 53%; left: 113%;">Malacca</div>
+                    <div class="location penang">Penang</div>
+                    <div class="location perak">Perak</div>
+                    <div class="location pahang">Pahang</div>
+                    <div class="location malacca">Malacca</div>
                 </div>
             </div>
-
 
             <!-- Button with Text and Icon -->
             <button class="exploremore">
@@ -118,133 +116,133 @@
                 <img class="right" src="images/homepage/b-rightarrow.png" alt="Right arrow">
             </button>
         </section>
-    </div>
 
 
-    <!----------------------------------------------------- Find ur interest ------------------------------------------------>
+        <!----------------------------------------------------- Find ur interest ------------------------------------------------>
 
-    <div class="page">
-        <section class="interest">
+        <div class="page">
+            <section class="interest">
 
-            <div class="interest-content">
-                <p>Find your interest</p>
-            </div>
+                <div class="interest-content">
+                    <p>Find your interest</p>
+                </div>
 
-            <section class="circle-section">
-                <div class="circle-container">
-                    <div class="circle">
-                        <img src="images/homepage/adventure.avif" alt="Image 1">
+                <section class="circle-section">
+                    <div class="circle-container">
+                        <div class="circle">
+                            <img src="images/homepage/adventure.avif" alt="Image 1">
 
+                        </div>
+                        <div class="circle">
+                            <img src="images/homepage/city.jpg" alt="Image 2">
+                        </div>
+                        <div class="circle">
+                            <img src="images/homepage/nature.jpg" alt="Image 3">
+                        </div>
                     </div>
-                    <div class="circle">
-                        <img src="images/homepage/city.jpg" alt="Image 2">
+                </section>
+
+
+                <div class="cirtextbyrow">
+                    <div>
+                        <h1>Adventure</h1>
+                        <p class="cirsmallest">Where Every Journey Reveals a <br> New World of Wonders</p>
                     </div>
-                    <div class="circle">
-                        <img src="images/homepage/nature.jpg" alt="Image 3">
+                    <div>
+                        <h1>Cityscape</h1>
+                        <p class="cirsmallest">Immerse Yourself in the Thriving <br> Heartbeat of Urban Life</p>
+                    </div>
+                    <div>
+                        <h1>Nature</h1>
+                        <p class="cirsmallest">Let the Wild Landscapes Ignite <br> Your Sense of Discovery</p>
                     </div>
                 </div>
+
             </section>
-
-            <div class="cirtextbyrow">
-                <div>
-                    <h1>Adventure</h1>
-                    <p>Where Every Journey Reveals a <br> New World of Wonders</p>
-                </div>
-                <div>
-                    <h1>Cityscape</h1>
-                    <p>Immerse Yourself in the Thriving <br> Heartbeat of Urban Life</p>
-                </div>
-                <div>
-                    <h1>Nature</h1>
-                    <p>Let the Wild Landscapes Ignite <br> Your Sense of Discovery</p>
-                </div>
-            </div>
-
-        </section>
-    </div>
-
-
-    <!--------------------------------------------------- Footer Section -------------------------------------------------->
-    <section class="footer">
-        <div>
-            <h1>
-                Wishing you memorable journeys in Malaysia!
-            </h1>
-            <p>
-                Making Malaysian travel easy and accessible.
-            </p>
         </div>
 
-        <div>
-            <a href="#">
-                <button class="explore">
-                    <span>Start exploring</span>
-                    <img class="search" src="images/general/search.png" alt="Search">
-                </button>
-            </a>
-        </div>
 
-        <hr />
-
-        <div class="footer-menu-container">
+        <!--------------------------------------------------- Footer Section -------------------------------------------------->
+        <section class="footer">
             <div>
-                <a href="https://www.facebook.com/MalaysiaFoodandTravel">
-                    <button class="socialmedia">
-                        <img src="images/general/facebook.png" alt="Facebook" height="25" />
-                    </button>
-                </a>
-                <a href="https://www.instagram.com/malaysiafoodandtravel/">
-                    <button class="socialmedia">
-                        <img src="images/general/instagram.png" alt="Instagram" height="25" />
-                    </button>
-                </a>
-                <a href="https://www.tiktok.com/@malaysiafoodandtravel">
-                    <button class="socialmedia">
-                        <img src="images/general/tiktok.png" alt="TikTok" height="25" />
-                    </button>
-                </a>
-            </div>
-
-            <div class="footer-menu-bar">
-                <a href="#">Home</a>
-                <a href="#">Explore & Tips</a>
-                <a href="#">Plan Your Trip</a>
-                <a href="#">Places To Go</a>
-                <a href="#">Blog Sharing</a>
-            </div>
-
-            <div>
+                <h1>
+                    Wishing you memorable journeys in Malaysia!
+                </h1>
                 <p>
-                    © 2024 Explore.my
+                    Making Malaysian travel easy and accessible.
                 </p>
             </div>
-        </div>
-    </section>
 
-    <!--------------------------------------------------- Back To Top Button -------------------------------------------------->
-    <button class="back-to-top" onclick="scrollToTop()">
-        <img class="bttimg" src="images/general/top.png" alt="Back to Top">
-    </button>
+            <div>
+                <a href="#">
+                    <button class="explore">
+                        <span>Start exploring</span>
+                        <img class="search" src="images/general/search.png" alt="Search">
+                    </button>
+                </a>
+            </div>
 
-    <script>
-        // Show or hide the "Back to Top" button based on scroll position
-        window.addEventListener('scroll', function () {
-            const button = document.querySelector('.back-to-top');
-            if (window.scrollY > 100) { // Show after 100px of scrolling
-                button.style.display = 'flex';
-            } else {
-                button.style.display = 'none';
-            }
-        });
+            <hr />
 
-        // Smooth scroll to top functionality
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
+            <div class="footer-menu-container">
+                <div>
+                    <a href="https://www.facebook.com/MalaysiaFoodandTravel">
+                        <button class="socialmedia">
+                            <img src="images/general/facebook.png" alt="Facebook" height="25" />
+                        </button>
+                    </a>
+                    <a href="https://www.instagram.com/malaysiafoodandtravel/">
+                        <button class="socialmedia">
+                            <img src="images/general/instagram.png" alt="Instagram" height="25" />
+                        </button>
+                    </a>
+                    <a href="https://www.tiktok.com/@malaysiafoodandtravel">
+                        <button class="socialmedia">
+                            <img src="images/general/tiktok.png" alt="TikTok" height="25" />
+                        </button>
+                    </a>
+                </div>
+
+                <div class="footer-menu-bar">
+                    <a href="#">Home</a>
+                    <a href="#">Explore & Tips</a>
+                    <a href="#">Plan Your Trip</a>
+                    <a href="#">Places To Go</a>
+                    <a href="#">Blog Sharing</a>
+                </div>
+
+                <div>
+                    <p>
+                        © 2024 Explore.my
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--------------------------------------------------- Back To Top Button -------------------------------------------------->
+        <button class="back-to-top" onclick="scrollToTop()">
+            <img class="bttimg" src="images/general/top.png" alt="Back to Top">
+        </button>
+
+        <script>
+            // Show or hide the "Back to Top" button based on scroll position
+            window.addEventListener('scroll', function () {
+                const button = document.querySelector('.back-to-top');
+                if (window.scrollY > 100) { // Show after 100px of scrolling
+                    button.style.display = 'flex';
+                } else {
+                    button.style.display = 'none';
+                }
             });
-        }
-    </script>
+
+            // Smooth scroll to top functionality
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+        </script>
 
 </body>
 
