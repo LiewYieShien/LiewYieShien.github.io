@@ -462,10 +462,10 @@
 .r-hoteldetails {
     background-color: #C0B1A1;
     position: relative;
-    bottom: 25px;
-    right: -195px;
+    bottom: 70px;
+    right: -120px;
     padding: 20px;
-    width: 60%;
+    width: 70%;
     border-radius: 15px;
 }
 
@@ -491,6 +491,13 @@
     padding: 40px;
     text-align: right;
     /* Align the text section to the right */
+}
+
+.text2hotel {
+    flex: 2;
+    max-width: 600px;
+    margin-bottom: 50px;
+    padding: 40px;
 }
 
 .text2hotel h1 {
@@ -525,7 +532,8 @@
     cursor: pointer;
     border: none;
     position: relative;
-    left: 480px;
+    bottom: 30px;
+    left: 465px;
     z-index: 5;
     transition: background-color 0.3s, transform 0.3s;
 }
@@ -598,9 +606,51 @@
 .r6-hoteldetails {
     background-color: #F2E5DA;
     position: relative;
-    bottom: 25px;
+    bottom: 70px;
     right: -195px;
     padding: 20px;
     width: 60%;
     border-radius: 15px;
+}
+
+
+/* Button Styles */
+.book4 {
+    width: auto;
+    padding: 15px 25px;
+    background-color: #49100B;
+    border-radius: 25px;
+    display: flex;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    bottom: 30px;
+    left: 490px;
+    z-index: 5;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* -----------Text---------------- */
+.book4 span {
+    padding-left: 10px;
+    color: #E6DFD5;
+    font-size: 18px;
+}
+
+/* -----------Icon---------------- */
+.book4 .right {
+    margin-left: 10px;
+    width: 15px;
+    height: auto;
+}
+
+/* Hover Effect */
+.book4:hover {
+    background-color: #E6DFD5;
+    transform: scale(1.1);
+}
+
+
+.book4:hover span {
+    color: #9f0d08;
 }
