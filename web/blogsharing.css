@@ -10,7 +10,7 @@
     font-family: 'Sweet Sans Pro', sans-serif;
     height: 100vh;
     /* Full screen height */
-    background: url('image.leqian/bloghero.png') no-repeat center center;
+    background: url('images/blogsharing/bloghero.png') no-repeat center center;
     background-size: cover;
     /* covers the entire section */
     display: flex;
@@ -62,7 +62,7 @@
 /*------------------------malacca blog---------------------------*/
 .malaccablog {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url(image.leqian/melakariver.png);
+        url(images/blogsharing/melakariver.png);
     height: 100vh;
     height: 100vh;
     background-size: cover;
@@ -184,11 +184,11 @@
 
 /*-------------------pahang blog-----------------------------------*/
 .pahangblog {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(image.leqian/genting.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/blogsharing/genting.png);
 
     background-size: cover;
     background-repeat: no-repeat;
-    background-: center center;
+    background-position: center center;
     width: 100%;
 
     display: flex;
@@ -339,8 +339,7 @@
 
 
     /* 父容器統一設置 */
-    .malaccablog,
-    .penangblog,
+    .malaccablog .penangblog,
     .pahangblog,
     .perakblog {
         text-align: center;
@@ -351,6 +350,19 @@
         /* 背景至少 1000px 高 */
         flex-direction: column;
 
+    }
+
+    .content1 {
+        display: flex;
+        /* 圖片與文字垂直排列 */
+        width: 100%;
+        /* 確保子容器寬度填滿父容器 */
+        /* 適當限制寬度，防止過大 */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     /* 確保內容不重疊的子容器 */
@@ -392,7 +404,7 @@
         /* 圖片居中，並與文字留空隙 */
         display: block;
         /* 保證圖片為塊級元素，避免與其他內容並列 */
-        margin-left: 20px;
+        margin-left: 2px;
     }
 
     /* 文字容器 */

@@ -110,22 +110,18 @@
 .localetiquette {
     font-family: 'Sweet Sans Pro', sans-serif;
     background-color: #d6cbbbe3;
-    background-repeat: no-repeat;
-    background-position: center center;
-    /* Center the background image */
-    background-size: cover;
-    /* Ensure the image covers the section */
+
     display: flex;
     justify-content: center;
     /* Center horizontally */
     align-items: center;
     /* Center vertically */
-    height: 100vh;
     /* Full viewport height */
     padding: 20px;
     /* Optional padding */
-    width: 100%;
+    gap: 20px;
 }
+
 
 
 .picmosque img {
@@ -138,9 +134,17 @@
     display: block;
     /* Ensure the image behaves as a block-level element */
     margin-right: 120px;
+}
 
-
-
+.picmosquemobile img {
+    width: 10px;
+    /* 圖片寬度填滿容器 */
+    height: 10px;
+    /* 保持比例 */
+    margin-left: -300px;
+    border-radius: 9.39px;
+    object-fit: cover;
+    display: block;
 }
 
 .content2 {
@@ -239,9 +243,6 @@
 }
 
 
-
-
-
 @media screen and (max-width: 600px) {
     .hero {
         font-family: 'Sweet Sans Pro', sans-serif;
@@ -282,7 +283,7 @@
         flex-direction: column;
         text-align: center;
         align-items: center;
-        height: 1000px;
+        height: 900px;
         justify-content: center;
 
     }
@@ -291,13 +292,25 @@
         flex-direction: column;
         text-align: center;
         align-items: center;
-        height: 1100px;
+        height: 800px;
         justify-content: center;
+        margin-top: 40px;
+        margin-left: 50px;
 
     }
 
-    .picturetraveltips img,
-    .picmosque img,
+    .picturetraveltips img {
+        width: 259.8px;
+        /* 圖片寬度填滿容器 */
+        height: 321px;
+        /* 保持比例 */
+        margin: 0 auto 10px;
+        /* 圖片居中，並與文字留空隙 */
+        display: block;
+        /* 保證圖片為塊級元素，避免與其他內容並列 */
+        margin-top: 50px;
+    }
+
     .picclimate img {
         width: 259.8px;
         /* 圖片寬度填滿容器 */
@@ -307,6 +320,24 @@
         /* 圖片居中，並與文字留空隙 */
         display: block;
         /* 保證圖片為塊級元素，避免與其他內容並列 */
+        margin-top: 40px;
+    }
+
+    .picmosquemobile img {
+        width: 259.8px;
+        /* 圖片寬度填滿容器 */
+        height: 321px;
+        /* 保持比例 */
+        margin: 0 auto 10px;
+        /* 圖片居中，並與文字留空隙 */
+        display: block;
+        /* 保證圖片為塊級元素，避免與其他內容並列 */
+        justify-content: center;
+        align-items: center;
+        margin-right: 55px;
+        flex-direction: column;
+        padding-bottom: 120px;
+
     }
 
     .text,
@@ -328,6 +359,15 @@
     .text3 h2 {
         font-size: 25px;
         text-align: center;
+    }
+
+    .text2 h2 {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-right: 50px;
+        padding-top: 40px;
+
     }
 
     .text p,
