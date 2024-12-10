@@ -54,13 +54,10 @@
 
             <a href="BlogSharing.html" class="blogs">Blog Sharing</a>
         </div>
-    </header>
-    <!---------------------hamburger menu mobile--------------------------->
-    <header>
-        <a href="http://127.0.0.1:5500/web/index.html">
-            <div id="nav">
-                <img src="images/general/logo.png" height="70px" class="logo">
-            </div>
+
+        <!---------------------hamburger menu mobile--------------------------->
+        <a href="index.html">
+
         </a>
         <div class="hamburger-menu" onclick="toggleMenu()">
             <div class="bar"></div>
@@ -68,7 +65,7 @@
             <div class="bar"></div>
         </div>
         <div class="info" id="menu">
-            <a href="http://127.0.0.1:5500/web/explore&tips.html">Explore & Tips</a>
+            <a href="explore&tips.html">Explore & Tips</a>
 
             <div class="menu-pyt">
                 <div class="icon-container" onclick="toggleSubmenu('submenu-pyt')">
@@ -76,8 +73,8 @@
                     <img src="images/general/arrow.png" height="15px" class="icon">
                 </div>
                 <div class="submenu" id="submenu-pyt">
-                    <a href="http://127.0.0.1:5500/web/transportation.html">Transportation</a>
-                    <a href="http://127.0.0.1:5500/web/accommodation.html">Accommodation</a>
+                    <a href="transportation.html">Transportation</a>
+                    <a href="accommodation.html">Accommodation</a>
                 </div>
             </div>
 
@@ -94,20 +91,23 @@
                 </div>
             </div>
 
-            <a href="http://127.0.0.1:5500/web/BlogSharing.html" class="blogs">Blog Sharing</a>
+            <a href="BlogSharing.html" class="blogs">Blog Sharing</a>
         </div>
-    </header>
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById('menu');
-            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
-        }
 
-        function toggleSubmenu(submenuId) {
-            const submenu = document.getElementById(submenuId);
-            submenu.style.display = submenu.style.display === 'flex' ? 'none' : 'flex';
-        }
-    </script>
+        <script>
+            function toggleMenu() {
+                const menu = document.getElementById('menu');
+                menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+            }
+
+            function toggleSubmenu(submenuId) {
+                const submenu = document.getElementById(submenuId);
+                submenu.style.display = submenu.style.display === 'flex' ? 'none' : 'flex';
+            }
+        </script>
+    </header>
+
+
     <!--------------------------------------------------- Destination Section -------------------------------------------------->
     <section class="destination-section-background">
         <div class="destination-container">
@@ -258,6 +258,8 @@
             });
         }
     </script>
+
+
 </body>
 
 </html>
