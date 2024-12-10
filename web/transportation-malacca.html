@@ -54,57 +54,6 @@
 
             <a href="BlogSharing.html" class="blogs">Blog Sharing</a>
         </div>
-
-        <!---------------------hamburger menu mobile--------------------------->
-        <a href="index.html">
-
-        </a>
-        <div class="hamburger-menu" onclick="toggleMenu()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        <div class="info" id="menu">
-            <a href="explore&tips.html">Explore & Tips</a>
-
-            <div class="menu-pyt">
-                <div class="icon-container" onclick="toggleSubmenu('submenu-pyt')">
-                    <a href="#">Plan Your Trip</a>
-                    <img src="images/general/arrow.png" height="15px" class="icon">
-                </div>
-                <div class="submenu" id="submenu-pyt">
-                    <a href="transportation.html">Transportation</a>
-                    <a href="accommodation.html">Accommodation</a>
-                </div>
-            </div>
-
-            <div class="menu-ptg">
-                <div class="icon-container" onclick="toggleSubmenu('submenu-ptg')">
-                    <a href="#">Places To Go</a>
-                    <img src="images/general/arrow.png" height="15px" class="icon">
-                </div>
-                <div class="submenu" id="submenu-ptg">
-                    <a href="#">Penang</a>
-                    <a href="#">Perak</a>
-                    <a href="#">Pahang</a>
-                    <a href="#">Malacca</a>
-                </div>
-            </div>
-
-            <a href="BlogSharing.html" class="blogs">Blog Sharing</a>
-        </div>
-
-        <script>
-            function toggleMenu() {
-                const menu = document.getElementById('menu');
-                menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
-            }
-
-            function toggleSubmenu(submenuId) {
-                const submenu = document.getElementById(submenuId);
-                submenu.style.display = submenu.style.display === 'flex' ? 'none' : 'flex';
-            }
-        </script>
     </header>
 
 
