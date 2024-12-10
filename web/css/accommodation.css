@@ -862,7 +862,7 @@
     }
 
     .promotwo-container {
-        background-color: #7d7d7d;
+        background-color: #E2D5CA;
         top: -150px;
         width: 445px;
         margin: 0 0;
@@ -897,7 +897,7 @@
         bottom: 70px;
         left: 0px;
         padding: 0px;
-        background-color: #db8b89;
+        background-color: #FFFFFF;
         width: 100%;
         margin: 0px 0;
         padding-top: 10px;
@@ -948,26 +948,11 @@
     /* -----------------------------------------Section 7------------------------------ */
 
     .sec7hotel4 {
-        background-size: 300%;
-        display: flex;
         flex-direction: column;
-        /* Stack content vertically */
-        align-items: center;
-        padding: 20px;
-        gap: 20px;
-        /* Adds spacing between elements */
+        height: 100vh;
+        padding: 0px;
     }
 
-    /* Cover Left and Right Container */
-    .coverleftnright {
-        display: flex;
-        flex-direction: column;
-        /* Stack the image and promo section */
-        align-items: center;
-        /* Center content horizontally */
-        width: 100%;
-        /* Full width on mobile */
-    }
 
     /* Image Section */
     .sec7hotel4 .imagetwo-section {
@@ -975,30 +960,23 @@
         margin-top: -18px;
     }
 
+    .sec7hotel4 .promo-container {
+        bottom: 50px;
+        margin-left: 0px;
+        flex-direction: column;
+        align-items: center;
+    }
 
     /* Button */
     .book4 {
         width: 100%;
-        /* Full width for mobile */
         padding: 12px 20px;
-        /* Adjusted padding for touch devices */
-        background-color: #8C5A42;
-        color: white;
-        font-size: 16px;
-        text-align: center;
-        border: none;
-        border-radius: 20px;
-        /* Rounded corners for a modern look */
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        transition: background-color 0.3s ease, transform 0.2s ease;
+        margin-right: 100px;
     }
 
     .book4:hover {
         background-color: #DAB69D;
-        transform: scale(1.05);
+        transform: scale(1);
         /* Subtle hover effect */
     }
 
