@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <title>Onboarding Screens Slider</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        .slider {
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .slide {
+            min-width: 33.33%;
+            /* Show three slides at once */
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.5s ease-in-out;
+            text-align: center;
+        }
+
+        .slide img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .slide h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .slide p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .slider-controls {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            display: block;
+            /* Show controls in both desktop and mobile */
+        }
+
+        .slider-controls button {
+            width: 12px;
+            height: 12px;
+            border: none;
+            border-radius: 50%;
+            background-color: #ccc;
+            cursor: pointer;
+            outline: none;
+            display: none;
+            /* hide it */
+        }
+
+        .slider-controls button.active {
+            background-color: #333;
+        }
+
+        .nav-buttons {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+            display: none;
+            /* Hide navigation buttons initially */
+        }
+
+        .nav-buttons button {
+            margin: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            padding: 10px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-buttons button:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        /* Media query for mobile screens, to show controls */
+        @media (max-width: 768px) {
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                overflow: hidden;
+            }
+
+            .slider {
+                display: flex;
+                overflow: hidden;
+                position: relative;
+                width: 100%;
+                height: 100vh;
+            }
+
+            .slide {
+                min-width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transition: transform 0.5s ease-in-out;
+                text-align: center;
+            }
+
+            .slide img {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                margin-bottom: 20px;
+            }
+
+            .slide h1 {
+                font-size: 2rem;
+                margin-bottom: 10px;
+            }
+
+            .slide p {
+                font-size: 1.2rem;
+                color: #555;
+            }
+
+            .slider-controls {
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                display: flex;
+                gap: 10px;
+            }
+
+            .slider-controls button {
+                display: flex;
+                width: 12px;
+                height: 12px;
+                border: none;
+                border-radius: 50%;
+                background-color: #ccc;
+                cursor: pointer;
+                outline: none;
+            }
+
+            .slider-controls button.active {
+                background-color: #333;
+                border-radius: 30px;
+            }
+
+            .nav-buttons {
+                position: absolute;
+                top: 50%;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                transform: translateY(-50%);
+            }
+
+            .nav-buttons button {
+                margin: 20px;
+                background-color: rgba(0, 0, 0, 0.5);
+                border: none;
+                color: white;
+                font-size: 1.5rem;
+                padding: 10px;
+                width: 50px;
+                /* Equal width and height for a circle */
+                height: 50px;
+                border-radius: 50%;
+                /* Makes the button circular */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+            .nav-buttons button:hover {
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slider">
+        <div class="slide">
+            <img src="images/homepage/adventure.jpg" alt="Adventure">
+            <h1>Adventure</h1>
+            <p>Where Every Journey Reveals a <br> New World of Wonders</p>
+        </div>
+        <div class="slide">
+            <img src="images/homepage/city.jpg" alt="Cityscape">
+            <h1>Cityscape</h1>
+            <p>Immerse Yourself in the Thriving <br> Heartbeat of Urban Life</p>
+        </div>
+        <div class="slide">
+            <img src="images/homepage/nature.jpg" alt="Nature">
+            <h1>Nature</h1>
+            <p>Let the Wild Landscapes Ignite <br> Your Sense of Discovery</p>
+        </div>
+    </div>
+
+    <div class="slider-controls">
+        <!-- Each button corresponds to a slide -->
+        <button class="active"></button>
+        <button></button>
+        <button></button>
+    </div>
+
+    <div class="nav-buttons">
+        <button id="prev"><i class="fas fa-chevron-left"></i></button>
+        <button id="next"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => { // Ensure the DOM is fully loaded
+
+            const slides = document.querySelectorAll('.slide');
+            const buttons = document.querySelectorAll('.slider-controls button');
+            const prevButton = document.getElementById('prev');
+            const nextButton = document.getElementById('next');
+            let currentIndex = 0;
+
+            function updateSlider(index) {
+                const offset = -index * 100;  // Corrected string interpolation
+                slides.forEach(slide => {
+                    slide.style.transform = `translateX(${offset}%)`; // Apply translateX based on the index
+                });
+                buttons.forEach((button, i) => {
+                    button.classList.toggle('active', i === index);  // Toggle the active class for the button
+                });
+            }
+
+            buttons.forEach((button, index) => {
+                button.addEventListener('click', () => {
+                    currentIndex = index;
+                    updateSlider(currentIndex); // Update the slider when a dot is clicked
+                });
+            });
+
+            prevButton.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + slides.length) % slides.length;  // Loop back to the last slide
+                updateSlider(currentIndex); // Update the slider when the previous button is clicked
+            });
+
+            nextButton.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % slides.length; // Loop to the first slide after the last
+                updateSlider(currentIndex); // Update the slider when the next button is clicked
+            });
+
+            // Initialize the first slide
+            updateSlider(currentIndex);
+        });
+    </script>
+
+</body>
+
+</html>
