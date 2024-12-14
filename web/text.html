@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>Explore Malaysia | Blog Sharing</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/general.css" />
+
+
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        @font-face {
+            font-family: 'Sweet Sans Pro';
+            src: url('fonts/SweetSansProMedium.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* Hero Section Styles */
+        .hero {
+            font-family: 'Sweet Sans Pro', sans-serif;
+            height: 100vh;
+            /* Full screen height */
+            background: url('../web/images/blogsharing/bloghero.png') no-repeat center center;
+            background-size: cover;
+            /* covers the entire section */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #F6F6F6;
+
+            padding-top: 0;
+            /* For overlay effects */
+        }
+
+        /* Optional: Add a dark overlay to make text stand out */
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+
+
+
+        /* Hero Content */
+        .hero-content {
+            font-family: 'Sweet Sans Pro';
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            /* 讓 h1 和 p 垂直排列 */
+        }
+
+        .hero h1 {
+            font-size: 80px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero p {
+            font-size: 25px;
+            margin-top: -70px;
+            letter-spacing: 2px;
+            font-weight: lighter;
+        }
+
+        /*------------------------malacca blog---------------------------*/
+        .malaccablog {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url(../web/images/blogsharing/melakariver.png);
+            height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 100%;
+        }
+
+        .content1 {
+            font-family: 'Sweet Sans Pro', sans-serif;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 20px;
+        }
+
+
+        .text1 {
+            flex: 1;
+            text-align: left;
+        }
+
+        .text1 h2 {
+            font-size: 48px;
+            margin-bottom: 30px;
+            padding-top: 25px;
+            color: #F6F6F6;
+        }
+
+        .text1 p {
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: justify;
+            margin: 0;
+            color: #F6F6F6;
+            max-width: 600px;
+        }
+
+        .malaccapic img {
+
+            max-width: 80%;
+            margin-top: 50px;
+            padding: 40px;
+
+        }
+
+        .malaccapic {
+            flex: 1;
+
+        }
+
+        /************** penang blog**********/
+        .penangblog {
+
+            background-size: cover;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 100%;
+            /* covers the entire section */
+
+            background-color: #E2D5CA;
+        }
+
+        .content2 {
+            font-family: 'Sweet Sans Pro', sans-serif;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 20px;
+        }
+
+
+        .text2 {
+            flex: 1;
+            text-align: left;
+        }
+
+
+        .text2 h2 {
+            font-size: 48px;
+            margin-bottom: 30px;
+            padding-top: 25px;
+            color: #020C16;
+        }
+
+        .text2 p {
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: justify;
+            margin: 0;
+            color: #020C16;
+            max-width: 600px;
+        }
+
+        .penangpic {
+            flex: 1;
+        }
+
+        .penangpic img {
+            max-width: 80%;
+            margin-top: 50px;
+            padding: 40px;
+        }
+
+        /*------------------------pahang blog---------------------------*/
+        .pahangblog {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../web/images/blogsharing/genting.png);
+            height: 110vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 100%;
+        }
+
+        .content3 {
+            font-family: 'Sweet Sans Pro', sans-serif;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 20px;
+
+        }
+
+
+        .text3 {
+            flex: 1;
+            text-align: left;
+        }
+
+        .text3 h2 {
+            font-size: 48px;
+            margin-bottom: 30px;
+            padding-top: 25px;
+            color: #F6F6F6;
+        }
+
+        .text3 p {
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: justify;
+            margin: 0;
+            color: #DDDCDB;
+            max-width: 600px;
+        }
+
+        .pahangpic img {
+
+            max-width: 80%;
+            margin-top: 50px;
+            padding: 40px;
+
+        }
+
+        .pahangpic {
+            flex: 1;
+
+        }
+
+        /************** perak blog**********/
+        .perakblog {
+            background-size: cover;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 100%;
+            /* covers the entire section */
+
+            background-color: #E2D5CA;
+
+        }
+
+        .content4 {
+            font-family: 'Sweet Sans Pro', sans-serif;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 20px;
+
+        }
+
+
+        .text4 {
+            flex: 1;
+            text-align: left;
+        }
+
+
+        .text4 h2 {
+            font-size: 48px;
+            margin-bottom: 30px;
+            padding-top: 25px;
+            color: #020C16;
+        }
+
+        .text4 p {
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: justify;
+            margin: 0;
+            color: #020C16;
+            max-width: 600px;
+        }
+
+        .perakpic {
+            flex: 1;
+        }
+
+        .perakpic img {
+            max-width: 80%;
+            margin-top: 50px;
+            padding: 40px;
+        }
+
+        /*-----------------------------mobile----------------------------------*/
+        @media screen and (max-width: 600px) {
+            .hero {
+                background-position: center;
+                background-size: cover;
+                padding: 20px;
+                /* Add padding for breathing space */
+            }
+
+            .hero h1 {
+                font-size: 58px;
+                /* Smaller hero heading */
+            }
+
+            .hero p {
+                font-size: 20px;
+                padding-top: 30px;
+                display: flex;
+                justify-content: center;
+
+            }
+
+
+            /************** content **********/
+            .malaccablog {
+                text-align: center;
+                /* 文字置中 */
+                align-items: center;
+                /* 增加區塊內邊距 */
+                height: 1400px;
+                /* 背景至少 1000px 高 */
+                flex-direction: column;
+            }
+
+            .content1 {
+                display: flex;
+                /* 圖片與文字垂直排列 */
+                width: 100%;
+                /* 確保子容器寬度填滿父容器 */
+                /* 適當限制寬度，防止過大 */
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                flex-direction: column-reverse;
+
+            }
+
+            .malaccapic {
+                width: 100%;
+                /* 圖片寬度填滿容器 */
+                height: auto;
+                /* 保持比例 */
+                margin: 0 auto 20px;
+                /* 圖片居中，並與文字留空隙 */
+                display: block;
+                /* 保證圖片為塊級元素，避免與其他內容並列 */
+            }
+
+            .text1 {
+                width: 100%;
+                /* 確保文字容器寬度填滿父容器 */
+                margin: 0;
+                /* 移除多餘外邊距 */
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .text1 p {
+                font-size: 16px;
+                /* 合適的段落文字字體 */
+                line-height: 1.6;
+                /* 提高行間距，增強閱讀性 */
+                text-align: left;
+                margin: 40px;
+
+            }
+
+            .text1 h2 {
+                order: 1;
+                /* 標題在第一位 */
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                margin: 30px;
+                font-size: 30px;
+                /* 合適的標題字體 */
+                text-align: center;
+                display: flex;
+                /* 與段落文字留距 */
+                margin-top: 0px;
+
+            }
+
+            /************** penang blog**********/
+            .penangblog {
+                text-align: center;
+                /* 文字置中 */
+                align-items: center;
+                /* 增加區塊內邊距 */
+                height: 1450px;
+                /* 背景至少 1000px 高 */
+                flex-direction: column;
+            }
+
+            .content2 {
+                display: flex;
+                /* 圖片與文字垂直排列 */
+                width: 100%;
+                /* 確保子容器寬度填滿父容器 */
+                /* 適當限制寬度，防止過大 */
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+
+            }
+
+            .penangpic {
+                width: 100%;
+                /* 圖片寬度填滿容器 */
+                height: auto;
+                /* 保持比例 */
+                margin: 0 auto 20px;
+                /* 圖片居中，並與文字留空隙 */
+                display: block;
+                /* 保證圖片為塊級元素，避免與其他內容並列 */
+            }
+
+            .text2 {
+                width: 100%;
+                /* 確保文字容器寬度填滿父容器 */
+                margin: 0;
+                /* 移除多餘外邊距 */
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .text2 p {
+                font-size: 16px;
+                /* 合適的段落文字字體 */
+                line-height: 1.6;
+                /* 提高行間距，增強閱讀性 */
+                text-align: left;
+                margin: 40px;
+
+            }
+
+            .text2 h2 {
+                order: 1;
+                /* 標題在第一位 */
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                margin: 30px;
+                font-size: 30px;
+                /* 合適的標題字體 */
+                text-align: center;
+                display: flex;
+                /* 與段落文字留距 */
+                margin-top: 0px;
+
+            }
+
+            /*---------pahang blog--------*/
+            .pahangblog {
+                text-align: center;
+                /* 文字置中 */
+                align-items: center;
+                /* 增加區塊內邊距 */
+                height: 1400px;
+                /* 背景至少 1000px 高 */
+                flex-direction: column;
+            }
+
+            .content3 {
+                display: flex;
+                /* 圖片與文字垂直排列 */
+                width: 100%;
+                /* 確保子容器寬度填滿父容器 */
+                /* 適當限制寬度，防止過大 */
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                flex-direction: column-reverse;
+
+            }
+
+            .pahangpic {
+                width: 100%;
+                /* 圖片寬度填滿容器 */
+                height: auto;
+                /* 保持比例 */
+                margin: 0 auto 20px;
+                /* 圖片居中，並與文字留空隙 */
+                display: block;
+                /* 保證圖片為塊級元素，避免與其他內容並列 */
+            }
+
+            .text3 {
+                width: 100%;
+                /* 確保文字容器寬度填滿父容器 */
+                margin: 0;
+                /* 移除多餘外邊距 */
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .text3 p {
+                font-size: 16px;
+                /* 合適的段落文字字體 */
+                line-height: 1.6;
+                /* 提高行間距，增強閱讀性 */
+                text-align: left;
+                margin: 40px;
+
+            }
+
+            .text3 h2 {
+                order: 1;
+                /* 標題在第一位 */
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                margin: 30px;
+                font-size: 30px;
+                /* 合適的標題字體 */
+                text-align: center;
+                display: flex;
+                /* 與段落文字留距 */
+                margin-top: 0px;
+
+            }
+
+            /************** perak blog**********/
+            .perakblog {
+                text-align: center;
+                /* 文字置中 */
+                align-items: center;
+                /* 增加區塊內邊距 */
+                height: 1450px;
+                /* 背景至少 1000px 高 */
+                flex-direction: column;
+            }
+
+            .content4 {
+                display: flex;
+                /* 圖片與文字垂直排列 */
+                width: 100%;
+                /* 確保子容器寬度填滿父容器 */
+                /* 適當限制寬度，防止過大 */
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+
+            }
+
+            .perakpic {
+                width: 100%;
+                /* 圖片寬度填滿容器 */
+                height: auto;
+                /* 保持比例 */
+                margin: 0 auto 20px;
+                /* 圖片居中，並與文字留空隙 */
+                display: block;
+                /* 保證圖片為塊級元素，避免與其他內容並列 */
+            }
+
+            .text4 {
+                width: 100%;
+                /* 確保文字容器寬度填滿父容器 */
+                margin: 0;
+                /* 移除多餘外邊距 */
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .text4 p {
+                font-size: 16px;
+                /* 合適的段落文字字體 */
+                line-height: 1.6;
+                /* 提高行間距，增強閱讀性 */
+                text-align: left;
+                margin: 40px;
+
+            }
+
+            .text4 h2 {
+                order: 1;
+                /* 標題在第一位 */
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                margin: 30px;
+                font-size: 30px;
+                /* 合適的標題字體 */
+                text-align: center;
+                display: flex;
+                /* 與段落文字留距 */
+                margin-top: 0px;
+
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!----------------------------------------------------- Nav----------------------------------------------------->
+    <header>
+        <!----------------------------------------------------- Nav----------------------------------------------------->
+        <a href="index.html">
+            <div id="nav">
+                <img src="images/general/logo.png" height="70px" class="logo">
+            </div>
+        </a>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="info" id="menu">
+            <a href="explore&tips.html">Explore & Tips</a>
+
+            <div class="menu-pyt">
+                <div class="icon-container" onclick="toggleSubmenu('submenu-pyt')">
+                    <a href="#">Plan Your Trip</a>
+                    <img src="images/general/arrow.png" height="15px" class="icon">
+                </div>
+                <div class="submenu" id="submenu-pyt">
+                    <a href="transportation.html">Transportation</a>
+                    <a href="accommodation.html">Accommodation</a>
+                </div>
+            </div>
+
+            <div class="menu-ptg">
+                <div class="icon-container" onclick="toggleSubmenu('submenu-ptg')">
+                    <a href="#">Places To Go</a>
+                    <img src="images/general/arrow.png" height="15px" class="icon">
+                </div>
+                <div class="submenu" id="submenu-ptg">
+                    <a href="#">Penang</a>
+                    <a href="#">Perak</a>
+                    <a href="#">Pahang</a>
+                    <a href="#">Malacca</a>
+                </div>
+            </div>
+
+            <a href="blogsharing.html" class="blogs">Blog Sharing</a>
+        </div>
+
+        <script>
+            function toggleMenu() {
+                const menu = document.getElementById('menu');
+                menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+            }
+
+            function toggleSubmenu(submenuId) {
+                const submenu = document.getElementById(submenuId);
+                submenu.style.display = submenu.style.display === 'flex' ? 'none' : 'flex';
+            }
+        </script>
+
+    </header>
+
+
+    <!-------------------------------- Hero Section ------------------------>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>BLOG SHARING </h1>
+            <p>Wander, discover, and savor the moment.</p>
+        </div>
+    </section>
+    <!---------------------------------------------------------- Malacca blog------------------------------------------------------------>
+    <div class="malaccablog">
+        <div class="content1">
+            <div class=" text1">
+                <h2>A Blend of Culture and History in Malacca</h2>
+                <p>
+                    Jonker Street kicked things off with some chicken rice balls and a refreshing bowl of cendol. The
+                    night
+                    market was buzzing with life, packed with food stalls and quirky souvenirs.
+                    <br><br>
+                    At Encore Melaka, I caught an amazing performance that brought Malacca’s multicultural roots to
+                    life,
+                    with stunning lights and effects.
+                    <br><br>
+                    The sunset at Malacca Straits Mosque was magical, with the mosque sitting right by the sea, offering
+                    an
+                    amazing view.
+                    <br><br>
+                    I ended the day strolling around Christ Church, an iconic red building surrounded by charming little
+                    stalls selling local crafts.
+                    <br><br>
+                    Malacca is such a vibe with great food, rich history, and plenty of spots to chill and explore. If
+                    you
+                    haven’t been, you should totally check it out.
+                </p>
+            </div>
+
+            <div class=" malaccapic">
+                <img src="images/blogsharing/melakablog.png" alt="melaka " />
+
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------------------------- Penang blog------------------------------------------------------------>
+    <section class="penangblog">
+        <div class="content2">
+            <div class="penangpic">
+                <img src="images/blogsharing/penangblog.png" alt="penangblog" />
+            </div>
+            <div class=" text2">
+                <h2>A Mix of Nature, and Fun in Penang</h2>
+                <p>
+
+
+                    In George Town, I wandered colorful streets filled with street art, historic buildings, and charming
+                    cafés, soaking in its rich cultural fusion.
+                    <br><br>
+                    Penang Hill offered stunning views, cool breezes, and The Habitat, where I enjoyed canopy walks
+                    surrounded by nature.
+                    <br><br>
+                    Kek Lok Si Temple impressed me with its majestic Kuan Yin statue, intricate pagodas, and serene
+                    spiritual vibes.
+                    <br><br>
+                    At Penang National Park, I hiked to Pantai Kerachut and visited the Turtle Conservation Centre, a
+                    peaceful retreat into nature.
+                    <br><br>
+                    ESCAPE Penang was pure adrenaline, with zip-lining and the world’s longest water slide making it an
+                    unforgettable adventure.
+                    <br><br>
+                    Penang’s mix of culture, nature, and attractions is truly captivating. Have you been? What’s your
+                    favorite spot?
+                </p>
+            </div>
+        </div>
+
+
+    </section>
+    <!---------------------------------------------------------- Pahang blog------------------------------------------------------------>
+    <section class="pahangblog">
+        <div class="content3">
+            <div class=" text3">
+                <h2>
+                    A Blend of Cool Retreats, and Island Escapes in Pahang
+
+                </h2>
+                <p>
+                    Genting Highlands combines entertainment and nature perfectly, with cool mountain air and exciting
+                    theme parks.
+                    <br><br>
+                    Cameron Highlands offers lush tea plantations and strawberry farms, making it a serene and
+                    refreshing retreat.
+                    <br><br>
+                    Colmar Tropicale feels like a charming European village, with colorful buildings and cobblestone
+                    streets perfect for photos.
+                    <br><br>
+                    Misty Mountain Farmstay is a peaceful escape, with misty hills and farm-fresh breakfasts to enjoy.
+                    <br><br>
+                    Tioman Island, with its clear waters and sandy beaches, is ideal for snorkeling and relaxing under
+                    palm trees.
+                    <br><br>
+                    Pahang truly has it all, from highlands to beaches. What’s your favorite spot in Pahang?
+                </p>
+            </div>
+            <div class="pahangpic">
+                <img src="images/blogsharing/pahangblog.png" alt="pahangblog" />
+            </div>
+        </div>
+    </section>
+    <!---------------------------------------------------------- Perak blog------------------------------------------------------------>
+    <section class="perakblog">
+        <div class="content4">
+            <div class="perakpic">
+                <img src="images/blogsharing/perakblog.png" alt="perakblog">
+            </div>
+            <div class="text4">
+                <h2>A Short Getaway in Perak</h2>
+                <p>
+                    Pulau Pangkor offers pristine beaches, a relaxed atmosphere, and delicious seafood, with sunsets
+                    that are truly breathtaking.
+                    <br><br>
+                    Chui Chak is a peaceful village surrounded by lush greenery, perfect for experiencing traditional
+                    Malaysian culture.
+                    <br><br>
+                    Gopeng Glamping Park provides a cozy outdoor escape with campfires, morning hikes, and serene jungle
+                    surroundings.
+                    <br><br>
+                    Tasik Cermin, or Mirror Lake, is a stunning hidden gem where still waters reflect limestone hills,
+                    ideal for photography.
+                    <br><br>
+                    Concubine Lane in Ipoh blends heritage and modern vibes with quirky shops, colorful murals, and
+                    tasty street food.
+                    <br><br>
+                    Perak is a wonderful mix of nature, relaxation, and culture, perfect for any traveler.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--------------------------------------------------- Footer Section -------------------------------------------------->
+    <section class="footer">
+        <div>
+            <h1>
+                Wishing you memorable journeys in Malaysia!
+            </h1>
+            <p>
+                Making Malaysian travel easy and accessible.
+            </p>
+        </div>
+
+        <div>
+            <a href="index.html">
+                <button class="explore">
+                    <span>Start exploring</span>
+                    <img class="search" src="images/general/search.png" alt="Search">
+                </button>
+            </a>
+        </div>
+
+        <hr />
+
+        <div class="footer-menu-container">
+            <div>
+                <a href="https://www.facebook.com/MalaysiaFoodandTravel">
+                    <button class="socialmedia">
+                        <img src="images/general/facebook.png" alt="Facebook" height="25" />
+                    </button>
+                </a>
+                <a href="https://www.instagram.com/malaysiafoodandtravel/">
+                    <button class="socialmedia">
+                        <img src="images/general/instagram.png" alt="Instagram" height="25" />
+                    </button>
+                </a>
+                <a href="https://www.tiktok.com/@malaysiafoodandtravel">
+                    <button class="socialmedia">
+                        <img src="images/general/tiktok.png" alt="TikTok" height="25" />
+                    </button>
+                </a>
+            </div>
+
+            <div>
+                <p>
+                    © 2024 Explore.my
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--------------------------------------------------- Back To Top Button -------------------------------------------------->
+    <button class="back-to-top" onclick="scrollToTop()">
+        <img class="bttimg" src="images/general/top.png" alt="Back to Top">
+    </button>
+
+    <script>
+        // Show or hide the "Back to Top" button based on scroll position
+        window.addEventListener('scroll', function () {
+            const button = document.querySelector('.back-to-top');
+            if (window.scrollY > 100) { // Show after 100px of scrolling
+                button.style.display = 'flex';
+            } else {
+                button.style.display = 'none';
+            }
+        });
+
+        // Smooth scroll to top functionality
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>
+
+</html
