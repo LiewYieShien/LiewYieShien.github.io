@@ -121,6 +121,11 @@
     padding-bottom: 130px;
 }
 
+a {
+    text-decoration: none;
+    /* Remove the underline for all links */
+}
+
 button.malacca {
     background:
         linear-gradient(rgba(230, 223, 213, 0.2), rgba(230, 223, 213, 0.2)), url('../images/transportation/malacca\ button.jpg');
@@ -152,7 +157,6 @@ button.malacca:hover {
     /* Vertically aligns text to the bottom */
     padding-bottom: 20px;
     cursor: pointer;
-    text-decoration: none;
 }
 
 button.pahang {
@@ -186,7 +190,6 @@ button.pahang:hover {
     /* Vertically aligns text to the bottom */
     padding-bottom: 20px;
     cursor: pointer;
-    text-decoration: none;
 }
 
 button.penang {
@@ -220,7 +223,6 @@ button.penang:hover {
     /* Vertically aligns text to the bottom */
     padding-bottom: 20px;
     cursor: pointer;
-    text-decoration: none;
 }
 
 button.perak {
@@ -254,7 +256,6 @@ button.perak:hover {
     /* Vertically aligns text to the bottom */
     padding-bottom: 20px;
     cursor: pointer;
-    text-decoration: none;
 }
 
 
@@ -355,7 +356,6 @@ button.perak:hover {
         /* Vertically aligns text to the bottom */
         padding-bottom: 20px;
         cursor: pointer;
-        text-decoration: none;
     }
 
     button.pahang {
@@ -377,7 +377,6 @@ button.perak:hover {
         /* Vertically aligns text to the bottom */
         padding-bottom: 20px;
         cursor: pointer;
-        text-decoration: none;
     }
 
     button.penang {
@@ -399,7 +398,6 @@ button.perak:hover {
         /* Vertically aligns text to the bottom */
         padding-bottom: 20px;
         cursor: pointer;
-        text-decoration: none;
     }
 
     button.perak {
@@ -421,7 +419,6 @@ button.perak:hover {
         /* Vertically aligns text to the bottom */
         padding-bottom: 20px;
         cursor: pointer;
-        text-decoration: none;
     }
 }
 
