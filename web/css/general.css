@@ -11,141 +11,97 @@ body {
     padding: 0;
 }
 
+
 /* ---------------------------------------------Navigation Bar Styles----------------------------------------------- */
-#nav {
-    padding: 5px;
+body {
+    font-family: 'Sweet Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-a {
-    text-decoration: none;
-    color: #AAA297;
-}
-
-
-/* Header Styles */
-header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    padding: 15px;
+.navbar {
     background-color: #020C16;
+    overflow: hidden;
     display: flex;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 20px;
+}
+
+.navbar a {
+    color: #AAA297;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 .logo {
-    margin-left: 20px;
     height: 40px;
-    width: auto;
+    margin: -10px;
 }
 
-
-/* Info Section Styling */
-.info {
-    font-family: 'Sweet Sans Pro', sans-serif;
-    font-weight: 500;
-    gap: 30px;
+.menu {
     display: flex;
     align-items: center;
-    margin-right: 45px;
-    margin-left: auto;
-    margin-right: 45px;
-    position: relative;
 }
 
-
-.icon-container {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    /* Space between the text and the icon */
+.menu a {
+    padding: 14px 20px;
 }
 
-
-.icon {
-    align-items: center;
-    height: 15px;
-    position: relative;
-    top: 3px;
-
-}
-
-
-.blogs {
-    margin-right: 20px;
-    /* Adds space to the right of blogshare */
-}
-
-.menu-ptg {
-    position: relative;
-    display: inline-block;
-}
-
-.menu-pyt {
-    position: relative;
-    display: inline-block;
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    color: #AAA297;
+    cursor: pointer;
+    margin-right: 10px;
 }
 
 .submenu {
-    font-size: 15px;
     display: none;
     position: absolute;
-    background-color: #333333;
+    background-color: #333;
     color: white;
-    min-width: 150px;
-    z-index: 10;
-    top: 100%;
-    left: 0;
-    box-sizing: border-box;
     border-radius: 5px;
-    overflow: hidden;
-    /* To ensure items are clipped */
-    opacity: 0;
-    transform: translateY(-10px);
-    /* Initial position for slide-in effect */
+    font-size: 15px;
+    min-width: 160px;
+    z-index: 1;
+    margin: 10px;
     transition: all 0.3s ease-in-out;
-
 }
 
 .submenu a {
-    min-height: 30px;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    text-align: left;
-    padding: 10px 15px;
     color: white;
-    background-color: transparent;
+    font-size: 14px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-
 .submenu a:hover {
-    background-color: #555;
-    /* Highlight color */
+    background-color: #575757;
+    border-radius: 5px;
     color: #ffd700;
-    /* Gold color for hover text */
-    transform: scale(1.02);
-    /* Slight zoom effect */
     transition: all 0.3s ease-in-out;
-    /* Add smooth animation for hover effects */
 }
 
-.menu-ptg:hover .submenu {
+.menu-item:hover .submenu {
     display: block;
-    opacity: 1;
-    /* Fully opaque */
-    transform: translateY(0);
-    /* Slide to the normal position */
 }
 
-.menu-pyt:hover .submenu {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
-
+.close-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: none;
+    font-size: 30px;
+    color: #AAA297;
+    cursor: pointer;
 }
+
 
 /* ---------------------------------------------Footer Styles----------------------------------------------- */
 .footer {
@@ -242,6 +198,7 @@ header {
     margin-top: 42.5px;
 }
 
+
 /* ---------------------------------------------Transport Footer Styles----------------------------------------------- */
 .footer-transport {
     display: block;
@@ -337,6 +294,7 @@ header {
     margin-top: 42.5px;
 }
 
+
 /* ---------------------------------------------Back To Top Button Styles----------------------------------------------- */
 /* Initially hide the button */
 .back-to-top {
@@ -377,105 +335,52 @@ header {
     height: auto;
 }
 
+
 /* ---------------------------------------------Mobile Styles----------------------------------------------- */
+@media screen and (max-width: 800px) {
 
-
-@media screen and (max-width: 600px) {
-    /*--------------------hamburger menu*----------------------*/
-
-    a {
-        text-decoration: none;
-        color: #AAA297;
-    }
-
-    header {
+    /*Navigation Bar*/
+    .menu {
+        flex-direction: column;
+        display: none;
         position: fixed;
-        width: 100%;
         top: 0;
-        padding: 15px;
-        background-color: #020C16;
-        display: flex;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        justify-content: center;
         align-items: center;
         z-index: 1000;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
 
-    .logo {
-        margin-left: 30px;
-        height: 40px;
-        width: auto;
+    .menu a {
+        text-align: center;
+        padding: 20px;
+        font-size: 15px;
     }
 
-    .hamburger-menu {
-        margin-left: auto;
-        margin-right: 40px;
+    .menu-item>a {
+        display: block;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    #menu-checkbox:checked+.menu-toggle+.menu {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 20px;
-        width: 30px;
-        cursor: pointer;
-
     }
 
-    .hamburger-menu .bar {
-        height: 3px;
-        width: 100%;
-        background-color: #AAA297;
-        border-radius: 2px;
-        transition: all 0.3s ease-in-out;
-    }
-
-    .info {
-        display: none;
-        flex-direction: column;
-        align-items: start;
-        background-color: #020C16;
-        position: absolute;
-        top: 100%;
-        left: 200px;
-        width: 100%;
-        z-index: 999;
-    }
-
-    .info a {
-        margin-left: 30px;
-        margin-bottom: 20px;
+    #menu-checkbox:checked+.menu-toggle+.menu .close-btn {
+        display: block;
     }
 
     .submenu {
-        display: none;
-        flex-direction: column;
-        background-color: #333333;
-        padding: 0;
+        display: block;
+        position: static;
     }
 
-    .submenu a {
-        padding: 10px 20px;
-    }
-
-    .icon-container {
-        display: flex;
-        align-items: center;
-        margin-bottom: 20px;
-        width: 100%;
-
-        cursor: pointer;
-    }
-
-    .icon {
-        height: 15px;
-        margin-bottom: 15px;
-    }
-
-    .info .submenu a:hover {
-        background-color: #555;
-        color: #ffd700;
-
-    }
-}
-
-@media screen and (max-width: 600px) {
 
     /*Footer & Transport Footer*/
     .explore {
