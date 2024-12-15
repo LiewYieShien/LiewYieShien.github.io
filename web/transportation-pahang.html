@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Explore Malaysia | Transportation of Pahang</title>
+    <title>Transportation of Pahang</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/transportation-pahang.css">
@@ -17,37 +17,33 @@
 <body class="setbackground">
     <!----------------------------------------------------- Nav----------------------------------------------------->
     <header>
-        <!----------------------------------------------------- Nav----------------------------------------------------->
-        <a href="index.html">
-            <div id="nav">
-                <img src="images/general/logo.png" height="70px" class="logo">
-            </div>
-        </a>
-        <div class="hamburger-menu" onclick="toggleMenu()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+        <div id="nav">
+            <a href="index.html">
+                <img src="images/general/logo.png" height="70px" class="logo" alt="Logo">
+            </a>
         </div>
-        <div class="info" id="menu">
+
+        <div class="info">
+
             <a href="explore&tips.html">Explore & Tips</a>
 
             <div class="menu-pyt">
-                <div class="icon-container" onclick="toggleSubmenu('submenu-pyt')">
+                <div class="icon-container">
                     <a href="#">Plan Your Trip</a>
                     <img src="images/general/arrow.png" height="15px" class="icon">
                 </div>
-                <div class="submenu" id="submenu-pyt">
+                <div class="submenu">
                     <a href="transportation.html">Transportation</a>
                     <a href="accommodation.html">Accommodation</a>
                 </div>
             </div>
 
             <div class="menu-ptg">
-                <div class="icon-container" onclick="toggleSubmenu('submenu-ptg')">
+                <div class="icon-container">
                     <a href="#">Places To Go</a>
                     <img src="images/general/arrow.png" height="15px" class="icon">
                 </div>
-                <div class="submenu" id="submenu-ptg">
+                <div class="submenu">
                     <a href="#">Penang</a>
                     <a href="#">Perak</a>
                     <a href="#">Pahang</a>
@@ -55,23 +51,9 @@
                 </div>
             </div>
 
-            <a href="blogsharing.html" class="blogs">Blog Sharing</a>
+            <a href="BlogSharing.html" class="blogs">Blog Sharing</a>
         </div>
-
-        <script>
-            function toggleMenu() {
-                const menu = document.getElementById('menu');
-                menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
-            }
-
-            function toggleSubmenu(submenuId) {
-                const submenu = document.getElementById(submenuId);
-                submenu.style.display = submenu.style.display === 'flex' ? 'none' : 'flex';
-            }
-        </script>
-
     </header>
-
 
     <!--------------------------------------------------- Destination Section -------------------------------------------------->
     <section class="destination-section-background">
@@ -116,7 +98,7 @@
                     <h3>1h 12m</h3>
                     <div>
                         <a
-                            href="https://www.busonlineticket.com/booking/kl-sentral-to-genting-awana-bus-terminal-bus-tickets">
+                            href="https://www.busonlineticket.com/booking/tbs-(terminal-bersepadu-selatan)-to-melaka-sentral-bus-tickets">
                             <button class="booknow1">
                                 <span>Book Now</span>
                                 <img class="search" src="images/general/search.png" alt="Search">
