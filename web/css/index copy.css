@@ -189,16 +189,21 @@
 /* ---------------------------------------------Map Section Styles----------------------------------------------- */
 .map {
     flex-direction: column;
+    /* Ensure flex-direction is column */
     height: 100vh;
+    /* Full height */
     background: url('../images/homepage/street.jpg');
     background-size: cover;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    /* Distribute space between children */
     align-items: center;
+    /* Center all children horizontally */
     text-align: center;
     color: white;
     position: relative;
 }
+
 
 /* Dark overlay */
 .map::before {
@@ -213,46 +218,83 @@
 /* Title */
 .map-content {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    /* Align content to the top */
     justify-content: center;
     text-align: center;
     position: relative;
-    top: 100px;
+    padding-top: 80px;
     z-index: 15;
+    width: 100%;
 }
 
 .map-content p {
     font-size: 45px;
 }
 
-/* Image container styles */
 .imagecontainer {
-    z-index: 5;
-}
-
-.map-container {
+    background: url('../images/homepage/image.png');
+    background-size: contain;
+    z-index: 10;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80%;
+    /* Remove width: 100% */
+    height: 500px;
+    max-width: 1216px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px;
+    /* This should work now */
     position: relative;
-    width: 600px;
-    height: 400px;
+    bottom: 100px;
 }
 
-.dashcurve {
-    position: absolute;
-    width: 1216px;
+
+
+.map-container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 270px;
+    width: 100%;
     height: 80px;
-    bottom: 300px;
-    left: calc(50% - 1216px/2);
+    max-width: 1216px;
+    position: absolute;
+    bottom: 160px;
+    right: 100px;
 }
+
+.map-container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 270px;
+    width: 100%;
+    height: 80px;
+    max-width: 1216px;
+    position: absolute;
+    left: 83px;
+    bottom: 210px;
+}
+
+
 
 /* Base styles for all locations */
 .location {
-    position: absolute;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     color: #fff;
     font-size: 26px;
-    transform: translate(-50%, -50%) scale(1);
     cursor: pointer;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in-out;
-    transform-origin: center;
 }
 
 .location::before {
@@ -262,63 +304,45 @@
     background: #fff;
     border-radius: 50%;
     display: block;
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
+
 /* Hover effect on the dot */
 .location:hover::before {
-    transform: translate(-50%, -50%) scale(1.2);
+    transform: scale(1.2);
     background-color: #ff6f61;
     opacity: 1;
 }
 
 /* Hover effect on the text */
 .location:hover {
-    transform: translate(-50%, -50%) scale(1.4);
+    transform: scale(1.2);
     color: #ff6f61;
     opacity: 1;
 }
 
-/* Specific positions for each location */
-.location.penang {
-    top: 72%;
-    left: -20%;
-}
 
-.location.perak {
-    top: 53%;
-    left: 26%;
-}
-
-.location.pahang {
-    top: 72%;
-    left: 72%;
-}
-
-.location.malacca {
-    top: 53%;
-    left: 113%;
-}
 
 /* ------------------------------------------------------loactionnnnnnnnn----------------------------------------------- */
 
-
-
-/* Button Styles */
+/* Explore More Button */
 .exploremore {
-    z-index: 10;
-    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
     padding: 10px 20px;
     background-color: #E6DFD5;
     border-radius: 25px;
     cursor: pointer;
     border: none;
-    margin-top: 30px;
     transition: background-color 0.3s, transform 0.3s;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* Center horizontally with respect to its container */
 }
 
 /* Icon Styles */
@@ -333,16 +357,16 @@
     margin-left: 10px;
     color: #31312E;
     font-size: 20px;
-
 }
+
 
 /* Hover Effect */
 .exploremore:hover {
     background-color: #f5c400;
-    /* Change to orange on hover */
-    transform: scale(1.1);
-    /* Slightly enlarge on hover */
+    transform: translateX(-50%) scale(1.1);
+    /* Apply scale without affecting position */
 }
+
 
 
 /* --------------------------------------------Interest Section Styles----------------------------------------------- */
@@ -578,7 +602,7 @@
 
     .slider-controls button.active {
         display: flex;
-        background-color: #333;
+        background-color: #f5c400;
         border-radius: 30px;
     }
 
