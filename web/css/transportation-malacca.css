@@ -173,6 +173,10 @@ body.setbackground {
 }
 
 /* Button Styles */
+a {
+    text-decoration: none;
+}
+
 .booknow1 {
     width: auto;
     padding: 10px 20px;
