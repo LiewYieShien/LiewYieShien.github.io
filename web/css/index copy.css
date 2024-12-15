@@ -558,7 +558,7 @@
 
     .slider-controls {
         position: absolute;
-        bottom: 20px;
+        bottom: 50px;
         left: 50%;
         transform: translateX(-50%);
         display: flex;
@@ -577,6 +577,7 @@
     }
 
     .slider-controls button.active {
+        display: flex;
         background-color: #333;
         border-radius: 30px;
     }
