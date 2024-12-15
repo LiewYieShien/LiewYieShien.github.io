@@ -337,7 +337,7 @@ body {
 
 
 /* ---------------------------------------------Mobile Styles----------------------------------------------- */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 
     /*Navigation Bar*/
     .menu {
