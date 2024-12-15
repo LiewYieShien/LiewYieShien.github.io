@@ -5,6 +5,10 @@
     font-style: light;
 }
 
+.navbar {
+    z-index: 1000px;
+}
+
 .page {
     font-family: 'Sweet Sans Pro', sans-serif;
 }
@@ -245,7 +249,7 @@
     align-items: center;
     margin: 0 auto;
     position: relative;
-    bottom: 240px;
+    bottom: 100px;
     z-index: 10;
 }
 
@@ -279,7 +283,7 @@
     height: 80px;
     max-width: 1216px;
     position: absolute;
-    bottom: 43%;
+    bottom: 42%;
     left: 60%;
     transform: translateX(-50%);
     z-index: 10;
@@ -514,7 +518,7 @@
         background-position: center;
         width: 200px;
         height: 400px;
-        bottom: 250px;
+        bottom: 150px;
         transform-origin: center;
     }
 
