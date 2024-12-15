@@ -79,6 +79,7 @@
     max-width: 1200px;
     margin: 0 auto;
     gap: 20px;
+    padding: 20px;
 }
 
 
@@ -138,6 +139,7 @@
     max-width: 1200px;
     margin: 0 auto;
     gap: 20px;
+    padding: 20px;
 }
 
 
@@ -192,6 +194,7 @@
     max-width: 1200px;
     margin: 0 auto;
     gap: 20px;
+    padding: 20px;
 
 }
 
@@ -252,6 +255,7 @@
     max-width: 1200px;
     margin: 0 auto;
     gap: 20px;
+
 
 }
 
@@ -595,5 +599,29 @@
 
     }
 
+    @media screen and (max-width: 1090px) {
+        .malaccablog {}
+
+        .content1 {
+            font-family: 'Sweet Sans Pro', sans-serif;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .malaccapic img {
+
+            max-width: 50%;
+            margin-top: 50px;
+
+        }
+
+
+    }
 
 }
