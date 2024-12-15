@@ -5,57 +5,77 @@
     font-style: light;
 }
 
+.navbar {
+    z-index: 1000px;
+}
+
 .page {
     font-family: 'Sweet Sans Pro', sans-serif;
 }
 
 
 /* ----------------------------------------Hero Section Styles----------------------------------------------- */
-.hero {
+.page1 {
+    position: relative;
+    font-family: 'Sweet Sans Pro', sans-serif;
     height: 100vh;
     /* Full screen height */
     background: url('../images/homepage/herosection.jpg');
     background-size: cover;
     /* covers the entire section */
     display: flex;
-    justify-content: left;
     align-items: center;
-    text-align: left;
-    color: white;
-    /* For overlay effects */
 }
 
-/* Optional: Add a dark overlay to make text stand out */
-.hero::before {
+.page1::before {
     content: '';
     position: absolute;
     width: 100%;
     height: 100vh;
     background: rgba(0, 0, 0, 0.4);
     z-index: 4;
+    /* Optional: Add a dark overlay to make text stand out */
 }
 
-/* Hero Content */
-.hero-content {
-    font-family: 'Sweet Sans Pro';
+
+.hero {
+    display: flex;
+    /* Use Flexbox for layout */
+    justify-content: space-between;
+    /* Push content to opposite sides */
+    align-items: center;
+    /* Vertically center the items */
+    height: 100%;
+    /* Ensure the hero section takes up full height */
+    width: 100%;
+    /* Full width of the section */
     position: relative;
-    z-index: 15;
-    /* Ensure text appears above overlay */
+    /* Ensures child absolute elements are relative to this container */
 }
+
+
+
+.hero-content {
+    z-index: 10;
+    color: white;
+    margin-left: 100px;
+    text-align: left;
+    /* Ensure text is aligned left */
+}
+
 
 .hero h1 {
     position: relative;
     top: 90px;
-    margin-left: 92px;
     font-size: 120px;
-    margin-bottom: 2px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .hero p {
+    font-weight: 200;
     position: relative;
-    margin-left: 100px;
-    top: -135px;
+    left: 8px;
+    top: -185px;
     font-size: 35px;
 }
 
@@ -63,17 +83,14 @@
 
 /* --------------------------------------------------Button-------------------------------------------------------- */
 .button-container {
-    display: flex;
     flex-direction: column;
-    /* Aligns the buttons vertically */
-    justify-content: center;
-    /* Centers buttons vertically */
+    display: flex;
     gap: 30px;
-
+    position: relative;
+    margin-right: 100px;
 }
 
 .circle-btn {
-    left: 600px;
     position: relative;
     z-index: 5;
     width: 60px;
@@ -102,21 +119,95 @@
 }
 
 
+@media (max-width: 1000px) {
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        /* Center content vertically */
+        align-items: center;
+        /* Center content horizontally */
+        text-align: center;
+        /* Center-align text */
+    }
+
+    .hero-content {
+        margin: 0 100px;
+        text-align: left;
+    }
+
+    .hero h1 {
+        top: 45px;
+        font-size: 100px;
+        /* Reduce the font size */
+    }
+
+    .hero p {
+        font-size: 30px;
+        /* Remove any extra space at the top */
+    }
+
+    .button-container {
+        position: absolute;
+        bottom: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .circle-btn {
+        margin: 0 30px;
+        margin-bottom: 30px;
+        /* Reduce the margin between buttons */
+    }
+
+    .button-container .circle-btn:first-child {
+        align-self: flex-start;
+    }
+
+    .button-container .circle-btn:last-child {
+        align-self: flex-end;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        top: -10px;
+        left: 3px;
+        font-size: 70px;
+    }
+
+    .hero p {
+        font-size: 28px;
+    }
+}
+
+
+
+
+
+
 
 
 /* ---------------------------------------------Map Section Styles----------------------------------------------- */
 .map {
     flex-direction: column;
+    /* Ensure flex-direction is column */
     height: 100vh;
+    /* Full height */
     background: url('../images/homepage/street.jpg');
     background-size: cover;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    /* Distribute space between children */
     align-items: center;
+    /* Center all children horizontally */
     text-align: center;
     color: white;
     position: relative;
 }
+
 
 /* Dark overlay */
 .map::before {
@@ -131,46 +222,88 @@
 /* Title */
 .map-content {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    /* Align content to the top */
     justify-content: center;
     text-align: center;
     position: relative;
-    top: 100px;
+    padding-top: 150px;
     z-index: 15;
+    width: 100%;
 }
 
 .map-content p {
     font-size: 45px;
 }
 
-/* Image container styles */
+/* Default styles for imagecontainer */
 .imagecontainer {
-    z-index: 5;
-}
-
-.map-container {
-    position: relative;
-    width: 600px;
+    background: url('../images/homepage/lineho.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 900px;
     height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    bottom: 100px;
+    z-index: 10;
 }
 
-.dashcurve {
-    position: absolute;
-    width: 1216px;
+
+
+/* First map container */
+.map-container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    width: 100%;
     height: 80px;
-    bottom: 300px;
-    left: calc(50% - 1216px/2);
+    max-width: 1216px;
+    position: absolute;
+    bottom: 29%;
+    left: 38%;
+    transform: translateX(-50%);
+    z-index: 10;
 }
+
+/* Second map container */
+.map-container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    width: 100%;
+    height: 80px;
+    max-width: 1216px;
+    position: absolute;
+    bottom: 42%;
+    left: 60%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+
+
 
 /* Base styles for all locations */
 .location {
-    position: absolute;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     color: #fff;
     font-size: 26px;
-    transform: translate(-50%, -50%) scale(1);
     cursor: pointer;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in-out;
-    transform-origin: center;
 }
 
 .location::before {
@@ -180,63 +313,45 @@
     background: #fff;
     border-radius: 50%;
     display: block;
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
+
 /* Hover effect on the dot */
 .location:hover::before {
-    transform: translate(-50%, -50%) scale(1.2);
+    transform: scale(1.2);
     background-color: #ff6f61;
     opacity: 1;
 }
 
 /* Hover effect on the text */
 .location:hover {
-    transform: translate(-50%, -50%) scale(1.4);
+    transform: scale(1.2);
     color: #ff6f61;
     opacity: 1;
 }
 
-/* Specific positions for each location */
-.location.penang {
-    top: 72%;
-    left: -20%;
-}
 
-.location.perak {
-    top: 53%;
-    left: 26%;
-}
-
-.location.pahang {
-    top: 72%;
-    left: 72%;
-}
-
-.location.malacca {
-    top: 53%;
-    left: 113%;
-}
 
 /* ------------------------------------------------------loactionnnnnnnnn----------------------------------------------- */
 
-
-
-/* Button Styles */
+/* Explore More Button */
 .exploremore {
-    z-index: 10;
-    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
     padding: 10px 20px;
     background-color: #E6DFD5;
     border-radius: 25px;
     cursor: pointer;
     border: none;
-    margin-top: 30px;
     transition: background-color 0.3s, transform 0.3s;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* Center horizontally with respect to its container */
 }
 
 /* Icon Styles */
@@ -251,177 +366,134 @@
     margin-left: 10px;
     color: #31312E;
     font-size: 20px;
-
 }
+
 
 /* Hover Effect */
 .exploremore:hover {
     background-color: #f5c400;
-    /* Change to orange on hover */
-    transform: scale(1.1);
-    /* Slightly enlarge on hover */
+    transform: translateX(-50%) scale(1.1);
+    /* Apply scale without affecting position */
 }
+
 
 
 /* --------------------------------------------Interest Section Styles----------------------------------------------- */
 
-.interest {
-    flex-direction: column;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+
+.slider {
+    font-family: 'Sweet Sans Pro', sans-serif;
     background-color: #020C16;
     color: #E6DFD5;
+    display: flex;
+    overflow: hidden;
     position: relative;
+    width: 100%;
+    height: 100vh;
 }
 
-.interest-content {
+.slide {
+    min-width: 33.33%;
+    /* Show three slides at once */
+    height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: transform 0.5s ease-in-out;
     text-align: center;
-    position: relative;
-    top: 160px;
-    z-index: 15;
 }
 
-.interest-content p {
-    font-size: 45px;
-    margin: 0;
-}
-
-
-/* -----------------------------------------------3 Circle------------------------------------------------- */
-
-.interest {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.interest-content {
-    position: absolute;
-    top: 100px;
-}
-
-.circle-section {
-    position: relative;
-    width: 1153px;
-    height: 400px;
-    /* Adjust height to accommodate text */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Default styles for larger screens */
-.circle-container {
-    display: flex;
-    justify-content: center;
-    gap: 278px;
-    align-items: center;
-    margin: 0 auto;
-    /* Centers the container */
-}
-
-.circle {
+.slide img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    overflow: hidden;
-    position: relative;
+    margin-bottom: 20px;
 }
 
-.circle img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.slide h1 {
+    font-size: 32px;
+    margin-bottom: 0px;
 }
 
-.circle:hover {
-    transform: scale(1.1);
+.slide p {
+    font-weight: 200;
+    font-size: 20px;
+    color: #AAA297;
 }
 
-.circle:hover img {
-    opacity: 0.8;
-}
-
-/* Text section in a row */
-.cirtextbyrow {
+.slider-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
+    gap: 10px;
+    display: block;
+    /* Show controls in both desktop and mobile */
+}
+
+.slider-controls button {
+    width: 12px;
+    height: 12px;
+    border: none;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    outline: none;
+    display: none;
+    /* hide it */
+}
+
+.slider-controls button.active {
+    background-color: #333;
+}
+
+.nav-buttons {
+    position: absolute;
+    top: 50%;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    display: none;
+    /* Hide navigation buttons initially */
+}
+
+.nav-buttons button {
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 80px;
-    position: relative;
-    bottom: 90px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.cirtextbyrow div {
-    text-align: center;
+.nav-buttons button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
 }
-
-.cirtextbyrow h1 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.cirtextbyrow p {
-    font-size: 16px;
-    color: #7d7b7b;
-}
-
-
-.cirsmallest {
-    width: 400px;
-}
-
-
-
 
 /* -------------------------------------------------------Mobile------------------------------------------------------- */
 
 @media (max-width: 768px) {
-    .hero h1 {
-        font-size: 60px;
-        margin-left: 50px;
-        top: 30px;
-    }
 
-    .hero p {
-        font-size: 24px;
-        margin-left: 51px;
-        top: -100px;
-    }
-
-    .button-container {
-        position: relative;
-        right: 305px;
-        top: 310px;
-        flex-direction: row;
-        gap: 220px;
-        z-index: 100;
-    }
-
-
-    .circle-btn {
-        left: auto;
-    }
-
-    .circle-btn img {
-        width: 75%;
-    }
 
     /* -------------------------------------------------------Map------------------------------------------------------- */
 
     .map-content {
-        top: 20px;
+        padding-top: 100px;
     }
 
     .map-content p {
-        font-size: 32px;
+        font-size: 30px;
     }
 
     .explore {
@@ -439,14 +511,29 @@
         height: auto;
     }
 
+    .imagecontainer {
+        background: url('../images/homepage/linever.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 200px;
+        height: 400px;
+        bottom: 150px;
+        transform-origin: center;
+    }
 
-    .dashcurve {
-        width: 100%;
-        height: auto;
-        left: 0;
-        /* Center the image */
-        bottom: 370px;
-        transform: rotate(90deg);
+    .map-container1 {
+        gap: 120px;
+        flex-direction: column;
+        bottom: 45%;
+        left: 62%;
+    }
+
+    .map-container2 {
+        gap: 125px;
+        flex-direction: column;
+        bottom: 25%;
+        left: 72%;
     }
 
     .location {
@@ -454,66 +541,109 @@
         transform: translate(-50%, -50%) scale(0.8);
     }
 
-    .location.penang {
-        left: -15px;
-        top: 90px;
-    }
-
-    .location.perak {
-        left: 17px;
-        top: 200px;
-    }
-
-    .location.pahang {
-        left: -15px;
-        top: 310px;
-    }
-
-    .location.malacca {
-        left: 17px;
-        top: 420px;
-    }
 
     /* dottt */
     .location:hover::before {
         transform: translate(-50%, -50%) scale(1);
     }
 
+    .exploremore {
+        bottom: -30px;
+    }
+
 
 
     /* -------------------------------------------------------3 Circle------------------------------------------------------- */
 
-    .interest-content p {
-        font-size: 32px;
-    }
-
-
-    .circle-container {
+    .slider {
         display: flex;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        /* Enable horizontal scrolling */
-        gap: 150px;
-        padding: 10px;
-    }
-
-    .circle {
-        width: 50vw;
-        height: 50vw;
-    }
-
-
-    .cirsmallest {
-        width: 400px;
-    }
-
-    .cirtextbyrow {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        gap: 80px;
+        overflow: hidden;
         position: relative;
-        bottom: 50px;
+        width: 100%;
+        height: 100vh;
     }
 
+    .slide {
+        min-width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.5s ease-in-out;
+        text-align: center;
+    }
+
+    .slide img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    .slide h1 {
+        font-size: 30px;
+    }
+
+    .slide p {
+        font-size: 20px;
+    }
+
+    .slider-controls {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 10px;
+    }
+
+    .slider-controls button {
+        display: flex;
+        width: 12px;
+        height: 12px;
+        border: none;
+        border-radius: 50%;
+        background-color: #ccc;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .slider-controls button.active {
+        display: flex;
+        background-color: #f5c400;
+        border-radius: 30px;
+    }
+
+    .nav-buttons {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+    }
+
+    .nav-buttons button {
+        margin: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        color: white;
+        font-size: 1.5rem;
+        padding: 10px;
+        width: 50px;
+        /* Equal width and height for a circle */
+        height: 50px;
+        border-radius: 50%;
+        /* Makes the button circular */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .nav-buttons button:hover {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
 }
