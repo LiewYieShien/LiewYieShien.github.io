@@ -223,7 +223,7 @@
     justify-content: center;
     text-align: center;
     position: relative;
-    padding-top: 80px;
+    padding-top: 150px;
     z-index: 15;
     width: 100%;
 }
@@ -232,54 +232,59 @@
     font-size: 45px;
 }
 
+/* Default styles for imagecontainer */
 .imagecontainer {
-    background: url('../images/homepage/image.png');
+    background: url('../images/homepage/lineho.png');
     background-size: contain;
-    z-index: 10;
     background-repeat: no-repeat;
     background-position: center;
-    width: 80%;
-    /* Remove width: 100% */
-    height: 500px;
-    max-width: 1216px;
+    width: 900px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 50px;
-    /* This should work now */
+    margin: 0 auto;
     position: relative;
-    bottom: 100px;
+    bottom: 240px;
+    z-index: 10;
 }
 
 
 
+/* First map container */
 .map-container1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 270px;
+    gap: 300px;
     width: 100%;
     height: 80px;
     max-width: 1216px;
     position: absolute;
-    bottom: 160px;
-    right: 100px;
+    bottom: 29%;
+    left: 38%;
+    transform: translateX(-50%);
+    z-index: 10;
 }
 
+/* Second map container */
 .map-container2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 270px;
+    gap: 300px;
     width: 100%;
     height: 80px;
     max-width: 1216px;
     position: absolute;
-    left: 83px;
-    bottom: 210px;
+    bottom: 43%;
+    left: 60%;
+    transform: translateX(-50%);
+    z-index: 10;
 }
+
 
 
 
@@ -339,7 +344,7 @@
     border: none;
     transition: background-color 0.3s, transform 0.3s;
     position: absolute;
-    bottom: 20px;
+    bottom: -30px;
     left: 50%;
     transform: translateX(-50%);
     /* Center horizontally with respect to its container */
@@ -480,11 +485,11 @@
     /* -------------------------------------------------------Map------------------------------------------------------- */
 
     .map-content {
-        top: 20px;
+        padding-top: 100px;
     }
 
     .map-content p {
-        font-size: 32px;
+        font-size: 30px;
     }
 
     .explore {
@@ -502,14 +507,29 @@
         height: auto;
     }
 
+    .imagecontainer {
+        background: url('../images/homepage/linever.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 200px;
+        height: 400px;
+        bottom: 250px;
+        transform-origin: center;
+    }
 
-    .dashcurve {
-        width: 100%;
-        height: auto;
-        left: 0;
-        /* Center the image */
-        bottom: 370px;
-        transform: rotate(90deg);
+    .map-container1 {
+        gap: 120px;
+        flex-direction: column;
+        bottom: 45%;
+        left: 62%;
+    }
+
+    .map-container2 {
+        gap: 125px;
+        flex-direction: column;
+        bottom: 25%;
+        left: 72%;
     }
 
     .location {
@@ -517,29 +537,14 @@
         transform: translate(-50%, -50%) scale(0.8);
     }
 
-    .location.penang {
-        left: -15px;
-        top: 90px;
-    }
-
-    .location.perak {
-        left: 17px;
-        top: 200px;
-    }
-
-    .location.pahang {
-        left: -15px;
-        top: 310px;
-    }
-
-    .location.malacca {
-        left: 17px;
-        top: 420px;
-    }
 
     /* dottt */
     .location:hover::before {
         transform: translate(-50%, -50%) scale(1);
+    }
+
+    .exploremore {
+        bottom: -30px;
     }
 
 
