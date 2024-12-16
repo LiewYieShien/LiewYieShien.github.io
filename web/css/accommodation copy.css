@@ -863,8 +863,6 @@
     }
 
 
-
-
     .text-melaka h1 {
         font-size: 32px;
         /* Adjust font size for smaller screens */
@@ -874,6 +872,19 @@
     .text-melaka .p2 {
         font-size: 14px;
         /* Adjust paragraph font size */
+    }
+
+    /* -------------------------------------Slider*/
+    .slider-container {
+        margin-right: 100px;
+        margin-bottom: 20px;
+        width: 290px;
+        height: 414px;
+    }
+
+    .slider img {
+        width: 100%;
+        height: auto;
     }
 
 
@@ -906,8 +917,6 @@
 
     .text4hotel {
         max-width: 100%;
-        padding: 20px;
-        margin-bottom: 20px;
     }
 
     .text4hotel .p1 {
