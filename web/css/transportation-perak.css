@@ -1,0 +1,412 @@
+/* ---------------------------------------------Transportation of Perak----------------------------------------------- */
+@font-face {
+    font-family: 'Sweet Sans Pro';
+    src: url('fonts/SweetSansProMedium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ---------------------------------------------Background Styles----------------------------------------------- */
+body.setbackground {
+    background-size: 100%;
+    background: linear-gradient(rgba(3, 49, 78, 0.8), rgba(3, 49, 78, 0.2)), url(../images/transportation/perak.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: fit-content;
+}
+
+/* ---------------------------------------------Destination Section Styles----------------------------------------------- */
+.destination-container {
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    font-family: 'Sweet Sans Pro', sans-serif;
+    color: #E9F6FD;
+    padding-top: 80px;
+}
+
+.destination-column1 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 60px;
+}
+
+.destination-column2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding-top: 30px;
+    margin-top: 70px;
+}
+
+.destination-container h1 {
+    font-size: 42px;
+}
+
+.destination-container p {
+    font-size: 20px;
+    margin-top: -30px;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+.destination-column2 img {
+    display: block;
+    flex-direction: column;
+    margin-bottom: -18px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+}
+
+.box {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 300px;
+    height: 35px;
+    background-color: #E9F6FD;
+    border: 0px;
+    border-radius: 10px;
+    font-family: 'Sweet Sans Pro', sans-serif;
+    color: #017BC8;
+    padding: 20px;
+    margin: 40px 10px 30px 0;
+    /* Vertical margin between boxes */
+}
+
+.box:nth-child(1) h2 {
+    font-weight: 400;
+    color: #017BC8;
+    /* Custom font weight and color for the second box */
+}
+
+/* ---------------------------------------------Transportation Section Styles----------------------------------------------- */
+.alignment {
+    flex-direction: column;
+    margin-bottom: 120px;
+}
+
+.spacing {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.transportation-option-container {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    background-color: #E9F6FD;
+    border-radius: 15px;
+    width: 1000px;
+    height: 350px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.transportation-column {
+    padding: 40px;
+    margin-top: 50px;
+    font-family: 'Sweet Sans Pro', sans-serif;
+    color: #004A7B;
+}
+
+.transportation-column h1 {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.tiny-word {
+    font-size: 13px;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.transportation-column h2 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.transportation-column h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: -10px;
+}
+
+.transportation-column h4 {
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.transportation-column p {
+    font-size: 13px;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.bus {
+    background:
+        linear-gradient(rgba(209, 228, 217, 0.2), rgba(209, 228, 217, 0.2)), url('../images/transportation/bus.jpg');
+    background-size: cover;
+    background-color: #E9F6FD;
+    color: transparent;
+    border: 0px;
+    border-radius: 15px;
+    height: 350px;
+    width: 350px;
+}
+
+.charterservice {
+    background:
+        linear-gradient(rgba(209, 228, 217, 0.2), rgba(209, 228, 217, 0.2)), url('../images/transportation/charter\ service.jpg');
+    background-size: cover;
+    background-color: #E9F6FD;
+    color: transparent;
+    border: 0px;
+    border-radius: 15px;
+    height: 350px;
+    width: 350px;
+}
+
+/* Button Styles */
+a {
+    text-decoration: none;
+}
+
+.booknow1 {
+    width: auto;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 80px;
+    margin-left: 395px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    /* Add shadow */
+}
+
+/* Icon Styles */
+.booknow1 .search {
+    margin-left: 10px;
+    width: 20px;
+    height: auto;
+}
+
+/* Text Styles */
+.booknow1 span {
+    margin-left: 10px;
+    color: #020C16;
+    font-size: 20px;
+
+}
+
+/* Hover Effect */
+.booknow1:hover {
+    background-color: #acdcff;
+    /* Change to orange on hover */
+    transform: scale(1.1);
+    /* Slightly enlarge on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    /* Enhance shadow on hover */
+}
+
+/* Button Styles */
+.booknow2 {
+    width: auto;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 80px;
+    margin-left: 395px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    /* Add shadow */
+}
+
+/* Icon Styles */
+.booknow2 .search {
+    margin-left: 10px;
+    width: 20px;
+    height: auto;
+}
+
+/* Text Styles */
+.booknow2 span {
+    margin-left: 10px;
+    color: #020C16;
+    font-size: 20px;
+
+}
+
+/* Hover Effect */
+.booknow2:hover {
+    background-color: #acdcff;
+    /* Change to orange on hover */
+    transform: scale(1.1);
+    /* Slightly enlarge on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    /* Enhance shadow on hover */
+}
+
+
+/* ---------------------------------------------Mobile Styles----------------------------------------------- */
+@media screen and (max-width: 1200px) {
+
+    /* ---------------------------------------------Background Styles----------------------------------------------- */
+    body.setbackground {
+        background-size: cover;
+        background-position: top center;
+    }
+
+    /* ---------------------------------------------Destination Section Styles----------------------------------------------- */
+    .destination-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .destination-column1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px;
+        margin-top: 50px;
+    }
+
+    .destination-column2 {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        margin-top: -70px;
+    }
+
+    .destination-container h1 {
+        font-size: 38px;
+    }
+
+    .destination-container p {
+        font-size: 16px;
+        margin-top: -20px;
+        letter-spacing: 2px;
+        font-weight: 300;
+    }
+
+    .destination-column2 img {
+        display: block;
+        flex-direction: column;
+        margin-bottom: -18px;
+        padding-right: 30px;
+        padding-bottom: 5px;
+        height: 40px;
+    }
+
+    .box {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 230px;
+        height: 35px;
+        background-color: #E9F6FD;
+        border: 0px;
+        border-radius: 10px;
+        font-family: 'Sweet Sans Pro', sans-serif;
+        color: #017BC8;
+        padding: 15px;
+        margin: 40px 10px 30px 0;
+        /* Vertical margin between boxes */
+    }
+
+    .box:nth-child(1) h2 {
+        font-weight: 400;
+        color: #017BC8;
+        /* Custom font weight and color for the second box */
+    }
+
+    /* ---------------------------------------------Transportation Section Styles----------------------------------------------- */
+    .spacing {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 35px;
+    }
+
+    .transportation-option-container {
+        display: flex;
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+        width: 80%;
+        /* Adjust width for mobile screens */
+        height: auto;
+        padding: 10px;
+        margin: 10px 0;
+        /* Add spacing between containers */
+        background-color: #E9F6FD;
+        border-radius: 15px;
+        box-shadow: none;
+        /* Simplify styling for smaller screens */
+    }
+
+    .bus,
+    .charterservice {
+        width: 98%;
+        /* Ensure it stays a square */
+        height: auto;
+        aspect-ratio: 1/1;
+        /* Maintain square shape */
+        margin-top: 4px;
+        /* Add spacing above image */
+        border-radius: 10px;
+    }
+
+    .transportation-column {
+        display: flex;
+        flex-direction: column;
+        /* Stack text and button */
+        justify-content: space-between;
+        /* Space items evenly */
+        align-items: flex-start;
+        /* Align text to the left */
+        width: 80%;
+        padding: 10px;
+    }
+
+    .transportation-column h1,
+    .transportation-column h2,
+    .transportation-column h3,
+    .transportation-column h4,
+    .transportation-column p {
+        text-align: left;
+        /* Align text to the left */
+        margin-bottom: 15px;
+    }
+
+    .booknow1,
+    .booknow2 {
+        margin-top: 30px;
+        margin-bottom: 40px;
+        margin-left: 0px;
+        width: auto;
+        /* Keep button size */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        /* Add shadow */
+    }
+
+    .booknow1:hover,
+    .booknow2:hover {
+        transform: none;
+        /* Disable scaling for hover on mobile */
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+        /* Enhance shadow on hover */
+    }
+}
