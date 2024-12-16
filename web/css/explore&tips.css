@@ -142,7 +142,7 @@
     margin: 0;
     max-width: 100%;
     justify-content: center;
-    justify-items: center;
+
 }
 
 .text2 h2 {
@@ -215,23 +215,142 @@
     max-width: 600px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1100px) {
+    .hero {
+        font-family: 'Sweet Sans Pro', sans-serif;
+        height: 100vh;
+        /* Full screen height */
+        background:
+            linear-gradient(rgba(0, 0, 0, 0.8), rgba(2, 12, 22, 0.2)), url('../images/exploretips/explore.png');
+        background-size: cover;
+        /* covers the entire section */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #E6DFD5;
+        background-position: 25% 50%;
+        /* Fine-tune to focus on a specific part, first is for left, second is for top */
+    }
+
+    /* Hero Content */
+    .hero-content {
+        font-family: 'Sweet Sans Pro';
+    }
+
+    .hero h1 {
+        font-size: 50px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    .hero p {
+        font-size: 20px;
+        margin-top: -30px;
+        letter-spacing: 2px;
+        font-weight: lighter;
+    }
+
+    .content1 {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        height: 1100px;
+        justify-content: center;
+
+    }
+
+
+    .content2 {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        height: 1050px;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .content3 {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        height: 1200px;
+        justify-content: center;
+
+    }
+
+    .picturetraveltips img {
+        width: 50%;
+        height: auto;
+        margin: 0 auto 10px;
+        /* 圖片居中，並與文字留空隙 */
+        display: block;
+        /* 保證圖片為塊級元素，避免與其他內容並列 */
+        margin-top: 50px;
+    }
+
+    .picclimate img {
+        width: 50%;
+        height: auto;
+        margin: 0 auto 10px;
+        /* 圖片居中，並與文字留空隙 */
+        display: block;
+        /* 保證圖片為塊級元素，避免與其他內容並列 */
+        margin-top: 40px;
+    }
+
+    .picmosque img {
+        width: 50%;
+        height: auto;
+        margin: 0 auto 10px;
+        /* 圖片居中，並與文字留空隙 */
+        display: block;
+        /* 保證圖片為塊級元素，避免與其他內容並列 */
+        margin-top: 40px;
+    }
+
+    .text,
+    .text2,
+    .text3 {
+        width: 100%;
+        /* 確保文字容器寬度填滿父容器 */
+        margin: 0;
+        /* 移除多餘外邊距 */
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+        max-width: 600px;
+
+    }
 
     .text h2,
     .text2 h2,
     .text3 h2 {
         font-size: 40px;
+        text-align: center;
+    }
+
+    .text2 h2 {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
 
     }
 
     .text p,
     .text2 p,
     .text3 p {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 1.6;
 
     }
 
+    .text2 p {
+
+        margin: 0;
+
+        text-align: left;
+        max-width: 600px;
+    }
 
 }
 
@@ -275,7 +394,7 @@
         flex-direction: column;
         text-align: center;
         align-items: center;
-        height: 900px;
+        height: 1000px;
         justify-content: center;
 
     }
@@ -285,7 +404,7 @@
         flex-direction: column;
         text-align: center;
         align-items: center;
-        height: 800px;
+        height: 900px;
         justify-content: center;
         flex-direction: column-reverse;
     }
@@ -294,7 +413,7 @@
         flex-direction: column;
         text-align: center;
         align-items: center;
-        height: 900px;
+        height: 1000px;
         justify-content: center;
 
     }
