@@ -20,62 +20,38 @@
 </head>
 
 <body>
-
-    <!----------------------------------------------------- Nav----------------------------------------------------->
+    <!--------------navigation bar---------------->
     <header>
-        <!----------------------------------------------------- Nav----------------------------------------------------->
-        <a href="index.html">
-            <div id="nav">
-                <img src="images/general/logo.png" height="70px" class="logo">
-            </div>
-        </a>
-        <div class="hamburger-menu" onclick="toggleMenu()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        <div class="info" id="menu">
-            <a href="explore&tips.html">Explore & Tips</a>
-
-            <div class="menu-pyt">
-                <div class="icon-container" onclick="toggleSubmenu('submenu-pyt')">
+        <div class="navbar">
+            <a href="index.html">
+                <img src="images/general/logo.png" class="logo">
+            </a>
+            <!-- Checkbox to toggle menu on mobile -->
+            <input type="checkbox" id="menu-checkbox" style="display: none;">
+            <label for="menu-checkbox" class="menu-toggle">&#9776;</label>
+            <div class="menu">
+                <!-- Close button for mobile view -->
+                <label for="menu-checkbox" class="close-btn">&times;</label>
+                <a href="explore&tips.html">Explore & Tips</a>
+                <div class="menu-item">
                     <a href="#">Plan Your Trip</a>
-                    <img src="images/general/arrow.png" height="15px" class="icon">
+                    <div class="submenu">
+                        <a href="transportation.html">Transportation</a>
+                        <a href="accommodation.html">Accommodation</a>
+                    </div>
                 </div>
-                <div class="submenu" id="submenu-pyt">
-                    <a href="transportation.html">Transportation</a>
-                    <a href="accommodation.html">Accommodation</a>
-                </div>
-            </div>
-
-            <div class="menu-ptg">
-                <div class="icon-container" onclick="toggleSubmenu('submenu-ptg')">
+                <div class="menu-item">
                     <a href="#">Places To Go</a>
-                    <img src="images/general/arrow.png" height="15px" class="icon">
+                    <div class="submenu">
+                        <a href="penang.html">Penang</a>
+                        <a href="perak.html">Perak</a>
+                        <a href="pahang.html">Pahang</a>
+                        <a href="malacca.html">Malacca</a>
+                    </div>
                 </div>
-                <div class="submenu" id="submenu-ptg">
-                    <a href="#">Penang</a>
-                    <a href="#">Perak</a>
-                    <a href="#">Pahang</a>
-                    <a href="#">Malacca</a>
-                </div>
+                <a href="blogsharing.html">Blog Sharing</a>
             </div>
-
-            <a href="blogsharing.html" class="blogs">Blog Sharing</a>
         </div>
-
-        <script>
-            function toggleMenu() {
-                const menu = document.getElementById('menu');
-                menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
-            }
-
-            function toggleSubmenu(submenuId) {
-                const submenu = document.getElementById(submenuId);
-                submenu.style.display = submenu.style.display === 'flex' ? 'none' : 'flex';
-            }
-        </script>
-
     </header>
 
 
@@ -106,10 +82,7 @@
                     <br><br>
                     I ended the day strolling around Christ Church, an iconic red building surrounded by charming little
                     stalls selling local crafts.
-                    <br><br>
-                    Malacca is such a vibe with great food, rich history, and plenty of spots to chill and explore. If
-                    you
-                    haven’t been, you should totally check it out.
+
                 </p>
             </div>
 
@@ -144,10 +117,8 @@
                     <br><br>
                     ESCAPE Penang was pure adrenaline, with zip-lining and the world’s longest water slide making it an
                     unforgettable adventure.
-                    <br><br>
-                    Penang’s mix of culture, nature, and attractions is truly captivating. Have you been? What’s your
-                    favorite spot?
                 </p>
+
             </div>
         </div>
 
@@ -175,8 +146,7 @@
                     <br><br>
                     Tioman Island, with its clear waters and sandy beaches, is ideal for snorkeling and relaxing under
                     palm trees.
-                    <br><br>
-                    Pahang truly has it all, from highlands to beaches. What’s your favorite spot in Pahang?
+
                 </p>
             </div>
             <div class="pahangpic">
@@ -207,8 +177,7 @@
                     <br><br>
                     Concubine Lane in Ipoh blends heritage and modern vibes with quirky shops, colorful murals, and
                     tasty street food.
-                    <br><br>
-                    Perak is a wonderful mix of nature, relaxation, and culture, perfect for any traveler.
+
                 </p>
             </div>
         </div>

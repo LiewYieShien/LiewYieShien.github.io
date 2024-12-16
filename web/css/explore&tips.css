@@ -55,45 +55,42 @@
 }
 
 .content1 {
+    font-family: 'Sweet Sans Pro', sans-serif;
     display: flex;
-    /* 确保子元素并排 */
-    justify-content: center;
-    align-content: center;
-    gap: 20px;
-    /* 图片和文本之间的间距 */
-    padding: 20px;
-    /* 添加内边距，避免内容贴边 */
     align-items: center;
+    padding: 30px;
     height: 100vh;
+
 }
 
-
-.picturetraveltips img {
-    margin-top: 100px;
-    margin-left: 20 px;
-    width: 40%;
+.picturetraveltips {
+    flex: 1;
     display: flex;
     justify-content: center;
-    margin-bottom: 70px;
-    flex: 1;
-    margin: 0px;
-    padding: 0;
+}
+
+.picturetraveltips img {
+    width: 60%;
+    padding: 10px;
+
 }
 
 .text {
 
     /* 文本最大宽度 */
     flex: 1;
-    margin-top: 50px;
-    align-items: center;
+    text-align: left;
+    justify-content: center;
+    margin-right: 30px;
+
+
 
 }
 
 .text h2 {
     font-size: 50px;
-    /* 标题字体大小 */
     margin-bottom: 50px;
-    /* 标题和段落的间距 */
+
 }
 
 .text p {
@@ -103,67 +100,55 @@
     /* 段落行高 */
     text-align: justify;
     /* 段落对齐 */
+    max-width: 600px;
 
 }
 
 /*local */
-.content2 {
+.localetiquette {
     font-family: 'Sweet Sans Pro', sans-serif;
     background-color: #d6cbbbe3;
+
+}
+
+.content2 {
     display: flex;
-    justify-content: center;
-    /* Center horizontally */
     align-items: center;
-    /* Center vertically */
-    /* Full viewport height */
-    padding: 20px;
-    /* Optional padding */
-    gap: 20px;
+    padding: 30px;
     height: 100vh;
+    justify-content: center;
+
 }
 
 
-
+.picmosque {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
 
 
 .picmosque img {
-    width: 450px;
-    /* 图片宽度 */
-    height: 550px;
-    /* 图片高度 */
-    border-radius: 9.39px;
-    object-fit: cover;
-    display: block;
-    /* Ensure the image behaves as a block-level element */
-    margin-right: 120px;
-    margin-top: 100px;
-    margin-bottom: 70px;
-    flex: 1;
+    width: 60%;
+    padding: 10px;
 
 }
 
-.picmosquemobile img {
-    width: 10px;
-    /* 圖片寬度填滿容器 */
-    height: 10px;
-    /* 保持比例 */
-    margin-left: -300px;
-    border-radius: 9.39px;
-    object-fit: cover;
-    display: block;
-}
 
 .text2 {
-    margin-left: 70px;
-    max-width: 600px;
-
+    flex: 1;
+    min-width: 0;
+    text-align: left;
+    margin: 0;
+    max-width: 100%;
+    justify-content: center;
 
 }
 
 .text2 h2 {
     font-size: 50px;
-    margin-top: -150px;
     margin-bottom: 50px;
+
 }
 
 .text2 p {
@@ -172,54 +157,51 @@
     line-height: 1.6;
     /* 段落行高 */
     text-align: justify;
-    /* 段落对齐 */
-    margin-right: 70px;
+    max-width: 600px;
+    align-content: right;
+
 
 }
 
-/*Climate guide*/
-.content3 {
-
+/*---------------------Climate guide--------------------*/
+.climateguide {
     font-family: 'Sweet Sans Pro', sans-serif;
     background-color: #CEC2B1;
+}
+
+.content3 {
+    font-family: 'Sweet Sans Pro', sans-serif;
     display: flex;
-    /* 确保子元素并排 */
+    align-items: center;
+    padding: 30px;
+    height: 100vh;
+
+
+}
+
+.picclimate {
+    flex: 1;
+    display: flex;
     justify-content: center;
-    /* 子元素靠左排列 */
-    gap: 20px;
-    /* 图片和文本之间的间距 */
-    padding: 20px;
-    /* 添加内边距，避免内容贴边 */
-
-
 }
 
 .picclimate img {
-    flex: 1;
-    margin-top: 100px;
-    margin-left: 20 px;
-    width: 450px;
-    /* 图片宽度 */
-    height: 550px;
-    /* 图片高度 */
-    border-radius: 9.39px;
-    /* 图片圆角 */
-    object-fit: cover;
-    /* 确保图片适应容器 */
-    margin-bottom: 70px;
+    width: 60%;
+    padding: 10px;
 }
 
 .text3 {
     flex: 1;
-    max-width: 600px;
-    /* 文本最大宽度 */
-    margin-left: 70px;
-    margin-top: 80px;
+
+    text-align: left;
+    justify-content: center;
+    margin-right: 30px;
+
+
 }
 
 .text3 h2 {
     font-size: 50px;
-    /* 标题字体大小 */
     margin: 0;
 }
 
@@ -230,17 +212,156 @@
     /* 段落行高 */
     text-align: justify;
     /* 段落对齐 */
-
+    max-width: 600px;
 }
 
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1100px) {
     .hero {
         font-family: 'Sweet Sans Pro', sans-serif;
         height: 100vh;
         /* Full screen height */
         background:
-            linear-gradient(rgba(0, 0, 0, 0.8), rgba(2, 12, 22, 0.2)), url('../images/exploretips/image-exploretips/explore.png');
+            linear-gradient(rgba(0, 0, 0, 0.8), rgba(2, 12, 22, 0.2)), url('../images/exploretips/explore.png');
+        background-size: cover;
+        /* covers the entire section */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #E6DFD5;
+        background-position: 25% 50%;
+        /* Fine-tune to focus on a specific part, first is for left, second is for top */
+    }
+
+    /* Hero Content */
+    .hero-content {
+        font-family: 'Sweet Sans Pro';
+    }
+
+    .hero h1 {
+        font-size: 50px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    .hero p {
+        font-size: 20px;
+        margin-top: -30px;
+        letter-spacing: 2px;
+        font-weight: lighter;
+    }
+
+    .content1 {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        height: 1100px;
+        justify-content: center;
+
+    }
+
+
+    .content2 {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        height: 1050px;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .content3 {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        height: 1200px;
+        justify-content: center;
+
+    }
+
+    .picturetraveltips img {
+        width: 50%;
+        height: auto;
+        margin: 0 auto 10px;
+        /* 圖片居中，並與文字留空隙 */
+        display: block;
+        /* 保證圖片為塊級元素，避免與其他內容並列 */
+        margin-top: 50px;
+    }
+
+    .picclimate img {
+        width: 50%;
+        height: auto;
+        margin: 0 auto 10px;
+        /* 圖片居中，並與文字留空隙 */
+        display: block;
+        /* 保證圖片為塊級元素，避免與其他內容並列 */
+        margin-top: 40px;
+    }
+
+    .picmosque img {
+        width: 50%;
+        height: auto;
+        margin: 0 auto 10px;
+        /* 圖片居中，並與文字留空隙 */
+        display: block;
+        /* 保證圖片為塊級元素，避免與其他內容並列 */
+        margin-top: 40px;
+    }
+
+    .text,
+    .text2,
+    .text3 {
+        width: 100%;
+        /* 確保文字容器寬度填滿父容器 */
+        margin: 0;
+        /* 移除多餘外邊距 */
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+        max-width: 600px;
+
+    }
+
+    .text h2,
+    .text2 h2,
+    .text3 h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .text2 h2 {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .text p,
+    .text2 p,
+    .text3 p {
+        font-size: 20px;
+        line-height: 1.6;
+
+    }
+
+    .text2 p {
+
+        margin: 0;
+
+        text-align: left;
+        max-width: 600px;
+    }
+
+}
+
+
+@media screen and (max-width: 700px) {
+    .hero {
+        font-family: 'Sweet Sans Pro', sans-serif;
+        height: 100vh;
+        /* Full screen height */
+        background:
+            linear-gradient(rgba(0, 0, 0, 0.8), rgba(2, 12, 22, 0.2)), url('../images/exploretips/explore.png');
         background-size: cover;
         /* covers the entire section */
         display: flex;
@@ -273,7 +394,7 @@
         flex-direction: column;
         text-align: center;
         align-items: center;
-        height: 900px;
+        height: 1000px;
         justify-content: center;
 
     }
@@ -283,24 +404,23 @@
         flex-direction: column;
         text-align: center;
         align-items: center;
-        height: 800px;
+        height: 900px;
         justify-content: center;
+        flex-direction: column-reverse;
     }
 
     .content3 {
         flex-direction: column;
         text-align: center;
         align-items: center;
-        height: 900px;
+        height: 1000px;
         justify-content: center;
 
     }
 
     .picturetraveltips img {
-        width: 259.8px;
-        /* 圖片寬度填滿容器 */
-        height: 321px;
-        /* 保持比例 */
+        width: 60%;
+        height: auto;
         margin: 0 auto 10px;
         /* 圖片居中，並與文字留空隙 */
         display: block;
@@ -309,10 +429,8 @@
     }
 
     .picclimate img {
-        width: 259.8px;
-        /* 圖片寬度填滿容器 */
-        height: 321px;
-        /* 保持比例 */
+        width: 60%;
+        height: auto;
         margin: 0 auto 10px;
         /* 圖片居中，並與文字留空隙 */
         display: block;
@@ -320,26 +438,14 @@
         margin-top: 40px;
     }
 
-    .picmosquemobile img {
-        width: 259.8px;
-        /* 圖片寬度填滿容器 */
-        height: 321px;
-        /* 保持比例 */
+    .picmosque img {
+        width: 60%;
+        height: auto;
         margin: 0 auto 10px;
         /* 圖片居中，並與文字留空隙 */
         display: block;
         /* 保證圖片為塊級元素，避免與其他內容並列 */
-        justify-content: center;
-        align-items: center;
-        margin-right: 55px;
-        flex-direction: column;
-        padding-bottom: 120px;
-        margin-left: 30px;
-        margin-top: 20px;
-    }
-
-    .picmosque img {
-        display: none;
+        margin-top: 40px;
     }
 
     .text,
@@ -368,8 +474,6 @@
         text-align: center;
         justify-content: center;
 
-        padding-top: 40px;
-
     }
 
     .text p,
@@ -381,16 +485,10 @@
     }
 
     .text2 p {
-        margin-left: 50px;
-        width: 100%;
-        /* 確保文字容器寬度填滿父容器 */
+
         margin: 0;
-        /* 移除多餘外邊距 */
+
         text-align: left;
-        align-items: center;
-        justify-content: center;
         max-width: 350px;
     }
-
-
 }
