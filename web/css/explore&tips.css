@@ -55,37 +55,37 @@
 }
 
 .content1 {
+    font-family: 'Sweet Sans Pro', sans-serif;
     display: flex;
-    /* 确保子元素并排 */
     justify-content: center;
-    align-content: center;
-    gap: 20px;
-    /* 图片和文本之间的间距 */
-    padding: 20px;
-    /* 添加内边距，避免内容贴边 */
     align-items: center;
+    padding: 30px;
     height: 100vh;
+
 }
 
-
-.picturetraveltips img {
-    margin-top: 100px;
-    margin-left: 20 px;
-    width: 40%;
+.picturetraveltips {
+    flex: 1;
     display: flex;
     justify-content: center;
+}
+
+.picturetraveltips img {
+    width: 60%;
+    margin-top: 100px;
+    object-fit: cover;
     margin-bottom: 70px;
-    flex: 1;
-    margin: 0px;
-    padding: 0;
 }
 
 .text {
 
     /* 文本最大宽度 */
     flex: 1;
-    margin-top: 50px;
+    max-width: auto;
+    justify-content: center;
+    display: flex;
     align-items: center;
+
 
 }
 
@@ -107,63 +107,47 @@
 }
 
 /*local */
-.content2 {
+.localetiquette {
     font-family: 'Sweet Sans Pro', sans-serif;
     background-color: #d6cbbbe3;
+}
+
+.content2 {
     display: flex;
-    justify-content: center;
-    /* Center horizontally */
     align-items: center;
-    /* Center vertically */
-    /* Full viewport height */
-    padding: 20px;
-    /* Optional padding */
-    gap: 20px;
-    height: 100vh;
+    padding: 65px;
+    justify-content: center;
+
 }
 
 
-
+.picmosque {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
 
 
 .picmosque img {
-    width: 450px;
-    /* 图片宽度 */
-    height: 550px;
-    /* 图片高度 */
-    border-radius: 9.39px;
-    object-fit: cover;
-    display: block;
-    /* Ensure the image behaves as a block-level element */
-    margin-right: 120px;
-    margin-top: 100px;
-    margin-bottom: 70px;
-    flex: 1;
+    width: 60%;
 
 }
 
-.picmosquemobile img {
-    width: 10px;
-    /* 圖片寬度填滿容器 */
-    height: 10px;
-    /* 保持比例 */
-    margin-left: -300px;
-    border-radius: 9.39px;
-    object-fit: cover;
-    display: block;
-}
 
 .text2 {
-    margin-left: 70px;
-    max-width: 600px;
-
-
+    flex: 1;
+    padding: 15px;
+    justify-content: center;
+    display: block;
+    margin-left: 30px;
 }
 
 .text2 h2 {
     font-size: 50px;
-    margin-top: -150px;
-    margin-bottom: 50px;
+    justify-content: center;
+    margin: 0;
+    padding-bottom: 20px;
+
 }
 
 .text2 p {
@@ -177,7 +161,7 @@
 
 }
 
-/*Climate guide*/
+/*---------------------Climate guide--------------------*/
 .content3 {
 
     font-family: 'Sweet Sans Pro', sans-serif;
@@ -234,7 +218,7 @@
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .hero {
         font-family: 'Sweet Sans Pro', sans-serif;
         height: 100vh;
