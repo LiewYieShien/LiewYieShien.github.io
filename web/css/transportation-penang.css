@@ -335,6 +335,7 @@ a {
 
     /* ---------------------------------------------Transportation Section Styles----------------------------------------------- */
     .spacing {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -360,12 +361,12 @@ a {
 
     .bus,
     .charterservice {
-        width: 98%;
+        width: 90%;
         /* Ensure it stays a square */
         height: auto;
         aspect-ratio: 1/1;
         /* Maintain square shape */
-        margin-top: 4px;
+        margin-top: 40px;
         /* Add spacing above image */
         border-radius: 10px;
     }
@@ -381,6 +382,7 @@ a {
         color: #7b2d0b;
         width: 80%;
         padding: 10px;
+        margin-top: 15px;
     }
 
     .transportation-column h1,
@@ -410,5 +412,35 @@ a {
         /* Disable scaling for hover on mobile */
         box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
         /* Enhance shadow on hover */
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    .bus,
+    .charterservice {
+        width: 90%;
+        /* Ensure it stays a square */
+        height: auto;
+        aspect-ratio: 1/1;
+        /* Maintain square shape */
+        margin-top: 30px;
+        /* Add spacing above image */
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .bus,
+    .charterservice {
+        width: 90%;
+        /* Ensure it stays a square */
+        height: auto;
+        aspect-ratio: 1/1;
+        /* Maintain square shape */
+        margin-top: 20px;
+        /* Add spacing above image */
+        border-radius: 10px;
     }
 }
