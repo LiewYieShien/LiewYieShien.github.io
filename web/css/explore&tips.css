@@ -108,6 +108,9 @@
 .localetiquette {
     font-family: 'Sweet Sans Pro', sans-serif;
     background-color: #d6cbbbe3;
+    background-image: url(../images/exploretips/local\ bg.png);
+    background-size: cover;
+    display: flex;
 
 }
 
@@ -266,7 +269,7 @@
         align-items: center;
         height: 1050px;
         justify-content: center;
-        flex-direction: column-reverse;
+
     }
 
     .content3 {
@@ -406,7 +409,7 @@
         align-items: center;
         height: 900px;
         justify-content: center;
-        flex-direction: column-reverse;
+
     }
 
     .content3 {
