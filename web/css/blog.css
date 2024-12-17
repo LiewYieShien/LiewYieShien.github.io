@@ -8,6 +8,7 @@
 .body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 /* ---------------------------------------------Navigation Bar Styles----------------------------------------------- */
@@ -17,88 +18,6 @@ body {
     padding: 0;
 }
 
-.navbar {
-    background-color: #020C16;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 13px 20px;
-}
-
-.navbar a {
-    color: #AAA297;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.logo {
-    height: 40px;
-    margin: -10px;
-}
-
-.menu {
-    display: flex;
-    align-items: center;
-}
-
-.menu a {
-    padding: 14px 20px;
-}
-
-.menu-toggle {
-    display: none;
-    font-size: 30px;
-    color: #AAA297;
-    cursor: pointer;
-    margin-right: 10px;
-}
-
-.submenu {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    color: white;
-    border-radius: 5px;
-    font-size: 15px;
-    min-width: 160px;
-    z-index: 1;
-    margin: 10px;
-    transition: all 0.3s ease-in-out;
-}
-
-.submenu a {
-    color: white;
-    font-size: 14px;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.submenu a:hover {
-    background-color: #575757;
-    border-radius: 5px;
-    color: #ffd700;
-    transition: all 0.3s ease-in-out;
-}
-
-.menu-item:hover .submenu {
-    display: block;
-}
-
-.close-btn {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    display: none;
-    font-size: 30px;
-    color: #AAA297;
-    cursor: pointer;
-}
 
 /* Hero Section Styles */
 .hero {
@@ -207,7 +126,7 @@ body {
 .penangblog {
 
     background-size: cover;
-    height: 100vh;
+    height: 108vh;
     background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
@@ -322,7 +241,7 @@ body {
 /************** perak blog**********/
 .perakblog {
     background-size: cover;
-    height: 100vh;
+    height: 108vh;
     background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
@@ -381,6 +300,13 @@ body {
 
 /*-----------------------------mobile----------------------------------*/
 @media screen and (max-width: 700px) {
+
+    .body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
     .hero {
         background-position: center;
         background-size: cover;
@@ -431,7 +357,7 @@ body {
         /* 圖片寬度填滿容器 */
         height: auto;
         /* 保持比例 */
-        margin: 0 auto 20px;
+        justify-content: center;
         /* 圖片居中，並與文字留空隙 */
         display: block;
         /* 保證圖片為塊級元素，避免與其他內容並列 */
@@ -502,8 +428,7 @@ body {
         /* 圖片寬度填滿容器 */
         height: auto;
         /* 保持比例 */
-        margin: 0 auto 20px;
-        /* 圖片居中，並與文字留空隙 */
+
         display: block;
         /* 保證圖片為塊級元素，避免與其他內容並列 */
     }
@@ -573,8 +498,7 @@ body {
         /* 圖片寬度填滿容器 */
         height: auto;
         /* 保持比例 */
-        margin: 0 auto 20px;
-        /* 圖片居中，並與文字留空隙 */
+
         display: block;
         /* 保證圖片為塊級元素，避免與其他內容並列 */
     }
@@ -631,7 +555,6 @@ body {
         /* 圖片與文字垂直排列 */
         width: 100%;
         /* 確保子容器寬度填滿父容器 */
-        /* 適當限制寬度，防止過大 */
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -644,8 +567,7 @@ body {
         /* 圖片寬度填滿容器 */
         height: auto;
         /* 保持比例 */
-        margin: 0 auto 20px;
-        /* 圖片居中，並與文字留空隙 */
+
         display: block;
         /* 保證圖片為塊級元素，避免與其他內容並列 */
     }
@@ -689,6 +611,11 @@ body {
 
 @media screen and (max-width: 1200px) {
 
+    .body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
 
     .content1 {
         font-family: 'Sweet Sans Pro', sans-serif;
@@ -932,6 +859,8 @@ body {
         position: static;
     }
 
+    /**/
+
     .hero {
         background-position: center;
         background-size: cover;
@@ -978,7 +907,7 @@ body {
     }
 
     .malaccapic {
-        width: 60%;
+        width: 70%;
         /* 圖片寬度填滿容器 */
         height: auto;
         /* 保持比例 */
@@ -1019,7 +948,7 @@ body {
         text-align: center;
         display: flex;
         /* 與段落文字留距 */
-        margin-top: 0px;
+        margin-top: -40px;
 
     }
 
@@ -1048,7 +977,7 @@ body {
     }
 
     .penangpic {
-        width: 60%;
+        width: 70%;
         /* 圖片寬度填滿容器 */
         height: auto;
         /* 保持比例 */
@@ -1089,7 +1018,7 @@ body {
         text-align: center;
         display: flex;
         /* 與段落文字留距 */
-        margin-top: 0px;
+        margin-top: -50px;
 
     }
 
@@ -1118,7 +1047,7 @@ body {
     }
 
     .pahangpic {
-        width: 60%;
+        width: 70%;
         /* 圖片寬度填滿容器 */
         height: auto;
         /* 保持比例 */
@@ -1160,7 +1089,7 @@ body {
         text-align: center;
         display: flex;
         /* 與段落文字留距 */
-        margin-top: 0px;
+        margin-top: -40px;
 
     }
 
@@ -1189,7 +1118,7 @@ body {
     }
 
     .perakpic {
-        width: 60%;
+        width: 70%;
         /* 圖片寬度填滿容器 */
         height: auto;
         /* 保持比例 */
@@ -1231,7 +1160,7 @@ body {
         text-align: center;
         display: flex;
         /* 與段落文字留距 */
-        margin-top: 0px;
+        margin-top: -40px;
 
     }
 }
