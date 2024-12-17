@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Explore Malaysia | Accommodation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/accommodationold.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <!----------------------------------------------------- Nav----------------------------------------------------->
+        <header>
+            <div class="navbar">
+                <a href="index.html">
+                    <img src="images/general/logo.png" class="logo">
+                </a>
+                <!-- Checkbox to toggle menu on mobile -->
+                <input type="checkbox" id="menu-checkbox" style="display: none;">
+                <label for="menu-checkbox" class="menu-toggle">&#9776;</label>
+                <div class="menu">
+                    <!-- Close button for mobile view -->
+                    <label for="menu-checkbox" class="close-btn">&times;</label>
+                    <a href="explore&tips.html">Explore & Tips</a>
+                    <div class="menu-item">
+                        <a href="#">Plan Your Trip</a>
+                        <div class="submenu">
+                            <a href="transportation.html">Transportation</a>
+                            <a href="accommodation.html">Accommodation</a>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">Places To Go</a>
+                        <div class="submenu">
+                            <a href="penang.html">Penang</a>
+                            <a href="perak.html">Perak</a>
+                            <a href="pahang.html">Pahang</a>
+                            <a href="malacca.html">Malacca</a>
+                        </div>
+                    </div>
+                    <a href="blogsharing.html">Blog Sharing</a>
+                </div>
+            </div>
+        </header>
+
+        <!--------------------------------------------------- Hero Section -------------------------------------------------->
+        <div class="page">
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>ACCOMMODATION</h1>
+                    <p>Find Your Perfect Stay</p>
+                </div>
+            </section>
+
+            <!----------------------------------------------------  Section 2 --------------------------------------------------->
+            <section class="sec2">
+                <div class="findingstay-content">
+                    <h1>Find Your Perfect Stay</h1>
+                    <p>A place to rest, recharge, and create memories that make<br>every journey worth it.</p>
+
+                    <div class="buttons">
+                        <button class="btn" onclick="scrollToSection('melaka')">Melaka</button>
+                        <button class="btn" onclick="scrollToSection('pahang')">Pahang</button>
+                        <button class="btn" onclick="scrollToSection('perak')">Perak</button>
+                        <button class="btn" onclick="scrollToSection('penang')">Penang</button>
+                    </div>
+
+                    <script>
+                        function scrollToSection(id) {
+                            const section = document.getElementById(id);
+                            if (section) {
+                                section.scrollIntoView({ behavior: 'smooth' });
+                            }
+                        }
+                    </script>
+
+                </div>
+
+                <div class="iphone">
+                    <img src="images/accommodation/ipmockup.png" alt="iPhone Mockup">
+                </div>
+
+                <div class="white-rectangle"></div>
+            </section>
+
+            <!------------------------------------------------------  Melaka ----------------------------------------------------->
+            <section class="sec3melaka" id="melaka">
+                <div class="left-melaka">
+                    <img src="images/accommodation/melakaaccomo.png" alt="Melaka Image" />
+                </div>
+                <div class="right-melaka">
+                    <div class="text-melaka">
+                        <p class="p1">Your Perfect Getaway Awaits in</p>
+                        <h1>Melaka</h1>
+                        <p class="p2">Melaka offers a range of accommodations, from heritage guesthouses to modern
+                            hotels,
+                            catering to every traveler.</p>
+                    </div>
+
+                    <div class="slidermelaka">
+                        <div class="slider-container">
+                            <div class="slider">
+                                <img src="images/accommodation/melaka1.png" alt="Image 1">
+                                <img src="images/accommodation/melaka2.png" alt="Image 2">
+                                <img src="images/accommodation/melaka3.png" alt="Image 3">
+                                <img src="images/accommodation/melaka4.png" alt="Image 4">
+                            </div>
+                        </div>
+                    </div>
+
+                    <script src="slider.js"></script>
+
+                </div>
+            </section>
+
+            <!-------------------------------------------------------------- right hotel 1-------------------------------------------------------------------->
+
+            <section class="sec4hotel1">
+
+                <div class="promo-container">
+                    <div class="text4hotel">
+                        <p class="p1">Your Perfect Getaway Awaits in</p>
+                        <h1>DoubleTree By Hilton Melaka</h1>
+                        <p class="p2">
+                            This hotel is perfect for travelers who appreciate a blend of
+                            <span class="highlight">modern luxury</span> and convenient amenities.
+                        </p>
+
+
+                        <div class="hoteldetails">
+                            <p>
+                                <img class="icon" src="images/accommodation/hotellocation.png" alt="Location">
+                                Christ Church Malacca: ~ <strong>1.5 km</strong><br>
+                            </p>
+                            <p class="baba">
+                                Baba & Nyonya Heritage Museum: ~ <strong>2.2 km</strong>
+                            </p>
+                            <!-- 3rd n 4 row -->
+                            <div class="adjustmargintop">
+                                <p class="secondhoteldetails"><img class="icon"
+                                        src="images/accommodation/hotelprice.png" alt="Location">
+                                    From
+                                    <strong>RM
+                                        380/night</strong>.
+                                </p>
+                                <p class="secondhoteldetails"><img class="icon"
+                                        src="images/accommodation/hotelfacility.png" alt="Location">
+                                    Panoramic views, outdoor pool,
+                                </p>
+                                <p class="baba">
+                                    fitness center, dining options. <strong>2.2 km</strong>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <button class="book">
+                            <span>Book now</span>
+                            <img class="right" src="images/accommodation/rightarrow.png" alt="Right arrow">
+                        </button>
+                    </div>
+                    <div class="image-section">
+                        <img src="images/accommodation/hotelmelaka1.png" alt="Hotel Bathroom">
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-------------------------------------------------------------- left hotel 2-------------------------------------------------------------------->
+            <section class="sec5hotel2">
+
+                <div class="coverleftnright">
+                    <div class="imagetwo-section">
+                        <img src="images/accommodation/hotelmelaka2.png">
+                    </div>
+
+
+                    <div class="promotwo-container">
+                        <div class="text2hotel">
+                            <p class="p1">Your Perfect Getaway Awaits in</p>
+                            <h1>Moty Hotel</h1>
+                            <p class="p2">
+                                With <span class="highlight">kid-friendly</span> amenities like a children's
+                                pool, Moty Hotel is an ideal choice for
+                                families seeking a comfortable stay.​
+                            </p>
+                        </div>
+
+                        <div>
+                            <div class="r-hoteldetails">
+                                <p>
+                                    <img class="icon" src="images/accommodation/hotellocation.png" alt="Location">
+                                    Jonker Street: ~ <strong>1.2 km</strong><br>
+                                </p>
+                                <p class="baba">
+                                    Baba & Nyonya Heritage Museum: ~ <strong>1.2 km</strong>
+                                </p>
+                                <!-- 3rd n 4 row -->
+                                <div>
+                                    <p class="secondhoteldetails"><img class="icon"
+                                            src="images/accommodation/hotelprice.png" alt="Price">
+                                        From
+                                        <strong>RM
+                                            200/night</strong>.
+                                    </p>
+                                    <p class="secondhoteldetails"><img class="icon"
+                                            src="images/accommodation/hotelfacility.png" alt="Facilities">
+                                        Spacious rooms, indoor pool, sauna, on-site </p>
+                                    <p class="baba">
+                                        restaurant.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <button class="book2">
+                                <span>Book now</span>
+                                <img class="right" src="images/accommodation/rightarrow.png" alt="Right arrow">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <!-------------------------------------------------------------- right hotel 3-------------------------------------------------------------------->
+
+
+        <section class="sec6hotel3">
+
+            <div class="promo-container">
+                <div class="text4hotel">
+                    <p class="p1">Your Perfect Getaway Awaits in</p>
+                    <h1 class="hatten">Hatten Hotel</h1>
+                    <p class="p2">
+                        Hatten Hotel offers a <span class="highlight">central location </span>with comfortable rooms,
+                        and
+                        easy access to shopping and cultural landmarks​.
+                    </p>
+
+
+                    <div class="hoteldetails">
+                        <p>
+                            <img class="icon" src="images/accommodation/hotellocation.png" alt="Location">
+                            Jonker Street: ~ <strong>1.2 km</strong><br>
+                        </p>
+                        <p class="baba">
+                            Pahlawan Mall: ~ <strong>1.3 km</strong>
+                        </p>
+                        <!-- 3rd n 4 row -->
+                        <div class="adjustmargintop">
+                            <p class="secondhoteldetails"><img class="icon" src="images/accommodation/hotelprice.png"
+                                    alt="Location">
+                                From
+                                <strong>RM
+                                    250/night</strong>.
+                            </p>
+                            <p class="secondhoteldetails"><img class="icon" src="images/accommodation/hotelfacility.png"
+                                    alt="Location">
+                                Infinity pool, fitness center, buffet breakfast, and</p>
+                            <p class="baba">
+                                shuttle services to<strong>popular attractions</strong>.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <button class="book">
+                        <span>Book now</span>
+                        <img class="right" src="images/accommodation/rightarrow.png" alt="Right arrow">
+                    </button>
+                </div>
+                <div class="image-section">
+                    <img src="images/accommodation/hotelmelaka1.png" alt="Hotel Bathroom">
+                </div>
+            </div>
+
+        </section>
+
+        <!-------------------------------------------------------------- left hotel 4-------------------------------------------------------------------->
+        <section class="sec7hotel4">
+
+            <div class="coverleftnright">
+                <div class="imagetwo-section">
+                    <img src="images/accommodation/hotelmelaka4.png">
+                </div>
+
+
+                <div class="promotwo-container">
+                    <div class="text2hotel">
+                        <p class="p1">Your Perfect Getaway Awaits in</p>
+                        <h1>The Majestic Malacca</h1>
+                        <p class="p2">
+                            It combines Dutch colonial architecture with
+                            Peranakan decor, offering a <span class="highlight">luxurious, heritage</span> experience
+                            with
+                            elegant rooms.
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="r6-hoteldetails">
+                            <p>
+                                <img class="icon" src="images/accommodation/hotellocation.png" alt="Location">
+                                Jonker Street: ~ <strong>2.5 km</strong><br>
+                            </p>
+                            <p class="baba">
+                                Encore Malacca: ~ <strong>4.5 km</strong>
+                            </p>
+                            <!-- 3rd n 4 row -->
+                            <div>
+                                <p class="secondhoteldetails"><img class="icon"
+                                        src="images/accommodation/hotelprice.png" alt="Price">
+                                    From
+                                    <strong>RM
+                                        500/night</strong>.
+                                </p>
+                                <p class="secondhoteldetails"><img class="icon"
+                                        src="images/accommodation/hotelfacility.png" alt="Facilities">
+                                    Blend of vintage charm and modern comforts,</p>
+                                <p class="baba">
+                                    traditional Peranakan cuisine. </p>
+                            </div>
+
+                        </div>
+
+                        <button class="book4">
+                            <span>Book now</span>
+                            <img class="right" src="images/accommodation/rightarrow.png" alt="Right arrow">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--------------------------------------------------- Footer Section -------------------------------------------------->
+        <section class="footer">
+            <div>
+                <h1>
+                    Wishing you memorable journeys in Malaysia!
+                </h1>
+                <p>
+                    Making Malaysian travel easy and accessible.
+                </p>
+            </div>
+
+            <div>
+                <a href="#">
+                    <button class="explore">
+                        <span>Start exploring</span>
+                        <img class="search" src="images/general/search.png" alt="Search">
+                    </button>
+                </a>
+            </div>
+
+            <hr />
+
+            <div class="footer-menu-container">
+                <div>
+                    <a href="https://www.facebook.com/MalaysiaFoodandTravel">
+                        <button class="socialmedia">
+                            <img src="images/general/facebook.png" alt="Facebook" height="25" />
+                        </button>
+                    </a>
+                    <a href="https://www.instagram.com/malaysiafoodandtravel/">
+                        <button class="socialmedia">
+                            <img src="images/general/instagram.png" alt="Instagram" height="25" />
+                        </button>
+                    </a>
+                    <a href="https://www.tiktok.com/@malaysiafoodandtravel">
+                        <button class="socialmedia">
+                            <img src="images/general/tiktok.png" alt="TikTok" height="25" />
+                        </button>
+                    </a>
+                </div>
+
+                <div class="footer-menu-bar">
+                    <a href="#">Home</a>
+                    <a href="#">Explore & Tips</a>
+                    <a href="#">Plan Your Trip</a>
+                    <a href="#">Places To Go</a>
+                    <a href="#">Blog Sharing</a>
+                </div>
+
+                <div>
+                    <p>
+                        © 2024 Explore.my
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--------------------------------------------------- Back To Top Button -------------------------------------------------->
+        <button class="back-to-top" onclick="scrollToTop()">
+            <img class="bttimg" src="images/general/top.png" alt="Back to Top">
+        </button>
+
+        <script>
+            // Show or hide the "Back to Top" button based on scroll position
+            window.addEventListener('scroll', function () {
+                const button = document.querySelector('.back-to-top');
+                if (window.scrollY > 100) { // Show after 100px of scrolling
+                    button.style.display = 'flex';
+                } else {
+                    button.style.display = 'none';
+                }
+            });
+
+            // Smooth scroll to top functionality
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+        </script>
+
+
+
+</body>
+
+</html>
