@@ -4,11 +4,6 @@
 }
 
 .page {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
-    /* Prevent horizontal scrolling */
     font-family: 'Sweet Sans Pro', sans-serif;
 }
 
@@ -31,21 +26,16 @@
 
 /* Hero Content */
 .hero-content {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    /* Stack items vertically */
-    align-items: center;
-    /* Center items horizontally */
-    gap: 20px;
-    /* Space between child elements */
+    color: #ffffff;
+    position: relative;
+    z-index: 500;
+    top: 30px;
+    font-family: 'Sweet Sans Pro';
 }
-
 
 .hero h1 {
     font-size: 80px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    margin-bottom: -20px;
 }
 
 .hero p {
@@ -53,8 +43,6 @@
     letter-spacing: 2px;
     font-weight: lighter;
 }
-
-
 
 
 /* ------------------------------------------------------------Section 2-------------------------------------------------------------------- */
@@ -167,15 +155,14 @@
     background-color: #49100B;
     display: flex;
     align-items: center;
-    height: 100vh;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .left-melaka {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
+    width: 45%;
+    display: flex;
 }
 
 .left-melaka img {
@@ -185,27 +172,19 @@
 }
 
 .right-melaka {
-    flex: 1.5;
+    margin-top: 120px;
+    width: 55%;
+    /* You can adjust this to fit the layout */
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    gap: 20px;
-    color: white;
-    text-align: center;
+    align-items: flex-start;
 }
-
-
 
 .text-melaka {
-    position: relative;
-    width: 650px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     color: white;
+    margin-bottom: 20px;
 }
-
 
 .text-melaka h1,
 .text-melaka p {
@@ -233,16 +212,21 @@
 }
 
 
+
 /* ------------------------------------------------------------Slider-------------------------------------------------------------------- */
 
-.slidermelaka {
+.slidermeleka {
     position: relative;
 }
 
 .slider-container {
-    width: 650px;
+    width: 802px;
+    /* Set container width */
+    height: 414px;
+    position: relative;
     overflow: hidden;
     display: flex;
+    justify-content: space-between;
 }
 
 .slider {
@@ -288,7 +272,7 @@
 .promo-container {
     position: relative;
     left: -20px;
-    bottom: -15px;
+    bottom: -65px;
     display: flex;
     max-width: 2000px;
     margin: 100px auto;
@@ -430,45 +414,40 @@
     object-fit: cover;
 }
 
-/* -------------------------------------------- section 5 --- hotel 2 ------------------------------------------- */
+/* --------------------------------------------section 5---hotel 2------------------------------------------- */
 
 .sec5hotel2 {
     background-color: #E2D5CA;
     z-index: 15;
     font-family: 'Sweet Sans Pro', sans-serif;
     display: flex;
-    flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
-    padding: 0 150px;
+    padding: 20px;
     height: 100vh;
 }
 
 .coverleftnright {
-    margin-left: 150px;
-    margin-right: 150px;
     display: flex;
     position: relative;
     width: 100%;
+
 }
-
-
 
 .imagetwo-section {
     flex: 1;
-    display: block;
+    margin-top: 150px;
+    margin-left: 160px;
+    display: flex;
     align-items: center;
     justify-content: center;
     max-width: 450px;
     max-height: 750px;
 }
 
-
 .imagetwo-section img {
     border-radius: 20px;
-    height: 750px;
     width: 100%;
-    display: block;
     height: auto;
     object-fit: cover;
 }
@@ -478,28 +457,27 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-left: 50px;
     position: relative;
-    bottom: 70px;
-    max-height: 500px;
-    width: 2000px;
+    top: 50px;
+    margin: 50px auto;
+    margin-right: 150px;
+    padding: 20px;
+    max-width: 700px;
 }
-
-
 
 .r-hoteldetails {
     background-color: #C0B1A1;
     position: relative;
-    bottom: 20px;
-    /* Adjusted for reverse layout */
-    margin-left: 30px;
+    bottom: 70px;
+    right: -120px;
     padding: 20px;
-    width: 550px;
+    width: 70%;
     border-radius: 15px;
 }
 
 .r-hoteldetails p {
     margin: 20px 0;
+    margin-left: 15px;
 }
 
 .r-hoteldetails strong {
@@ -510,15 +488,22 @@
     width: 20px;
     height: 20px;
     margin-right: 8px;
+    margin-top: -9px;
     vertical-align: middle;
 }
 
 .text2hotel {
-    width: 500px;
     flex: 1;
     padding: 40px;
-    text-align: left;
-    /* Align text to the left after the reverse layout */
+    text-align: right;
+    /* Align the text section to the right */
+}
+
+.text2hotel {
+    flex: 2;
+    max-width: 600px;
+    margin-bottom: 50px;
+    padding: 40px;
 }
 
 .text2hotel h1 {
@@ -545,7 +530,7 @@
 
 /* Button Styles */
 .book2 {
-    width: 170px;
+    width: auto;
     padding: 15px 25px;
     background-color: #49100B;
     border-radius: 25px;
@@ -553,21 +538,20 @@
     cursor: pointer;
     border: none;
     position: relative;
-    margin-top: 10px;
-    margin-left: 25px;
-    /* Adjusted for reverse layout */
+    bottom: 30px;
+    left: 465px;
     z-index: 5;
     transition: background-color 0.3s, transform 0.3s;
 }
 
-/* ----------- Text ---------------- */
+/* -----------Text---------------- */
 .book2 span {
     padding-left: 10px;
     color: #E6DFD5;
     font-size: 18px;
 }
 
-/* ----------- Icon ---------------- */
+/* -----------Icon---------------- */
 .book2 .right {
     margin-left: 10px;
     width: 15px;
@@ -580,10 +564,10 @@
     transform: scale(1.1);
 }
 
+
 .book2:hover span {
     color: #9f0d08;
 }
-
 
 
 /* --------------------------------------------section 6---hotel 3------------------------------------------- */
@@ -607,151 +591,75 @@
 }
 
 
+/* --------------------------------------------section 7---hotel 4------------------------------------------- */
 
-
-/* --------------------------------------------Tablet Styles ------------------------------------------ */
-@media screen and (max-width: 1100px) {
-
-    /*------------------------ hero-------------------- */
-    .hero h1 {
-        font-size: 60px;
-    }
-
-    .hero p {
-        font-size: 25px;
-    }
-
-
-    .imagetwo-section {
-        display: none;
-    }
-
-    .promotwo-container {
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        margin: 0 100px;
-        bottom: 30px;
-        width: 20px;
-    }
-
-    /* ----------------------------------------Section 2--------------------------------------------------- */
-    .sec2 {
-        background-color: #DBDCDD;
-        height: 100vh;
-        flex-direction: column;
-        justify-content: left;
-        padding: 20px;
-    }
-
-    .findingstay-content {
-        z-index: 7;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
-        width: 100%;
-        background-color: white;
-        position: relative;
-        left: -80px;
-        top: 293px;
-        padding: 90px 64px;
-        box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.2);
-        /* Add box shadow */
-
-    }
-
-    .findingstay-content br {
-        display: none;
-    }
-
-    .findingstay-content h1 {
-        font-size: 22px;
-    }
-
-    .findingstay-content p {
-        position: relative;
-        top: -40px;
-        font-family: 'Quicksand', sans-serif;
-        font-size: 16px;
-    }
-
-    .iphone {
-        z-index: 5;
-        position: relative;
-        bottom: 650px;
-        left: 15px;
-        margin-right: 0;
-        width: 80%;
-        /* Make image smaller */
-    }
-
-
-    .buttons {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-
-    .btn {
-        padding: 10px 20px;
-        font-family: 'Sweet Sans Pro';
-        font-size: 18px;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        transition: background-color 0.3s ease, transform 0.2s ease;
-
-    }
-
-
-    /* ---------------------------------------Section 3 melakaaa---------------------------- */
-    .sec3melaka {
-        height: 800px;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .left-melaka {
-        height: 50px;
-        width: 100%;
-        display: flex;
-    }
-
-    .right-melaka {
-        height: 700px;
-        width: 100%;
-        display: flex;
-    }
-
-    .text-melaka {
-        width: 70%;
-        color: white;
-        margin-left: 0 10px;
-        margin-top: 10px;
-    }
-
-    .text-melaka h1 {
-        font-size: 28px;
-    }
-
-    .text-melaka p {
-        font-size: 18px;
-    }
-
-    /* -------------------------------------Slider*/
-    .slider-container {
-        margin-left: 100px;
-        width: 80%;
-        height: 300px;
-    }
-
-    .slider img {
-        width: 100%;
-        height: auto;
-    }
-
+.sec7hotel4 {
+    z-index: 15;
+    font-family: 'Sweet Sans Pro', sans-serif;
+    height: 100vh;
+    background: url('../images/accommodation/hotelmelaka4abg.png') no-repeat center center;
+    background-size: 120%;
+    /* Makes the background image 120% of its original size */
+    display: flex;
+    justify-content: space-between;
+    /* Aligns the content left and right */
+    align-items: center;
+    /* Vertically center the content */
+    position: relative;
 }
 
+
+.r6-hoteldetails {
+    background-color: #F2E5DA;
+    position: relative;
+    bottom: 70px;
+    right: -195px;
+    padding: 20px;
+    width: 60%;
+    border-radius: 15px;
+}
+
+
+/* Button Styles */
+.book4 {
+    width: auto;
+    padding: 15px 25px;
+    background-color: #49100B;
+    border-radius: 25px;
+    display: flex;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    bottom: 30px;
+    left: 490px;
+    z-index: 5;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* -----------Text---------------- */
+.book4 span {
+    padding-left: 10px;
+    color: #E6DFD5;
+    font-size: 18px;
+}
+
+/* -----------Icon---------------- */
+.book4 .right {
+    margin-left: 10px;
+    width: 15px;
+    height: auto;
+}
+
+/* Hover Effect */
+.book4:hover {
+    background-color: #E6DFD5;
+    transform: scale(1.1);
+}
+
+
+.book4:hover span {
+    color: #9f0d08;
+}
 
 /* --------------------------------------------Mobile Styles ------------------------------------------ */
 @media screen and (max-width: 767px) {
@@ -764,15 +672,15 @@
     }
 
     .hero h1 {
-        font-size: 35px;
+        font-size: 40px;
+        /* Smaller heading size */
     }
 
     .hero p {
         font-size: 18px;
     }
 
-
-    /* ----------------------------------------Section 2--------------------------------------------------- */
+    /* Section 2 */
     .sec2 {
         background-color: #DBDCDD;
         height: 100vh;
@@ -788,7 +696,7 @@
         align-items: flex-start;
         text-align: left;
         gap: 10px;
-        width: 100%;
+        width: 80%;
         background-color: white;
         position: relative;
         left: -110px;
@@ -843,41 +751,42 @@
 
     /* ---------------------------------------Section 3 melakaaa---------------------------- */
     .sec3melaka {
+        height: 1000px;
         flex-direction: column;
-        /* Stack the left and right sections vertically */
         align-items: center;
-        height: auto;
     }
 
     .left-melaka {
-        flex: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .left-melaka img {
+        height: 300px;
         width: 100%;
-        height: 350px;
-        object-fit: cover;
+        display: flex;
     }
 
+    .right-melaka {
+        height: 700px;
+        width: 100%;
+        display: flex;
+    }
+
+    .text-melaka {
+        color: white;
+        margin-left: 20px;
+        margin-bottom: 380px;
+    }
 
     .text-melaka h1 {
-        font-size: 32px;
-        /* Adjust font size for smaller screens */
+        font-size: 28px;
+        /* Smaller text size */
     }
 
-    .text-melaka .p1,
-    .text-melaka .p2 {
-        font-size: 14px;
-        /* Adjust paragraph font size */
+    .text-melaka p {
+        font-size: 18px;
     }
 
     /* -------------------------------------Slider*/
     .slider-container {
-        margin-right: 100px;
-        margin-bottom: 20px;
+        bottom: 340px;
+        margin-left: 100px;
         width: 290px;
         height: 414px;
     }
@@ -887,18 +796,15 @@
         height: auto;
     }
 
-
     /* -----------------------------------------------------Section 4 ------------------------------------------------*/
     .sec4hotel1 {
         height: 100vh;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         padding: 20px;
     }
 
     .promo-container {
-        margin-bottom: 50px;
         overflow: visible;
         height: 100vh;
     }
@@ -917,10 +823,12 @@
 
     .text4hotel {
         max-width: 100%;
+        padding: 20px;
+        margin-bottom: 20px;
     }
 
     .text4hotel .p1 {
-        font-size: 20px;
+        font-size: 23px;
     }
 
 
@@ -955,9 +863,10 @@
 
     .promotwo-container {
         background-color: #E2D5CA;
-        padding: 20px;
-        width: 70%;
+        top: -150px;
+        width: 445px;
         margin: 0 0;
+        padding: 20px;
     }
 
     /* Text Section */
