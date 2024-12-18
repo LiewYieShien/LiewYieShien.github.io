@@ -1,11 +1,4 @@
 /* ---------------------------------------------Transportation of Perak----------------------------------------------- */
-@font-face {
-    font-family: 'Sweet Sans Pro';
-    src: url('fonts/SweetSansProMedium.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /* ---------------------------------------------Background Styles----------------------------------------------- */
 body.setbackground {
     background-size: 100%;

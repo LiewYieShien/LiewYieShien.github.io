@@ -1,11 +1,4 @@
 /* ---------------------------------------------Transportation----------------------------------------------- */
-@font-face {
-    font-family: 'Sweet Sans Pro';
-    src: url('fonts/SweetSansProMedium.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /* ---------------------------------------------Hero Section Styles----------------------------------------------- */
 .hero {
     font-family: 'Sweet Sans Pro', sans-serif;
@@ -293,7 +286,7 @@ button.perak:hover {
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
 
     /* ---------------------------------------------Hero Section Styles----------------------------------------------- */
     .hero {
