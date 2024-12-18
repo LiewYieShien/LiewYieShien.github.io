@@ -314,6 +314,9 @@
 }
 
 .hoteldetails {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
     max-width: 500px;
     padding: 20px;
     background-color: #F2E5DA;
@@ -321,31 +324,25 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.detailsleftnright {
+    margin-left: 30px;
+}
+
 .hoteldetails p {
-    margin: 20px 0;
     margin-left: 15px;
+    text-indent: -38px;
+    /* Negative indent to bring the first line closer to the icon */
+}
+
+.hoteldetails img.icon {
+    flex-shrink: 0;
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
 }
 
 .hoteldetails strong {
     color: #9f0d08;
-}
-
-.icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
-    vertical-align: middle;
-}
-
-.baba {
-    position: relative;
-    top: -20px;
-    left: 32px;
-}
-
-/* Adjusting the space between paragraphs */
-.adjustmargintop {
-    margin-top: -15px;
 }
 
 
