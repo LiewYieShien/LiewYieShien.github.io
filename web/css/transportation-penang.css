@@ -267,6 +267,7 @@ a {
         align-items: center;
         text-align: center;
         gap: 50px;
+        margin-top: -90px;
     }
 
     .destination-column1 {
