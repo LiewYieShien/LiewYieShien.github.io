@@ -141,9 +141,9 @@ body.setbackground {
     font-style: italic;
 }
 
-.bus {
+.train {
     background:
-        linear-gradient(rgba(209, 228, 217, 0.2), rgba(209, 228, 217, 0.2)), url('../images/transportation/bus.jpg');
+        linear-gradient(rgba(209, 228, 217, 0.2), rgba(209, 228, 217, 0.2)), url('../images/transportation/train.jpg');
     background-size: cover;
     background-color: #E9F6FD;
     color: transparent;
@@ -351,7 +351,7 @@ a {
         /* Simplify styling for smaller screens */
     }
 
-    .bus,
+    .train,
     .charterservice {
         width: 90%;
         /* Ensure it stays a square */
@@ -408,7 +408,7 @@ a {
 
 @media screen and (max-width: 850px) {
 
-    .bus,
+    .train,
     .charterservice {
         width: 90%;
         /* Ensure it stays a square */
@@ -423,7 +423,7 @@ a {
 
 @media screen and (max-width: 700px) {
 
-    .bus,
+    .train,
     .charterservice {
         width: 90%;
         /* Ensure it stays a square */

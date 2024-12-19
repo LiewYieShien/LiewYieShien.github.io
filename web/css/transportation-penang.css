@@ -141,7 +141,7 @@ body.setbackground {
     font-style: italic;
 }
 
-.bus {
+.flight {
     background:
         linear-gradient(rgba(230, 171, 115, 0.2), rgba(230, 171, 115, 0.2)), url('../images/transportation/flight.jpg');
     background-size: cover;
@@ -352,7 +352,7 @@ a {
         /* Simplify styling for smaller screens */
     }
 
-    .bus,
+    .flight,
     .charterservice {
         width: 90%;
         /* Ensure it stays a square */
@@ -410,7 +410,7 @@ a {
 
 @media screen and (max-width: 850px) {
 
-    .bus,
+    .flight,
     .charterservice {
         width: 90%;
         /* Ensure it stays a square */
@@ -425,7 +425,7 @@ a {
 
 @media screen and (max-width: 700px) {
 
-    .bus,
+    .flight,
     .charterservice {
         width: 90%;
         /* Ensure it stays a square */
