@@ -102,7 +102,6 @@
 /* -------------------------Phone */
 
 .iphone {
-
     width: 40%;
     /* Adjusts the width of the iPhone image */
     display: flex;
@@ -278,9 +277,7 @@
     background-size: cover;
     display: flex;
     justify-content: space-between;
-    /* Aligns the content left and right */
     align-items: center;
-    /* Vertically center the content */
     position: relative;
 }
 
@@ -309,13 +306,13 @@
 }
 
 .text4hotel h1 {
-    font-size: 30px;
+    font-size: 400px;
     margin-bottom: 20px;
 }
 
 .text4hotel .p1 {
     font-weight: 100px;
-    font-size: 25px;
+    font-size: 30px;
     margin-bottom: -5px;
 }
 
@@ -330,6 +327,9 @@
 }
 
 .hoteldetails {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
     max-width: 500px;
     padding: 20px;
     background-color: #F2E5DA;
@@ -337,37 +337,27 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.detailsleftnright {
+    margin-left: 30px;
+}
+
 .hoteldetails p {
-    margin: 20px 0;
     margin-left: 15px;
+    text-indent: -38px;
+    /* Negative indent to bring the first line closer to the icon */
+}
+
+.hoteldetails img.icon {
+    flex-shrink: 0;
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
 }
 
 .hoteldetails strong {
     color: #9f0d08;
 }
 
-.icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
-    vertical-align: middle;
-}
-
-.baba {
-    position: relative;
-    top: -20px;
-    left: 32px;
-}
-
-/* Adjusting the space between paragraphs */
-.adjustmargintop {
-    margin-top: -15px;
-}
-
-
-.secondhoteldetails strong {
-    color: #9f0d08;
-}
 
 /* Button Styles */
 .book {
@@ -637,69 +627,87 @@
 
     /* ----------------------------------------Section 2--------------------------------------------------- */
     .sec2 {
-        background-color: #DBDCDD;
+        background-size: cover;
         height: 100vh;
+        display: flex;
         flex-direction: column;
-        justify-content: left;
+        align-items: center;
         padding: 20px;
+        width: 100%;
+        margin: 0;
     }
 
     .findingstay-content {
-        z-index: 7;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
-        width: 100%;
-        background-color: white;
+        z-index: 20;
         position: relative;
-        top: 293px;
-        padding: 50px 10px;
-        box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.2);
-        /* Add box shadow */
-
-    }
-
-    .findingstay-content br {
-        display: none;
+        top: 298px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: white;
+        margin-left: -40px;
+        width: 100%;
+        text-align: left;
     }
 
     .findingstay-content h1 {
-        font-size: 22px;
+        position: relative;
+        left: -40px;
+        font-size: 35px;
     }
 
     .findingstay-content p {
         position: relative;
-        top: -40px;
-        font-family: 'Quicksand', sans-serif;
-        font-size: 16px;
+        left: 35px;
+        font-size: 20px;
     }
 
     .iphone {
-        z-index: 5;
+        z-index: 3;
         position: relative;
-        bottom: 650px;
-        left: 15px;
-        margin-right: 0;
-        width: 80%;
-        /* Make image smaller */
+        bottom: 400px;
+        width: 60%;
+        margin-top: 0px;
+        margin-right: 0px;
     }
 
+    .iphone img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
 
     .buttons {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        /* Center buttons horizontally */
         gap: 20px;
+        position: relative;
     }
 
     .btn {
-        padding: 10px 20px;
+        padding: 12px 24px;
         font-family: 'Sweet Sans Pro';
         font-size: 18px;
+        background-color: #d3d3d3;
+        color: black;
         border: 1px solid #ccc;
         border-radius: 8px;
+        cursor: pointer;
+        text-align: center;
         transition: background-color 0.3s ease, transform 0.2s ease;
+        flex: 0 0 45%;
+        /* Ensures buttons don't stretch too much */
+    }
 
+    .btn:hover {
+        background-color: #b0b0b0;
+        transform: scale(1.05);
+    }
+
+    .btn:focus {
+        outline: none;
     }
 
 
@@ -772,54 +780,23 @@
 
 
     /* ----------------------------------------Section 2--------------------------------------------------- */
-    .sec2 {
-        background-color: #DBDCDD;
-        height: 100vh;
-        flex-direction: column;
-        justify-content: left;
-        padding: 20px;
-    }
-
     .findingstay-content {
-        z-index: 7;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
-        width: 100%;
-        background-color: white;
-        position: relative;
-        left: -110px;
-        padding: 42px 64px;
-        box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.2);
-        /* Add box shadow */
-
-    }
-
-    .findingstay-content br {
-        display: none;
+        top: 320px;
     }
 
     .findingstay-content h1 {
-        font-size: 22px;
+        position: relative;
+        margin-left: 50px;
+        font-size: 30px;
     }
 
     .findingstay-content p {
-        position: relative;
-        font-family: 'Quicksand', sans-serif;
-        font-size: 16px;
-    }
-
-    .iphone {
-        z-index: 5;
-        position: relative;
-        bottom: 650px;
-        left: 15px;
-        margin-right: 0;
+        text-align: center;
         width: 80%;
-        /* Make image smaller */
+        position: relative;
+        left: 0px;
+        font-size: 18px;
     }
-
 
     /* ---------------------------------------Section 3 melakaaa---------------------------- */
     .sec3melaka {
@@ -857,7 +834,7 @@
     /* -------------------------------------Slider*/
     .slider-container {
         margin-right: 100px;
-
+        margin-bottom: 30px;
         width: 290px;
         height: 414px;
     }
@@ -870,7 +847,7 @@
 
     /* -----------------------------------------------------Section 4 ------------------------------------------------*/
     .sec4hotel1 {
-        height: 100vh;
+        height: auto;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -878,7 +855,7 @@
     }
 
     .promo-container {
-        margin-bottom: 50px;
+        margin-bottom: px;
         overflow: visible;
         height: 100vh;
     }
@@ -995,16 +972,13 @@
 
     /* Book Now Button */
     .book2 {
-        padding: 15px 0px;
+        margin-left: 0px;
+        padding: 20px 10px;
         width: 100%;
-        margin: 0px auto 0;
         border-radius: 0px;
         font-size: 16px;
     }
 
-    .book2 span {
-        padding-left: 300px;
-    }
 
     .book2:hover {
         background-color: #E6DFD5;
@@ -1012,56 +986,135 @@
     }
 
 
-
     /* -----------------------------------------Section 6------------------------------ */
 
     .sec6hotel3 {
-        height: 100vh;
+        height: auto;
         flex-direction: column;
         align-items: center;
         padding: 20px;
+        margin-bottom: 20px;
     }
 
-    /* -----------------------------------------Section 7------------------------------ */
+}
 
-    .sec7hotel4 {
-        flex-direction: column;
-        height: 100vh;
-        padding: 0px;
+@media screen and (min-width: 425px) {
+    .sec4hotel1 {
+        padding: 0;
+    }
+
+    .text4hotel h1 {
+        font-size: 24px;
+        /* Reduce header size */
+    }
+
+    .text4hotel h4,
+    .text4hotel .p1,
+    .text4hotel .p2 {
+        font-size: 15px;
+        /* Adjust font size for better fit */
+    }
+
+    .sec6hotel3 {
+        margin-bottom: 0px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    /* Hero Section */
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
     }
 
 
-    /* Image Section */
-    .sec7hotel4 .imagetwo-section {
-        width: 100%;
-        margin-top: -18px;
+    .findingstay-content {
+        top: 320px;
     }
 
-    .sec7hotel4 .promo-container {
-        bottom: 50px;
-        margin-left: 0px;
-        flex-direction: column;
-        align-items: center;
+    .findingstay-content h1 {
+        position: relative;
+        margin-left: 50px;
+        margin-bottom: 40px;
+        font-size: 24px;
     }
 
-    /* Button */
-    .book4 {
-        width: 100%;
-        padding: 12px 20px;
-        margin-right: 100px;
+    .findingstay-content p {
+        font-size: 0px;
+        width: 90%;
+        margin: 0 auto;
     }
 
-    .book4:hover {
-        background-color: #DAB69D;
-        transform: scale(1);
-        /* Subtle hover effect */
+    .btn {
+        padding: 10px 20px;
     }
 
-    .book4 img.right {
-        margin-left: 8px;
-        /* Space between text and icon */
-        width: 16px;
-        height: auto;
+    /* Section 3 Melaka */
+    .left-melaka img {
+        height: 300px;
+    }
+
+    .text-melaka h1 {
+        font-size: 26px;
+    }
+
+    .text-melaka .p1,
+    .text-melaka .p2 {
+        font-size: 12px;
+    }
+
+    /* Slider */
+    .slider-container {
+        width: 270px;
+        height: 400px;
+    }
+
+    /* Section 4 Hotel */
+    .sec4hotel1 {
+        padding: 10px;
+    }
+
+    .text4hotel h1 {
+        font-size: 22px;
+    }
+
+    .text4hotel .p1 {
+        font-size: 18px;
+    }
+
+    .hoteldetails p {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    /* Section 5 Hotel 2 */
+    .text2hotel h1 {
+        font-size: 24px;
+    }
+
+    .text2hotel .p1,
+    .text2hotel .p2 {
+        font-size: 12px;
+    }
+
+    .r-hoteldetails p {
+        font-size: 12px;
+    }
+
+    .book2 {
+        font-size: 14px;
+        padding: 15px 8px;
+    }
+
+    /* Section 6 */
+    .sec6hotel3 {
+        padding: 10px;
+        margin-bottom: 0px;
     }
 
 }
