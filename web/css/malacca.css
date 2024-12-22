@@ -51,7 +51,7 @@
     text-align: center;
     font-size: 36px;
     color: #AAA297;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 /* 主内容容器，左右分布 */
@@ -61,6 +61,8 @@
     justify-content: space-between;
     align-items: center;
     margin: 30px;
+    margin-top: 40px;
+
 }
 
 .image1 {
@@ -70,7 +72,7 @@
 }
 
 .main-image {
-    margin-right: 0px;
+    margin-right: -40px;
 }
 
 .main-image img {
@@ -119,4 +121,36 @@
 
 .intro strong {
     color: #B24534;
+}
+
+/*------------------- encore melaka -------------------*/
+.encoremelaka {
+    background-image: url(../images/gallery-malacca/encoremelaka.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    height: 100vh;
+    width: auto;
+}
+
+
+.column1 {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    height: 500px;
+    width: 670px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: left;
+
+}
+
+.content2 {
+    color: #F6EBDC;
+}
+
+.content2 h3 {
+    font-size: 30px;
+    color: #F6EBDC;
 }

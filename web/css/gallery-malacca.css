@@ -61,12 +61,12 @@
     }
 
     .hero h1 {
-        font-size: 50px;
+        font-size: 40px;
         /* Smaller hero heading */
     }
 
     .hero p {
-        font-size: 18px;
+        font-size: 14px;
         padding-top: 30px;
         display: flex;
         justify-content: center;
