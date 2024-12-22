@@ -1,0 +1,74 @@
+/* Hero Section Styles */
+.hero {
+    font-family: 'Sweet Sans Pro', sans-serif;
+    height: 100vh;
+    /* Full screen height */
+    background-image:
+        url('../images/gallery-malacca/melakariver.png');
+    background-size: cover;
+    /* covers the entire section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #F6F6F6;
+
+    padding-top: 0;
+    /* For overlay effects */
+}
+
+.hero p {
+    font-size: 22px;
+    font-weight: 100;
+    justify-content: center;
+    margin: 0;
+    letter-spacing: 5px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 80px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.gallery {
+
+    padding: 30px;
+    background-color: #2A0C08;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.gallery img {
+    padding-top: 50px;
+    width: 90%;
+    height: auto;
+
+    padding-bottom: 50px;
+
+}
+
+@media screen and (max-width: 700px) {
+    .hero {
+        background-position: center;
+        background-size: cover;
+        padding: 20px;
+        /* Add padding for breathing space */
+    }
+
+    .hero h1 {
+        font-size: 50px;
+        /* Smaller hero heading */
+    }
+
+    .hero p {
+        font-size: 18px;
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+
+    }
+}
