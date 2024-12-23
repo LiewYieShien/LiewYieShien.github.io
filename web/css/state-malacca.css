@@ -102,7 +102,7 @@
 }
 
 .intro h3 {
-    font-size: 30px;
+    font-size: 35px;
     margin-bottom: 15px;
     color: #F6EBDC;
 }
@@ -187,6 +187,7 @@
 .babanyonya {
     padding: 50px;
     background-color: #130B10;
+    height: 100vh;
 }
 
 .content3 {
@@ -212,4 +213,115 @@
     justify-content: flex-start;
     align-items: center;
     padding-left: 80px;
+}
+
+/*------------------- church -------------------*/
+
+.church {
+    padding: 50px;
+    background-color: #45150E;
+    height: 110vh;
+}
+
+.content4 {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    margin-top: 40px;
+    flex-direction: row-reverse;
+
+}
+
+
+/*------------------- Button style -------------------*/
+.gallery {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    text-decoration: none;
+
+}
+
+.buttongallery {
+    font-size: 20px;
+    width: 20%;
+    padding: 10px;
+    margin: 40px;
+
+    background-color: #AAA297;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    /* Add shadow */
+
+}
+
+.search {
+    margin-left: 15px;
+
+    height: 20px;
+}
+
+.buttongallery:hover {
+
+    background-color: #F6EBDC;
+    /* Change to orange on hover */
+    transform: scale(1.1);
+    /* Slightly enlarge on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    /* Enhance shadow on hover */
+    text-decoration: none;
+}
+
+/*----------------------- What to eat----------------------------- */
+.restaurant {
+    background-color: #2A0C08;
+    height: 100vh;
+
+}
+
+.content5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.text {
+    margin-top: 50px;
+    margin-right: 123px;
+
+
+}
+
+.text h2 {
+    color: #F6EBDC;
+    font-size: 50px;
+}
+
+.text p {
+    color: #AAA297;
+    font-size: 20px;
+}
+
+.restaurantpic {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    margin-top: 50px;
+}
+
+.restaurantpic img {
+    display: flex;
+
+    width: 20%;
+    padding: 20px;
 }
