@@ -53,7 +53,7 @@
     <!------------------------------------------------------  Pahang cover ----------------------------------------------------->
     <section class="hotelpahang1">
         <div class="left-melaka">
-            <img src="images/accommodation/melakaaccomo.png" alt="Melaka Image" />
+            <img src="images/accommodation-pahang/pahangacco.png" alt="Pahang Image" />
         </div>
         <div class="right-melaka">
             <div class="text-melaka">
@@ -135,7 +135,7 @@
     </section>
 
     <!-------------------------------------------------------------- left hotel 2-------------------------------------------------------------------->
-    <section class="sec5hotel2">
+    <section class="hotel2">
 
         <div class="coverleftnright">
             <div class="imagetwo-section">
@@ -242,3 +242,80 @@
         </div>
 
     </section>
+
+    <!--------------------------------------------------- Footer Section -------------------------------------------------->
+    <section class="footer-transport">
+        <div>
+            <h1>
+                Wishing you memorable journeys in Malaysia!
+            </h1>
+            <p>
+                Making Malaysian travel easy and accessible.
+            </p>
+        </div>
+
+        <div>
+            <a href="index.html">
+                <button class="explore">
+                    <span>Start exploring</span>
+                    <img class="search" src="images/general/search.png" alt="Search">
+                </button>
+            </a>
+        </div>
+
+        <hr />
+
+        <div class="footer-menu-container">
+            <div>
+                <a href="https://www.facebook.com/MalaysiaFoodandTravel">
+                    <button class="socialmedia">
+                        <img src="images/general/facebook.png" alt="Facebook" height="25" />
+                    </button>
+                </a>
+                <a href="https://www.instagram.com/malaysiafoodandtravel/">
+                    <button class="socialmedia">
+                        <img src="images/general/instagram.png" alt="Instagram" height="25" />
+                    </button>
+                </a>
+                <a href="https://www.tiktok.com/@malaysiafoodandtravel">
+                    <button class="socialmedia">
+                        <img src="images/general/tiktok.png" alt="TikTok" height="25" />
+                    </button>
+                </a>
+            </div>
+
+            <div>
+                <p>
+                    © 2024 Explore.my
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------------------------------------- Back To Top Button -------------------------------------------------->
+    <button class="back-to-top" onclick="scrollToTop()">
+        <img class="bttimg" src="images/general/top.png" alt="Back to Top">
+    </button>
+
+    <script>
+        // Show or hide the "Back to Top" button based on scroll position
+        window.addEventListener('scroll', function () {
+            const button = document.querySelector('.back-to-top');
+            if (window.scrollY > 100) { // Show after 100px of scrolling
+                button.style.display = 'flex';
+            } else {
+                button.style.display = 'none';
+            }
+        });
+
+        // Smooth scroll to top functionality
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>
