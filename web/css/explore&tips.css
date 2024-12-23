@@ -198,7 +198,7 @@
 
 .text3 h2 {
     font-size: 50px;
-    margin: 0;
+    margin-bottom: 30px
 }
 
 .text3 p {
@@ -340,13 +340,6 @@
 
     }
 
-    .text2 p {
-
-        margin: 0;
-
-        text-align: left;
-        max-width: 600px;
-    }
 
 }
 
@@ -415,7 +408,7 @@
     }
 
     .picturetraveltips img {
-        width: 60%;
+        width: 70%;
         height: auto;
         margin: 0 auto 10px;
         /* 圖片居中，並與文字留空隙 */
@@ -425,7 +418,7 @@
     }
 
     .picclimate img {
-        width: 60%;
+        width: 70%;
         height: auto;
         margin: 0 auto 10px;
         /* 圖片居中，並與文字留空隙 */
@@ -435,7 +428,7 @@
     }
 
     .picmosque img {
-        width: 60%;
+        width: 70%;
         height: auto;
         margin: 0 auto 10px;
         /* 圖片居中，並與文字留空隙 */
@@ -484,7 +477,8 @@
 
         margin: 0;
 
-        text-align: left;
+        text-align: justify;
         max-width: 350px;
+
     }
 }
