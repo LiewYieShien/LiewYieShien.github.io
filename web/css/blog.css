@@ -329,8 +329,6 @@
 
     .content1 {
         display: flex;
-        /* 圖片與文字垂直排列 */
-
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -340,9 +338,7 @@
 
     .malaccapic {
         width: 100%;
-        /* 圖片寬度填滿容器 */
         height: auto;
-        /* 保持比例 */
         justify-content: center;
         /* 圖片居中，並與文字留空隙 */
         display: block;
@@ -356,6 +352,8 @@
         /* 移除多餘外邊距 */
         align-items: center;
         justify-content: center;
+        text-align: justify;
+
 
     }
 
@@ -364,26 +362,13 @@
         /* 合適的段落文字字體 */
         line-height: 1.6;
         /* 提高行間距，增強閱讀性 */
-        text-align: left;
+        text-align: justify;
         margin: 40px;
-
-    }
-
-    .text1 h2 {
-        order: 1;
-        /* 標題在第一位 */
-        display: flex;
         justify-content: center;
-        text-align: center;
-        margin: 30px;
-        font-size: 30px;
-        /* 合適的標題字體 */
-        text-align: center;
         display: flex;
-        /* 與段落文字留距 */
-        margin-top: 0px;
 
     }
+
 
     /************** penang blog**********/
     .penangblog {
@@ -437,21 +422,6 @@
 
     }
 
-    .text2 h2 {
-        order: 1;
-        /* 標題在第一位 */
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        margin: 30px;
-        font-size: 30px;
-        /* 合適的標題字體 */
-        text-align: center;
-        display: flex;
-        /* 與段落文字留距 */
-        margin-top: 0px;
-
-    }
 
     /*---------pahang blog--------*/
     .pahangblog {
@@ -505,21 +475,7 @@
 
     }
 
-    .text3 h2 {
-        order: 1;
-        /* 標題在第一位 */
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        margin: 30px;
-        font-size: 30px;
-        /* 合適的標題字體 */
-        text-align: center;
-        display: flex;
-        /* 與段落文字留距 */
-        margin-top: 0px;
 
-    }
 
     /************** perak blog**********/
     .perakblog {
@@ -573,21 +529,7 @@
 
     }
 
-    .text4 h2 {
-        order: 1;
-        /* 標題在第一位 */
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        margin: 30px;
-        font-size: 30px;
-        /* 合適的標題字體 */
-        text-align: center;
-        display: flex;
-        /* 與段落文字留距 */
-        margin-top: 0px;
 
-    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -607,7 +549,7 @@
         max-width: 1200px;
         margin: 0 auto;
         gap: 20px;
-        padding: 20px;
+
     }
 
     .malaccapic img {
@@ -635,6 +577,7 @@
         font-size: 40px;
         display: flex;
         justify-content: center;
+        text-align: center;
 
     }
 
@@ -645,6 +588,7 @@
         font-size: 18px;
         overflow: hidden;
         max-width: 700px;
+
 
     }
 
@@ -666,6 +610,7 @@
         align-items: center;
         flex-direction: column;
         flex-direction: column-reverse;
+        padding: revert;
 
     }
 
@@ -696,11 +641,10 @@
     .content2 {
         display: flex;
         /* 圖片與文字垂直排列 */
-
         justify-content: center;
         align-items: center;
         flex-direction: column;
-
+        padding: revert;
 
     }
 
@@ -737,7 +681,7 @@
         align-items: center;
         flex-direction: column;
         flex-direction: column-reverse;
-
+        padding: revert;
     }
 
     .pahangpic {
@@ -771,7 +715,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-
+        padding: revert;
 
     }
 
@@ -829,12 +773,10 @@
     .content1 {
         display: flex;
         /* 圖片與文字垂直排列 */
-        width: 100%;
-        /* 確保子容器寬度填滿父容器 */
-        /* 適當限制寬度，防止過大 */
+
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        padding: revert;
         flex-direction: column-reverse;
 
     }
@@ -866,6 +808,7 @@
         /* 提高行間距，增強閱讀性 */
         text-align: left;
         margin: 40px;
+        text-align: justify;
 
     }
 
@@ -905,7 +848,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-
+        padding: revert;
 
     }
 
@@ -936,6 +879,7 @@
         /* 提高行間距，增強閱讀性 */
         text-align: left;
         margin: 40px;
+        text-align: justify;
 
     }
 
@@ -976,6 +920,7 @@
         align-items: center;
         flex-direction: column;
         flex-direction: column-reverse;
+        padding: revert;
 
     }
 
@@ -1007,6 +952,7 @@
         /* 提高行間距，增強閱讀性 */
         text-align: left;
         margin: 40px;
+        text-align: justify;
 
     }
 
@@ -1046,7 +992,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-
+        padding: revert;
 
     }
 
@@ -1078,6 +1024,7 @@
         /* 提高行間距，增強閱讀性 */
         text-align: left;
         margin: 40px;
+        text-align: justify;
 
     }
 
