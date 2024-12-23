@@ -1,10 +1,11 @@
+/* ---------------------------------------------Gallery of Pahang----------------------------------------------- */
 /* Hero Section Styles */
 .hero {
     font-family: 'Sweet Sans Pro', sans-serif;
     height: 100vh;
     /* Full screen height */
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('../images/malacca/malaccariver.png');
+        linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('../images/pahang/pahang-galleryhero.jpg');
     background-size: cover;
     /* covers the entire section */
     display: flex;
@@ -29,7 +30,7 @@
 
 .gallery {
     padding: 30px;
-    background-color: #2A0C08;
+    background-color: #0F2307;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
