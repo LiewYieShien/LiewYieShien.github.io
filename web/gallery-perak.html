@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Explore Malaysia | Gallery of Perak</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/gallery-perak.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!----------------------------------------------------- Navgation Bar ----------------------------------------------------->
+    <header>
+        <div class="navbar">
+            <a href="index.html">
+                <img src="images/general/logo.png" class="logo">
+            </a>
+            <!-- Checkbox to toggle menu on mobile -->
+            <input type="checkbox" id="menu-checkbox" style="display: none;">
+            <label for="menu-checkbox" class="menu-toggle">&#9776;</label>
+            <div class="menu">
+                <!-- Close button for mobile view -->
+                <label for="menu-checkbox" class="close-btn">&times;</label>
+                <a href="explore&tips.html">Explore & Tips</a>
+                <div class="menu-item">
+                    <a href="#">Plan Your Trip</a>
+                    <div class="submenu">
+                        <a href="transportation.html">Transportation</a>
+                        <a href="accommodation.html">Accommodation</a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <a href="#">Places To Go</a>
+                    <div class="submenu">
+                        <a href="penang.html">Penang</a>
+                        <a href="perak.html">Perak</a>
+                        <a href="pahang.html">Pahang</a>
+                        <a href="malacca.html">Malacca</a>
+                    </div>
+                </div>
+                <a href="blog.html">Blog Sharing</a>
+            </div>
+        </div>
+    </header>
+
+    <!--------------------------------------------------- Hero Section -------------------------------------------------->
+    <section class="hero">
+        <div>
+            <p>EXPLORE</p>
+            <h1>GALLERY OF PERAK</h1>
+        </div>
+    </section>
+
+    <!--------------------------------------------------- Gallery Section -------------------------------------------------->
+    <div class="gallery">
+        <img src="images/perak/perak-fullgallery.png" alt="Gallery of Perak">
+    </div>
+
+    <!--------------------------------------------------- Footer Section -------------------------------------------------->
+    <section class="footer">
+        <div>
+            <h1>
+                Wishing you memorable journeys in Malaysia!
+            </h1>
+            <p>
+                Making Malaysian travel easy and accessible.
+            </p>
+        </div>
+
+        <div>
+            <a href="index.html">
+                <button class="explore">
+                    <span>Start exploring</span>
+                    <img class="search" src="images/general/search.png" alt="Search">
+                </button>
+            </a>
+        </div>
+
+        <hr />
+
+        <div class="footer-menu-container">
+            <div>
+                <a href="https://www.facebook.com/MalaysiaFoodandTravel">
+                    <button class="socialmedia">
+                        <img src="images/general/facebook.png" alt="Facebook" height="25" />
+                    </button>
+                </a>
+                <a href="https://www.instagram.com/malaysiafoodandtravel/">
+                    <button class="socialmedia">
+                        <img src="images/general/instagram.png" alt="Instagram" height="25" />
+                    </button>
+                </a>
+                <a href="https://www.tiktok.com/@malaysiafoodandtravel">
+                    <button class="socialmedia">
+                        <img src="images/general/tiktok.png" alt="TikTok" height="25" />
+                    </button>
+                </a>
+            </div>
+
+            <div>
+                <p>
+                    © 2024 Explore.my
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------------------------------------- Back To Top Button -------------------------------------------------->
+    <button class="back-to-top" onclick="scrollToTop()">
+        <img class="bttimg" src="images/general/top.png" alt="Back to Top">
+    </button>
+
+    <script>
+        // Show or hide the "Back to Top" button based on scroll position
+        window.addEventListener('scroll', function () {
+            const button = document.querySelector('.back-to-top');
+            if (window.scrollY > 100) { // Show after 100px of scrolling
+                button.style.display = 'flex';
+            } else {
+                button.style.display = 'none';
+            }
+        });
+
+        // Smooth scroll to top functionality
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>
