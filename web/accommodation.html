@@ -65,21 +65,24 @@
                 <p>A place to rest, recharge, and create memories that make<br>every journey worth it.</p>
 
                 <div class="buttons">
-                    <button class="btn" onclick="scrollToSection('melaka')">Melaka</button>
-                    <button class="btn" onclick="scrollToSection('pahang')">Pahang</button>
-                    <button class="btn" onclick="scrollToSection('perak')">Perak</button>
-                    <button class="btn" onclick="scrollToSection('penang')">Penang</button>
+                    <a href="#" class="btn" onclick="scrollToSection('melaka')">Melaka</a>
+                    <a href="accommodation-pahang.html" class="btn">Pahang</a>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn" onclick="scrollToSection('perak')">Perak</a>
+                    <a href="#" class="btn" onclick="scrollToSection('penang')">Penang</a>
                 </div>
 
                 <script>
                     function scrollToSection(id) {
+                        console.log("Scrolling to section: " + id); // Check if this is being triggered
                         const section = document.getElementById(id);
                         if (section) {
                             section.scrollIntoView({ behavior: 'smooth' });
                         }
                     }
-                </script>
 
+                </script>
             </div>
 
             <div class="iphone">

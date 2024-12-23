@@ -118,15 +118,14 @@
     height: auto;
 }
 
-/* -------------------------button */
-
 .buttons {
+    margin-bottom: 5px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: flex-start;
     gap: 20px;
     position: relative;
-    top: -40px;
+    top: -50px;
+    width: 85%;
 }
 
 .btn {
@@ -140,8 +139,9 @@
     cursor: pointer;
     text-align: center;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    flex: 0 0 45%;
-    /* Ensures buttons don't stretch too much */
+    flex: 0 0 calc(50% - 10px);
+    text-decoration: none;
+    box-sizing: border-box;
 }
 
 .btn:hover {
@@ -152,6 +152,7 @@
 .btn:focus {
     outline: none;
 }
+
 
 
 .white-rectangle {

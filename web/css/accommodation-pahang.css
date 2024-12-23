@@ -571,19 +571,27 @@
 }
 
 @media screen and (max-width: 1250px) {
-    .hotel2 .image-section {
+    .hotel2 .imagetwo-section {
         display: none;
         /* Hide the image section */
     }
 
-    .hotel2 .text4hotel {
-        text-align: center;
-        /* Center align the text */
-        margin: 0 auto;
-        /* Ensure proper centering */
-        width: 100%;
-        /* Adjust width to fit */
+    .text2hotel {
+        width: 600px;
+        flex: 0;
+        padding: 40px;
+        text-align: left;
     }
+
+    .promotwo-container {
+        flex: 0;
+        margin-left: 0px;
+        position: relative;
+        bottom: 30px;
+        max-height: 500px;
+    }
+
+
 }
 
 
