@@ -279,3 +279,49 @@
     /* Enhance shadow on hover */
     text-decoration: none;
 }
+
+/*----------------------- What to eat----------------------------- */
+.restaurant {
+    background-color: #2A0C08;
+    height: 100vh;
+
+}
+
+.content5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.text {
+    margin-top: 50px;
+    margin-right: 123px;
+
+
+}
+
+.text h2 {
+    color: #F6EBDC;
+    font-size: 50px;
+}
+
+.text p {
+    color: #AAA297;
+    font-size: 20px;
+}
+
+.restaurantpic {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    margin-top: 50px;
+}
+
+.restaurantpic img {
+    display: flex;
+
+    width: 20%;
+    padding: 20px;
+}

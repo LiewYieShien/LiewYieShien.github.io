@@ -303,12 +303,12 @@
     }
 
     .hero h1 {
-        font-size: 58px;
+        font-size: 20px;
         /* Smaller hero heading */
     }
 
     .hero p {
-        font-size: 20px;
+        font-size: 18px;
         padding-top: 30px;
         display: flex;
         justify-content: center;
@@ -746,13 +746,14 @@
     }
 
     .hero h1 {
-        font-size: 58px;
+        font-size: 35px;
+
         /* Smaller hero heading */
     }
 
     .hero p {
-        font-size: 20px;
-        padding-top: 30px;
+        font-size: 15px;
+        padding-top: 40px;
         display: flex;
         justify-content: center;
 
