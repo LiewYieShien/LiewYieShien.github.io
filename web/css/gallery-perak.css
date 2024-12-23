@@ -1,11 +1,11 @@
-/* ---------------------------------------------Gallery of Pahang----------------------------------------------- */
+/* ---------------------------------------------Gallery of Perak----------------------------------------------- */
 /* Hero Section Styles */
 .hero {
     font-family: 'Sweet Sans Pro', sans-serif;
     height: 100vh;
     /* Full screen height */
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('../images/pahang/pahang-galleryhero.jpg');
+        linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('../images/perak/perak-galleryhero.jpg');
     background-size: cover;
     /* covers the entire section */
     display: flex;
@@ -17,7 +17,7 @@
 
 .hero h1 {
     font-size: 80px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
     letter-spacing: 5px;
 }
 
@@ -30,7 +30,7 @@
 
 .gallery {
     padding: 30px;
-    background-color: #0F2307;
+    background-color: #03122D;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -48,7 +48,7 @@
 @media screen and (max-width: 1300px) {
     .hero h1 {
         font-size: 60px;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
     }
 
     .hero p {
@@ -71,7 +71,7 @@
     /* ---------------------------------------------Hero Section Styles----------------------------------------------- */
     .hero h1 {
         font-size: 50px;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
     }
 
     .hero p {
@@ -94,7 +94,7 @@
     /* ---------------------------------------------Hero Section Styles----------------------------------------------- */
     .hero h1 {
         font-size: 40px;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
     }
 
     .hero p {

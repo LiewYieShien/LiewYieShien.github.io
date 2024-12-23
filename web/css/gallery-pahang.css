@@ -17,7 +17,7 @@
 
 .hero h1 {
     font-size: 80px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
     letter-spacing: 5px;
 }
 
@@ -48,7 +48,7 @@
 @media screen and (max-width: 1300px) {
     .hero h1 {
         font-size: 60px;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
     }
 
     .hero p {
@@ -71,7 +71,7 @@
     /* ---------------------------------------------Hero Section Styles----------------------------------------------- */
     .hero h1 {
         font-size: 50px;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
     }
 
     .hero p {
@@ -94,7 +94,7 @@
     /* ---------------------------------------------Hero Section Styles----------------------------------------------- */
     .hero h1 {
         font-size: 40px;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
     }
 
     .hero p {
