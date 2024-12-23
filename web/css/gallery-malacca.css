@@ -4,7 +4,7 @@
     height: 100vh;
     /* Full screen height */
     background-image:
-        url('../images/gallery-malacca/melakariver.png');
+        linear-gradient(rgba(42, 12, 8, 0.1), rgba(42, 12, 8, 0.3)), url('../images/malacca/malaccariver.png');
     background-size: cover;
     /* covers the entire section */
     display: flex;
@@ -12,64 +12,100 @@
     align-items: center;
     text-align: center;
     color: #F6F6F6;
+}
 
-    padding-top: 0;
-    /* For overlay effects */
+.hero h1 {
+    font-size: 80px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    letter-spacing: 5px;
 }
 
 .hero p {
     font-size: 28px;
-    font-weight: 100;
-    justify-content: center;
-    margin: 0;
+    font-weight: 250;
     letter-spacing: 5px;
-}
-
-.hero h1 {
-    margin: 0;
-    font-size: 80px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    letter-spacing: 6px;
+    margin-bottom: -70px;
 }
 
 .gallery {
-
     padding: 30px;
     background-color: #2A0C08;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .gallery img {
-    padding-top: 50px;
+    padding-top: 90px;
+    padding-bottom: 90px;
     width: 90%;
     height: auto;
-
-    padding-bottom: 50px;
-
 }
 
-@media screen and (max-width: 700px) {
-    .hero {
-        background-position: center;
-        background-size: cover;
-        padding: 20px;
-        /* Add padding for breathing space */
-    }
-
+@media screen and (max-width: 1300px) {
     .hero h1 {
-        font-size: 40px;
-        /* Smaller hero heading */
+        font-size: 60px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
     }
 
     .hero p {
-        font-size: 14px;
-        padding-top: 30px;
-        display: flex;
-        justify-content: center;
+        font-size: 20px;
+        margin-bottom: -50px;
+        letter-spacing: 2px;
+        font-weight: 300;
+    }
 
+    .gallery img {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+
+    /* ---------------------------------------------Hero Section Styles----------------------------------------------- */
+    .hero h1 {
+        font-size: 50px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    }
+
+    .hero p {
+        font-size: 18px;
+        margin-bottom: -42.5px;
+        letter-spacing: 2px;
+        font-weight: 300;
+    }
+
+    .gallery img {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    /* ---------------------------------------------Hero Section Styles----------------------------------------------- */
+    .hero h1 {
+        font-size: 40px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    }
+
+    .hero p {
+        font-size: 16px;
+        margin-bottom: -35px;
+        letter-spacing: 2px;
+        font-weight: 300;
+    }
+
+    .gallery img {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        width: 90%;
+        height: auto;
     }
 }

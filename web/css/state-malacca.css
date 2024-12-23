@@ -10,7 +10,7 @@
     height: 100vh;
     /* Full screen height */
     background-image:
-        url('../images/gallery-malacca/hero.png');
+        url('../images/malacca/hero.png');
     background-size: cover;
     /* covers the entire section */
     display: flex;
@@ -126,7 +126,7 @@
 
 /*------------------- encore melaka -------------------*/
 .encoremelaka {
-    background-image: url(../images/gallery-malacca/encoremelaka.png);
+    background-image: url(../images/malacca/encoremelaka.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
