@@ -325,3 +325,30 @@
     width: 20%;
     padding: 20px;
 }
+
+@media screen and (max-width: 900px) {
+
+    .hero {
+        background-position: center;
+        background-size: cover;
+        padding: 20px;
+        /* Add padding for breathing space */
+    }
+
+    .hero h1 {
+        font-size: 50px;
+        letter-spacing: 10px;
+
+        /* Smaller hero heading */
+    }
+
+    .hero p {
+        font-size: 15px;
+        padding-top: 40px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+
+}
