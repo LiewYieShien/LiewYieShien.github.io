@@ -389,7 +389,7 @@ body {
     }
 
     .footer-menu-container {
-        gap: 50px;
+        gap: 20px;
     }
 
     .footer-menu-bar {
@@ -397,7 +397,13 @@ body {
     }
 
     .footer-menu-container p {
-        font-size: 15px;
+        font-size: 8px;
         margin-top: 30px;
+    }
+
+    .socialmedia {
+        height: 45px;
+        margin-top: 20px;
+        cursor: none;
     }
 }
