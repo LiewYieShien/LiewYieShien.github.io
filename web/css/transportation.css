@@ -251,7 +251,6 @@ button.perak:hover {
     cursor: pointer;
 }
 
-
 /* ---------------------------------------------Mobile Styles----------------------------------------------- */
 @media screen and (max-width: 800px) {
     .hamburger {
