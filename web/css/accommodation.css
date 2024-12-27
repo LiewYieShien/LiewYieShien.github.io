@@ -424,91 +424,52 @@
 /* -------------------------------------------- section 5 --- hotel 2 ------------------------------------------- */
 
 .sec5hotel2 {
-    background-color: #E2D5CA;
     z-index: 15;
     font-family: 'Sweet Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E2D5CA;
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
     justify-content: center;
-    padding: 0 150px;
+    align-items: center;
     height: 100vh;
 }
 
 .coverleftnright {
+    margin: 0 40px;
     display: flex;
-    position: relative;
+    justify-content: center;
     width: 100%;
+    max-width: 1200px;
+    border-radius: 20px;
+    overflow: hidden;
 }
-
 
 
 .imagetwo-section {
-    flex: 1;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    max-width: 450px;
-    max-height: 750px;
+    width: 40%;
+    height: auto;
 }
 
-
 .imagetwo-section img {
-    border-radius: 20px;
-    height: 750px;
     width: 100%;
-    display: block;
-    height: auto;
+    height: 100%;
     object-fit: cover;
+    border-radius: 15px;
+    /* Rounded corners for the left image */
 }
 
 .promotwo-container {
-    flex: 1;
-    display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    margin-left: 50px;
-    position: relative;
-    bottom: 30px;
-    max-height: 500px;
-}
-
-
-.r-hoteldetails {
-    margin-top: -10px;
-    margin-left: 30px;
+    justify-content: center;
+    margin-left: 60px;
     display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding: 20px;
-    background-color: #C0B1A1;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    max-width: 1200px;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
-.r-hoteldetails p {
-    margin-left: 15px;
-    text-indent: -38px;
-}
-
-
-.r-hoteldetails strong {
-    color: #9f0d08;
-}
-
-.icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
-    vertical-align: middle;
-}
-
-.text2hotel {
-    width: 500px;
-    flex: 1;
-    padding: 40px;
-    text-align: left;
-}
 
 .text2hotel h1 {
     position: relative;
@@ -532,6 +493,41 @@
     color: #9f0d08;
 }
 
+
+.r-hoteldetails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #C0B1A1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.r-hoteldetails p {
+    line-height: 1.5;
+    margin-left: 15px;
+    text-indent: -38px;
+}
+
+.r-hoteldetails strong {
+    color: #9f0d08;
+}
+
+.detailsleftnright {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 14px;
+    vertical-align: middle;
+}
+
+
 /* Button Styles */
 .book2 {
     width: 170px;
@@ -541,10 +537,7 @@
     display: flex;
     cursor: pointer;
     border: none;
-    position: relative;
     margin-top: 25px;
-    margin-left: 25px;
-    /* Adjusted for reverse layout */
     z-index: 5;
     transition: background-color 0.3s, transform 0.3s;
 }
@@ -566,7 +559,7 @@
 /* Hover Effect */
 .book2:hover {
     background-color: #E6DFD5;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .book2:hover span {
@@ -610,18 +603,6 @@
     }
 
 
-    .imagetwo-section {
-        display: none;
-    }
-
-    .promotwo-container {
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        margin: 0 100px;
-        bottom: 30px;
-        width: 20px;
-    }
 
     /* ----------------------------------------Section 2--------------------------------------------------- */
     .sec2 {
