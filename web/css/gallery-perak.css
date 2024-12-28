@@ -1,5 +1,6 @@
 /* ---------------------------------------------Gallery of Perak----------------------------------------------- */
-/* Hero Section Styles */
+
+/* ---------------------------------------------Hero Section Styles----------------------------------------------- */
 .hero {
     font-family: 'Sweet Sans Pro', sans-serif;
     height: 100vh;
@@ -28,23 +29,131 @@
     margin-bottom: -70px;
 }
 
-.gallery {
-    padding: 30px;
+/* ---------------------------------------------Gallery Section Styles----------------------------------------------- */
+.states-container {
     background-color: #03122D;
-    box-sizing: border-box;
+    padding: 80px;
+}
+
+.gallery {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
 }
 
-.gallery img {
-    padding-top: 90px;
-    padding-bottom: 90px;
-    width: 90%;
-    height: auto;
+.column1 {
+    flex: 1;
+}
+
+.column2 {
+    flex: 2;
+}
+
+/* ---------------------------------------------Photos Section Styles----------------------------------------------- */
+.perak1 {
+    background:
+        url('../images/perak/perak1.jpg');
+    background-size: cover;
+    border: 0px;
+    border-radius: 10px;
+    height: 275px;
+    width: auto;
+}
+
+.perak2 {
+    background:
+        url('../images/perak/perak2.jpg');
+    background-size: cover;
+    border: 0px;
+    border-radius: 10px;
+    height: 275px;
+    width: auto;
+}
+
+.perak3 {
+    background:
+        url('../images/perak/perak3.jpg');
+    background-size: cover;
+    border: 0px;
+    border-radius: 10px;
+    height: 325px;
+    width: auto;
+}
+
+.perak4 {
+    background:
+        url('../images/perak/perak4.png');
+    background-size: cover;
+    border: 0px;
+    border-radius: 10px;
+    height: 325px;
+    width: auto;
+}
+
+.perak5 {
+    background:
+        url('../images/perak/perak5.jpg');
+    background-size: cover;
+    border: 0px;
+    border-radius: 10px;
+    height: 325px;
+    width: auto;
+}
+
+.perak6 {
+    background:
+        url('../images/perak/perak6.jpg');
+    background-size: cover;
+    border: 0px;
+    border-radius: 10px;
+    height: 375px;
+    width: auto;
+}
+
+.perak7 {
+    background:
+        url('../images/perak/perak7.jpg');
+    background-size: cover;
+    border: 0px;
+    border-radius: 10px;
+    height: 375px;
+    width: auto;
+}
+
+.perak8 {
+    background:
+        url('../images/perak/perak8.jpg');
+    background-size: cover;
+    border: 0px;
+    border-radius: 10px;
+    height: 425px;
+    width: auto;
+}
+
+.perak9 {
+    background:
+        url('../images/perak/perak9.jpg');
+    background-size: cover;
+    border: 0px;
+    border-radius: 10px;
+    height: 425px;
+    width: auto;
+}
+
+.perak10 {
+    background:
+        url('../images/perak/perak10.jpg');
+    background-size: cover;
+    border: 0px;
+    border-radius: 10px;
+    height: 500px;
+    width: auto;
 }
 
 
+/* ---------------------------------------------Mobile Styles----------------------------------------------- */
 @media screen and (max-width: 1300px) {
     .hero h1 {
         font-size: 60px;
