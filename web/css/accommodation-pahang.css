@@ -134,7 +134,8 @@
     bottom: -15px;
     display: flex;
     max-width: 2000px;
-    margin: 100px auto;
+    margin: 100px 0px;
+    padding: 0px 60px;
     overflow: hidden;
 }
 
@@ -147,21 +148,17 @@
 }
 
 
-.text4hotel h4 {
-    font-size: 18px;
-    color: #7d7d7d;
-}
-
-.text4hotel h1 {
-    font-size: 40px;
+.text4hotel .bigttl {
+    font-size: 38px !important;
 }
 
 .text4hotel .p1 {
     font-weight: 100px;
-    font-size: 25px;
+    font-size: 25px !important;
 }
 
 .text4hotel .p2 {
+    font-size: 16px !important;
     font-weight: 100px;
     margin-bottom: 50px;
     line-height: 1.8;
@@ -255,6 +252,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 20px;
+    overflow: hidden;
     max-width: 450px;
     max-height: 750px;
 }
@@ -263,95 +262,60 @@
     border-radius: 20px;
     width: 100%;
     height: auto;
-    display: block;
     object-fit: cover;
 }
+
 
 
 
 /* ----------------------------------------------- hotel 2 ------------------------------------------- */
 .hotel2 {
-    background-color: #C8CEBC;
     z-index: 15;
     font-family: 'Sweet Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #C8CEBC;
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
     justify-content: center;
-    padding: 0 150px;
+    align-items: center;
     height: 100vh;
 }
 
 .coverleftnright {
+    margin: 0 60px;
     display: flex;
-    position: relative;
-    left: 80px;
+    justify-content: center;
     width: 100%;
+    max-width: 1200px;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 
 .imagetwo-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 450px;
-    max-height: 750px;
+    width: 40%;
+    height: auto;
 }
 
 .imagetwo-section img {
-    border-radius: 20px;
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
     object-fit: cover;
+    border-radius: 15px;
+    /* Rounded corners for the left image */
 }
 
 .promotwo-container {
-    flex: 1;
-    display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    margin-left: 50px;
-    position: relative;
-    bottom: 30px;
-    max-height: 500px;
-}
-
-
-.r-hoteldetails {
+    justify-content: center;
+    margin-left: 60px;
     display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding: 20px 40px;
-    background-color: #A1B082;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    max-width: 1200px;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
-
-
-.r-hoteldetails p {
-    text-indent: -38px;
-}
-
-
-.r-hoteldetails strong {
-    color: #2D9818;
-}
-
-.icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
-    vertical-align: middle;
-}
-
-.text2hotel {
-    width: 500px;
-    flex: 1;
-    padding: 40px;
-    text-align: left;
-}
 
 .text2hotel h1 {
     position: relative;
@@ -375,6 +339,41 @@
     color: #2D9818;
 }
 
+
+.r-hoteldetails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #94a670;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.r-hoteldetails p {
+    line-height: 1.5;
+    margin-left: 15px;
+    text-indent: -38px;
+}
+
+.r-hoteldetails strong {
+    color: #2D9818;
+}
+
+.detailsleftnright {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 14px;
+    vertical-align: middle;
+}
+
+
 /* Button Styles */
 .book2 {
     width: 170px;
@@ -384,9 +383,7 @@
     display: flex;
     cursor: pointer;
     border: none;
-    position: relative;
     margin-top: 25px;
-    /* Adjusted for reverse layout */
     z-index: 5;
     transition: background-color 0.3s, transform 0.3s;
 }
@@ -394,7 +391,7 @@
 /* ----------- Text ---------------- */
 .book2 span {
     padding-left: 10px;
-    color: #DDE1CE;
+    color: #E6DFD5;
     font-size: 18px;
 }
 
@@ -407,14 +404,13 @@
 
 /* Hover Effect */
 .book2:hover {
-    background-color: #DDE1CE;
-    transform: scale(1.1);
+    background-color: #E6DFD5;
+    transform: scale(1.05);
 }
 
 .book2:hover span {
     color: #2D9818;
 }
-
 
 /* -----------------------------------------------hotel 1--------------------------------------------- */
 
@@ -563,35 +559,11 @@
 }
 
 .image-section img {
-    border-radius: 20px;
+    border-radius: 0px;
     width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
-}
-
-@media screen and (max-width: 1250px) {
-    .hotel2 .imagetwo-section {
-        display: none;
-        /* Hide the image section */
-    }
-
-    .text2hotel {
-        width: 600px;
-        flex: 0;
-        padding: 40px;
-        text-align: left;
-    }
-
-    .promotwo-container {
-        flex: 0;
-        margin-left: 0px;
-        position: relative;
-        bottom: 30px;
-        max-height: 500px;
-    }
-
-
 }
 
 
@@ -644,8 +616,28 @@
         height: auto;
     }
 
+}
 
+@media screen and (max-width: 976px) {
 
+    /* melaka hotel 111111 */
+    .image-section {
+        display: none;
+    }
+
+    .text4hotel {
+        margin-right: 0px;
+    }
+
+    /* melaka hotel 22222 */
+    .imagetwo-section {
+        display: none;
+    }
+
+    .promotwo-container {
+        margin-left: 0px;
+        width: 90%;
+    }
 }
 
 
@@ -744,34 +736,34 @@
     .hotel2 {
         width: 100%;
         flex-direction: column;
-        height: auto;
-        padding: 0px;
+        height: 900px;
     }
 
     /* Content Wrapper */
     .coverleftnright {
         flex-direction: column;
         align-items: center;
+        border-radius: 0px !important;
     }
 
     .imagetwo-section {
-        flex: 1;
         display: block;
         align-items: center;
         justify-content: center;
         width: 100%;
-        height: auto;
+        height: 40%;
     }
 
     .imagetwo-section img {
+        border-radius: 0px !important;
         width: 100%;
         height: auto;
         object-fit: cover;
-        border-radius: 0;
     }
 
     .promotwo-container {
-        background-color: #E2D5CA;
+        border-radius: 0px !important;
+        background-color: #C8CEBC;
         width: 100%;
         margin: 0 0;
     }
@@ -779,21 +771,24 @@
     /* Text Section */
     .text2hotel {
         position: relative;
-        left: -30px;
-        width: 80%;
-        margin-left: 20px;
+        width: 75%;
+        margin-left: 30px;
         text-align: left;
     }
 
     .text2hotel h1 {
+        bottom: -30px;
         font-size: 28px;
     }
+
 
     .text2hotel .p1 {
         font-size: 18px;
     }
 
     .text2hotel .p2 {
+        margin-top: 40px;
+        margin-bottom: 10px;
         font-size: 14px;
         line-height: 1.5;
     }
@@ -801,22 +796,23 @@
     /* Hotel Details */
     .r-hoteldetails {
         position: relative;
-        background-color: #FFFFFF;
+        background-color: #94a670;
         width: 80%;
         margin: 10px;
+        margin-left: 30px;
         padding-left: 20px;
         padding-top: 10px;
     }
 
     .r-hoteldetails p {
         text-align: left;
-        font-size: 14px;
+        font-size: 16px;
         /* Smaller font for mobile */
     }
 
     .r-hoteldetails .icon {
-        width: 16px;
-        height: 16px;
+        width: 18px;
+        height: 18px;
     }
 
     /* Book Now Button */
@@ -841,7 +837,24 @@
         height: auto;
         flex-direction: column;
         align-items: center;
-        padding: 20px;
+    }
+
+    .text4hotel .bigttl {
+        line-height: 1.1;
+        font-size: 35px !important;
+    }
+
+    .text4hotel .p1 {
+        font-size: 20px !important;
+    }
+
+
+    .promo-container {
+        position: relative;
+        left: -30px;
+        bottom: 0px;
+        max-width: 20000px;
+        padding: 0 10px;
     }
 
 }
