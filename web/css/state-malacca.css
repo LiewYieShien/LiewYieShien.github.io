@@ -40,6 +40,44 @@
 
 }
 
+/* --------------------------------------------------Button-------------------------------------------------------- */
+.button-container {
+    flex-direction: column;
+    display: flex;
+    gap: 30px;
+    position: relative;
+    margin-right: 100px;
+}
+
+.circle-btn {
+    position: relative;
+    z-index: 5;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    /* Removes default border */
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.circle-btn img {
+    width: 75%;
+    height: auto;
+}
+
+/* Hover effect for button */
+.circle-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+
 /*---------------------------- jonker street-------------------*/
 
 .jonkerstreet {

@@ -481,4 +481,31 @@
         max-width: 350px;
 
     }
+
+    /* ----------------- accomodation &transpot buttons ------------------------------------------*/
+
+
+    .button-container {
+        position: absolute;
+        bottom: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .circle-btn {
+        margin: 0 30px;
+        margin-bottom: 30px;
+        /* Reduce the margin between buttons */
+    }
+
+    .button-container .circle-btn:first-child {
+        align-self: flex-start;
+    }
+
+    .button-container .circle-btn:last-child {
+        align-self: flex-end;
+    }
 }
