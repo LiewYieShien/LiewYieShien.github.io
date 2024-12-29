@@ -154,7 +154,7 @@
 
 .text4hotel .p1 {
     font-weight: 100px;
-    font-size: 25px;
+    font-size: 25px !important;
 }
 
 .text4hotel .p2 {
@@ -572,24 +572,10 @@
     }
 
 
-
-    .hoteldetails p {
-        margin-left: 0px;
-    }
-
-
     .promo-container {
         margin-left: 40px;
         flex-direction: column;
         align-items: center;
-    }
-
-    .text4hotel {
-        max-width: 100%;
-    }
-
-    .text4hotel .p1 {
-        font-size: 20px;
     }
 
 
@@ -634,7 +620,7 @@
 
     .promotwo-container {
         border-radius: 0px;
-        background-color: #C8CEBC;
+        background-color: #CEE1ED;
         width: 100%;
         margin: 0 0;
     }
@@ -667,7 +653,7 @@
     /* Hotel Details */
     .r-hoteldetails {
         position: relative;
-        background-color: #94a670;
+        background-color: #90B7C9;
         width: 80%;
         margin: 10px;
         margin-left: 30px;
@@ -716,7 +702,7 @@
     }
 
     .text4hotel .p1 {
-        font-size: 20px;
+        font-size: 20px !important;
     }
 
 
