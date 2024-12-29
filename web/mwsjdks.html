@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Location Map</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #ddd;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .locationmap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 65%;
+            gap: 180px;
+            /* Added gap between location points */
+        }
+
+        .line-mapdashline {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 2px;
+            border-top: 2px dashed #ddd;
+            transform: translateY(-50%);
+        }
+
+        .locationpoint {
+            position: relative;
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+
+        .locationpoint:hover {
+            transform: scale(1.2);
+        }
+
+        .locationpoint:hover .button-map {
+            background-color: #ff6f61;
+        }
+
+        .locationpoint:hover .label {
+            color: #ff6f61;
+        }
+
+        .button-map {
+            width: 16px;
+            height: 16px;
+            background: #ddd;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .label {
+            font-size: 25px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+            color: #ddd;
+        }
+
+        .below .label {
+            top: 26px;
+            /* Spacing for below position */
+        }
+
+        .above .label {
+            top: -40px;
+            /* Spacing for above position */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="locationmap">
+        <div class="line-mapdashline"></div>
+        <div class="locationpoint below">
+            <button class="button-map" onclick="alert('Penang clicked!')"></button>
+            <div class="label">Penang</div>
+        </div>
+        <div class="locationpoint above">
+            <button class="button-map" onclick="alert('Perak clicked!')"></button>
+            <div class="label">Perak</div>
+        </div>
+        <div class="locationpoint below">
+            <button class="button-map" onclick="alert('Pahang clicked!')"></button>
+            <div class="label">Pahang</div>
+        </div>
+        <div class="locationpoint above">
+            <button class="button-map" onclick="alert('Malacca clicked!')"></button>
+            <div class="label">Malacca</div>
+        </div>
+    </div>
+</body>
+
+</html>
