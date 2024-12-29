@@ -1,0 +1,626 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    font-family: 'Sweet Sans Pro', sans-serif;
+    height: 100vh;
+    /* Full screen height */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(2, 12, 22, 0.2)), url('../images/penang/hero.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-content {
+    color: white;
+    text-align: center;
+
+}
+
+.hero p {
+    position: relative;
+    top: 30px;
+    font-weight: 200;
+    font-size: 32px;
+}
+
+.hero h1 {
+    font-size: 120px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+
+
+/* --------------------------------------------------Button-------------------------------------------------------- */
+.button-container {
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.circle-btn {
+    position: relative;
+    z-index: 5;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    /* Removes default border */
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.circle-btn img {
+    width: 65%;
+    height: auto;
+}
+
+/* Hover effect for button */
+.circle-btn:hover {
+    transform: scale(1.2);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/*---------------------------- jonker street-------------------*/
+
+.jonkerstreet {
+    padding: 50px;
+    background-color: #45150E;
+}
+
+.jonkerstreet h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #AAA297;
+    margin-bottom: 60px;
+}
+
+/* 主内容容器，左右分布 */
+.content1 {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    margin-top: 40px;
+
+}
+
+.image1 {
+    flex: 1;
+    display: flex;
+
+}
+
+.main-image {
+    margin-right: -40px;
+}
+
+.main-image img {
+    width: 80%;
+    height: auto;
+    margin-right: 0px;
+}
+
+.small-images {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    margin-left: 0px;
+}
+
+.small-images img {
+    width: 80%;
+    height: auto;
+    margin-left: 0px;
+}
+
+/* 文字介绍 */
+.intro {
+    flex: 1;
+    max-width: 600px;
+
+}
+
+.intro h3 {
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: #F6EBDC;
+}
+
+.intro h4 {
+    font-size: 20px;
+
+    margin-bottom: 15px;
+    color: #AAA297
+}
+
+.intro p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #816E60;
+    font-weight: medium;
+}
+
+.intro strong {
+    color: #B24534;
+}
+
+/*------------------- encore melaka -------------------*/
+.encoremelaka {
+    background-image: url(../images/malacca/encoremelaka.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    height: 100vh;
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 80px;
+}
+
+
+.column1 {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    height: auto;
+    width: 40%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+
+
+
+}
+
+.content2 {
+    color: #F6EBDC;
+    padding: 20px;
+}
+
+.content2 h3 {
+    font-size: 30px;
+    color: #F6EBDC;
+    padding: 13px;
+}
+
+.content2 h4 {
+    font-size: 20px;
+    color: #AAA297;
+    padding: 13px;
+}
+
+.content2 p {
+    color: #816E60;
+    font-size: 16px;
+    padding: 13px;
+}
+
+.content2 strong {
+    color: #B24534;
+}
+
+/*------------------- Baba Nyonya-------------------*/
+
+.babanyonya {
+    padding: 50px;
+    background-color: #130B10;
+    height: 100vh;
+}
+
+.content3 {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    margin-top: 40px;
+
+}
+
+/*---------------------Malacca Straits Mosque-------------------*/
+.mosque {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/malacca/mosque.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 100vh;
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 80px;
+}
+
+/*------------------- church -------------------*/
+
+.church {
+    padding: 50px;
+    background-color: #45150E;
+    height: 110vh;
+}
+
+.content4 {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    margin-top: 40px;
+    flex-direction: row-reverse;
+
+}
+
+
+/*------------------- Button style -------------------*/
+.gallery {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    text-decoration: none;
+
+}
+
+.buttongallery {
+    font-size: 20px;
+    width: 20%;
+    padding: 10px;
+    margin: 40px;
+
+    background-color: #AAA297;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    /* Add shadow */
+
+}
+
+.search {
+    margin-left: 15px;
+
+    height: 20px;
+}
+
+.buttongallery:hover {
+
+    background-color: #F6EBDC;
+    /* Change to orange on hover */
+    transform: scale(1.1);
+    /* Slightly enlarge on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    /* Enhance shadow on hover */
+    text-decoration: none;
+}
+
+/*----------------------- What to eat----------------------------- */
+.restaurant {
+    background-color: #2A0C08;
+    height: 100vh;
+
+}
+
+.content5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.text {
+    margin-top: 50px;
+
+
+
+}
+
+.text h2 {
+    color: #F6EBDC;
+    font-size: 50px;
+}
+
+.text p {
+    color: #AAA297;
+    font-size: 20px;
+}
+
+.restaurantpic {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    margin-top: 50px;
+}
+
+.restaurantpic img {
+    display: flex;
+
+    width: 20%;
+    padding: 20px;
+}
+
+@media screen and (max-width: 900px) {
+
+    .hero {
+        background-position: center;
+        background-size: cover;
+        padding: 20px;
+        /* Add padding for breathing space */
+    }
+
+    .hero h1 {
+        font-size: 50px;
+        letter-spacing: 10px;
+
+        /* Smaller hero heading */
+    }
+
+    .hero p {
+        font-size: 15px;
+        padding-top: 40px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+
+    /* ---------------Jonker street-------------*/
+
+
+
+    .jonkerstreet h2 {
+        text-align: center;
+        font-size: 26px;
+
+
+    }
+
+    .content1 {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .image1 {
+        flex-direction: column;
+
+    }
+
+
+
+    .small-images {
+        display: none;
+    }
+
+    .intro h3 {
+        font-size: 30px;
+    }
+
+    /*----------- encore melaka--------------- */
+    .encoremelaka {
+        display: flex;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 80px;
+        height: 800px;
+    }
+
+
+    .column1 {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+        height: auto;
+        width: 800px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+
+
+    }
+
+    .content2 h3 {
+        font-size: 30px;
+        color: #F6EBDC;
+        padding: 13px;
+    }
+
+    .content2 h4 {
+        font-size: 15px;
+        color: #AAA297;
+        padding: 13px;
+    }
+
+    .content2 p {
+        font-size: 16px;
+        padding: 13px;
+    }
+
+    /* ---------------Baba & Nyonya-------------*/
+
+    .babanyonya {
+        height: fit-content;
+    }
+
+    .babanyonya h2 {
+        text-align: center;
+        font-size: 26px;
+
+
+    }
+
+    .content3 {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .image1 {
+        flex-direction: column;
+
+    }
+
+    .intro h3 {
+        font-size: 30px;
+    }
+
+    .intro h4 {
+        font-size: 18px;
+    }
+
+    .intro p {
+        font-size: 18px;
+    }
+
+    .bbnyonya {
+        width: 30%;
+    }
+
+    /*----------- encore melaka--------------- */
+    .mosque {
+        display: flex;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 80px;
+    }
+
+    /*----------- Christ Church--------------- */
+    .church {
+        height: fit-content;
+    }
+
+    .babanyonya h2 {
+        text-align: center;
+        font-size: 26px;
+
+
+    }
+
+    .content3 {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .content4 {
+        flex-direction: column;
+        display: flex;
+    }
+
+
+    /*------------------- Button style -------------------*/
+    .gallery {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        text-decoration: none;
+
+    }
+
+    .buttongallery {
+        font-size: 15px;
+        width: 50%;
+        padding: 10px;
+        margin: 40px;
+
+        background-color: #AAA297;
+        border-radius: 25px;
+        cursor: pointer;
+        border: none;
+
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.3s, transform 0.3s;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        /* Add shadow */
+
+    }
+
+    .search {
+        margin-left: 15px;
+
+        height: 20px;
+    }
+
+    .buttongallery:hover {
+
+        background-color: #F6EBDC;
+        /* Change to orange on hover */
+        transform: scale(1.1);
+        /* Slightly enlarge on hover */
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+        /* Enhance shadow on hover */
+        text-decoration: none;
+    }
+
+
+
+
+    /*----------------------- What to eat----------------------------- */
+    .restaurant {
+        background-color: #2A0C08;
+        height: fit-content;
+
+    }
+
+    .content5 {
+        display: flex;
+
+
+    }
+
+    .text {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding: 20px;
+
+
+    }
+
+    .text h2 {
+        color: #F6EBDC;
+        font-size: 40px;
+    }
+
+    .text p {
+        color: #AAA297;
+        font-size: 18px;
+    }
+
+    .restaurantpic {
+        display: flex;
+        justify-content: center;
+
+        margin-top: 50px;
+    }
+
+    .restaurantpic img {
+
+
+        width: 50%;
+        padding: 20px;
+    }
+}
