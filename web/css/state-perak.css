@@ -1,232 +1,86 @@
 /* ---------------------------------------------Perak----------------------------------------------- */
 
 /* ---------------------------------------------Hero Section Styles----------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .hero {
     font-family: 'Sweet Sans Pro', sans-serif;
     height: 100vh;
     /* Full screen height */
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('../images/perak/perak-galleryhero.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(2, 12, 22, 0.2)), url('../images/perak/perak-hero.jpg');
     background-size: cover;
-    /* covers the entire section */
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    color: #F6F6F6;
+    position: relative;
 }
 
-.hero h1 {
-    font-size: 80px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-    letter-spacing: 5px;
+.hero-content {
+    color: white;
+    text-align: center;
+
 }
 
 .hero p {
-    font-size: 28px;
-    font-weight: 250;
-    letter-spacing: 5px;
-    margin-bottom: -70px;
+    position: relative;
+    top: 30px;
+    font-weight: 200;
+    font-size: 32px;
 }
 
-/* ---------------------------------------------Gallery Section Styles----------------------------------------------- */
+.hero h1 {
+    font-size: 120px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* --------------------------------------------------Button-------------------------------------------------------- */
+.button-container {
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.circle-btn {
+    position: relative;
+    z-index: 5;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    /* Removes default border */
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.circle-btn img {
+    width: 65%;
+    height: auto;
+}
+
+/* Hover effect for button */
+.circle-btn:hover {
+    transform: scale(1.2);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------------------------------------------Top Things To Do Section Styles----------------------------------------------- */
 .states-container {
     background-color: #03122D;
     padding: 80px;
 }
 
 /* ---------------------------------------------Mobile Styles----------------------------------------------- */
-@media screen and (max-width: 1300px) {
-
-    /* ---------------------------------------------Hero Section Styles----------------------------------------------- */
-    .hero h1 {
-        font-size: 60px;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-    }
-
-    .hero p {
-        font-size: 20px;
-        margin-bottom: -50px;
-        letter-spacing: 2px;
-        font-weight: 300;
-    }
-}
-
-@media screen and (max-width: 1150px) {
-
-    /* ---------------------------------------------Hero Section Styles----------------------------------------------- */
-    .hero h1 {
-        font-size: 50px;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-    }
-
-    .hero p {
-        font-size: 18px;
-        margin-bottom: -42.5px;
-        letter-spacing: 2px;
-        font-weight: 300;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-
-    /* ---------------------------------------------Gallery Section Styles----------------------------------------------- */
-    .states-container {
-        padding: 60px;
-    }
-}
-
-@media screen and (max-width: 900px) {
-
-    /* ---------------------------------------------Hero Section Styles----------------------------------------------- */
-    .hero h1 {
-        font-size: 40px;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-    }
-
-    .hero p {
-        font-size: 16px;
-        margin-bottom: -35px;
-        letter-spacing: 2px;
-        font-weight: 300;
-    }
-
-}
-
-@media screen and (max-width: 650px) {
-
-    /* ---------------------------------------------Hero Section Styles----------------------------------------------- */
-    .hero h1 {
-        font-size: 30px;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-    }
-
-    .hero p {
-        font-size: 15px;
-        margin-bottom: -27.5px;
-        letter-spacing: 2px;
-        font-weight: 300;
-    }
-
-    /* ---------------------------------------------Gallery Section Styles----------------------------------------------- */
-    .states-container {
-        padding: 40px;
-    }
-
-    .gallery {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 9px;
-        margin-bottom: 9px;
-    }
-
-    .column1 {
-        flex: 1;
-    }
-
-    .column2 {
-        flex: 2;
-    }
-
-    /* ---------------------------------------------Photos Section Styles----------------------------------------------- */
-    .perak1 {
-        background:
-            url('../images/perak/perak1.jpg');
-        background-size: cover;
-        border: 0px;
-        border-radius: 10px;
-        height: 85px;
-        width: auto;
-    }
-
-    .perak2 {
-        background:
-            url('../images/perak/perak2.jpg');
-        background-size: cover;
-        border: 0px;
-        border-radius: 10px;
-        height: 85px;
-        width: auto;
-    }
-
-    .perak3 {
-        background:
-            url('../images/perak/perak3.jpg');
-        background-size: cover;
-        border: 0px;
-        border-radius: 10px;
-        height: 85px;
-        width: auto;
-    }
-
-    .perak4 {
-        background:
-            url('../images/perak/perak4.png');
-        background-size: cover;
-        border: 0px;
-        border-radius: 10px;
-        height: 85px;
-        width: auto;
-    }
-
-    .perak5 {
-        background:
-            url('../images/perak/perak5.jpg');
-        background-size: cover;
-        border: 0px;
-        border-radius: 10px;
-        height: 85px;
-        width: auto;
-    }
-
-    .perak6 {
-        background:
-            url('../images/perak/perak6.jpg');
-        background-size: cover;
-        border: 0px;
-        border-radius: 10px;
-        height: 125px;
-        width: auto;
-    }
-
-    .perak7 {
-        background:
-            url('../images/perak/perak7.jpg');
-        background-size: cover;
-        border: 0px;
-        border-radius: 10px;
-        height: 125px;
-        width: auto;
-    }
-
-    .perak8 {
-        background:
-            url('../images/perak/perak8.jpg');
-        background-size: cover;
-        border: 0px;
-        border-radius: 10px;
-        height: 130px;
-        width: auto;
-    }
-
-    .perak9 {
-        background:
-            url('../images/perak/perak9.jpg');
-        background-size: cover;
-        border: 0px;
-        border-radius: 10px;
-        height: 130px;
-        width: auto;
-    }
-
-    .perak10 {
-        background:
-            url('../images/perak/perak10.jpg');
-        background-size: cover;
-        border: 0px;
-        border-radius: 10px;
-        height: 200px;
-        width: auto;
-    }
-}
+@media screen and (max-width: 1300px) {}
