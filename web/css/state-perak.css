@@ -1,12 +1,6 @@
 /* ---------------------------------------------Perak----------------------------------------------- */
 
 /* ---------------------------------------------Hero Section Styles----------------------------------------------- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .hero {
     font-family: 'Sweet Sans Pro', sans-serif;
     height: 100vh;
@@ -30,6 +24,7 @@
     top: 30px;
     font-weight: 200;
     font-size: 32px;
+    margin-bottom: -100px;
 }
 
 .hero h1 {
