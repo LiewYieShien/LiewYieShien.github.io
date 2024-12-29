@@ -1,0 +1,81 @@
+/* ---------------------------------------------Perak----------------------------------------------- */
+
+/* ---------------------------------------------Hero Section Styles----------------------------------------------- */
+.hero {
+    font-family: 'Sweet Sans Pro', sans-serif;
+    height: 100vh;
+    /* Full screen height */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(2, 12, 22, 0.2)), url('../images/perak/perak-hero.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-content {
+    color: white;
+    text-align: center;
+
+}
+
+.hero p {
+    position: relative;
+    top: 30px;
+    font-weight: 200;
+    font-size: 32px;
+    margin-bottom: -100px;
+}
+
+.hero h1 {
+    font-size: 120px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* --------------------------------------------------Button-------------------------------------------------------- */
+.button-container {
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.circle-btn {
+    position: relative;
+    z-index: 5;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    /* Removes default border */
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.circle-btn img {
+    width: 65%;
+    height: auto;
+}
+
+/* Hover effect for button */
+.circle-btn:hover {
+    transform: scale(1.2);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------------------------------------------Top Things To Do Section Styles----------------------------------------------- */
+.states-container {
+    background-color: #03122D;
+    padding: 80px;
+}
+
+/* ---------------------------------------------Mobile Styles----------------------------------------------- */
+@media screen and (max-width: 1300px) {}
