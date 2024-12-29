@@ -1,0 +1,812 @@
+@font-face {
+    font-family: 'Sweet Sans Pro';
+    src: url('fonts/SweetSansProMedium.otf') format('opentype');
+}
+
+/* ------------------------------------------------------------Cover-------------------------------------------------------------------- */
+
+.hotelperak1 {
+    background-color: #051839;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.left-melaka {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.left-melaka img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right-melaka {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+
+
+.text-melaka {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 55px;
+    width: 80%;
+    color: white;
+}
+
+
+.text-melaka h1,
+.text-melaka p {
+    text-align: left;
+    margin: 0;
+}
+
+.text-melaka h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.text-melaka .p1 {
+    color: #C0B9AF;
+    font-family: 'Sweet Sans Pro', sans-serif;
+    font-weight: 100;
+    font-size: 22px;
+}
+
+.text-melaka .p2 {
+    color: #C0B9AF;
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+}
+
+/* ------------------------------------------------------------Slider-------------------------------------------------------------------- */
+
+.slidermelaka {
+    position: relative;
+}
+
+.slider-container {
+    width: 650px;
+    overflow: hidden;
+    display: flex;
+}
+
+.slider {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.slider img {
+    width: 287px;
+    height: 414px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+/* Optional: Add some border styling */
+.slider-container:before {
+    content: " ";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 10px;
+}
+
+
+
+/* -----------------------------------------------hotel 1--------------------------------------------- */
+
+.hotel1 {
+    z-index: 15;
+    font-family: 'Sweet Sans Pro', sans-serif;
+    height: 100vh;
+    background: url('../images/accommodation-perak/cover.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+
+.promo-container {
+    position: relative;
+    left: -20px;
+    bottom: -15px;
+    display: flex;
+    max-width: 2000px;
+    margin: 100px 0px;
+    padding: 0px 60px;
+    overflow: hidden;
+}
+
+.text4hotel {
+    flex: 2;
+    max-width: 600px;
+    margin-bottom: 50px;
+    padding: 40px;
+    line-height: 0.6;
+}
+
+
+.text4hotel .bigttl {
+    font-size: 38px;
+}
+
+.text4hotel .p1 {
+    font-weight: 100px;
+    font-size: 25px;
+}
+
+.text4hotel .p2 {
+    font-size: 16px;
+    font-weight: 100px;
+    margin-bottom: 50px;
+    line-height: 1.8;
+}
+
+.text4hotel .highlight {
+    font-weight: bold;
+    color: #167EC3;
+}
+
+.hoteldetails {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #CEE1ED;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.detailsleftnright {
+    margin-left: 30px;
+}
+
+.hoteldetails p {
+    margin-left: 15px;
+    text-indent: -38px;
+    line-height: 1.5;
+    /* Negative indent to bring the first line closer to the icon */
+}
+
+.hoteldetails img.icon {
+    flex-shrink: 0;
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.hoteldetails strong {
+    color: #167EC3;
+}
+
+
+/* Button Styles */
+.book {
+    width: auto;
+    padding: 15px 25px;
+    background-color: #1A426E;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    bottom: -25px;
+    z-index: 20;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* -----------Text---------------- */
+.book span {
+    padding-left: 10px;
+    color: #a0c1cf;
+    font-size: 18px;
+}
+
+/* -----------Icon---------------- */
+.book .right {
+    margin-left: 10px;
+    width: 15px;
+    height: auto;
+}
+
+/* Hover Effect */
+.book:hover {
+    background-color: #a0c1cf;
+    transform: scale(1.1);
+}
+
+
+.book:hover span {
+    color: #167EC3;
+}
+
+
+.image-section {
+    flex: 1;
+    margin-top: -40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 450px;
+    max-height: 750px;
+}
+
+.image-section img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+
+
+/* ----------------------------------------------- hotel 2 ------------------------------------------- */
+.hotel2 {
+    z-index: 15;
+    font-family: 'Sweet Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #CEE1ED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.coverleftnright {
+    margin: 0 60px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+.imagetwo-section {
+    width: 40%;
+    height: auto;
+}
+
+.imagetwo-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    /* Rounded corners for the left image */
+}
+
+.promotwo-container {
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 60px;
+    display: flex;
+    width: 50%;
+    max-width: 1200px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+.text2hotel h1 {
+    position: relative;
+    bottom: -20px;
+    font-size: 40px;
+}
+
+.text2hotel .p1 {
+    font-weight: 250;
+    font-size: 25px;
+    margin-bottom: -50px;
+}
+
+.text2hotel .p2 {
+    font-weight: 250;
+    margin-bottom: 20px;
+}
+
+.text2hotel .highlight {
+    font-weight: bold;
+    color: #167EC3;
+}
+
+
+.r-hoteldetails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #90B7C9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.r-hoteldetails p {
+    line-height: 1.5;
+    margin-left: 15px;
+    text-indent: -38px;
+}
+
+.r-hoteldetails strong {
+    color: #167EC3;
+}
+
+.detailsleftnright {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 14px;
+    vertical-align: middle;
+}
+
+
+/* Button Styles */
+.book2 {
+    width: 170px;
+    padding: 15px 25px;
+    background-color: #1A426E;
+    border-radius: 25px;
+    display: flex;
+    cursor: pointer;
+    border: none;
+    margin-top: 25px;
+    z-index: 5;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* ----------- Text ---------------- */
+.book2 span {
+    padding-left: 10px;
+    color: #a0c1cf;
+    font-size: 18px;
+}
+
+/* ----------- Icon ---------------- */
+.book2 .right {
+    margin-left: 10px;
+    width: 15px;
+    height: auto;
+}
+
+/* Hover Effect */
+.book2:hover {
+    background-color: #a0c1cf;
+    transform: scale(1.05);
+}
+
+.book2:hover span {
+    color: #167EC3;
+}
+
+/* -----------------------------------------------hotel 3--------------------------------------------- */
+
+.hotel3 {
+    z-index: 15;
+    font-family: 'Sweet Sans Pro', sans-serif;
+    height: 100vh;
+    background: url('../images/accommodation-perak/cover2.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+
+.promo-container {
+    position: relative;
+    left: -20px;
+    bottom: -15px;
+    display: flex;
+    max-width: 2000px;
+    margin: 100px auto;
+    overflow: hidden;
+}
+
+
+
+@media screen and (max-width: 1100px) {
+
+    /* ---------------------------------------Pahang---------------------------- */
+    .hotelpahang1 {
+        height: 800px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-melaka {
+        height: 50px;
+        width: 100%;
+        display: flex;
+    }
+
+    .right-melaka {
+        height: 700px;
+        width: 100%;
+        display: flex;
+    }
+
+    .text-melaka {
+        width: 70%;
+        color: white;
+        margin-left: 0 10px;
+        margin-top: 10px;
+    }
+
+    .text-melaka h1 {
+        font-size: 28px;
+    }
+
+    .text-melaka p {
+        font-size: 18px;
+    }
+
+    /* -------------------------------------Slider*/
+    .slider-container {
+        margin-left: 100px;
+        width: 80%;
+        height: 300px;
+    }
+
+    .slider img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 976px) {
+
+    /* melaka hotel 111111 */
+    .image-section {
+        display: none;
+    }
+
+    .text4hotel {
+        margin-right: 0px;
+    }
+
+    /* melaka hotel 22222 */
+    .imagetwo-section {
+        display: none;
+    }
+
+    .promotwo-container {
+        margin-left: 0px;
+        width: 90%;
+    }
+}
+
+
+/* --------------------------------------------Mobile Styles ------------------------------------------ */
+@media screen and (max-width: 767px) {
+
+    /* ---------------------------------------Pahang---------------------------- */
+    .hotelpahang1 {
+        flex-direction: column;
+        /* Stack the left and right sections vertically */
+        align-items: center;
+        height: auto;
+    }
+
+    .left-melaka {
+        flex: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-melaka img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+
+
+    .text-melaka h1 {
+        font-size: 32px;
+        /* Adjust font size for smaller screens */
+    }
+
+    .text-melaka .p1,
+    .text-melaka .p2 {
+        font-size: 14px;
+        /* Adjust paragraph font size */
+    }
+
+    /* -------------------------------------Slider*/
+    .slider-container {
+        margin-right: 100px;
+        margin-bottom: 30px;
+        width: 290px;
+        height: 414px;
+    }
+
+    .slider img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* -----------------------------------------------------Hotel 1 ------------------------------------------------*/
+    .hotel1 {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+
+
+    .hoteldetails p {
+        margin-left: 0px;
+    }
+
+
+    .promo-container {
+        margin-left: 40px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text4hotel {
+        max-width: 100%;
+    }
+
+    .text4hotel .p1 {
+        font-size: 20px;
+    }
+
+
+    .book {
+        width: 100%;
+        text-align: center;
+    }
+
+    .image-section {
+        display: none;
+    }
+
+
+    /* -----------------------------------------Hotel 2------------------------------ */
+    .hotel2 {
+        width: 100%;
+        flex-direction: column;
+        height: 900px;
+    }
+
+    /* Content Wrapper */
+    .coverleftnright {
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0px;
+    }
+
+    .imagetwo-section {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 40%;
+    }
+
+    .imagetwo-section img {
+        border-radius: 0px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .promotwo-container {
+        border-radius: 0px;
+        background-color: #C8CEBC;
+        width: 100%;
+        margin: 0 0;
+    }
+
+    /* Text Section */
+    .text2hotel {
+        position: relative;
+        width: 75%;
+        margin-left: 30px;
+        text-align: left;
+    }
+
+    .text2hotel h1 {
+        bottom: -30px;
+        font-size: 28px;
+    }
+
+
+    .text2hotel .p1 {
+        font-size: 18px;
+    }
+
+    .text2hotel .p2 {
+        margin-top: 40px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    /* Hotel Details */
+    .r-hoteldetails {
+        position: relative;
+        background-color: #94a670;
+        width: 80%;
+        margin: 10px;
+        margin-left: 30px;
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+
+    .r-hoteldetails p {
+        text-align: left;
+        font-size: 16px;
+        /* Smaller font for mobile */
+    }
+
+    .r-hoteldetails .icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* Book Now Button */
+    .book2 {
+        margin-left: 0px;
+        padding: 20px 10px;
+        width: 100%;
+        border-radius: 0px;
+        font-size: 16px;
+    }
+
+
+    .book2:hover {
+        background-color: #E6DFD5;
+        transform: scale(1);
+    }
+
+
+    /* -----------------------------------------Hotel 3------------------------------ */
+
+    .hotel3 {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text4hotel .bigttl {
+        line-height: 1.1;
+        font-size: 35px;
+    }
+
+    .text4hotel .p1 {
+        font-size: 20px;
+    }
+
+
+    .promo-container {
+        position: relative;
+        left: -30px;
+        bottom: 0px;
+        max-width: 20000px;
+        padding: 0 10px;
+    }
+
+}
+
+@media screen and (min-width: 425px) {
+    .hotel1 {
+        padding: 0;
+    }
+
+    .text4hotel h1 {
+        font-size: 24px;
+        /* Reduce header size */
+    }
+
+    .text4hotel h4,
+    .text4hotel .p1,
+    .text4hotel .p2 {
+        font-size: 15px;
+        /* Adjust font size for better fit */
+    }
+
+    .sec6hotel3 {
+        margin-bottom: 0px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .left-melaka img {
+        height: 300px;
+    }
+
+    .text-melaka h1 {
+        font-size: 26px;
+    }
+
+    .text-melaka .p1,
+    .text-melaka .p2 {
+        font-size: 12px;
+    }
+
+    /* Slider */
+    .slider-container {
+        width: 270px;
+        height: 400px;
+    }
+
+    .hotel1 {
+        padding: 10px;
+    }
+
+    .text4hotel h1 {
+        font-size: 22px;
+    }
+
+    .text4hotel .p1 {
+        font-size: 18px;
+    }
+
+    .hoteldetails p {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    /* Section 5 Hotel 2 */
+    .text2hotel h1 {
+        font-size: 24px;
+    }
+
+    .text2hotel .p1,
+    .text2hotel .p2 {
+        font-size: 12px;
+    }
+
+    .r-hoteldetails p {
+        font-size: 12px;
+    }
+
+    .book2 {
+        font-size: 14px;
+        padding: 15px 8px;
+    }
+
+}
