@@ -9,8 +9,8 @@
     font-family: 'Sweet Sans Pro', sans-serif;
     height: 100vh;
     /* Full screen height */
-    background-image:
-        url('../images/malacca/hero.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(2, 12, 22, 0.3)),
+        url('../images/pahang/heropahang.png');
     background-size: cover;
     /* covers the entire section */
     display: flex;
@@ -81,14 +81,14 @@
 
 
 
-/*---------------------------- jonker street-------------------*/
+/*---------------------------- cameron-------------------*/
 
-.jonkerstreet {
+.cameron {
     padding: 50px;
-    background-color: #45150E;
+    background-image: url(../images/pahang/cameron-bg.png);
 }
 
-.jonkerstreet h2 {
+.cameron h2 {
     text-align: center;
     font-size: 36px;
     color: #AAA297;
@@ -135,7 +135,7 @@
     margin-left: 0px;
 }
 
-/* 文字介绍 */
+/*--------------------------- text------------------------------------------------------ */
 .intro {
     flex: 1;
     max-width: 600px;
@@ -145,7 +145,7 @@
 .intro h3 {
     font-size: 35px;
     margin-bottom: 15px;
-    color: #F6EBDC;
+    color: #AAA297;
 }
 
 .intro h4 {
@@ -153,14 +153,6 @@
 
     margin-bottom: 15px;
     color: #AAA297
-}
-
-.intro p {
-    font-size: 16px;
-    margin-bottom: 15px;
-    line-height: 1.6;
-    color: #816E60;
-    font-weight: medium;
 }
 
 .intro ul li {
@@ -172,7 +164,7 @@
 }
 
 .intro strong {
-    color: #B24534;
+    color: #91C569;
 }
 
 .intro ul li::marker {
@@ -180,8 +172,29 @@
     color: #816E60;
 }
 
-/*------------------- encore melaka -------------------*/
-.encoremelaka {
+
+/*------------------- Genting highlands-------------------*/
+.genting {
+    padding: 50px;
+    background-color: #102121;
+}
+
+
+
+/* 主内容容器，左右分布 */
+.content2 {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    margin-top: 40px;
+    flex-direction: row-reverse;
+
+}
+
+/* -------------------------------------------------------tioman------------------------------------------------------------- */
+.tioman {
     background-image: url(../images/malacca/encoremelaka.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -208,31 +221,31 @@
 
 }
 
-.content2 {
+.content3 {
     color: #F6EBDC;
     padding: 20px;
 }
 
-.content2 h3 {
+.content3 h3 {
     font-size: 30px;
     color: #F6EBDC;
     padding: 13px;
 }
 
-.content2 h4 {
+.content3 h4 {
     font-size: 20px;
     color: #AAA297;
     padding: 13px;
 }
 
-.content2 p {
+.content3 p {
     color: #816E60;
     font-size: 16px;
     padding: 13px;
 }
 
-.content2 strong {
-    color: #B24534;
+.content3 strong {
+    color: #91C569;
 }
 
 /*------------------- Baba Nyonya-------------------*/
