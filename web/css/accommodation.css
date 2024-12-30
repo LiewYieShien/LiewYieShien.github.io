@@ -3,6 +3,10 @@
     src: url('fonts/SweetSansProMedium.otf') format('opentype');
 }
 
+.navbar {
+    z-index: 1000;
+}
+
 .page {
     margin: 0;
     padding: 0;
@@ -15,7 +19,6 @@
 
 /* ----------------------------------------Hero Section Styles----------------------------------------------- */
 .hero {
-    z-index: 15;
     font-family: 'Sweet Sans Pro', sans-serif;
     height: 100vh;
     background:

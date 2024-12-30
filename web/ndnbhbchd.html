@@ -4,242 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Section</title>
+    <title>Dashed Line with Buttons</title>
     <style>
-        /*----------------------- What to eat----------------------------- */
-        body {
-            margin: 0;
-            font-family: 'Sweet Sans Pro', sans-serif;
-        }
-
-        .restaurant {
-            background-color: #2A1A08;
-            height: 100vh;
-        }
-
-        .content5 {
+        /* Base styles for all locations (now buttons) */
+        .location {
+            z-index: 20;
             display: flex;
-            justify-content: center;
-            align-items: center;
             flex-direction: column;
-        }
-
-        .titleof-res {
-            width: 80%;
-            color: #F6EBDC;
-            font-size: 50px;
-        }
-
-
-        .titleof-res p {
-            margin-top: -40px;
-            color: #AAA297;
-            font-size: 20px;
-        }
-
-        .restaurantpic {
-            width: 80%;
-            display: flex;
+            align-items: center;
             justify-content: center;
-            flex: 1;
-            margin-top: 50px;
-            gap: 0px;
-        }
-
-        .image-button {
+            position: relative;
+            color: #fff;
+            font-size: 26px;
+            cursor: pointer;
+            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in-out;
             background: none;
             border: none;
-            padding: 0;
-            cursor: pointer;
-            transition: transform 0.3s, box-shadow 0.3s;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .image-button img {
-            width: 90%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        .image-button:hover {
-            transform: scale(1.1);
-        }
-
-        .image-button::after {
-            content: '';
-            position: absolute;
-            bottom: 7px;
-            left: 15px;
-            width: 90%;
-            height: 60%;
-            background: linear-gradient(to top, rgba(3, 3, 3, 0.7) 40%, rgba(0, 0, 0, 0.0) 100%);
-            opacity: 0;
-            transition: opacity 0.3s;
-            pointer-events: none;
-            z-index: 1;
-            /* Make sure the gradient stays behind */
-        }
-
-        .image-button:hover::after {
-            opacity: 1;
-        }
-
-        .text-overlay {
-            position: absolute;
-            bottom: 20px;
-            left: 30px;
-            color: white;
-            font-size: 20px;
-            font-weight: bold;
-            opacity: 0;
-            transition: opacity 0.3s;
-            pointer-events: none;
-            z-index: 2;
-            /* Ensure text is above the gradient */
-        }
-
-        .image-button:hover .text-overlay {
-            opacity: 1;
-        }
-
-
-        /* Popup styles */
-        .popup {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 80%;
-            max-width: 400px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            z-index: 1000;
-        }
-
-        .popup-content {
-            padding: 20px;
-            text-align: center;
-        }
-
-        .popup-content h3 {
-            margin-bottom: 10px;
-            color: #2A1A08;
-        }
-
-        .popup-content p {
-            color: #AAA297;
-        }
-
-        .close-popup {
-            margin-top: 20px;
+            /* Remove default button borders */
             padding: 10px 20px;
-            background-color: #AAA297;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            color: #fff;
+            text-align: center;
+            font-family: inherit;
+            font-weight: bold;
         }
 
-        .close-popup:hover {
-            background-color: #2A1A08;
-            color: #F6EBDC;
+        .location::before {
+            content: '';
+            width: 15px;
+            height: 15px;
+            background: #fff;
+            border-radius: 50%;
+            display: block;
+            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        }
+
+        /* Hover effect on the dot */
+        .location:hover::before {
+            transform: scale(1.2);
+            background-color: #ff6f61;
+            opacity: 1;
+        }
+
+        /* Hover effect on the text */
+        .location:hover {
+            transform: scale(1.2);
+            color: #ff6f61;
+            opacity: 1;
+        }
+
+        /* Add focus styles for accessibility */
+        .location:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px #ff6f61;
         }
     </style>
 </head>
 
 <body>
-    <section class="restaurant">
-        <div class="content5">
-            <div class="titleof-res">
-                <h2>What to eat</h2>
-                <p>Penang is a culinary paradise with must-try dishes showcasing its rich multicultural heritage.</p>
-            </div>
 
-
-            <!-------- Buttons-------->
-            <div class="restaurantpic">
-                <button class="image-button">
-                    <img src="images/penang/restaurant1.png" alt="Kebaya Dining">
-                    <div class="text-overlay">Kebaya Dining</div>
-                </button>
-                <button class="image-button">
-                    <img src="images/penang/restaurant2.png" alt="Curry Mee">
-                    <div class="text-overlay">Curry Mee</div>
-                </button>
-                <button class="image-button">
-                    <img src="images/penang/restaurant3.png" alt="Tree Monkey">
-                    <div class="text-overlay">Tree Monkey</div>
-                </button>
-                <button class="image-button">
-                    <img src="images/penang/restaurant4.png" alt="Char Kway Teow">
-                    <div class="text-overlay">Char Kway Teow</div>
-                </button>
-            </div>
-
-
-            <!-- Popups -->
-            <div class="popup">
-                <div class="popup-content">
-                    <h3>Kebaya Dining Room</h3>
-                    <p>Fine-dining restaurant serving modern Peranakan cuisine in an elegant setting.</p>
-                    <button class="close-popup">Close</button>
-                </div>
-            </div>
-            <div class="popup">
-                <div class="popup-content">
-                    <h3>Air Itam Sister Curry Mee​</h3>
-                    <p>Indulge in freshly baked delights from Melaka’s renowned bakery.</p>
-                    <button class="close-popup">Close</button>
-                </div>
-            </div>
-            <div class="popup">
-                <div class="popup-content">
-                    <h3>Tree monkey restaurant</h3>
-                    <p>Experience the unique Melaka-style satay dipped in savory sauce!</p>
-                    <button class="close-popup">Close</button>
-                </div>
-            </div>
-            <div class="popup">
-                <div class="popup-content">
-                    <h3>Siam Road Charcoal Char Kway Teow</h3>
-                    <p>Enjoy traditional kaya toast with a Peranakan twist.</p>
-                    <button class="close-popup">Close</button>
-                </div>
-            </div>
+    <div class="imagecontainer">
+        <div class="map-container1">
+            <button class="location penang" onclick="alert('You clicked Penang!')">Penang</button>
+            <button class="location pahang" onclick="alert('You clicked Pahang!')">Pahang</button>
         </div>
-    </section>
-    <script>
-        // Select all buttons and popups
-        const buttons = document.querySelectorAll(".image-button");
-        const popups = document.querySelectorAll(".popup");
-        const closeButtons = document.querySelectorAll(".close-popup");
+        <div class="map-container2">
+            <button class="location perak" onclick="alert('You clicked Perak!')">Perak</button>
+            <button class="location melaka" onclick="alert('You clicked Melaka!')">Melaka</button>
+        </div>
 
-        // Show popup on button click
-        buttons.forEach((button, index) => {
-            button.addEventListener("click", () => {
-                popups[index].style.display = "block";
-            });
-        });
+    </div>
 
-        // Hide popup on close button click
-        closeButtons.forEach((closeButton, index) => {
-            closeButton.addEventListener("click", () => {
-                popups[index].style.display = "none";
-            });
-        });
-
-        // Close popup when clicking outside of the popup content
-        popups.forEach((popup) => {
-            popup.addEventListener("click", (e) => {
-                if (e.target === popup) {
-                    popup.style.display = "none";
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>
