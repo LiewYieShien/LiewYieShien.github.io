@@ -40,6 +40,12 @@
 
 }
 
+.text strong,
+.text2 strong,
+.text3 strong {
+    color: #982D52;
+}
+
 .travel-tips {
 
     font-family: 'Sweet Sans Pro', sans-serif;
@@ -66,7 +72,7 @@
 }
 
 .picturetraveltips img {
-    width: 60%;
+    width: 70%;
     padding: 10px;
 
 }
@@ -116,25 +122,28 @@
 .content2 {
     display: flex;
     align-items: center;
-    margin: 30px;
     height: 100vh;
     max-width: 1280px;
     margin: 0 auto;
+    justify-content: center;
+    gap: 50px;
+    padding-left: 40px;
 
 
 }
 
 
+
+
 .picmosque {
     flex: 1;
-    justify-content: center;
-    display: flex;
+
 
 }
 
 
 .picmosque img {
-    width: 60%;
+    width: 70%;
     padding: 10px;
     margin-left: 20px;
     justify-content: center;
@@ -142,10 +151,9 @@
 
 
 .text2 {
-    flex: 1;
-    text-align: left;
-    justify-content: center;
-
+    flex: 1.5;
+    max-width: 600px;
+    padding-left: 60px;
 
 
 
@@ -164,7 +172,7 @@
     /* 段落行高 */
     text-align: justify;
     /* 段落对齐 */
-    max-width: 550px;
+
     align-items: right;
 
 
@@ -175,6 +183,7 @@
 .climateguide {
     font-family: 'Sweet Sans Pro', sans-serif;
     background-color: #CEC2B1;
+
 }
 
 .content3 {
@@ -195,7 +204,7 @@
 }
 
 .picclimate img {
-    width: 60%;
+    width: 70%;
     padding: 10px;
 }
 
@@ -273,7 +282,7 @@
         flex-direction: column-reverse;
         text-align: center;
         align-items: center;
-        height: 1050px;
+        height: 1150px;
         justify-content: center;
 
     }
@@ -318,7 +327,6 @@
     }
 
     .text,
-    .text2,
     .text3 {
         width: 100%;
         /* 確保文字容器寬度填滿父容器 */
@@ -331,6 +339,19 @@
 
     }
 
+    .text2 {
+        width: 100%;
+        /* 確保文字容器寬度填滿父容器 */
+        margin: 0;
+        /* 移除多餘外邊距 */
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+        max-width: 600px;
+        margin-left: -70px;
+
+    }
+
     .text h2,
     .text2 h2,
     .text3 h2 {
@@ -339,6 +360,7 @@
     }
 
     .text2 h2 {
+
         align-items: center;
         text-align: center;
         justify-content: center;
@@ -406,7 +428,7 @@
         flex-direction: column-reverse;
         text-align: center;
         align-items: center;
-        height: 900px;
+        height: 1000px;
         justify-content: center;
 
     }
@@ -415,7 +437,7 @@
         flex-direction: column;
         text-align: center;
         align-items: center;
-        height: 1000px;
+        height: 1100px;
         justify-content: center;
 
     }
@@ -451,7 +473,6 @@
     }
 
     .text,
-    .text2,
     .text3 {
         width: 100%;
         /* 確保文字容器寬度填滿父容器 */
@@ -462,6 +483,19 @@
         justify-content: center;
         max-width: 350px;
 
+    }
+
+    .text2 {
+        width: 100%;
+        /* 確保文字容器寬度填滿父容器 */
+        margin: 0;
+        /* 移除多餘外邊距 */
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+        max-width: 350px;
+        margin-left: -90px;
+        margin-bottom: 50px;
     }
 
     .text h2,
@@ -475,7 +509,7 @@
         align-items: center;
         text-align: center;
         justify-content: center;
-
+        margin-top: -30px;
     }
 
     .text p,
@@ -488,37 +522,28 @@
 
     .text2 p {
 
-        margin: 0;
+        margin-bottom: 20px;
 
         text-align: justify;
         max-width: 350px;
 
     }
 
-    /* ----------------- accomodation &transpot buttons ------------------------------------------*/
 
+}
 
-    .button-container {
-        position: absolute;
-        bottom: 30px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 90%;
-        margin: 0 auto;
+@media screen and (max-width: 400px) {
+    .content2 {}
+
+    .picmosque img {
+        width: 70%;
+        height: auto;
+
+        margin-left: -30px;
+
     }
 
-    .circle-btn {
-        margin: 0 30px;
-        margin-bottom: 30px;
-        /* Reduce the margin between buttons */
-    }
-
-    .button-container .circle-btn:first-child {
-        align-self: flex-start;
-    }
-
-    .button-container .circle-btn:last-child {
-        align-self: flex-end;
+    .text2 {
+        margin-right: 0px;
     }
 }
