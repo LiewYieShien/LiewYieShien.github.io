@@ -232,7 +232,7 @@
         </div>
 
         <div>
-            <a class="gallery" href="gallery-malacca.html">
+            <a class="gallery" href="gallery-penang.html">
                 <button class="buttongallery">
                     Explore the Gallery
                     <img class="search" src="images/malacca/search.png" alt="icon" />
@@ -251,24 +251,93 @@
     <!--------------------------------------------------- What to eat -------------------------------------------------->
     <section class="restaurant">
         <div class="content5">
-            <div class="text">
+            <div class="titleof-res">
                 <h2>What to eat</h2>
-                <p>Melaka is a cultural gem and a culinary haven, offering must-try dishes that reflect its
-                    vibrant blend of <br>
-                    historical and multicultural influences.</p>
+                <p>Penang is a culinary paradise with must-try dishes showcasing its rich multicultural heritage.</p>
             </div>
 
+
+            <!-------- Buttons-------->
             <div class="restaurantpic">
-                <img src="images/malacca/chickenrice.png" alt="Hoe Kee chickenrice">
-                <img src="images/malacca/somethingbakery.png" alt="Something Bakery">
-                <img src="images/malacca/sataycelup.png" alt="Satay Celup">
-                <img src="images/malacca/babakaya.png" alt="Baba Kaya">
+                <button class="image-button">
+                    <img src="images/penang/restaurant1.png" alt="Kebaya Dining">
+                    <div class="text-overlay">Kebaya Dining</div>
+                </button>
+                <button class="image-button">
+                    <img src="images/penang/restaurant2.png" alt="Curry Mee">
+                    <div class="text-overlay">Curry Mee</div>
+                </button>
+                <button class="image-button">
+                    <img src="images/penang/restaurant3.png" alt="Tree Monkey">
+                    <div class="text-overlay">Tree Monkey</div>
+                </button>
+                <button class="image-button">
+                    <img src="images/penang/restaurant4.png" alt="Char Kway Teow">
+                    <div class="text-overlay">Char Kway Teow</div>
+                </button>
             </div>
 
+
+            <!-- Popups -->
+            <div class="popup">
+                <div class="popup-content">
+                    <h3>Kebaya Dining Room</h3>
+                    <p>Fine-dining restaurant serving modern Peranakan cuisine in an elegant setting.</p>
+                    <button class="close-popup">Close</button>
+                </div>
+            </div>
+            <div class="popup">
+                <div class="popup-content">
+                    <h3>Air Itam Sister Curry Mee​</h3>
+                    <p>Indulge in freshly baked delights from Melaka’s renowned bakery.</p>
+                    <button class="close-popup">Close</button>
+                </div>
+            </div>
+            <div class="popup">
+                <div class="popup-content">
+                    <h3>Tree monkey restaurant</h3>
+                    <p>Experience the unique Melaka-style satay dipped in savory sauce!</p>
+                    <button class="close-popup">Close</button>
+                </div>
+            </div>
+            <div class="popup">
+                <div class="popup-content">
+                    <h3>Siam Road Charcoal Char Kway Teow</h3>
+                    <p>Enjoy traditional kaya toast with a Peranakan twist.</p>
+                    <button class="close-popup">Close</button>
+                </div>
+            </div>
         </div>
-
-
     </section>
+    <script>
+        // Select all buttons and popups
+        const buttons = document.querySelectorAll(".image-button");
+        const popups = document.querySelectorAll(".popup");
+        const closeButtons = document.querySelectorAll(".close-popup");
+
+        // Show popup on button click
+        buttons.forEach((button, index) => {
+            button.addEventListener("click", () => {
+                popups[index].style.display = "block";
+            });
+        });
+
+        // Hide popup on close button click
+        closeButtons.forEach((closeButton, index) => {
+            closeButton.addEventListener("click", () => {
+                popups[index].style.display = "none";
+            });
+        });
+
+        // Close popup when clicking outside of the popup content
+        popups.forEach((popup) => {
+            popup.addEventListener("click", (e) => {
+                if (e.target === popup) {
+                    popup.style.display = "none";
+                }
+            });
+        });
+    </script>
 
     <!--------------------------------------------------- Footer Section -------------------------------------------------->
     <section class="footer">
