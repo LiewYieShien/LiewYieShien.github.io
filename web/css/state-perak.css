@@ -71,10 +71,263 @@
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* ---------------------------------------------Top Things To Do Section Styles----------------------------------------------- */
-.states-container {
+/* -------------------------------------------------------george town------------------------------------------------------------- */
+.georgetown {
+    padding: 100px 80px;
+    background-color: #001421;
+}
+
+.georgetown h2 {
+    text-align: center;
+    font-size: 34px;
+    color: #BEB6A7;
+    margin-bottom: 120px;
+}
+
+.content1 {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    margin-top: 40px;
+}
+
+.threeimage-gridcontainer {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    /* Adjust proportion between the two columns */
+    gap: 25px;
+    /* gap between */
+    max-width: 650px;
+    margin: 0;
+}
+
+.griditem-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.smallerimages {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    /* Create two stacked rows */
+    gap: 10px;
+    /* gap between */
+
+}
+
+
+/* ----------------------------text------------------------------------ */
+.intro {
+    flex: 1;
+    max-width: 550px;
+    margin-left: 30px;
+}
+
+.intro h3 {
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: #F6EBDC;
+}
+
+.intro h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #AAA297
+}
+
+.intro ul li {
+    font-size: 16px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+    color: #816E60;
+    font-weight: medium;
+}
+
+.intro strong {
+    color: #57A2D3;
+}
+
+.intro ul li::marker {
+    font-size: 20px;
+    color: #816E60;
+}
+
+
+
+/* -------------------------------------------------------penang hills------------------------------------------------------------- */
+.penanghills {
+    font-family: 'Sweet Sans Pro', sans-serif;
+    height: 130vh;
+    background-image: url('../images/perak/pulaupangkor.png');
+    background-size: cover;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 100px;
+}
+
+.georgetownimage {
+    flex: 1;
+    margin-right: 80px;
+    background-image: url('../images/penang/sec2penanghills.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 400px;
+}
+
+.textcontainerright1 {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    height: auto;
+    width: 42%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content2 {
+    color: #F6EBDC;
+    padding: 40px 20px;
+}
+
+.content2 h3 {
+    font-size: 30px;
+    color: #F6EBDC;
+    padding: 0 13px;
+}
+
+.content2 h4 {
+    font-size: 20px;
+    color: #AAA297;
+    padding: 13px;
+}
+
+
+/* <!------------------------------------------------------------ Kek Lok Si Temple ------------------------------------------------------------> */
+.klstemple {
+    padding: 100px 80px;
+    background-color: #000000;
+}
+
+
+/* <!------------------------------------------------------------ Penang National Park  ------------------------------------------------------------> */
+.nationalpark {
+    height: 100vh;
+    font-family: 'Sweet Sans Pro', sans-serif;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0px;
     background-color: #03122D;
-    padding: 80px;
+}
+
+
+.nationalpark-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    width: 80%;
+    margin: auto;
+}
+
+.content4 {
+    flex: 1;
+    text-align: left;
+}
+
+
+/* -------------------------------------------------------penang hills------------------------------------------------------------- */
+.escapepng {
+    font-family: 'Sweet Sans Pro', sans-serif;
+    height: 130vh;
+    background-image: url('../images/perak/gopeng.png');
+    background-size: cover;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 100px;
+}
+
+.textcontainerright2 {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    height: auto;
+    width: 42%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content2 {
+    color: #F6EBDC;
+    padding: 40px 20px;
+}
+
+.content2 h3 {
+    font-size: 30px;
+    color: #F6EBDC;
+    padding: 0 13px;
+}
+
+.content2 h4 {
+    font-size: 20px;
+    color: #AAA297;
+    padding: 13px;
+}
+
+
+
+
+
+/*------------------- Button style -------------------*/
+.gallery {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+
+}
+
+.buttongallery {
+    font-size: 20px;
+    width: auto;
+    padding: 15px 30px;
+    margin: 40px 0;
+    position: relative;
+    bottom: -50px;
+
+    background-color: #AAA297;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    /* Add shadow */
+}
+
+.search {
+    margin-left: 10px;
+    height: 20px;
+}
+
+.buttongallery:hover {
+    background-color: #F6EBDC;
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
 }
 
 /* ---------------------------------------------Mobile Styles----------------------------------------------- */
