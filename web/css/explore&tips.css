@@ -54,6 +54,7 @@
     padding: 30px;
     height: 100vh;
 
+
 }
 
 .picturetraveltips {
@@ -94,6 +95,7 @@
     text-align: justify;
     /* 段落对齐 */
     max-width: 600px;
+    align-items: right;
 
 }
 
@@ -104,40 +106,43 @@
     background-image: url(../images/exploretips/local\ bg.png);
     background-size: cover;
     display: flex;
+    justify-content: center;
+
 
 }
 
 .content2 {
     display: flex;
     align-items: center;
-    padding: 30px;
+    margin: 30px;
     height: 100vh;
-    justify-content: center;
+
 
 }
 
 
 .picmosque {
     flex: 1;
-    display: flex;
     justify-content: center;
+
 }
 
 
 .picmosque img {
     width: 60%;
     padding: 10px;
+    margin-left: 20px;
 
 }
 
 
 .text2 {
     flex: 1;
-    min-width: 0;
     text-align: left;
-    margin: 0;
-    max-width: 100%;
     justify-content: center;
+
+
+
 
 }
 
@@ -153,8 +158,10 @@
     line-height: 1.6;
     /* 段落行高 */
     text-align: justify;
-    max-width: 600px;
-    align-content: right;
+    /* 段落对齐 */
+    max-width: 550px;
+    align-items: right;
+
 
 
 }
@@ -257,7 +264,7 @@
 
 
     .content2 {
-        flex-direction: column;
+        flex-direction: column-reverse;
         text-align: center;
         align-items: center;
         height: 1050px;
@@ -390,7 +397,7 @@
 
 
     .content2 {
-        flex-direction: column;
+        flex-direction: column-reverse;
         text-align: center;
         align-items: center;
         height: 900px;
