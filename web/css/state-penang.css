@@ -183,6 +183,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 100px 80px;
     width: 80%;
 }
 
@@ -260,7 +261,7 @@
 }
 
 
-/* -------------------------------------------------------penang hills------------------------------------------------------------- */
+/* -------------------------------------------------------ESCAPE------------------------------------------------------------- */
 .escapepng {
     font-family: 'Sweet Sans Pro', sans-serif;
     height: 100vh;
@@ -311,7 +312,6 @@
     text-align: center;
     margin-top: 20px;
     text-decoration: none;
-
 }
 
 .buttongallery {
@@ -320,7 +320,7 @@
     padding: 15px 30px;
     margin: 40px 0;
     position: relative;
-    bottom: -50px;
+    bottom: -20px;
 
     background-color: #AAA297;
     border-radius: 30px;
@@ -389,6 +389,9 @@
     padding: 20px;
 }
 
+
+
+
 @media (max-width: 650px) {
 
     /* -------------------George Town-----------------*/
@@ -432,7 +435,113 @@
         margin-right: 30px;
 
     }
+
+
+    /* -------------------Penanghills-----------------*/
+    .penanghills {
+        height: auto;
+    }
+
+    .penanghills-container {
+        flex-direction: column;
+        margin: 50px;
+        width: 100%;
+    }
+
+    .georgetownimage {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+        height: auto;
+        background-size: cover;
+    }
+
+    .textcontainerright {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .content2 {
+        padding: 10px;
+    }
+
+    .content2 h3 {
+        font-size: 24px;
+    }
+
+    .content2 h4 {
+        font-size: 16px;
+    }
+
+
+    /* -------------------National Park-----------------*/
+    .nationalpark-container {
+        gap: 30px;
+    }
+
+    .threeimage-gridcontainer {
+        gap: 15px;
+    }
+
+    .smallerimages .griditem-image img {
+        width: calc(50% - 5px);
+    }
+
+    .content4 h3 {
+        font-size: 24px;
+    }
+
+    .content4 h4 {
+        font-size: 16px;
+        margin: 15px 0;
+    }
+
+    .content4 ul {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+
+    /* -------------------ESCAPE-----------------*/
+    .escapepng {
+        height: auto;
+    }
+
+    .escapepng-container {
+        flex-direction: column;
+        margin: 50px;
+        width: 100%;
+    }
+
+    .escapepngimage {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+    }
+
+    .textcontainerright {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+
+    .buttongallery {
+        font-size: 16px;
+        padding: 10px 20px;
+        border-radius: 20px;
+        bottom: 0px;
+    }
 }
+
+
+
+
 
 @media screen and (max-width: 920px) {
 
@@ -471,46 +580,50 @@
 
 
     /*--------------- penanghills------------------- */
+    .penanghills {
+        height: auto;
+    }
+
     .penanghills-container {
-        height: 100vh;
+        margin: 50px;
         flex-direction: column;
+        width: 90%;
     }
 
     .georgetownimage {
+        flex: 1;
         margin-right: 0;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         width: 100%;
-        min-height: 200px;
-        /* Ensures the image has some height */
+        min-height: 300px;
+        background-size: contain;
     }
 
     .textcontainerright {
         width: 100%;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    }
+
+    .content2 {
+        padding: 30px;
+    }
+
+    .content2 h3 {
+        font-size: 28px;
+    }
+
+    .content2 h4 {
+        font-size: 18px;
     }
 
 
 
-    /* ---------------Baba & Nyonya-------------*/
-
-    .babanyonya {
-        height: fit-content;
-    }
-
-    .babanyonya h2 {
-        text-align: center;
-        font-size: 26px;
-
-
-    }
-
+    /*--------------- Kl temple------------------- */
     .content3 {
         flex-direction: column;
         display: flex;
-    }
-
-    .image1 {
-        flex-direction: column;
-
     }
 
     .intro h3 {
@@ -525,35 +638,16 @@
         font-size: 18px;
     }
 
-    .bbnyonya {
-        width: 30%;
+    /*--------------- National Park------------------- */
+    .nationalpark {
+        height: auto;
     }
 
-    /*----------- encore melaka--------------- */
-    .mosque {
-        display: flex;
-        width: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-right: 80px;
-    }
-
-    /*----------- Christ Church--------------- */
-    .church {
-        height: fit-content;
-    }
-
-    .babanyonya h2 {
-        text-align: center;
-        font-size: 26px;
-
-
-    }
-
-    .content3 {
+    .nationalpark-container {
         flex-direction: column;
-        display: flex;
+        align-items: center;
+        gap: 40px;
+        width: 90%;
     }
 
     .content4 {
@@ -561,51 +655,47 @@
         display: flex;
     }
 
+    /*--------------- Escape penang------------------- */
+    .escapepng {
+        height: auto;
+    }
 
-    /*------------------- Button style -------------------*/
+    .escapepng-container {
+        margin: 50px;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .escapepngimage {
+        flex: 1;
+        margin-right: 0;
+        margin-bottom: 30px;
+        width: 100%;
+        min-height: 300px;
+        background-size: contain;
+    }
+
+    .textcontainerescape {
+        width: 100%;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    }
+
     .gallery {
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
+        margin-top: 0px;
         text-decoration: none;
-
+        margin-bottom: 50px;
     }
 
     .buttongallery {
-        font-size: 15px;
-        width: 50%;
-        padding: 10px;
-        margin: 40px;
-
-        background-color: #AAA297;
-        border-radius: 25px;
-        cursor: pointer;
-        border: none;
-
-        justify-content: center;
-        align-items: center;
-        transition: background-color 0.3s, transform 0.3s;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        /* Add shadow */
-
+        position: relative;
+        margin: 0px 0;
+        bottom: 0px;
     }
 
-    .search {
-        margin-left: 15px;
 
-        height: 20px;
-    }
 
-    .buttongallery:hover {
-
-        background-color: #F6EBDC;
-        /* Change to orange on hover */
-        transform: scale(1.1);
-        /* Slightly enlarge on hover */
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
-        /* Enhance shadow on hover */
-        text-decoration: none;
-    }
 
 
 
@@ -650,9 +740,26 @@
     }
 
     .restaurantpic img {
-
-
         width: 50%;
         padding: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 1170px) {
+    .escapepng {
+        height: auto;
+    }
+
+    .gallery {
+        text-decoration: none;
+        margin-bottom: 50px;
+    }
+
+    .buttongallery {
+        position: relative;
+        margin: 0px 0;
+        bottom: 0px;
     }
 }

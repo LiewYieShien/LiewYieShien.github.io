@@ -1,11 +1,10 @@
-/* ---------------------------------------------Gallery of Penang----------------------------------------------- */
-/* Hero Section Styles */
+/* ---------------------------------------------Hero Section Styles----------------------------------------------- */
 .hero {
     font-family: 'Sweet Sans Pro', sans-serif;
     height: 100vh;
     /* Full screen height */
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('../images/penang/penang-galleryhero.jpg');
+        linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('../images/penang/penang-galleryhero.png');
     background-size: cover;
     /* covers the entire section */
     display: flex;
@@ -28,68 +27,121 @@
     margin-bottom: -70px;
 }
 
+/* ---------------------------------------------Gallery Section Styles----------------------------------------------- */
+.states-container {
+    background-color: #39230A;
+    padding: 80px;
+}
+
 .gallery {
-    padding: 30px;
-    background-color: #3B2100;
-    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
 }
 
-.gallery img {
-    padding-top: 90px;
-    padding-bottom: 90px;
-    width: 90%;
-    height: auto;
+.column1 {
+    flex: 1;
+}
+
+.column2 {
+    flex: 2;
+}
+
+/* ---------------------------------------------Photos Section Styles----------------------------------------------- */
+.penang1 {
+    background: url('../images/penang/penang1.png');
+    background-size: cover;
+    border: 0px;
+    border-radius: 10px;
+    height: 275px;
+    width: auto;
+}
+
+.penang2 {
+    background: url('../images/penang/penang2.png');
+    background-size: cover;
+    border: 0px;
+    border-radius: 10px;
+    height: 275px;
+    width: auto;
+}
+
+.penang3 {
+    background: url('../images/penang/penang3.png');
+    background-size: cover;
+    border: 0px;
+    border-radius: 10px;
+    height: 325px;
+    width: auto;
+}
+
+.penang4 {
+    background: url('../images/penang/penang4.png');
+    background-size: cover;
+    border: 0px;
+    border-radius: 10px;
+    height: 325px;
+    width: auto;
+}
+
+.penang5 {
+    background: url('../images/penang/penang5.png');
+    background-size: cover;
+    border: 0px;
+    border-radius: 10px;
+    height: 325px;
+    width: auto;
+}
+
+.penang6 {
+    background: url('../images/penang/penang6.png');
+    background-size: cover;
+    border: 0px;
+    border-radius: 10px;
+    height: 375px;
+    width: auto;
+}
+
+.penang7 {
+    background: url('../images/penang/penang7.png');
+    background-size: cover;
+    border: 0px;
+    border-radius: 10px;
+    height: 375px;
+    width: auto;
+}
+
+.penang8 {
+    background: url('../images/penang/penang8.png');
+    background-size: cover;
+    border: 0px;
+    border-radius: 10px;
+    height: 425px;
+    width: auto;
+}
+
+.penang9 {
+    background: url('../images/penang/penang9.png');
+    background-size: cover;
+    border: 0px;
+    border-radius: 10px;
+    height: 425px;
+    width: auto;
+}
+
+.penang10 {
+    background: url('../images/penang/penang11.png');
+    background-size: cover;
+    border: 0px;
+    border-radius: 10px;
+    height: 500px;
+    width: auto;
 }
 
 
-@media screen and (max-width: 1300px) {
-    .hero h1 {
-        font-size: 60px;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-    }
-
-    .hero p {
-        font-size: 20px;
-        margin-bottom: -50px;
-        letter-spacing: 2px;
-        font-weight: 300;
-    }
-
-    .gallery img {
-        padding-top: 80px;
-        padding-bottom: 80px;
-        width: 90%;
-        height: auto;
-    }
-}
-
-@media screen and (max-width: 1150px) {
-
-    /* ---------------------------------------------Hero Section Styles----------------------------------------------- */
-    .hero h1 {
-        font-size: 50px;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-    }
-
-    .hero p {
-        font-size: 18px;
-        margin-bottom: -42.5px;
-        letter-spacing: 2px;
-        font-weight: 300;
-    }
-
-    .gallery img {
-        padding-top: 60px;
-        padding-bottom: 60px;
-        width: 90%;
-        height: auto;
-    }
-}
-
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
 
     /* ---------------------------------------------Hero Section Styles----------------------------------------------- */
     .hero h1 {
@@ -103,11 +155,103 @@
         letter-spacing: 2px;
         font-weight: 300;
     }
+}
 
-    .gallery img {
-        padding-top: 40px;
-        padding-bottom: 40px;
-        width: 90%;
-        height: auto;
+@media screen and (max-width: 650px) {
+
+    /* ---------------------------------------------Hero Section Styles----------------------------------------------- */
+    .hero h1 {
+        font-size: 30px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    }
+
+    .hero p {
+        font-size: 15px;
+        margin-bottom: -27.5px;
+        letter-spacing: 2px;
+        font-weight: 300;
+    }
+
+    /* ---------------------------------------------Gallery Section Styles----------------------------------------------- */
+    .states-container {
+        padding: 40px;
+    }
+
+    .gallery {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 9px;
+        margin-bottom: 9px;
+    }
+
+    .column1 {
+        flex: 1;
+    }
+
+    .column2 {
+        flex: 2;
+    }
+
+    /* ---------------------------------------------Photos Section Styles----------------------------------------------- */
+    .penang1 {
+        border-radius: 5px;
+        height: 85px;
+        width: auto;
+    }
+
+    .penang2 {
+        border-radius: 5px;
+        height: 85px;
+        width: auto;
+    }
+
+    .penang3 {
+        border-radius: 5px;
+        height: 85px;
+        width: auto;
+    }
+
+    .penang4 {
+        border-radius: 5px;
+        height: 85px;
+        width: auto;
+    }
+
+    .penang5 {
+        border-radius: 5px;
+        height: 85px;
+        width: auto;
+    }
+
+    .penang6 {
+        border-radius: 5px;
+        height: 125px;
+        width: auto;
+    }
+
+    .penang7 {
+        border-radius: 5px;
+        height: 125px;
+        width: auto;
+    }
+
+    .penang8 {
+        border-radius: 5px;
+        height: 130px;
+        width: auto;
+    }
+
+    .penang9 {
+        border-radius: 5px;
+        height: 130px;
+        width: auto;
+    }
+
+
+    .penang10 {
+        border-radius: 5px;
+        height: 200px;
+        width: auto;
     }
 }
