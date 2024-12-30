@@ -63,7 +63,6 @@
     height: 60px;
     border-radius: 50%;
     border: none;
-    /* Removes default border */
     background-color: rgba(255, 255, 255, 0.6);
     display: flex;
     align-items: center;
@@ -112,9 +111,7 @@
     flex: 1;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
-    /* Adjust proportion between the two columns */
     gap: 25px;
-    /* gap between */
     max-width: 650px;
     margin: 0;
 }
@@ -129,10 +126,7 @@
 .smallerimages {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    /* Create two stacked rows */
     gap: 10px;
-    /* gap between */
-
 }
 
 
@@ -202,8 +196,6 @@
     width: auto;
     height: 400px;
 }
-
-
 
 .textcontainerright {
     background-color: rgba(0, 0, 0, 0.6);
@@ -290,12 +282,23 @@
 .escapepngimage {
     flex: 1;
     margin-right: 80px;
-    background-image: url('../images/penang/sec2penanghills.png');
+    background-image: url('../images/penang/sec5escapepng.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     width: auto;
     height: 400px;
+}
+
+.textcontainerescape {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    height: auto;
+    width: 45%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -360,9 +363,6 @@
 
 .text {
     margin-top: 50px;
-
-
-
 }
 
 .text h2 {
@@ -389,101 +389,106 @@
     padding: 20px;
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 650px) {
 
-    .hero {
-        background-position: center;
-        background-size: cover;
-        padding: 20px;
-        /* Add padding for breathing space */
+    /* -------------------George Town-----------------*/
+    .smallerimages {
+        display: none;
     }
 
-    .hero h1 {
-        font-size: 50px;
-        letter-spacing: 10px;
+    .georgetown {
+        padding: 50px 20px;
+    }
 
-        /* Smaller hero heading */
+    .georgetown h2 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .content1 {
+        margin: 0px;
+        flex-direction: column;
+    }
+
+    .threeimage-gridcontainer {
+        grid-template-columns: 1fr;
+        max-width: 70%;
+        gap: 15px;
+    }
+
+    .griditem-image img {
+        border-radius: 10px;
+    }
+
+    .button-container {
+        position: absolute;
+        top: 90%;
+        left: 0;
+        right: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+        margin-left: 30px;
+        margin-right: 30px;
+
+    }
+}
+
+@media screen and (max-width: 920px) {
+
+    .hero h1 {
+        font-size: 80px;
     }
 
     .hero p {
-        font-size: 15px;
-        padding-top: 40px;
-        display: flex;
-        justify-content: center;
+        font-size: 24px;
+    }
+
+    .button-container {
+        position: absolute;
+        top: 90%;
+        left: 0;
+        right: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+        margin-left: 70px;
+        margin-right: 70px;
 
     }
 
-
-    /* ---------------Jonker street-------------*/
-
-
-
-    .jonkerstreet h2 {
-        text-align: center;
-        font-size: 26px;
-
-
-    }
+    /* -------------------George Town-----------------*/
 
     .content1 {
         flex-direction: column;
         display: flex;
     }
 
-    .image1 {
-        flex-direction: column;
-
-    }
-
-
-
-    .small-images {
-        display: none;
-    }
-
     .intro h3 {
         font-size: 30px;
     }
 
-    /*----------- encore melaka--------------- */
-    .encoremelaka {
-        display: flex;
-        width: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-right: 80px;
-        height: 800px;
+
+
+    /*--------------- penanghills------------------- */
+    .penanghills-container {
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .georgetownimage {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+        min-height: 200px;
+        /* Ensures the image has some height */
+    }
+
+    .textcontainerright {
+        width: 100%;
     }
 
 
-    .column1 {
-        background-color: rgba(0, 0, 0, 0.5);
-        border-radius: 20px;
-        height: auto;
-        width: 800px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-
-
-
-    }
-
-    .content2 h3 {
-        font-size: 30px;
-        color: #F6EBDC;
-        padding: 13px;
-    }
-
-    .content2 h4 {
-        font-size: 15px;
-        color: #AAA297;
-        padding: 13px;
-    }
-
-    .content2 p {
-        font-size: 16px;
-        padding: 13px;
-    }
 
     /* ---------------Baba & Nyonya-------------*/
 
