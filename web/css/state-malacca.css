@@ -225,10 +225,11 @@
     padding: 13px;
 }
 
-.content2 p {
+.content2 ul {
     color: #816E60;
     font-size: 16px;
     padding: 13px;
+    padding-left: 10px;
 }
 
 .content2 strong {
