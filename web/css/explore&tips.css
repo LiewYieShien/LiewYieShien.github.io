@@ -4,7 +4,7 @@
     height: 100vh;
     /* Full screen height */
     background:
-        linear-gradient(rgba(0, 0, 0, 0.8), rgba(2, 12, 22, 0.2)), url('../images/exploretips/explore.png');
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(2, 12, 22, 0.2)), url('../images/exploretips/exploretipshero.jpg');
     background-size: cover;
     /* covers the entire section */
     display: flex;
@@ -111,7 +111,7 @@
 .localetiquette {
     font-family: 'Sweet Sans Pro', sans-serif;
     background-color: #d6cbbbe3;
-    background-image: url(../images/exploretips/local\ bg.png);
+    background-image: url(../images/exploretips/local\ bg.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
