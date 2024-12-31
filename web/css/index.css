@@ -1,17 +1,9 @@
-@font-face {
-    font-family: 'Sweet Sans Pro';
-    src: url('../fonts/sweet-sans-pro') format('opentype');
-    font-weight: lighter;
-    font-style: light;
-}
-
 .navbar {
     z-index: 1000;
 }
 
 .page {
     font-family: 'Sweet Sans Pro', sans-serif;
-
 }
 
 
