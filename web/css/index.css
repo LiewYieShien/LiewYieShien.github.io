@@ -1,17 +1,9 @@
-@font-face {
-    font-family: 'Sweet Sans Pro';
-    src: url('../fonts/sweet-sans-pro') format('opentype');
-    font-weight: lighter;
-    font-style: light;
-}
-
 .navbar {
     z-index: 1000;
 }
 
 .page {
     font-family: 'Sweet Sans Pro', sans-serif;
-
 }
 
 
@@ -250,7 +242,7 @@
 
 
 
-/* ------------------------------------------------------loactionnnnnnnnn----------------------------------------------- */
+/* ------------------------------------------------------locationnnnnnnnn----------------------------------------------- */
 
 /* Explore More Button */
 .exploremore {
@@ -702,5 +694,15 @@
 
     .nav-buttons button:hover {
         background-color: rgba(0, 0, 0, 0.7);
+    }
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 60px;
+    }
+
+    .hero p {
+        font-size: 25px;
     }
 }
