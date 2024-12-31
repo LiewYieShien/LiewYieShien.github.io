@@ -239,7 +239,7 @@
         height: 100vh;
         /* Full screen height */
         background:
-            linear-gradient(rgba(0, 0, 0, 0.8), rgba(2, 12, 22, 0.2)), url('../images/exploretips/explore.png');
+            linear-gradient(rgba(0, 0, 0, 0.8), rgba(2, 12, 22, 0.2)), url('../images/exploretips/exploretipshero.jpg');
         background-size: cover;
         /* covers the entire section */
         display: flex;
@@ -385,7 +385,7 @@
         height: 100vh;
         /* Full screen height */
         background:
-            linear-gradient(rgba(0, 0, 0, 0.8), rgba(2, 12, 22, 0.2)), url('../images/exploretips/explore.png');
+            linear-gradient(rgba(0, 0, 0, 0.8), rgba(2, 12, 22, 0.2)), url('../images/exploretips/exploretipshero.jpg');
         background-size: cover;
         /* covers the entire section */
         display: flex;
@@ -470,6 +470,7 @@
         display: block;
         /* 保證圖片為塊級元素，避免與其他內容並列 */
         margin-top: 40px;
+        margin-left: 55px;
     }
 
     .text,
