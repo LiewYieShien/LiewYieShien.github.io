@@ -10,7 +10,7 @@
     height: 100vh;
     /* Full screen height */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(2, 12, 22, 0.3)),
-        url('../images/pahang/heropahang.png');
+        url('../images/pahang/heropahang.jpg');
     background-size: cover;
     /* covers the entire section */
     display: flex;
@@ -85,7 +85,15 @@
 
 .cameron {
     padding: 50px;
-    background-image: url(../images/pahang/cameron-bg.png);
+    background-image: url(../images/pahang/cameron-bg.jpg);
+}
+
+.main-image img {
+    border-radius: 10px;
+}
+
+.small-images img {
+    border-radius: 10px;
 }
 
 .cameron h2 {
@@ -177,6 +185,21 @@
 .genting {
     padding: 50px;
     background-color: #102121;
+    height: 100vh;
+}
+
+.main-image-g img {
+    border-radius: 10px;
+}
+
+.small-images-g img {
+    border-radius: 10px;
+}
+
+.image2 {
+    flex: 1;
+    display: flex;
+    padding-left: 30px;
 }
 
 
@@ -184,7 +207,7 @@
 /* 主内容容器，左右分布 */
 .content2 {
     display: flex;
-    gap: 20px;
+    gap: 90px;
     justify-content: space-between;
     align-items: center;
     margin: 30px;
