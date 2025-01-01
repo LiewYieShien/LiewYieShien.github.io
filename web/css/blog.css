@@ -413,7 +413,7 @@
     }
 
     .malaccapic img {
-        border-radius: 0px;
+        border-radius: 40px;
     }
 
 
@@ -444,10 +444,12 @@
         /* 圖片寬度填滿容器 */
         height: auto;
         /* 保持比例 */
-
+        justify-content: center;
         display: block;
         /* 保證圖片為塊級元素，避免與其他內容並列 */
     }
+
+    .penangpic img {}
 
     .text2 {
         width: 100%;
@@ -826,7 +828,7 @@
     }
 
     .malaccapic {
-        width: 70%;
+        width: 80%;
         /* 圖片寬度填滿容器 */
         height: auto;
         /* 保持比例 */
@@ -897,7 +899,7 @@
     }
 
     .penangpic {
-        width: 70%;
+        width: 80%;
         /* 圖片寬度填滿容器 */
         height: auto;
         /* 保持比例 */
@@ -949,7 +951,7 @@
         /* 文字置中 */
         align-items: center;
         /* 增加區塊內邊距 */
-        height: 1200px;
+        height: 1300px;
         /* 背景至少 1000px 高 */
         flex-direction: column;
     }
@@ -969,7 +971,7 @@
     }
 
     .pahangpic {
-        width: 70%;
+        width: 80%;
         /* 圖片寬度填滿容器 */
         height: auto;
         /* 保持比例 */
@@ -1022,7 +1024,7 @@
         /* 文字置中 */
         align-items: center;
         /* 增加區塊內邊距 */
-        height: 1200px;
+        height: 1250px;
         /* 背景至少 1000px 高 */
         flex-direction: column;
     }
@@ -1041,7 +1043,7 @@
     }
 
     .perakpic {
-        width: 70%;
+        width: 80%;
         /* 圖片寬度填滿容器 */
         height: auto;
         /* 保持比例 */
