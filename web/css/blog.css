@@ -449,7 +449,11 @@
         /* 保證圖片為塊級元素，避免與其他內容並列 */
     }
 
-    .penangpic img {}
+    .penangpic img {
+        padding: 0px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
 
     .text2 {
         width: 100%;
@@ -500,6 +504,14 @@
         justify-content: center;
         display: block;
         /* 保證圖片為塊級元素，避免與其他內容並列 */
+
+
+    }
+
+    .pahangpic img {
+        padding: 0px;
+        border-radius: 8px;
+        margin-bottom: 15px;
     }
 
     .text3 {
@@ -552,6 +564,13 @@
 
         display: block;
         /* 保證圖片為塊級元素，避免與其他內容並列 */
+
+    }
+
+    .perakpic img {
+        padding: 0px;
+        border-radius: 8px;
+        margin-bottom: 15px;
     }
 
     .text4 {
