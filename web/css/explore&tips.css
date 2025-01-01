@@ -443,7 +443,7 @@
     }
 
     .picturetraveltips img {
-        width: 70%;
+        width: 60%;
         height: auto;
         margin: 0 auto 10px;
         /* 圖片居中，並與文字留空隙 */
@@ -453,24 +453,25 @@
     }
 
     .picclimate img {
-        width: 70%;
+        width: 60%;
         height: auto;
         margin: 0 auto 10px;
         /* 圖片居中，並與文字留空隙 */
         display: block;
         /* 保證圖片為塊級元素，避免與其他內容並列 */
         margin-top: 40px;
+        border-radius: 16px;
     }
 
     .picmosque img {
-        width: 70%;
+        width: 60%;
         height: auto;
-        margin: 0 auto 10px;
+        margin: 0 auto;
         /* 圖片居中，並與文字留空隙 */
         display: block;
         /* 保證圖片為塊級元素，避免與其他內容並列 */
-        margin-top: 40px;
-        margin-left: 55px;
+        margin-top: 45px;
+        border-radius: 16px;
     }
 
     .text,
@@ -533,14 +534,16 @@
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .content2 {}
 
     .picmosque img {
         width: 70%;
-        height: auto;
-
-        margin-left: -30px;
+        padding: 0px;
+        margin: 0px;
+        margin-left: 35px;
+        margin-top: 40px;
+        border-radius: 10px;
 
     }
 
