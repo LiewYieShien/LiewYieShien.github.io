@@ -172,7 +172,7 @@
 }
 
 .intro strong {
-    color: #91C569;
+    color: #83A445;
 }
 
 .intro ul li::marker {
@@ -264,7 +264,7 @@
 }
 
 .content3 strong {
-    color: #91C569;
+    color: #83A445;
 }
 
 
@@ -287,19 +287,68 @@
 
 }
 
-/*---------------------Malacca Straits Mosque-------------------*/
-.mosque {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/malacca/mosque.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 
+/* -------------------------------------------------------Misty Mountain------------------------------------------------------------- */
+.mistymountain {
+    font-family: 'Sweet Sans Pro', sans-serif;
     height: 100vh;
-    width: auto;
+    background-image: url('../images/penang/bgpenanghills.png');
+    background-size: cover;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    padding-left: 80px;
+}
+
+.penanghills-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 80px;
+    width: 80%;
+}
+
+.georgetownimage {
+    flex: 1;
+    margin-right: 80px;
+    background-image: url('../images/penang/sec2penanghills.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 400px;
+}
+
+.textcontainerright {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    height: auto;
+    width: 45%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content5 {
+    color: #F6EBDC;
+    padding: 40px 20px;
+}
+
+.content5 h3 {
+    font-size: 30px;
+    color: #F6EBDC;
+    padding: 0 13px;
+}
+
+
+.content5 h4 {
+    font-size: 20px;
+    color: #AAA297;
+    padding: 13px;
+}
+
+.content5 strong {
+    color: #83A445;
 }
 
 /*------------------- church -------------------*/
@@ -326,19 +375,21 @@
 .gallery {
     display: flex;
     justify-content: center;
+    text-align: center;
     margin-top: 20px;
     text-decoration: none;
-
 }
 
 .buttongallery {
     font-size: 20px;
-    width: 20%;
-    padding: 10px;
-    margin: 40px;
+    width: auto;
+    padding: 15px 30px;
+    margin: 40px 0;
+    position: relative;
+    bottom: -20px;
 
     background-color: #AAA297;
-    border-radius: 25px;
+    border-radius: 30px;
     cursor: pointer;
     border: none;
     display: flex;
@@ -347,29 +398,23 @@
     transition: background-color 0.3s, transform 0.3s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     /* Add shadow */
-
 }
 
 .search {
-    margin-left: 15px;
-
+    margin-left: 10px;
     height: 20px;
 }
 
 .buttongallery:hover {
-
     background-color: #F6EBDC;
-    /* Change to orange on hover */
     transform: scale(1.1);
-    /* Slightly enlarge on hover */
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
-    /* Enhance shadow on hover */
     text-decoration: none;
 }
 
 /*----------------------- What to eat----------------------------- */
 .restaurant {
-    background-color: #2A0C08;
+    background-color: #0F2307;
     height: 100vh;
 
 }
