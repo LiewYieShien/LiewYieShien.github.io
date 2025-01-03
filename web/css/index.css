@@ -579,14 +579,11 @@
     .location {
         font-size: 20px;
         transform: translate(-50%, -50%) scale(0.8);
-        /* Add touch-active behavior */
         -webkit-tap-highlight-color: transparent;
-        /* Remove tap highlight */
     }
 
     .location:active {
         transform: scale(1.2);
-        /* Simulate hover effect on tap */
         color: #ff6f61;
     }
 

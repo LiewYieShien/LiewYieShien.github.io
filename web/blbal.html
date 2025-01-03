@@ -4,100 +4,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top Things to Do</title>
+    <title>Interactive Locations</title>
     <style>
-        /* General Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #2f1e12;
-            color: #fff;
-            line-height: 1.6;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0d1b2a;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
-        .container {
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
+        .line-container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 80%;
+            height: 100px;
         }
 
-        h1 {
-            text-align: center;
-            margin-bottom: 30px;
+        .line {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 48.5%;
+            border-top: 2px dashed #ffffff;
+            transform: translateY(-50%);
         }
 
-        .content {
-            display: grid;
-            grid-template-columns: 1fr 1.5fr;
-            gap: 20px;
-        }
-
-        .images {
-            display: grid;
-            grid-template-rows: repeat(3, 1fr);
-            gap: 10px;
-        }
-
-        .images img {
+        .location-group1 {
+            display: flex;
+            justify-content: space-evenly;
             width: 100%;
-            border-radius: 10px;
         }
 
-        .text h2 {
-            color: #f4ca64;
-            margin-bottom: 10px;
+        .location-group2 {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
         }
 
-        .text .highlight {
-            color: #f4ca64;
-            font-weight: bold;
+        .location {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            text-align: center;
         }
 
-        .text ul {
-            list-style: none;
+        .location.reversed .label {
+            margin-top: -30px;
+            /* Adjust this value to move the locations up */
+            margin-bottom: 5px;
         }
 
-        .text li {
-            margin-bottom: 10px;
+        .dot {
+            width: 15px;
+            height: 15px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
         }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .content {
-                grid-template-columns: 1fr;
-            }
+        .dot:hover {
+            background-color: #ffdd57;
+        }
+
+        .label {
+            margin-top: 5px;
+            font-size: 24px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .label:hover {
+            color: #ffdd57;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <h1>Top things to do</h1>
-        <div class="content">
-            <div class="images">
-                <img src="images/penang/top1big.png" alt="Heritage building">
-                <img src="images/penang/top1smallup.png" alt="Street art mural">
-                <img src="images/penang/top1smalldown.png" alt="Local food bowl">
+    <div class="line-container">
+        <div class="line"></div>
+
+        <!-- Group 1: Penang and Pahang -->
+        <div class="location-group1">
+            <!-- Penang -->
+            <div class="location">
+                <button class="dot"></button>
+                <a class="label" href="penang.html">Penang</a>
             </div>
-            <div class="text">
-                <h2>George Town</h2>
-                <p>
-                    A <span class="highlight">UNESCO World Heritage Site</span>, George Town is known for its colonial
-                    architecture, vibrant street art, and cultural diversity.
-                </p>
-                <ul>
-                    <li>Explore <span class="highlight">iconic street art</span>, including murals like "Children on a
-                        Bicycle."</li>
-                    <li>Visit historical sites such as <span class="highlight">Pinang Peranakan Mansion</span> and The
-                        Blue Mansion.</li>
-                    <li>Indulge in <span class="highlight">local street food</span> like Char Kway Teow, Assam Laksa,
-                        and Cendol at Gurney Drive or Lebuh Chulia.</li>
-                </ul>
+
+            <!-- Perak -->
+            <div class="location reversed">
+                <a class="label" href="perak.html">Perak</a>
+                <button class="dot"></button>
+            </div>
+
+        </div>
+
+        <!-- Group 2: Perak and Malacca -->
+        <div class="location-group2">
+            <!-- Pahang -->
+            <div class="location">
+                <button class="dot"></button>
+                <a class="label" href="pahang.html">Pahang</a>
+            </div>
+
+            <!-- Malacca -->
+            <div class="location reversed">
+                <a class="label" href="malacca.html">Malacca</a>
+                <button class="dot"></button>
             </div>
         </div>
     </div>

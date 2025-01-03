@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashed Line with Buttons</title>
+    <style>
+        .imagecontainer {
+            background-color: black;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .map-container {
+            z-index: 3;
+            position: relative;
+        }
+
+        /* buttons */
+        .button-container {
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            gap: 140px;
+            z-index: 2;
+            width: 100%;
+            /* Ensure the container takes the full width */
+        }
+
+        .button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            width: 100px;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+            background-color: transparent;
+            /* Make the button background transparent */
+        }
+
+        .dot {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #007BFF;
+            margin-bottom: 10px;
+        }
+
+        .text {
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Hover effect */
+        .button:hover {
+            transform: scale(1.2);
+        }
+
+        /* button positioning */
+        .button1 {
+            position: absolute;
+            top: 7px;
+            left: 16.1%;
+            z-index: 2;
+        }
+
+        .button2 {
+            position: absolute;
+            top: -70px;
+            left: 34.6%;
+            z-index: 2;
+        }
+
+        .button3 {
+            position: absolute;
+            top: 7px;
+            right: 37.7%;
+            z-index: 2;
+        }
+
+        .button4 {
+            position: absolute;
+            top: -70px;
+            right: 19.6%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="imagecontainer">
+        <div class="button-container">
+            <div class="button button1">
+                <div class="dot"></div>
+                <div class="text">Button 1</div>
+            </div>
+            <div class="button button2">
+                <div class="dot"></div>
+                <div class="text">Button 2</div>
+            </div>
+            <div class="button button3">
+                <div class="dot"></div>
+                <div class="text">Button 3</div>
+            </div>
+            <div class="button button4">
+                <div class="dot"></div>
+                <div class="text">Button 4</div>
+            </div>
+        </div>
+
+        <div class="map-container">
+            <img src="image map new.jpg" usemap="#image-map">
+
+            <map name="image-map">
+                <area target="" alt="location_penang" title="location_penang" href="state-penang.html"
+                    coords="486,177,649,287" shape="rect">
+                <area target="" alt="location_perak" title="location_perak" href="state-perak.html"
+                    coords="383,373,225,261" shape="rect">
+                <area target="" alt="location_pahang" title="location_pahang" href="state-pahang.html"
+                    coords="914,366,742,250" shape="rect">
+                <area target="" alt="location_malacca" title="location_malacca" href="state-malacca.html"
+                    coords="1194,291,995,172" shape="rect">
+            </map>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Locations</title>
+
+
+    <style>
+        /* ---------------------------------------------Map Section Styles----------------------------------------------- */
+        .page2 {
+            margin: 0;
+            padding: 0;
+            background-color: #31312E;
+            font-family: 'Sweet Sans Pro', sans-serif;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .map {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .map-content {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .map-button {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .map-4states {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .map-content p {
+            color: #E6DFD5;
+            text-align: center;
+            font-size: 45px;
+        }
+
+
+
+        /* Explore More Button */
+        .exploremore {
+            display: flex;
+            align-items: center;
+            width: auto;
+            padding: 10px 20px;
+            background-color: #E6DFD5;
+            border-radius: 25px;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.3s, transform 0.3s;
+            text-decoration: none;
+            /* Removes underline */
+        }
+
+        /* Icon Styles */
+        .exploremore .right {
+            margin-left: 10px;
+            width: 20px;
+            height: auto;
+        }
+
+        /* Text Styles */
+        .exploremore span {
+            margin-left: 10px;
+            color: #31312E;
+            font-size: 20px;
+        }
+
+        /* Hover Effect */
+        .exploremore:hover {
+            background-color: #f5c400;
+            transform: scale(1.2);
+        }
+
+        .map-button a {
+            text-decoration: none;
+            /* Removes underline */
+        }
+    </style>
+</head>
+
+<body>
+    <section class="page2">
+        <div class="map">
+            <!-- Title -->
+            <div class="map-content">
+                <p>Discover Malaysia</p>
+            </div>
+
+            <!-- Image Container -->
+            <img src="new opac.png" usemap="#image-map">
+
+            <map name="image-map">
+                <area target="" alt="location_penang" title="location_penang" href="state-penang.html"
+                    coords="485,387,353,258" shape="rect">
+                <area target="" alt="location_perak" title="location_perak" href="state-perak.html"
+                    coords="560,161,688,291" shape="rect">
+                <area target="" alt="location_pahang" title="location_pahang" href="state-pahang.html"
+                    coords="886,385,757,258" shape="rect">
+                <area target="" alt="location_malacca" title="location_malacca" href="state-malacca.html"
+                    coords="946,156,1106,303" shape="rect">
+            </map>
+
+
+            <!-- Explore More Button -->
+            <div class="map-button">
+                <a href="explore&tips.html">
+                    <button class="exploremore">
+                        <span>Explore more</span>
+                        <img class="right" src="images/homepage/b-rightarrow.png" alt="Right arrow">
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
