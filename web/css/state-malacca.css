@@ -220,16 +220,21 @@
 }
 
 .content2 h4 {
-    font-size: 20px;
+    font-size: 18px;
     color: #AAA297;
-    padding: 13px;
+    padding: 10px;
 }
 
 .content2 ul {
     color: #816E60;
     font-size: 16px;
     padding: 13px;
-    padding-left: 10px;
+    padding-left: 25px;
+
+}
+
+.content2 li {
+    padding: 10px;
 }
 
 .content2 strong {
@@ -828,5 +833,87 @@ button.Babakaya:hover {
         height: 300px;
         width: 160px;
         color: transparent;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    /*----------- encore melaka--------------- */
+    .encoremelaka {
+        display: flex;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 80px;
+        height: 800px;
+    }
+
+
+    .column1 {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+        height: 95%;
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .content2 h3 {
+        font-size: 25px;
+        color: #F6EBDC;
+        padding: 13px;
+    }
+
+    .content2 h4 {
+        font-size: 15px;
+        color: #AAA297;
+        padding: 13px;
+    }
+
+    .content2 ul {
+        font-size: 15px;
+        padding: 13px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+
+    /*----------- encore melaka--------------- */
+    .encoremelaka {
+        display: flex;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 80px;
+        height: 800px;
+    }
+
+
+    .column1 {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+        height: 96%;
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .content2 h3 {
+        font-size: 22px;
+        color: #F6EBDC;
+        padding: 13px;
+    }
+
+    .content2 h4 {
+        font-size: 13px;
+        color: #AAA297;
+        padding: 13px;
+    }
+
+    .content2 ul {
+        font-size: 12px;
+        padding: 13px;
     }
 }

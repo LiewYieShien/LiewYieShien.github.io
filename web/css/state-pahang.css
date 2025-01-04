@@ -669,10 +669,7 @@ button.Babakaya:hover {
     }
 
 
-
     /* ---------------cameron-------------*/
-
-
 
     .cameron h2 {
         text-align: center;
@@ -706,13 +703,15 @@ button.Babakaya:hover {
     .genting h2 {
         text-align: center;
         font-size: 26px;
-        p
+
     }
 
     .content2 {
         flex-direction: column;
         gap: 15px;
     }
+
+
 
     .content2 h3 {
         padding-bottom: 20px;
@@ -916,7 +915,7 @@ button.Babakaya:hover {
 }
 
 
-@media screen (max-width: 650px; ) {
+@media screen and (max-width: 650px) {
 
 
     /*--------------- Tioman------------------- */
