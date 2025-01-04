@@ -6,107 +6,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Locations</title>
 
-
     <style>
-        /* ---------------------------------------------Map Section Styles----------------------------------------------- */
-        .page2 {
+        /* General Reset */
+        body,
+        html {
             margin: 0;
             padding: 0;
-            background-color: #31312E;
-            font-family: 'Sweet Sans Pro', sans-serif;
-            width: 100%;
-            height: 100vh;
         }
 
-        .map {
+        /* Page Section Styles */
+        .page2 {
+            font-family: 'Sweet Sans Pro', sans-serif;
+            box-sizing: border-box;
+            background-color: #31312E;
+            width: 100%;
+            max-height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            width: 100%;
-            height: 100vh;
         }
 
         .map-content {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-        }
-
-        .map-button {
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
+            color: #E6DFD5;
+            text-align: center;
+            font-size: 45px;
+            margin-top: 200px;
         }
 
         .map-4states {
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-
-        .map-content p {
-            color: #E6DFD5;
             text-align: center;
-            font-size: 45px;
+            width: 100%;
+        }
+
+        .map-4states img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
         }
 
 
+        .map-button {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            margin-bottom: 200px;
+        }
 
         /* Explore More Button */
         .exploremore {
             display: flex;
             align-items: center;
-            width: auto;
             padding: 10px 20px;
             background-color: #E6DFD5;
             border-radius: 25px;
             cursor: pointer;
             border: none;
             transition: background-color 0.3s, transform 0.3s;
-            text-decoration: none;
-            /* Removes underline */
+            margin: 20px;
         }
 
-        /* Icon Styles */
+        .map-button a {
+            text-decoration: none;
+        }
+
         .exploremore .right {
             margin-left: 10px;
             width: 20px;
             height: auto;
         }
 
-        /* Text Styles */
         .exploremore span {
             margin-left: 10px;
             color: #31312E;
             font-size: 20px;
         }
 
-        /* Hover Effect */
         .exploremore:hover {
             background-color: #f5c400;
-            transform: scale(1.2);
+            transform: scale(1.1);
         }
 
-        .map-button a {
-            text-decoration: none;
-            /* Removes underline */
+
+        @media (max-width: 768px) {
+            .map-content {
+                margin-top: 100px;
+            }
+
+            .map-content p {
+                font-size: 32px;
+            }
+
+            .map-4states img {
+                max-width: 80%;
+            }
+
+            .exploremore {
+                padding: 8px 16px;
+            }
+
+            .exploremore span {
+                font-size: 16px;
+            }
+
+            .map-button {
+                margin-bottom: 100px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .map-content p {
+                font-size: 28px;
+            }
+
+            .exploremore {
+                padding: 6px 12px;
+            }
+
+            .exploremore span {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
 
 <body>
     <section class="page2">
-        <div class="map">
-            <!-- Title -->
-            <div class="map-content">
-                <p>Discover Malaysia</p>
-            </div>
+        <div class="map-content">
+            <p>Discover Malaysia</p>
+        </div>
 
-            <!-- Image Container -->
-            <img src="new opac.png" usemap="#image-map">
+        <div class="map-4states">
+            <!-- Default Image Map -->
+            <picture>
+                <!-- Fallback for larger screens -->
+                <source media="(max-width: 768px)" srcset="vertical.png">
+                <img src="new opac.png" usemap="#image-map" alt="Malaysia Map" id="map-image">
+            </picture>
 
-            <map name="image-map">
+            <!-- Image Maps -->
+            <map name="image-map" id="large-map">
                 <area target="" alt="location_penang" title="location_penang" href="state-penang.html"
                     coords="485,387,353,258" shape="rect">
                 <area target="" alt="location_perak" title="location_perak" href="state-perak.html"
@@ -118,17 +161,52 @@
             </map>
 
 
-            <!-- Explore More Button -->
-            <div class="map-button">
-                <a href="explore&tips.html">
-                    <button class="exploremore">
-                        <span>Explore more</span>
-                        <img class="right" src="images/homepage/b-rightarrow.png" alt="Right arrow">
-                    </button>
-                </a>
-            </div>
+            <map name="image-map" id="small-map" style="display: none;">
+                <area target="" alt="location_penang" title="location_penang" href="state-penang.html"
+                    coords="75,85,281,171" shape="rect">
+                <area target="" alt="location_perak" title="location_perak" href="state-perak.html"
+                    coords="119,226,324,311" shape="rect">
+                <area target="" alt="location_pahang" title="location_pahang" href="state-pahang.html"
+                    coords="76,359,279,443" shape="rect">
+                <area target="" alt="location_malacca" title="location_malacca" href="state-malacca.html"
+                    coords="120,493,319,573" shape="rect">
+            </map>
+
+        </div>
+
+        <div class="map-button">
+            <a href="explore&tips.html">
+                <button class="exploremore">
+                    <span>Explore more</span>
+                    <img class="right" src="images/homepage/b-rightarrow.png" alt="Right arrow">
+                </button>
+            </a>
         </div>
     </section>
+
+    <script>
+        const mapImage = document.getElementById('map-image');
+        const largeMap = document.getElementById('large-map');
+        const smallMap = document.getElementById('small-map');
+
+        function updateMap() {
+            if (window.innerWidth <= 768) {
+                mapImage.useMap = '#small-map';
+                smallMap.style.display = 'block';
+                largeMap.style.display = 'none';
+            } else {
+                mapImage.useMap = '#large-map';
+                smallMap.style.display = 'none';
+                largeMap.style.display = 'block';
+            }
+        }
+
+        // Initial call
+        updateMap();
+
+        // Update on window resize
+        window.addEventListener('resize', updateMap);
+    </script>
 </body>
 
 </html>

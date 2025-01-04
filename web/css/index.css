@@ -12,11 +12,9 @@
     position: relative;
     font-family: 'Sweet Sans Pro', sans-serif;
     height: 100vh;
-    /* Full screen height */
     background:
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(2, 12, 22, 0.2)), url('../images/homepage/homepagehero.png');
     background-size: cover;
-    /* covers the entire section */
     display: flex;
     align-items: center;
 }
@@ -100,42 +98,25 @@
 /* ---------------------------------------------Map Section Styles----------------------------------------------- */
 .map {
     flex-direction: column;
-    /* Ensure flex-direction is column */
     height: 100vh;
-    /* Full height */
     background: url('../images/homepage/street.jpg');
     background-size: cover;
     display: flex;
-    justify-content: space-between;
-    /* Distribute space between children */
     align-items: center;
-    /* Center all children horizontally */
     text-align: center;
     color: white;
     position: relative;
 }
 
 
-/* Dark overlay */
-.map::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0, 8, 11, 0.7);
-    z-index: 4;
-}
-
 /* Title */
 .map-content {
     display: flex;
     align-items: flex-start;
-    /* Align content to the top */
     justify-content: center;
     text-align: center;
     position: relative;
     padding-top: 150px;
-    z-index: 15;
     width: 100%;
 }
 
@@ -394,11 +375,8 @@
     .hero {
         flex-direction: column;
         justify-content: center;
-        /* Center content vertically */
         align-items: center;
-        /* Center content horizontally */
         text-align: center;
-        /* Center-align text */
     }
 
     .hero-content {
@@ -409,12 +387,10 @@
     .hero h1 {
         top: 45px;
         font-size: 100px;
-        /* Reduce the font size */
     }
 
     .hero p {
         font-size: 30px;
-        /* Remove any extra space at the top */
     }
 
     .button-container {
@@ -447,6 +423,9 @@
 
 
     /* -------------------------------------------------------Map------------------------------------------------------- */
+    .map {
+        height: 130vh;
+    }
 
     .map-content {
         padding-top: 100px;
@@ -462,10 +441,6 @@
         width: auto;
     }
 
-    .exploremore {
-        margin-top: 500px;
-    }
-
     .map-container {
         width: 100%;
         height: auto;
@@ -476,40 +451,43 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        width: 200px;
-        height: 400px;
-        bottom: 150px;
         transform-origin: center;
+        width: 400px;
+        height: 700px;
+        top: 10px;
     }
 
     .map-container1 {
-        gap: 120px;
+        gap: 300px;
         flex-direction: column;
-        bottom: 45%;
-        left: 62%;
+        bottom: 55%;
+        left: 45%;
     }
 
     .map-container2 {
-        gap: 125px;
+        gap: 300px;
         flex-direction: column;
-        bottom: 25%;
-        left: 72%;
+        bottom: 35%;
+        left: 56%;
     }
 
     .location {
         font-size: 20px;
-        transform: translate(-50%, -50%) scale(0.8);
+        transform: scale(0.9);
+        -webkit-tap-highlight-color: transparent;
     }
 
-
-    /* dottt */
-    .location:hover::before {
-        transform: translate(-50%, -50%) scale(1);
+    .location:active {
+        transform: scale(1.3);
+        color: #ff6f61;
     }
 
-    .exploremore {
-        bottom: -30px;
+    .location:hover::before,
+    .location:active::before {
+        transform: scale(1);
+        background-color: #ff6f61;
     }
+
 }
 
 /* -------------------------------------------------------Mobile------------------------------------------------------- */
@@ -524,77 +502,6 @@
 
     .hero p {
         font-size: 28px;
-    }
-
-    /* -------------------------------------------------------Map------------------------------------------------------- */
-
-    .map-content {
-        padding-top: 100px;
-    }
-
-    .map-content p {
-        font-size: 30px;
-    }
-
-    .explore {
-        font-size: 16px;
-        padding: 10px;
-        width: auto;
-    }
-
-    .exploremore {
-        margin-top: 500px;
-    }
-
-    .map-container {
-        width: 100%;
-        height: auto;
-    }
-
-    .imagecontainer {
-        background: url('../images/homepage/linever.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 200px;
-        height: 400px;
-        bottom: 150px;
-        transform-origin: center;
-    }
-
-    .map-container1 {
-        gap: 120px;
-        flex-direction: column;
-        bottom: 45%;
-        left: 62%;
-    }
-
-    .map-container2 {
-        gap: 125px;
-        flex-direction: column;
-        bottom: 25%;
-        left: 72%;
-    }
-
-    .location {
-        font-size: 20px;
-        transform: translate(-50%, -50%) scale(0.8);
-        -webkit-tap-highlight-color: transparent;
-    }
-
-    .location:active {
-        transform: scale(1.2);
-        color: #ff6f61;
-    }
-
-    .location:hover::before,
-    .location:active::before {
-        transform: translate(-50%, -50%) scale(1);
-        background-color: #ff6f61;
-    }
-
-    .exploremore {
-        bottom: -30px;
     }
 
 
