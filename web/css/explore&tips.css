@@ -162,6 +162,7 @@
 .text2 h2 {
     font-size: 50px;
     margin-bottom: 50px;
+    margin-top: 0;
 
 }
 
@@ -284,7 +285,7 @@
         align-items: center;
         height: 1150px;
         justify-content: center;
-
+        gap: 15px;
     }
 
     .content3 {
@@ -364,6 +365,8 @@
         align-items: center;
         text-align: center;
         justify-content: center;
+        margin-top: 0;
+
 
     }
 
@@ -511,7 +514,7 @@
         align-items: center;
         text-align: center;
         justify-content: center;
-        margin-top: -30px;
+        margin-top: 0px;
     }
 
     .text p,
@@ -534,14 +537,15 @@
 
 }
 
+
+
 @media screen and (max-width: 500px) {
-    .content2 {}
 
     .picmosque img {
         width: 70%;
         padding: 0px;
         margin: 0px;
-        margin-left: 35px;
+        margin-left: 55px;
         margin-top: 40px;
         border-radius: 10px;
 
@@ -549,5 +553,33 @@
 
     .text2 {
         margin-right: 0px;
+    }
+
+    .text2 h2 {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 470px) {
+
+    .picmosque img {
+        margin-left: 55px;
+
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .picmosque img {
+        margin-left: 42px;
+
+    }
+}
+
+@media screen and (max-width: 390px) {
+
+    .picmosque img {
+        margin-left: 32px;
+
     }
 }
