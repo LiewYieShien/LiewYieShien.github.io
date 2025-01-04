@@ -452,7 +452,7 @@
         background-repeat: no-repeat;
         background-position: center;
         transform-origin: center;
-        width: 400px;
+        width: 100px;
         height: 700px;
         top: 10px;
     }
@@ -461,14 +461,14 @@
         gap: 300px;
         flex-direction: column;
         bottom: 55%;
-        left: 45%;
+        left: 30%;
     }
 
     .map-container2 {
         gap: 300px;
         flex-direction: column;
         bottom: 35%;
-        left: 56%;
+        left: 75%;
     }
 
     .location {
