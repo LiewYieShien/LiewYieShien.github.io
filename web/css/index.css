@@ -13,7 +13,7 @@
     font-family: 'Sweet Sans Pro', sans-serif;
     height: 100vh;
     background:
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(2, 12, 22, 0.2)), url('../images/homepage/homepagehero.png');
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(2, 12, 22, 0.2)), url('../images/homepage/homepagehero.jpg');
     background-size: cover;
     display: flex;
     align-items: center;
