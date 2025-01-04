@@ -292,7 +292,7 @@
 .mistymountain {
     font-family: 'Sweet Sans Pro', sans-serif;
     height: 100vh;
-    background-image: url('../images/penang/bgpenanghills.png');
+    background-image: url('../images/pahang/mistymoutainhero.jpg');
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -310,7 +310,7 @@
 .georgetownimage {
     flex: 1;
     margin-right: 80px;
-    background-image: url('../images/penang/sec2penanghills.png');
+    background-image: url('../images/pahang/mistymoutain.jpg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
