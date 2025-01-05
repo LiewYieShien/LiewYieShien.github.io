@@ -413,6 +413,7 @@ body {
     .socialmedia {
         height: 45px;
         margin-top: 20px;
+        padding: -10px;
         cursor: none;
     }
 }
