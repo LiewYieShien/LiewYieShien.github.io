@@ -693,7 +693,6 @@
         position: relative;
         background-color: #90B7C9;
         width: 80%;
-        margin: 10px;
         margin-left: 30px;
         padding-left: 20px;
         padding-top: 10px;
@@ -706,8 +705,8 @@
     }
 
     .r-hoteldetails .icon {
-        width: 18px;
-        height: 18px;
+        width: 22px;
+        height: 22px;
     }
 
     /* Book Now Button */
@@ -734,14 +733,7 @@
         align-items: center;
     }
 
-    .text4hotel .bigttl {
-        line-height: 1.1;
-        font-size: 35px;
-    }
 
-    .text4hotel .p1 {
-        font-size: 20px !important;
-    }
 
 }
 
