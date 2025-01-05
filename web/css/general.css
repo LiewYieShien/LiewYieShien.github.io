@@ -394,7 +394,7 @@ body {
 
     /*Footer & Transport Footer*/
     .footer h1,
-    .footer-transport p {
+    .footer-transport h1 {
         font-size: 30px;
     }
 
