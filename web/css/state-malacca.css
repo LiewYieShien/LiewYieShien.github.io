@@ -18,7 +18,7 @@
 }
 
 .maxwidth {
-    max-width: 1440px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -102,7 +102,7 @@
     align-items: center;
     margin: 30px;
     margin-top: 40px;
-    max-width: 1440px;
+    max-width: 1280px;
     margin: 0 auto;
 
 
@@ -259,7 +259,7 @@
     align-items: center;
     margin: 30px;
     margin-top: 50px;
-    max-width: 1440px;
+    max-width: 1280px;
     margin: 0 auto;
     padding-top: 70px;
 
@@ -298,7 +298,7 @@
     margin: 30px;
     margin-top: 40px;
     flex-direction: row-reverse;
-    max-width: 1440px;
+    max-width: 1280px;
     margin: 0 auto;
     padding-top: 50px;
 
