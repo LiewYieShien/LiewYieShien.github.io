@@ -399,6 +399,7 @@ body {
 
     .footer-menu-container {
         padding: -20px;
+        flex-direction: column;
     }
 
     .footer-menu-bar {
