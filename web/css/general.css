@@ -393,12 +393,12 @@ body {
 
 
     /*Footer & Transport Footer*/
-    .footer-transport h1 {
-        font-size: 20px;
+    .footer h1 {
+        font-size: 30px;
     }
 
-    .footer-transport p {
-        font-size: 10px;
+    .footer p {
+        font-size: 18px;
         margin-top: -15px;
     }
 
@@ -408,6 +408,10 @@ body {
 
     .footer-menu-container {
         padding: -20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     .footer-menu-bar {
@@ -415,12 +419,12 @@ body {
     }
 
     .footer-menu-container p {
-        font-size: 8px;
+        font-size: 10px;
         margin-top: 30px;
     }
 
     .socialmedia {
-        margin-top: 20px;
+        margin-top: 35px;
         cursor: none;
     }
 }
