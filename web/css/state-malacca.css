@@ -597,7 +597,7 @@ button.Babakaya:hover {
 
     .jonkerstreet h2 {
         text-align: center;
-        font-size: 26px;
+        font-size: 30px;
 
 
     }
@@ -605,11 +605,20 @@ button.Babakaya:hover {
     .content1 {
         flex-direction: column;
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .image1 {
+    .image1 img {
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        padding-left: 60px;
 
+    }
+
+    .main-image img {
+        justify-content: center;
     }
 
 
@@ -836,46 +845,25 @@ button.Babakaya:hover {
     }
 }
 
-@media screen and (max-width: 500px) {
-
-    /*----------- encore melaka--------------- */
-    .encoremelaka {
+@media screen and (max-width: 490px) {
+    .image1 img {
         display: flex;
-        width: auto;
-        display: flex;
+        flex-direction: column;
         justify-content: center;
-        align-items: center;
-        padding-right: 80px;
-        height: 800px;
+        padding-left: 30px;
+
     }
 
-
-    .column1 {
-        background-color: rgba(0, 0, 0, 0.5);
-        border-radius: 20px;
-        height: 95%;
-        width: 100%;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    }
-
-    .content2 h3 {
+    .intro h3 {
         font-size: 25px;
-        color: #F6EBDC;
-        padding: 13px;
     }
 
-    .content2 h4 {
-        font-size: 15px;
-        color: #AAA297;
-        padding: 13px;
+    .intro h4 {
+        font-size: 18px;
     }
-
-    .content2 ul {
-        font-size: 15px;
-        padding: 13px;
-    }
-
 }
+
+
 
 @media screen and (max-width: 500px) {
 
