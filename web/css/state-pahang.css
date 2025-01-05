@@ -180,7 +180,7 @@ section {
 }
 
 .intro ul li {
-    font-size: 16px;
+    font-size: 15px;
     margin-left: 30px;
     margin-bottom: 15px;
     color: #816E60;
@@ -236,7 +236,7 @@ section {
 /* -------------------------------------------------------Tioman------------------------------------------------------------- */
 .tioman {
     font-family: 'Sweet Sans Pro', sans-serif;
-    height: 130vh;
+    height: 110vh;
     background-image: url('../images/pahang/tiomanhero.jpg');
     background-size: cover;
     display: flex;
@@ -249,7 +249,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: right;
-    margin: 100px 80px;
+    margin: 100px 0px;
     width: 100%;
 }
 
@@ -258,8 +258,8 @@ section {
 .textcontainerright1 {
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 20px;
-    height: auto;
-    width: 42%;
+    height: fit-content;
+    width: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     flex-direction: column;
     justify-content: center;
@@ -267,22 +267,32 @@ section {
 
 .content3 {
     color: #F6EBDC;
-    padding: 30px 20px;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    margin-top: 40px;
+
+
 }
 
 .content3 h3 {
-    font-size: 30px;
+    font-size: 28px;
     color: #F6EBDC;
-    padding: 0 13px;
+
     justify-content: left;
 
 }
 
 
 .content3 h4 {
-    font-size: 20px;
+    font-size: 18px;
     color: #AAA297;
-    padding: 13px;
+
+}
+
+.content3 ul {
+    font-size: 10px;
 }
 
 .content3 strong {
@@ -314,7 +324,7 @@ section {
 .mistymountain {
 
     font-family: 'Sweet Sans Pro', sans-serif;
-    height: 100vh;
+
     background-image: url('../images/pahang/mistymoutainhero.jpg');
     background-size: cover;
     display: flex;
@@ -329,6 +339,7 @@ section {
     align-items: center;
     justify-content: center;
     width: 80%;
+    margin: 50px;
 }
 
 .escapepngimage {
@@ -382,7 +393,7 @@ section {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 20px;
+
     text-decoration: none;
 }
 
@@ -392,7 +403,7 @@ section {
     padding: 15px 30px;
     margin: 40px 0;
     position: relative;
-    bottom: -20px;
+
 
     background-color: #AAA297;
     border-radius: 30px;
@@ -736,12 +747,12 @@ button.Babakaya:hover {
         width: 80%;
         display: flex;
 
-
     }
 
 
     .textcontainerright1 {
         width: 90%;
+        height: fit-content;
         justify-content: center;
 
         border-radius: 15px;
@@ -925,7 +936,8 @@ button.Babakaya:hover {
     }
 
     .penanghills-container {
-        width: 40%;
+        width: 50%;
+        height: fit-content;
         display: flex;
 
 
@@ -963,4 +975,33 @@ button.Babakaya:hover {
         margin: 0;
         padding: 0;
     }
+}
+
+@media screen and (max-width: 600px) {
+
+
+    /*--------------- Tioman------------------- */
+    .tioman {
+        height: 50%;
+        display: flex;
+    }
+
+    .penanghills-container {
+        width: 50%;
+        height: fit-content;
+        display: flex;
+
+
+    }
+
+
+    .textcontainerright1 {
+        width: 50%;
+        justify-content: center;
+
+        border-radius: 15px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+
+    }
+
 }
