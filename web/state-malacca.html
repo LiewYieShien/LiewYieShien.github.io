@@ -84,12 +84,12 @@
             <div class="image1">
 
                 <div class="main-image">
-                    <img src="images/malacca/jonkerstreet1.png" alt="Jonker Street">
+                    <img src="images/malacca/jonkerstreet1.jpg" alt="Jonker Street">
                 </div>
 
                 <div class="small-images">
-                    <img src="images/malacca/js2.png" alt="Jonker Street Detail">
-                    <img src="images/malacca/js3.png" alt="Jonker Street Food">
+                    <img src="images/malacca/js2.jpg" alt="Jonker Street Detail">
+                    <img src="images/malacca/js3.jpg" alt="Jonker Street Food">
                 </div>
             </div>
 
@@ -162,12 +162,12 @@
             <div class="image1">
 
                 <div class="main-image">
-                    <img class="bbnyonya" src="images/malacca/babanyonya.png" alt="Baba & Nyonya Heritage Museum">
+                    <img class="bbnyonya" src="images/malacca/babanyonya.jpg" alt="Baba & Nyonya Heritage Museum">
                 </div>
 
                 <div class="small-images">
-                    <img src="images/malacca/babanyonya2.png" alt="babanyonya Detail">
-                    <img src="images/malacca/babanyonya3.png" alt="babanyonya street">
+                    <img src="images/malacca/babanyonya2.jpg" alt="babanyonya Detail">
+                    <img src="images/malacca/babanyonya3.jpg" alt="babanyonya street">
                 </div>
             </div>
 
@@ -229,12 +229,12 @@
             <div class="image1">
 
                 <div class="main-image">
-                    <img src="images/malacca/church.png" alt="Christ, Church Melaka">
+                    <img src="images/malacca/church.jpg" alt="Christ, Church Melaka">
                 </div>
 
                 <div class="small-images">
-                    <img src="images/malacca/church2.png" alt="Churh Detail">
-                    <img src="images/malacca/church3.png" alt="Church street">
+                    <img src="images/malacca/church2.jpg" alt="Churh Detail">
+                    <img src="images/malacca/church3.jpg" alt="Church street">
                 </div>
             </div>
 
@@ -277,29 +277,123 @@
 
     </section>
     <!--------------------------------------------------- What to eat -------------------------------------------------->
+    <!--------------------------------------------------- What to eat -------------------------------------------------->
     <section class="restaurant">
-        <div class="content5">
-            <div class="text">
+        <div class="content6">
+            <div class="titleof-res">
                 <h2>What to eat</h2>
-                <p>Melaka is a cultural gem and a culinary haven, offering must-try dishes that reflect its
-                    vibrant blend of <br>
-                    historical and multicultural influences.</p>
+                <p>Penang is a culinary paradise with must-try dishes showcasing its rich multicultural heritage.</p>
             </div>
 
+
+            <!-------- Buttons-------->
             <div class="restaurantpic">
-                <button class="chickenrice">Hoe Kee Chicken Rice</button>
-                <button class="somethingbakery"> Something Bakery</button>
-
-                <button class="sataycelup">Satay Celup</button>
-                <button class="Babakaya"> Baba Kaya</button>
+                <button class="image-button">
+                    <img src="images/malacca/restaurant1.jpg" alt="Kebaya Dining">
+                    <div class="text-overlay">Hoe Kee
+                        Chicken Rice</div>
+                </button>
+                <button class="image-button">
+                    <img src="images/malacca/restaurant2.jpg" alt="Curry Mee">
+                    <div class="text-overlay">Sohething Bakery </div>
+                </button>
+                <button class="image-button">
+                    <img src="images/malacca/restaurant3.jpg" alt="Tree Monkey">
+                    <div class="text-overlay">Ban Lee Siang
+                        Satay Celup</div>
+                </button>
+                <button class="image-button">
+                    <img src="images/malacca/restaurant4.jpg" alt="Char Kway Teow">
+                    <div class="text-overlay">Baba Kaya</div>
+                </button>
             </div>
 
 
+            <!-- Popups -->
+            <div class="popup">
+                <div class="popup-content1">
+                    <button class="close-popup"><img src="images/malacca/close.png" alt="close"></button>
+                    <div class=" foodimage">
+                        <img src="images/malacca/riceball.jpg" alt="chickenrice">
+                    </div>
+                    <div class="text">
+
+                        <h3>Hoe Kee Chicken Rice</h3>
+
+                        <h5> Description:</h5>
+                        <p>Hoe Kee is known for its smooth chicken and fragrant rice balls. The restaurant has a
+                            charming,
+                            old-school ambiance​</p>
+
+                        <h5>Address:</h5>
+                        <p>468, Jalan Hang Jebat, 75200 Melaka</p>
+
+                        <h5>Operating Hours:</h5>
+                        <p> Monday to Sunday: 9am–4:30pm
+                            Thursday: Closed</p>
+
+                        <h5>Price Range: </h5>
+                        <p>RM15-40 per person</p>
+
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="popup">
+                <div class="popup-content2">
+
+                    <h3>Air Itam Sister
+                        Curry Mee​</h3>
+                    <p>Indulge in freshly baked delights from Melaka’s renowned bakery.</p>
+                    <button class="close-popup">Close</button>
+                </div>
+            </div>
+            <div class="popup">
+                <div class="popup-content3">
+                    <h3>Tree monkey restaurant</h3>
+                    <p>Experience the unique Melaka-style satay dipped in savory sauce!</p>
+                    <button class="close-popup">Close</button>
+                </div>
+            </div>
+            <div class="popup">
+                <div class="popup-content3">
+                    <h3>Siam Road Charcoal Char Kway Teow</h3>
+                    <p>Enjoy traditional kaya toast with a Peranakan twist.</p>
+                    <button class="close-popup">Close</button>
+                </div>
+            </div>
         </div>
-
-
     </section>
+    <script>
+        // Select all buttons and popups
+        const buttons = document.querySelectorAll(".image-button");
+        const popups = document.querySelectorAll(".popup");
+        const closeButtons = document.querySelectorAll(".close-popup");
 
+        // Show popup on button click
+        buttons.forEach((button, index) => {
+            button.addEventListener("click", () => {
+                popups[index].style.display = "block";
+            });
+        });
+
+        // Hide popup on close button click
+        closeButtons.forEach((closeButton, index) => {
+            closeButton.addEventListener("click", () => {
+                popups[index].style.display = "none";
+            });
+        });
+
+        // Close popup when clicking outside of the popup content
+        popups.forEach((popup) => {
+            popup.addEventListener("click", (e) => {
+                if (e.target === popup) {
+                    popup.style.display = "none";
+                }
+            });
+        });
+    </script>
     <!--------------------------------------------------- Footer Section -------------------------------------------------->
     <section class="footer">
         <div>

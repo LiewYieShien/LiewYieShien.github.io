@@ -220,7 +220,7 @@ section {
     flex: 1;
     display: flex;
     padding-left: 30px;
-    width: 80%;
+
 }
 
 .content2 {
@@ -788,6 +788,17 @@ section {
         font-size: 26px;
 
 
+    }
+
+
+    .intro2 h3 {
+        font-size: 30px;
+        padding: 0;
+    }
+
+    .intro2 {
+        padding-left: 50px;
+        max-width: 550px;
     }
 
     .content3 {

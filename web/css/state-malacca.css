@@ -185,7 +185,7 @@
 
 /*------------------- encore melaka -------------------*/
 .encoremelaka {
-    background-image: url(../images/malacca/encoremelaka.png);
+    background-image: url(../images/malacca/encoremelaka.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -353,182 +353,163 @@
 /*----------------------- What to eat----------------------------- */
 .restaurant {
     background-color: #2A0C08;
-    height: 100vh;
-
+    font-family: 'Sweet Sans Pro', sans-serif;
+    height: 110vh;
 }
 
-.content5 {
+.content6 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-width: 1280px;
-    margin: 0 auto;
-
+    padding: 80px 50px;
 }
 
-.text {
-    margin-top: 50px;
+.titleof-res {
 
-
-
-}
-
-.text h2 {
     color: #F6EBDC;
-    font-size: 50px;
+    justify-content: left;
+
 }
 
-.text p {
+.titleof-res h2 {
+    font-size: 40px;
+    color: #F6EBDC;
+
+}
+
+
+.titleof-res p {
     color: #AAA297;
     font-size: 20px;
 }
 
 .restaurantpic {
+    width: 90%;
     display: flex;
     justify-content: center;
     flex: 1;
     margin-top: 50px;
-    gap: 60px;
+    gap: px;
 }
 
-/* ---------------------what to eat-------------------- */
-
-button.chickenrice {
-    background:
-        linear-gradient(rgba(3, 3, 3, 0.2), rgba(0, 0, 0, 0.2)), url('../images/malacca/cr.png');
-    background-size: cover;
-    background-position: center;
-
-    border: 0px;
-    border-radius: 10px;
-    height: 400px;
-    width: 280px;
-    color: transparent;
-}
-
-button.chickenrice:hover {
-    background:
-        linear-gradient(rgba(2, 12, 22, 0.1), rgba(6, 6, 6, 0.9)), url('../images/malacca/cr.png');
-    background-size: cover;
-
-    border: 0px;
-    border-radius: 10px;
-    height: 400px;
-    width: 280px;
-    font-family: 'Sweet Sans Pro', sans-serif;
-    font-size: 25px;
-    font-weight: 600;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    /* Vertically aligns text to the bottom */
-    padding-bottom: 20px;
+.image-button {
+    background: none;
+    border: none;
+    padding: 0;
     cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
 }
 
-
-button.somethingbakery {
-    background:
-        linear-gradient(rgba(3, 3, 3, 0.2), rgba(0, 0, 0, 0.2)), url('../images/malacca/somethingbakery.png');
-    background-size: cover;
-    background-position: center;
-
-    border: 0px;
+.image-button img {
+    width: 90%;
+    height: auto;
     border-radius: 10px;
-    height: 400px;
-    width: 280px;
-    color: transparent;
 }
 
-button.somethingbakery:hover {
-    background:
-        linear-gradient(rgba(2, 12, 22, 0.1), rgba(6, 6, 6, 0.9)), url('../images/malacca/somethingbakery.png');
-    background-size: cover;
+.image-button:hover {
+    transform: scale(1.1);
+}
 
-    border: 0px;
-    border-radius: 10px;
-    height: 400px;
-    width: 280px;
+.text-overlay {
     font-family: 'Sweet Sans Pro', sans-serif;
-    font-size: 25px;
-    font-weight: 600;
-    color: #ffffff;
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8),
+}
+
+.image-button:hover .text-overlay {
+    opacity: 1;
+}
+
+
+/* Popup styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    background-color: ;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    /* Vertically aligns text to the bottom */
-    padding-bottom: 20px;
-    cursor: pointer;
+
 }
 
-button.sataycelup {
-    background:
-        linear-gradient(rgba(3, 3, 3, 0.2), rgba(0, 0, 0, 0.2)), url('../images/malacca/sataycelup.png');
-    background-size: cover;
-    background-position: center;
-
-    border: 0px;
-    border-radius: 10px;
-    height: 400px;
-    width: 280px;
-    color: transparent;
-}
-
-button.sataycelup:hover {
-    background:
-        linear-gradient(rgba(2, 12, 22, 0.1), rgba(6, 6, 6, 0.9)), url('../images/malacca/sataycelup.png');
-    background-size: cover;
-
-    border: 0px;
-    border-radius: 10px;
-    height: 400px;
-    width: 280px;
-    font-family: 'Sweet Sans Pro', sans-serif;
-    font-size: 25px;
-    font-weight: 600;
-    color: #ffffff;
+.popup-content1 {
+    background-image: url(../images/malacca/restaurant1bg.jpg);
+    padding: 20px;
+    text-align: left;
+    justify-content: space-between;
+    flex-direction: row;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    /* Vertically aligns text to the bottom */
-    padding-bottom: 20px;
-    cursor: pointer;
+    border-radius: 10px;
 }
 
-button.Babakaya {
-    background:
-        linear-gradient(rgba(3, 3, 3, 0.2), rgba(0, 0, 0, 0.2)), url('../images/malacca/babakaya.png');
-    background-size: cover;
-    background-position: center;
-
-    border: 0px;
-    border-radius: 10px;
-    height: 400px;
-    width: 280px;
-    color: transparent;
+.foodimage img {
+    width: 100%;
+    padding-top: 40px;
+    border-radius: 15px;
+    border-top-left-radius: 25px;
 }
 
-button.Babakaya:hover {
-    background:
-        linear-gradient(rgba(2, 12, 22, 0.1), rgba(6, 6, 6, 0.9)), url('../images/malacca/babakaya.png');
-    background-size: cover;
-
-    border: 0px;
-    border-radius: 10px;
-    height: 400px;
-    width: 280px;
-    font-family: 'Sweet Sans Pro', sans-serif;
-    font-size: 25px;
-    font-weight: 600;
+.text {
+    margin-left: 30px;
     color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    /* Vertically aligns text to the bottom */
-    padding-bottom: 20px;
+}
+
+
+.text h3 {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.text h5 {
+    font-size: 20px;
+    color: #ffffff;
+    margin: 0;
+
+}
+
+.text p {
+    font-size: 18px;
+    color: #E6DFD5;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+.close-popup {
+    margin-top: 20px;
+    padding: 10px 20px;
     cursor: pointer;
+
+}
+
+.close-popup img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+}
+
+.close-popup img:hover {
+    transform: scale(1.1);
+    /* 放大 10% */
+
 }
 
 
@@ -846,18 +827,7 @@ button.Babakaya:hover {
 
     }
 
-    .button.chickenrice {
-        background:
-            linear-gradient(rgba(3, 3, 3, 0.2), rgba(0, 0, 0, 0.2)), url('../images/malacca/cr.png');
-        background-size: cover;
-        background-position: center;
 
-        border: 0px;
-        border-radius: 10px;
-        height: 300px;
-        width: 160px;
-        color: transparent;
-    }
 }
 
 @media screen and (max-width: 490px) {
