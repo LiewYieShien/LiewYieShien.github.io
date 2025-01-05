@@ -394,12 +394,12 @@ body {
 
     /*Footer & Transport Footer*/
     .footer h1,
-    .footer-transport {
+    .footer-transport p {
         font-size: 30px;
     }
 
     .footer p,
-    .footer-transport {
+    .footer-transport p {
         font-size: 18px;
         margin-top: -15px;
     }
