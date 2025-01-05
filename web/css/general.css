@@ -93,6 +93,11 @@ body {
     display: block;
 }
 
+.menu-item img {
+    margin-left: -15px;
+    margin-bottom: -2px;
+}
+
 .close-btn {
     position: fixed;
     top: 20px;
@@ -363,6 +368,10 @@ body {
 
     .menu-item>a {
         display: block;
+    }
+
+    .menu-item img {
+        display: none;
     }
 
     .menu-toggle {
