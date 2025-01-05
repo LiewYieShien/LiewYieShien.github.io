@@ -13,7 +13,7 @@
     height: 100vh;
     /* Full screen height */
     background:
-        linear-gradient(rgba(0, 0, 0, 0.8), rgba(2, 12, 22, 0.2)), url('../images/blogsharing/bloghero.jpg ');
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(2, 12, 22, 0.2)), url('../images/blogsharing/bloghero.jpg');
     background-size: cover;
     background-size: cover;
     /* covers the entire section */

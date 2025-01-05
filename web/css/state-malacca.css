@@ -10,7 +10,7 @@
     height: 100vh;
     /* Full screen height */
     background-image:
-        url('../images/malacca/hero.png');
+        url('../images/malacca/hero.jpg');
     background-size: cover;
     /* covers the entire section */
     display: flex;
