@@ -1001,11 +1001,11 @@
 
     /* Hero Section */
     .hero h1 {
-        font-size: 28px;
+        font-size: 30px;
     }
 
     .hero p {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .iphone {
@@ -1035,18 +1035,23 @@
         padding: 10px 20px;
     }
 
-    /* Section 3 Melaka------------------------- */
+    /* Section 3 Melaka Sliderrrrrr------------------------- */
     .left-melaka img {
         height: 300px;
     }
 
+    .text-melaka {
+        margin-top: 50px;
+    }
+
+
     .text-melaka h1 {
-        font-size: 26px;
+        font-size: 35px;
     }
 
     .text-melaka .p1,
     .text-melaka .p2 {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     /* Slider */
