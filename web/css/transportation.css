@@ -320,6 +320,72 @@ button.perak:hover {
         font-weight: lighter;
     }
 
+    /* ---------------------------------------------Destination Section Styles----------------------------------------------- */
+    .destination-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .destination-column1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px;
+        margin-top: 50px;
+    }
+
+    .destination-column2 {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        margin-top: -70px;
+    }
+
+    .destination-container h1 {
+        font-size: 38px;
+    }
+
+    .destination-container p {
+        font-size: 16px;
+        margin-top: -20px;
+        letter-spacing: 2px;
+        font-weight: 300;
+    }
+
+    .destination-column2 img {
+        display: block;
+        flex-direction: column;
+        margin-bottom: -18px;
+        padding-right: 30px;
+        padding-bottom: 5px;
+        height: 40px;
+    }
+
+    .box {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 230px;
+        height: 35px;
+        background-color: #E6DFD5;
+        border: 0px;
+        border-radius: 10px;
+        font-family: 'Sweet Sans Pro', sans-serif;
+        color: #020C16;
+        padding: 15px;
+        margin: 40px 10px 30px 0;
+        /* Vertical margin between boxes */
+    }
+
+    .box:nth-child(2) h2 {
+        font-weight: 400;
+        color: #AAA297;
+        /* Custom font weight and color for the second box */
+    }
+
     /* ---------------------------------------------States Section Styles----------------------------------------------- */
     .states-container {
         flex-direction: column;
@@ -425,75 +491,5 @@ button.perak:hover {
         margin-top: -35px;
         letter-spacing: 2px;
         font-weight: lighter;
-    }
-
-    /* ---------------------------------------------Destination Section Styles----------------------------------------------- */
-    .destination-section-background {
-        background-color: #CEC2B1;
-    }
-
-    .destination-container {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        gap: 50px;
-    }
-
-    .destination-column1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 40px;
-        margin-top: 50px;
-    }
-
-    .destination-column2 {
-        display: flex;
-        justify-content: center;
-        padding: 10px;
-        margin-top: -70px;
-    }
-
-    .destination-container h1 {
-        font-size: 38px;
-    }
-
-    .destination-container p {
-        font-size: 16px;
-        margin-top: -20px;
-        letter-spacing: 2px;
-        font-weight: 300;
-    }
-
-    .destination-column2 img {
-        display: block;
-        flex-direction: column;
-        margin-bottom: -18px;
-        padding-right: 30px;
-        padding-bottom: 5px;
-        height: 40px;
-    }
-
-    .box {
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        width: 230px;
-        height: 35px;
-        background-color: #E6DFD5;
-        border: 0px;
-        border-radius: 10px;
-        font-family: 'Sweet Sans Pro', sans-serif;
-        color: #020C16;
-        padding: 15px;
-        margin: 40px 10px 30px 0;
-        /* Vertical margin between boxes */
-    }
-
-    .box:nth-child(2) h2 {
-        font-weight: 400;
-        color: #AAA297;
-        /* Custom font weight and color for the second box */
     }
 }
