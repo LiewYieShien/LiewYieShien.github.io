@@ -4,7 +4,7 @@
     height: 100vh;
     /* Full screen height */
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('../images/malacca/malaccariver.png');
+        linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('../images/malacca/malaccariver.jpg');
     background-size: cover;
     /* covers the entire section */
     display: flex;
