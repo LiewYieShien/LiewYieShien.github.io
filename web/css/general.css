@@ -393,16 +393,21 @@ body {
 
 
     /*Footer & Transport Footer*/
+    .footer-transport h1 {
+        font-size: 20px;
+    }
+
+    .footer-transport p {
+        font-size: 10px;
+        margin-top: -15px;
+    }
+
     .explore {
         display: none;
     }
 
     .footer-menu-container {
         padding: -20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
     }
 
     .footer-menu-bar {
