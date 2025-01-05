@@ -393,13 +393,15 @@ body {
 
 
     /*Footer & Transport Footer*/
-    .footer h1 {
+    .footer h1,
+    .footer-transport h1 {
         font-size: 30px;
     }
 
-    .footer p {
+    .footer p,
+    .footer-transport p {
         font-size: 18px;
-        margin-top: -15px;
+        margin-top: 15px;
     }
 
     .explore {
