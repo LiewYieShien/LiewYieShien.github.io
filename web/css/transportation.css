@@ -1,5 +1,21 @@
 /* ---------------------------------------------Transportation----------------------------------------------- */
 
+body {
+    background-color: #CEC2B1;
+    /* Set the overall background color */
+}
+
+/* ---------------------------------------------Max Width----------------------------------------------- */
+.space {
+    max-width: 1280px;
+    /* Set the maximum width */
+    width: 100%;
+    margin: 0 auto;
+    /* Center the section horizontally */
+    padding: 20px;
+    /* Add some padding for spacing */
+}
+
 /* ---------------------------------------------Hero Section Styles----------------------------------------------- */
 .hero {
     font-family: 'Sweet Sans Pro', sans-serif;
@@ -34,10 +50,6 @@
 }
 
 /* ---------------------------------------------Destination Section Styles----------------------------------------------- */
-.destination-section-background {
-    background-color: #CEC2B1;
-}
-
 .destination-container {
     margin-top: -20px;
     display: flex;
@@ -252,25 +264,10 @@ button.perak:hover {
     cursor: pointer;
 }
 
-/* ---------------------------------------------Mobile Styles----------------------------------------------- */
-@media screen and (max-width: 400px) {
-    .hamburger {
-        display: flex;
-    }
 
-    .menu {
-        flex-direction: column;
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
-        justify-content: center;
-        align-items: center;
-        z-index: 1000;
-    }
+/* ---------------------------------------------Mobile Styles----------------------------------------------- */
+
+@media screen and (max-width: 400px) {
 
     /* ---------------------------------------------Hero Section Styles----------------------------------------------- */
     .hero h1 {
