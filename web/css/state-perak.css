@@ -565,6 +565,12 @@
 
 
 /* ---------------------------------------------Mobile Styles----------------------------------------------- */
+@media screen and (max-width: 1300px) {
+    .space {
+        padding: 0px;
+    }
+}
+
 @media screen and (max-width: 1170px) {
     ul {
         padding: 0;
@@ -578,10 +584,6 @@
     .buttongallery {
         margin: 0px 0;
         bottom: 0px;
-    }
-
-    .space {
-        padding: 0px;
     }
 }
 
