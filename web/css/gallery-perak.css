@@ -3,13 +3,6 @@
     background-color: #03122D;
 }
 
-.space {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 80px;
-    box-sizing: border-box;
-}
-
 /* ---------------------------------------------Hero Section Styles----------------------------------------------- */
 .hero {
     font-family: 'Sweet Sans Pro', sans-serif;
@@ -41,6 +34,8 @@
 
 /* ---------------------------------------------Gallery Section Styles----------------------------------------------- */
 .states-container {
+    max-width: 1440px;
+    margin: 0 auto;
     background-color: #03122D;
     padding: 80px;
 }
@@ -165,10 +160,6 @@
 
 /* ---------------------------------------------Mobile Styles----------------------------------------------- */
 @media screen and (max-width: 1300px) {
-
-    .space {
-        padding: 0px;
-    }
 
     /* ---------------------------------------------Hero Section Styles----------------------------------------------- */
     .hero h1 {
