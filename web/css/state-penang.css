@@ -33,6 +33,7 @@
 }
 
 .hero h1 {
+    margin: 0px;
     font-size: 120px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
@@ -67,7 +68,7 @@
 }
 
 .circle-btn img {
-    width: 65%;
+    width: 40px;
     height: auto;
 }
 
@@ -154,6 +155,7 @@
 .intro strong {
     color: #C3733D;
 }
+
 
 .intro ul li::marker {
     font-size: 20px;
@@ -592,13 +594,6 @@
         background-size: cover;
     }
 
-    .textcontainerright {
-        width: 100%;
-        padding: 10px;
-        border-radius: 10px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    }
-
 
     .buttongallery {
         font-size: 16px;
@@ -609,7 +604,26 @@
 }
 
 
+@media screen and (max-width: 1170px) {
+    ul {
+        padding: 0;
+    }
 
+    .escapepng {
+        height: auto;
+    }
+
+    .gallery {
+        text-decoration: none;
+        margin-bottom: 50px;
+    }
+
+    .buttongallery {
+        position: relative;
+        margin: 0px 0;
+        bottom: 0px;
+    }
+}
 
 
 @media screen and (max-width: 920px) {
@@ -816,19 +830,35 @@
 
 
 
-@media screen and (max-width: 1170px) {
-    .escapepng {
-        height: auto;
+
+@media screen and (max-width: 450px) {
+    .intro {
+        margin-left: 20px;
     }
 
-    .gallery {
-        text-decoration: none;
-        margin-bottom: 50px;
+    .hero h1 {
+        font-size: 60px;
     }
 
-    .buttongallery {
-        position: relative;
-        margin: 0px 0;
-        bottom: 0px;
+    .content2 {
+        padding: 0px;
     }
+
+    .content2 h4 {
+        padding: 0 0;
+    }
+
+    .content2 h3 {
+        padding: 0 0;
+    }
+
+    .klstemple {
+        padding: 100px 20px;
+
+    }
+
+    .textcontainerescape {
+        width: 80%;
+    }
+
 }

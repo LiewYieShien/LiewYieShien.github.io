@@ -56,7 +56,9 @@
         </header>
 
         <!--------------------------------------------------- Hero Section -------------------------------------------------->
+
         <div class="page1">
+
             <section class="hero">
                 <!-- Left Content -->
                 <div class="hero-content">
@@ -83,42 +85,46 @@
 
 
 
+
+
         <!---------------------------------------------------------- Map------------------------------------------------------------>
         <div class="page">
             <section class="map">
                 <!-- Title -->
-                <div class="map-content">
-                    <p>Discover Malaysia</p>
-                </div>
-
-                <!-- Image Container -->
-                <div class="imagecontainer">
-                    <div class="map-container1">
-                        <a class="location penang" href="state-penang.html">
-                            Penang
-                        </a>
-                        <a class="location pahang" href="state-pahang.html">
-                            Pahang
-                        </a>
-                    </div>
-                    <div class="map-container2">
-                        <a class="location penang" href="state-perak.html">
-                            Perak
-                        </a>
-                        <a class="location pahang" href="state-malacca.html">
-                            Malacca
-                        </a>
+                <div class="maxwidthwrap">
+                    <div class="map-content">
+                        <p>Discover Malaysia</p>
                     </div>
 
+                    <!-- Image Container -->
+                    <div class="imagecontainer">
+                        <div class="map-container1">
+                            <a class="location penang" href="state-penang.html">
+                                Penang
+                            </a>
+                            <a class="location pahang" href="state-pahang.html">
+                                Pahang
+                            </a>
+                        </div>
+                        <div class="map-container2">
+                            <a class="location penang" href="state-perak.html">
+                                Perak
+                            </a>
+                            <a class="location pahang" href="state-malacca.html">
+                                Malacca
+                            </a>
+                        </div>
 
-                    <!-- Explore More Button -->
-                    <a href="explore&tips.html">
-                        <button class="exploremore">
-                            <span>Explore more</span>
-                            <img class="right" src="images/homepage/b-rightarrow.png" alt="Right arrow">
-                        </button>
-                    </a>
 
+                        <!-- Explore More Button -->
+                        <a href="explore&tips.html">
+                            <button class="exploremore">
+                                <span>Explore more</span>
+                                <img class="right" src="images/homepage/b-rightarrow.png" alt="Right arrow">
+                            </button>
+                        </a>
+
+                    </div>
                 </div>
             </section>
         </div>
@@ -128,37 +134,41 @@
         <!----------------------------------------------------- Find Your Interest -------------------------------------------------->
 
         <section class="slider">
+            <div class="maxwidthwrap">
+                <div class="threeslider">
+                    <div class="slide">
+                        <img src="images/homepage/adventure.jpg" alt="Adventure">
+                        <h1>Adventure</h1>
+                        <p>Where Every Journey Reveals a <br> New World of Wonders</p>
+                    </div>
+                    <div class="slide">
+                        <img src="images/homepage/city.jpg" alt="Cityscape">
+                        <h1>Cityscape</h1>
+                        <p>Immerse Yourself in the Thriving <br> Heartbeat of Urban Life</p>
+                    </div>
+                    <div class="slide">
+                        <img src="images/homepage/nature.jpg" alt="Nature">
+                        <h1>Nature</h1>
+                        <p>Let the Wild Landscapes Ignite <br> Your Sense of Discovery</p>
+                    </div>
+                </div>
 
-            <div class="slide">
-                <img src="images/homepage/adventure.jpg" alt="Adventure">
-                <h1>Adventure</h1>
-                <p>Where Every Journey Reveals a <br> New World of Wonders</p>
-            </div>
-            <div class="slide">
-                <img src="images/homepage/city.jpg" alt="Cityscape">
-                <h1>Cityscape</h1>
-                <p>Immerse Yourself in the Thriving <br> Heartbeat of Urban Life</p>
-            </div>
-            <div class="slide">
-                <img src="images/homepage/nature.jpg" alt="Nature">
-                <h1>Nature</h1>
-                <p>Let the Wild Landscapes Ignite <br> Your Sense of Discovery</p>
-            </div>
 
+                <div class="slider-controls">
+                    <!-- Each button corresponds to a slide -->
+                    <button class="active"></button>
+                    <button></button>
+                    <button></button>
+                </div>
 
-            <div class="slider-controls">
-                <!-- Each button corresponds to a slide -->
-                <button class="active"></button>
-                <button></button>
-                <button></button>
+                <div class="nav-buttons">
+                    <button id="prev"><i class="fas fa-chevron-left"></i></button>
+                    <button id="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
             </div>
-
-            <div class="nav-buttons">
-                <button id="prev"><i class="fas fa-chevron-left"></i></button>
-                <button id="next"><i class="fas fa-chevron-right"></i></button>
-            </div>
-
         </section>
+
+
 
         <script>
             document.addEventListener('DOMContentLoaded', () => { // Ensure the DOM is fully loaded
@@ -200,6 +210,8 @@
                 updateSlider(currentIndex);
             });
         </script>
+
+
 
         <!--------------------------------------------------- Footer Section -------------------------------------------------->
         <section class="footer">
