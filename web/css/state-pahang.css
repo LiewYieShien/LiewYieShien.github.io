@@ -223,16 +223,17 @@ section {
 .image2 {
     flex: 1;
     display: flex;
-    padding-left: 19px;
-
+    padding-left: 10px;
+    justify-content: center;
 
 }
 
 .image-genting {
     flex: 1;
     display: flex;
-    padding-left: 30px;
+    padding-left: 10px;
     width: 70%;
+    justify-content: center;
 }
 
 .content2 {

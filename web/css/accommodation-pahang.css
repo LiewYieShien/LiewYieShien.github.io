@@ -132,18 +132,24 @@
     position: relative;
 }
 
-
 .promo-container {
     position: relative;
     left: -20px;
     bottom: -15px;
     display: flex;
     max-width: 2000px;
-    margin: 100px 0px;
+    margin: 100px auto;
     padding: 0px 60px;
     overflow: hidden;
 }
 
+.text4hotel {
+    flex: 2;
+    max-width: 600px;
+    margin-bottom: 50px;
+    padding: 40px;
+    line-height: 0.6;
+}
 
 .text4hotel .bigttl {
     font-size: 38px;
@@ -159,6 +165,11 @@
     font-weight: 100px;
     margin-bottom: 50px;
     line-height: 1.8;
+}
+
+.text4hotel h4 {
+    font-size: 18px;
+    color: #7d7d7d;
 }
 
 .text4hotel .highlight {
@@ -414,7 +425,7 @@ a {
     color: #2D9818;
 }
 
-/* -----------------------------------------------hotel 1--------------------------------------------- */
+/* -----------------------------------------------hotel 3--------------------------------------------- */
 
 .hotel3 {
     z-index: 15;
@@ -429,71 +440,6 @@ a {
 }
 
 
-.promo-container {
-    position: relative;
-    left: -20px;
-    bottom: -15px;
-    display: flex;
-    max-width: 2000px;
-    margin: 100px auto;
-    overflow: hidden;
-}
-
-.text4hotel {
-    flex: 2;
-    max-width: 600px;
-    margin-bottom: 50px;
-    padding: 40px;
-    line-height: 0.6;
-}
-
-
-.text4hotel h4 {
-    font-size: 18px;
-    color: #7d7d7d;
-}
-
-.text4hotel h1 {
-    font-size: 40px;
-}
-
-
-.text4hotel .p2 {
-    font-weight: 100px;
-    margin-bottom: 50px;
-    line-height: 1.8;
-}
-
-.text4hotel .highlight {
-    font-weight: bold;
-    color: #2D9818;
-}
-
-
-
-.detailsleftnright {
-    margin-left: 30px;
-}
-
-.hoteldetails p {
-    margin-left: 15px;
-    text-indent: -38px;
-    line-height: 1.5;
-    /* Negative indent to bring the first line closer to the icon */
-}
-
-.hoteldetails img.icon {
-    flex-shrink: 0;
-    margin-right: 10px;
-    width: 24px;
-    height: 24px;
-}
-
-.hoteldetails strong {
-    color: #2D9818;
-}
-
-
 
 /* -----------Text---------------- */
 .book span {
@@ -502,43 +448,13 @@ a {
     font-size: 18px;
 }
 
-/* -----------Icon---------------- */
-.book .right {
-    margin-left: 10px;
-    width: 15px;
-    height: auto;
-}
+
 
 /* Hover Effect */
 .book:hover {
     background-color: #E6DFD5;
     transform: scale(1.1);
 }
-
-
-.book:hover span {
-    color: #2D9818;
-}
-
-
-.image-section {
-    flex: 1;
-    margin-top: -40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 450px;
-    max-height: 750px;
-}
-
-.image-section img {
-    border-radius: 0px;
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-}
-
 
 
 @media screen and (max-width: 1100px) {

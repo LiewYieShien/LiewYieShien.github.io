@@ -137,7 +137,7 @@
     bottom: -15px;
     display: flex;
     max-width: 2000px;
-    margin: 100px 0px;
+    margin: 100px auto;
     padding: 0px 60px;
     overflow: hidden;
 }
@@ -438,17 +438,6 @@ a {
     justify-content: space-between;
     align-items: center;
     position: relative;
-}
-
-
-.promo-container {
-    position: relative;
-    left: -20px;
-    bottom: -15px;
-    display: flex;
-    max-width: 2000px;
-    margin: 100px auto;
-    overflow: hidden;
 }
 
 
