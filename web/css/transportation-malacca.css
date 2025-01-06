@@ -1,16 +1,5 @@
 /* ---------------------------------------------Transportation of Malacca----------------------------------------------- */
 
-/* ---------------------------------------------Max Width----------------------------------------------- */
-.space {
-    max-width: 1280px;
-    /* Set the maximum width */
-    width: 100%;
-    margin: 0 auto;
-    /* Center the section horizontally */
-    padding: 20px;
-    /* Add some padding for spacing */
-}
-
 /* ---------------------------------------------Background Styles----------------------------------------------- */
 body.setbackground {
     background-size: 100%;
@@ -22,6 +11,8 @@ body.setbackground {
 
 /* ---------------------------------------------Destination Section Styles----------------------------------------------- */
 .destination-container {
+    max-width: 1440px;
+    margin: 0 auto;
     margin-top: -20px;
     display: flex;
     justify-content: center;
@@ -91,6 +82,8 @@ body.setbackground {
 
 /* ---------------------------------------------Transport Option Styles----------------------------------------------- */
 .alignment {
+    max-width: 1440px;
+    margin: 0 auto;
     flex-direction: column;
     margin-bottom: 120px;
 }
