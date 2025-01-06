@@ -413,6 +413,10 @@
     display: flex;
 }
 
+.popup strong {
+    color: #57A2D3
+}
+
 .popup-content1 {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(2, 12, 22, 0.2)), url(../images/perak/restaurant1-bg.jpg);
     background-size: cover;
