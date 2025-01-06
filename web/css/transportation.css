@@ -5,16 +5,6 @@
     background-color: #CEC2B1;
 }
 
-.space {
-    max-width: 1280px;
-    /* Set the maximum width */
-    width: 100%;
-    margin: 0 auto;
-    /* Center the section horizontally */
-    padding: 20px;
-    /* Add some padding for spacing */
-}
-
 /* ---------------------------------------------Hero Section Styles----------------------------------------------- */
 .hero {
     font-family: 'Sweet Sans Pro', sans-serif;
@@ -50,6 +40,8 @@
 
 /* ---------------------------------------------Destination Section Styles----------------------------------------------- */
 .destination-container {
+    max-width: 1440px;
+    margin: 0 auto;
     margin-top: -20px;
     display: flex;
     justify-content: center;
@@ -117,6 +109,8 @@
 
 /* ---------------------------------------------States Section Styles----------------------------------------------- */
 .states-container {
+    max-width: 1440px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     gap: 60px;
@@ -266,10 +260,6 @@ button.perak:hover {
 /* ---------------------------------------------Mobile Styles----------------------------------------------- */
 
 @media screen and (max-width: 1300px) {
-
-    .space {
-        padding: 0px;
-    }
 
     /* ---------------------------------------------Hero Section Styles----------------------------------------------- */
     .hero {
