@@ -296,8 +296,8 @@
             <!-------- Buttons-------->
             <div class="restaurantpic">
                 <button class="image-button">
-                    <img src="images/penang/restaurant1.png" alt="Kebaya Dining">
-                    <div class="text-overlay">Kebaya Dining</div>
+                    <img src="images/pahang/duckmee button 1.jpg" alt="Kebaya Dining">
+                    <div class="text-overlay">Tong Koon Mee Itik</div>
                 </button>
                 <button class="image-button">
                     <img src="images/penang/restaurant2.png" alt="Curry Mee">
@@ -315,62 +315,69 @@
 
 
             <!-- Popups -->
-            <div class="popup">
-                <div class="popup-content">
-                    <h3>Kebaya Dining Room</h3>
-                    <p>Fine-dining restaurant serving modern Peranakan cuisine in an elegant setting.</p>
-                    <button class="close-popup">Close</button>
-                </div>
-            </div>
-            <div class="popup">
-                <div class="popup-content">
-                    <h3>Air Itam Sister Curry Mee​</h3>
-                    <p>Indulge in freshly baked delights from Melaka’s renowned bakery.</p>
-                    <button class="close-popup">Close</button>
-                </div>
-            </div>
-            <div class="popup">
-                <div class="popup-content">
-                    <h3>Tree monkey restaurant</h3>
-                    <p>Experience the unique Melaka-style satay dipped in savory sauce!</p>
-                    <button class="close-popup">Close</button>
-                </div>
-            </div>
-            <div class="popup">
-                <div class="popup-content">
-                    <h3>Siam Road Charcoal Char Kway Teow</h3>
-                    <p>Enjoy traditional kaya toast with a Peranakan twist.</p>
-                    <button class="close-popup">Close</button>
+            <div class="popup1">
+                <div class="popup-content1">
+                    <button class="close-popup"><img src="images/malacca/closebutton.png" alt="close"></button>
+                    <div class=" restaurantimage">
+                        <img src="images/pahang/duckmee.jpg" alt="duckmee">
+                    </div>
+                    <div class="mobileimage">
+                        <img src="images/pahang/duckmeemobile.jpg" alt="duckmee">
+                    </div>
+                    <div class="text">
+
+                        <h3>Tong Koon Mee Itik</h3>
+
+                        <h5> Description:</h5>
+                        <p>Dongguan Roast Duck Noodles at Hao Cheng Food Court is a Kuantan favorite with chewy noodles
+                            and tender roast duck!​</p>
+
+                        <h5>Address:</h5>
+                        <p> 16, Lorong Seri Kuantan 17, Kampung Galing Besar, 25250 Kuantan, Pahang</p>
+
+                        <h5>Operating Hours:</h5>
+                        <p> Monday to Sunday: 10:00 AM – 5:30 PM</p>
+
+                        <h5>Price Range: </h5>
+                        <p>RM10– 30 per person</p>
+
+
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
     <script>
-        // Select all buttons and popups
-        const buttons = document.querySelectorAll(".image-button");
-        const popups = document.querySelectorAll(".popup");
-        const closeButtons = document.querySelectorAll(".close-popup");
+        document.addEventListener("DOMContentLoaded", () => {
+            const buttons = document.querySelectorAll(".image-button");
+            const popups = document.querySelectorAll(".popup1, .popup2, .popup3, .popup4");
+            const closeButtons = document.querySelectorAll(".close-popup");
 
-        // Show popup on button click
-        buttons.forEach((button, index) => {
-            button.addEventListener("click", () => {
-                popups[index].style.display = "block";
+            // 隐藏所有 popup
+            popups.forEach(popup => popup.style.display = "none");
+
+            // 点按钮显示 popup
+            buttons.forEach((button, index) => {
+                button.addEventListener("click", () => {
+                    popups[index].style.display = "block";
+                });
             });
-        });
 
-        // Hide popup on close button click
-        closeButtons.forEach((closeButton, index) => {
-            closeButton.addEventListener("click", () => {
-                popups[index].style.display = "none";
+            // 点击关闭按钮隐藏 popup
+            closeButtons.forEach((closeButton, index) => {
+                closeButton.addEventListener("click", () => {
+                    popups[index].style.display = "none";
+                });
             });
-        });
 
-        // Close popup when clicking outside of the popup content
-        popups.forEach((popup) => {
-            popup.addEventListener("click", (e) => {
-                if (e.target === popup) {
-                    popup.style.display = "none";
-                }
+            // 点击 popup 外部关闭
+            popups.forEach(popup => {
+                popup.addEventListener("click", (e) => {
+                    if (e.target === popup) {
+                        popup.style.display = "none";
+                    }
+                });
             });
         });
     </script>
