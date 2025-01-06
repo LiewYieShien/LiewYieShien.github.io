@@ -1,3 +1,15 @@
+/* ---------------------------------------------Gallery of Pahang----------------------------------------------- */
+.gallerybg {
+    background-color: #2A0C08;
+}
+
+.space {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 80px;
+    box-sizing: border-box;
+}
+
 /* ---------------------------------------------Hero Section Styles----------------------------------------------- */
 .hero {
     font-family: 'Sweet Sans Pro', sans-serif;
@@ -155,6 +167,10 @@
 
 /* ---------------------------------------------Mobile Styles----------------------------------------------- */
 @media screen and (max-width: 1300px) {
+
+    .space {
+        padding: 0px;
+    }
 
     /* ---------------------------------------------Hero Section Styles----------------------------------------------- */
     .hero h1 {
