@@ -1,4 +1,13 @@
 /* ------------------------------------------------------------Cover-------------------------------------------------------------------- */
+.maxwidthwrap {
+    max-width: 1440px;
+    width: 100%;
+}
+
+.bgcolor {
+    background-color: #051839;
+}
+
 
 .hotelperak1 {
     background-color: #051839;
@@ -205,6 +214,11 @@
 
 
 /* Button Styles */
+a {
+    text-decoration: none;
+}
+
+
 .book {
     width: auto;
     padding: 15px 25px;
@@ -777,17 +791,13 @@
     }
 
     /* hotel 2222222222222222222222222222 */
-    .promotwo-container {
-        align-items: center;
-    }
-
     .text2hotel {
-        margin-left: 0px;
+        margin-left: 20px;
 
     }
 
     .r-hoteldetails {
-        margin-left: 0px;
+        margin-left: 20px;
     }
 
 
