@@ -331,7 +331,72 @@
 }
 
 /* ---------------------------------------------Mobile Styles----------------------------------------------- */
+
+@media (max-width: 1000px) {
+
+    /* -------------------Penanghills-----------------*/
+    .penanghills {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0px;
+    }
+
+    .textcontainerright1 {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        margin: 60px;
+    }
+}
+
 @media (max-width: 650px) {
+
+    /* -------------------Penanghills-----------------*/
+    .penanghills {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0px;
+    }
+
+    .penanghills-container {
+        flex-direction: column;
+        margin: 50px;
+        width: 100%;
+    }
+
+    .georgetownimage {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+        height: auto;
+        background-size: cover;
+    }
+
+    .textcontainerright1 {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        margin: 30px;
+    }
+
+    .content2 {
+        padding: 10px;
+    }
+
+    .content2 h3 {
+        font-size: 24px;
+    }
+
+    .content2 h4 {
+        font-size: 16px;
+    }
+
 
     /* -------------------George Town-----------------*/
     .smallerimages {
@@ -375,46 +440,6 @@
 
     }
 
-
-    /* -------------------Penanghills-----------------*/
-    .penanghills {
-        height: auto;
-    }
-
-    .penanghills-container {
-        flex-direction: column;
-        margin: 50px;
-        width: 100%;
-    }
-
-    .georgetownimage {
-        margin-right: 0;
-        margin-bottom: 20px;
-        width: 100%;
-        height: auto;
-        background-size: cover;
-    }
-
-    .textcontainerright {
-        width: 100%;
-        padding: 10px;
-        border-radius: 10px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    }
-
-    .content2 {
-        padding: 10px;
-    }
-
-    .content2 h3 {
-        font-size: 24px;
-    }
-
-    .content2 h4 {
-        font-size: 16px;
-    }
-
-
     /* -------------------National Park-----------------*/
     .nationalpark-container {
         gap: 30px;
@@ -442,6 +467,47 @@
         padding: 0 10px;
     }
 
+    .penanghills {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0px;
+    }
+
+    .penanghills-container {
+        flex-direction: column;
+        margin: 50px;
+        width: 100%;
+    }
+
+    .georgetownimage {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+        height: auto;
+        background-size: cover;
+    }
+
+    .textcontainerright1 {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        margin: 60px;
+    }
+
+    .content2 {
+        padding: 10px;
+    }
+
+    .content2 h3 {
+        font-size: 24px;
+    }
+
+    .content2 h4 {
+        font-size: 16px;
+    }
 
     /* -------------------ESCAPE-----------------*/
     .escapepng {
@@ -517,6 +583,16 @@
 
     }
 
+    /* -------------------Penanghills-----------------*/
+
+    .content2 h3 {
+        font-size: 30px;
+    }
+
+    .content2 h4 {
+        font-size: 18px;
+    }
+
     /* -------------------George Town-----------------*/
 
     .content1 {
@@ -526,47 +602,6 @@
 
     .intro h3 {
         font-size: 30px;
-    }
-
-
-
-    /*--------------- penanghills------------------- */
-    .penanghills {
-        height: auto;
-    }
-
-    .penanghills-container {
-        margin: 50px;
-        flex-direction: column;
-        width: 90%;
-    }
-
-    .georgetownimage {
-        flex: 1;
-        margin-right: 0;
-        margin-bottom: 30px;
-        width: 100%;
-        min-height: 300px;
-        background-size: contain;
-    }
-
-    .textcontainerright {
-        width: 100%;
-        padding: 30px;
-        border-radius: 15px;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
-    }
-
-    .content2 {
-        padding: 30px;
-    }
-
-    .content2 h3 {
-        font-size: 28px;
-    }
-
-    .content2 h4 {
-        font-size: 18px;
     }
 
 
@@ -626,7 +661,7 @@
         background-size: contain;
     }
 
-    .textcontainerescape {
+    .textcontainerescape2 {
         width: 100%;
         padding: 30px;
         border-radius: 15px;
