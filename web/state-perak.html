@@ -257,6 +257,194 @@
         </div>
     </section>
 
+    <!------------------------------------------------------------ What to Eat ------------------------------------------------------------>
+    <section class="restaurant">
+        <div class="content5">
+            <div class="titleof-res">
+                <h2>What to eat</h2>
+                <p>Perak is a culinary gem with must-try dishes that reflect its diverse cultural heritage and vibrant
+                    local flavors.</p>
+            </div>
+
+
+            <!-------- Buttons-------->
+            <div class="restaurantpic">
+                <button class="image-button">
+                    <img src="images/perak/restaurant1.png" alt="Kebaya Dining">
+                    <div class="text-overlay">Kebaya Dining</div>
+                </button>
+                <button class="image-button">
+                    <img src="images/perak/restaurant2.png" alt="Curry Mee">
+                    <div class="text-overlay">Curry Mee</div>
+                </button>
+                <button class="image-button">
+                    <img src="images/perak/restaurant3.png" alt="Tree Monkey">
+                    <div class="text-overlay">Tree Monkey</div>
+                </button>
+                <button class="image-button">
+                    <img src="images/perak/restaurant4.png" alt="Char Kway Teow">
+                    <div class="text-overlay">Char Kway Teow</div>
+                </button>
+            </div>
+
+
+            <!-- Popups -->
+            <div class="popup">
+                <div class="popup-content1">
+                    <button class="close-popup"><img src="images/malacca/closebutton.png" alt="close"></button>
+                    <div class=" foodimage">
+                        <img src="images/perak/popup1.png" alt="Kebaya Dining Room">
+                    </div>
+                    <div class="text">
+
+                        <h3>Kebaya Dining Room</h3>
+
+                        <h5> Description:</h5>
+                        <p>Fine-dining restaurant serving modern Peranakan cuisine in an elegant setting.</p>
+
+                        <h5>Address:</h5>
+                        <p>7, 7A, 9 & 9A, Stewart Lane, George Town </p>
+
+                        <h5>Operating Hours:</h5>
+                        <p> Monday to Sunday: 12:00 PM – 2:30 PM (Lunch) <br>
+                            Monday to Sunday: 6:30 PM – 10:00 PM (Dinner)</p>
+
+                        <h5>Price Range: </h5>
+                        <p>RM15-40 per person</p>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="popup">
+                <div class="popup-content2">
+                    <button class="close-popup"><img src="images/malacca/closebutton.png" alt="close"></button>
+                    <div class=" foodimage">
+                        <img src="images/perak/popup2.png" alt="curry mee">
+                    </div>
+                    <div class="text">
+
+                        <h3>Air Itam Sister Curry Mee​</h3>
+
+                        <h5> Description:</h5>
+                        <p>Fine-dining restaurant serving modern Peranakan cuisine in an elegant setting.</p>
+
+                        <h5>Address:</h5>
+                        <p>7, 7A, 9 & 9A, Stewart Lane, George Town </p>
+
+                        <h5>Operating Hours:</h5>
+                        <p> Monday to Sunday: 12:00 PM – 2:30 PM (Lunch) <br>
+                            Monday to Sunday: 6:30 PM – 10:00 PM (Dinner)</p>
+
+                        <h5>Price Range: </h5>
+                        <p>RM15-40 per person</p>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="popup">
+                <div class="popup-content3">
+                    <button class="close-popup"><img src="images/malacca/closebutton.png" alt="close"></button>
+                    <div class=" foodimage">
+                        <img src="images/perak/popup3.png" alt="curry mee">
+                    </div>
+                    <div class="text">
+
+                        <h3>Air Itam Sister Curry Mee​</h3>
+
+                        <h5> Description:</h5>
+                        <p>Fine-dining restaurant serving modern Peranakan cuisine in an elegant setting.</p>
+
+                        <h5>Address:</h5>
+                        <p>7, 7A, 9 & 9A, Stewart Lane, George Town </p>
+
+                        <h5>Operating Hours:</h5>
+                        <p> Monday to Sunday: 12:00 PM – 2:30 PM (Lunch) <br>
+                            Monday to Sunday: 6:30 PM – 10:00 PM (Dinner)</p>
+
+                        <h5>Price Range: </h5>
+                        <p>RM15-40 per person</p>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="popup">
+                <div class="popup-content4">
+                    <button class="close-popup"><img src="images/malacca/closebutton.png" alt="close"></button>
+                    <div class=" foodimage">
+                        <img src="images/perak/popup4.png" alt="curry mee">
+                    </div>
+                    <div class="text">
+
+                        <h3>Air Itam Sister Curry Mee​</h3>
+
+                        <h5> Description:</h5>
+                        <p>Fine-dining restaurant serving modern Peranakan cuisine in an elegant setting.</p>
+
+                        <h5>Address:</h5>
+                        <p>7, 7A, 9 & 9A, Stewart Lane, George Town </p>
+
+                        <h5>Operating Hours:</h5>
+                        <p> Monday to Sunday: 12:00 PM – 2:30 PM (Lunch) <br>
+                            Monday to Sunday: 6:30 PM – 10:00 PM (Dinner)</p>
+
+                        <h5>Price Range: </h5>
+                        <p>RM15-40 per person</p>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Ensure popups are hidden when the page loads
+        document.addEventListener("DOMContentLoaded", () => {
+            const buttons = document.querySelectorAll(".image-button");
+            const popups = document.querySelectorAll(".popup");
+            const closeButtons = document.querySelectorAll(".close-popup");
+
+            // Hide all popups initially
+            popups.forEach(popup => {
+                popup.style.display = "none";
+            });
+
+            // Show the corresponding popup when a button is clicked
+            buttons.forEach((button, index) => {
+                button.addEventListener("click", () => {
+                    popups[index].style.display = "block";
+                });
+            });
+
+            // Hide the corresponding popup when the close button is clicked
+            closeButtons.forEach((closeButton, index) => {
+                closeButton.addEventListener("click", () => {
+                    popups[index].style.display = "none";
+                });
+            });
+
+            // Close popup by clicking outside of its content
+            popups.forEach(popup => {
+                popup.addEventListener("click", (e) => {
+                    if (e.target === popup) {
+                        popup.style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
 
     <!--------------------------------------------------- Footer Section -------------------------------------------------->
     <div class="footer-background">
