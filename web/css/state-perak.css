@@ -76,7 +76,6 @@
     height: 60px;
     border-radius: 50%;
     border: none;
-    /* Removes default border */
     background-color: rgba(255, 255, 255, 0.6);
     display: flex;
     align-items: center;
@@ -87,7 +86,7 @@
 }
 
 .circle-btn img {
-    width: 65%;
+    width: 40px;
     height: auto;
 }
 
@@ -577,6 +576,7 @@
     }
 
     .buttongallery {
+        position: relative;
         margin: 0px 0;
         bottom: 0px;
     }
@@ -635,6 +635,7 @@
     }
 
     .button-container {
+        position: absolute;
         top: 90%;
         left: 0;
         right: 0;
