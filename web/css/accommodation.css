@@ -616,17 +616,23 @@ a {
         margin: 0;
     }
 
+    .section2all {
+        flex-direction: column;
+    }
+
     .findingstay-content {
         z-index: 20;
         position: relative;
-        top: 298px;
+        top: 475px;
         display: flex;
         justify-content: flex-end;
         align-items: center;
         background-color: white;
+        margin-top: 0px;
         margin-left: -40px;
         width: 100%;
         text-align: left;
+        padding: 0 100px;
     }
 
     .findingstay-content h1 {
@@ -637,14 +643,14 @@ a {
 
     .findingstay-content p {
         position: relative;
-        left: 35px;
+        left: 25px;
         font-size: 20px;
     }
 
     .iphone {
         z-index: 3;
         position: relative;
-        bottom: 400px;
+        bottom: 200px;
         width: 60%;
         margin-top: 0px;
         margin-right: 0px;
@@ -790,9 +796,6 @@ a {
 
 
     /* ----------------------------------------Section 2--------------------------------------------------- */
-    .findingstay-content {
-        top: 320px;
-    }
 
     .findingstay-content h1 {
         position: relative;
@@ -1016,12 +1019,12 @@ a {
     }
 
     .iphone {
-        bottom: 340px;
+        bottom: 250px;
     }
 
 
     .findingstay-content {
-        top: 320px;
+        top: 420px;
     }
 
     .findingstay-content h1 {
