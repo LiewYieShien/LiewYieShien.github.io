@@ -450,13 +450,14 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     display: flex;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(2, 12, 22, 0.2)), url(../images/malacca/restaurant1bg.jpg);
 
 
 }
 
 .popup-content1 {
 
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(2, 12, 22, 0.2)), url(../images/malacca/restaurant1bg.jpg);
+
 
     padding: 20px;
     text-align: left;
@@ -470,8 +471,15 @@
 
 }
 
+.mobileimage {
+    display: none;
+}
 
-.foodimage img {
+.restaurantimage {
+    display: block;
+}
+
+.restaurantimage img {
     width: 88%;
     margin-left: 30px;
     margin-right: 10px;
@@ -829,7 +837,6 @@
 
     .search {
         margin-left: 15px;
-
         height: 20px;
     }
 
@@ -882,11 +889,97 @@
     .restaurantpic {
         flex-direction: column;
         height: auto;
-        width: 50%;
+        width: 60%;
         justify-content: center;
         gap: 30px
     }
 
+    /*----------------------- popup----------------------------- */
+
+    .popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        height: 90%;
+        max-width: 750px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        display: flex;
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(2, 12, 22, 0.2)), url(../images/malacca/restaurant1bg.jpg);
+
+
+    }
+
+    .popup-content1 {
+
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        padding: 10px;
+        text-align: left;
+        display: flex;
+        border-radius: 10px;
+        border: 40px #BEB6A7;
+        border-width: 50%;
+
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        margin: 20px;
+    }
+
+
+    .restaurantimage {
+        display: none;
+    }
+
+    .mobileimage {
+        display: block;
+    }
+
+    .mobileimage img {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-radius: 10px;
+        margin: 20px;
+    }
+
+    .text {
+        width: 100%;
+        margin-left: 0px;
+        color: #ffffff;
+    }
+
+
+    .text h3 {
+        font-size: 25px;
+        color: #ffffff;
+    }
+
+    .text h5 {
+        font-size: 13px;
+        color: #ffffff;
+        margin: 0;
+
+    }
+
+    .text p {
+
+        font-size: 16px;
+        color: #E6DFD5;
+        font-weight: lighter;
+        margin-top: 6px;
+    }
 
 }
 
@@ -923,27 +1016,70 @@
 
     }
 
+    .content2 ul {
+        padding-left: 20px;
+    }
+
     .intro ul {
         padding-left: 0;
     }
-}
 
-@media screen and (max-width: 490px) {
-    .image1 img {
+    .mobileimage img {
+
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        padding-left: 30px;
+        align-items: center;
+        width: 78%;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-radius: 10px;
+        margin: 20px;
+    }
+
+
+    /*----------------------- What to eat----------------------------- */
+    .restaurant {
+        background-color: #2A0C08;
+        height: fit-content;
 
     }
 
-    .intro h3 {
-        font-size: 25px;
+    .content6 {
+        display: flex;
+
+
     }
 
-    .intro h4 {
+    .titleof-res {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding: 20px;
+
+
+    }
+
+    .titleof-res h2 {
+        color: #F6EBDC;
+        font-size: 45px;
+    }
+
+    .titleof-res p {
+        color: #AAA297;
         font-size: 18px;
     }
+
+    .restaurantpic {
+        flex-direction: column;
+        height: auto;
+        width: 60%;
+        justify-content: center;
+        gap: 30px;
+    }
+
+
 }
 
 
@@ -987,4 +1123,49 @@
         font-size: 12px;
         padding: 13px;
     }
+
+    .image1 img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 30px;
+
+    }
+
+    .intro h3 {
+        font-size: 25px;
+    }
+
+    .intro h4 {
+        font-size: 18px;
+    }
+
+    .intro ul {
+        padding-left: 0;
+    }
+
+    .mobileimage img {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-radius: 10px;
+        margin: 20px;
+    }
+
+    .text h3 {
+        font-size: 23px;
+
+    }
+
+    .text h5 {
+        font-size: 18px;
+    }
+
+
 }
