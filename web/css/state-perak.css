@@ -162,23 +162,12 @@
 .penanghills {
     font-family: 'Sweet Sans Pro', sans-serif;
     height: 130vh;
-    background-image: url('../images/perak/pulaupangkor.png');
+    background-image: url('../images/perak/pulaupangkor.jpg');
     background-size: cover;
     display: flex;
     justify-content: right;
     align-items: center;
     padding-right: 100px;
-}
-
-.georgetownimage {
-    flex: 1;
-    margin-right: 80px;
-    background-image: url('../images/penang/sec2penanghills.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: auto;
-    height: 400px;
 }
 
 .textcontainerright1 {
@@ -248,7 +237,7 @@
 .escapepng {
     font-family: 'Sweet Sans Pro', sans-serif;
     height: 130vh;
-    background-image: url('../images/perak/gopeng.png');
+    background-image: url('../images/perak/gopeng.jpg');
     background-size: cover;
     display: flex;
     justify-content: right;
