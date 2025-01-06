@@ -1,4 +1,14 @@
 /* ------------------------------------------------------------Cover-------------------------------------------------------------------- */
+.maxwidthwrap {
+    max-width: 1440px;
+    width: 100%;
+}
+
+
+.bgcolor {
+    background-color: #582701;
+}
+
 
 .hotelpenang1 {
     background-color: #582701;
@@ -203,6 +213,9 @@
     color: #FF6A07;
 }
 
+a {
+    text-decoration: none;
+}
 
 /* Button Styles */
 .book {
@@ -777,17 +790,13 @@
     }
 
     /* hotel 2222222222222222222222222222 */
-    .promotwo-container {
-        align-items: center;
-    }
-
     .text2hotel {
-        margin-left: 0px;
+        margin-left: 20px;
 
     }
 
     .r-hoteldetails {
-        margin-left: 0px;
+        margin-left: 20px;
     }
 
 
