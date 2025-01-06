@@ -207,6 +207,11 @@
 
 
 /* Button Styles */
+a {
+    text-decoration: none;
+}
+
+
 .book {
     width: auto;
     padding: 15px 25px;
@@ -495,22 +500,6 @@
 }
 
 
-/* Button Styles */
-.book {
-    width: auto;
-    padding: 15px 25px;
-    background-color: #153215;
-    border-radius: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    border: none;
-    position: relative;
-    bottom: -25px;
-    z-index: 20;
-    transition: background-color 0.3s, transform 0.3s;
-}
 
 /* -----------Text---------------- */
 .book span {
