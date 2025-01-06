@@ -1,5 +1,16 @@
 /* ---------------------------------------------Transportation of Perak----------------------------------------------- */
 
+/* ---------------------------------------------Max Width----------------------------------------------- */
+.space {
+    max-width: 1280px;
+    /* Set the maximum width */
+    width: 100%;
+    margin: 0 auto;
+    /* Center the section horizontally */
+    padding: 20px;
+    /* Add some padding for spacing */
+}
+
 /* ---------------------------------------------Background Styles----------------------------------------------- */
 body.setbackground {
     background-size: 100%;
@@ -78,7 +89,7 @@ body.setbackground {
     /* Custom font weight and color for the second box */
 }
 
-/* ---------------------------------------------Transportation Section Styles----------------------------------------------- */
+/* ---------------------------------------------Transport Option Section Styles----------------------------------------------- */
 .alignment {
     flex-direction: column;
     margin-bottom: 120px;
@@ -363,6 +374,8 @@ a {
         margin-top: 40px;
         /* Add spacing above image */
         border-radius: 10px;
+        height: 350px;
+        width: 350px;
     }
 
     .transportation-column {
@@ -420,6 +433,8 @@ a {
         margin-top: 30px;
         /* Add spacing above image */
         border-radius: 10px;
+        height: 350px;
+        width: 350px;
     }
 }
 
@@ -435,5 +450,7 @@ a {
         margin-top: 20px;
         /* Add spacing above image */
         border-radius: 10px;
+        height: 350px;
+        width: 350px;
     }
 }
