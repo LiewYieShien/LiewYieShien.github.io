@@ -66,13 +66,19 @@
     height: 100vh;
     background-size: cover;
     display: flex;
-    justify-content: space-between;
-    /* Aligns the content left and right */
+    justify-content: center;
     align-items: center;
-    /* Vertically center the content */
     position: relative;
     padding: 0 20px;
 }
+
+.section2all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
 
 .findingstay-content {
     margin-top: 100px;
