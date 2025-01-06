@@ -1,5 +1,42 @@
 /* ---------------------------------------------Perak----------------------------------------------- */
 
+
+/* ---------------------------------------------Max Width----------------------------------------------- */
+.space {
+    max-width: 1280px;
+    /* Set the maximum width */
+    width: 100%;
+    margin: 0 auto;
+    /* Center the section horizontally */
+    padding: 20px;
+    /* Add some padding for spacing */
+}
+
+
+/* ---------------------------------------------Max Width Background----------------------------------------------- */
+.chuichakbg {
+    background-color: #001421;
+}
+
+.tasikcermin-whattoeatbg {
+    background-color: #03122D;
+}
+
+.concubinelanebg {
+    background-color: #000000;
+}
+
+.pangkorbg {
+    background-image: url('../images/perak/pulaupangkor.jpg');
+    background-size: cover;
+}
+
+.gopengbg {
+    background-image: url('../images/perak/gopeng.jpg');
+    background-size: cover;
+}
+
+
 /* ---------------------------------------------Hero Section Styles----------------------------------------------- */
 .hero {
     font-family: 'Sweet Sans Pro', sans-serif;
@@ -162,8 +199,6 @@
 .pangkor {
     font-family: 'Sweet Sans Pro', sans-serif;
     height: 130vh;
-    background-image: url('../images/perak/pulaupangkor.jpg');
-    background-size: cover;
     display: flex;
     justify-content: right;
     align-items: center;
@@ -213,7 +248,7 @@
     display: flex;
     align-items: center;
     text-align: center;
-    padding: 50px 0px;
+    padding: 30px 0px;
     background-color: #03122D;
 }
 
@@ -236,8 +271,6 @@
 .gopeng {
     font-family: 'Sweet Sans Pro', sans-serif;
     height: 130vh;
-    background-image: url('../images/perak/gopeng.jpg');
-    background-size: cover;
     display: flex;
     justify-content: right;
     align-items: center;
