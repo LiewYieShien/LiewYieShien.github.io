@@ -16,46 +16,40 @@
 
 <body>
     <!----------------------------------------------------- Navgation Bar ----------------------------------------------------->
-    <div class="footer-background">
-        <section class="footer">
-            <div>
-                <h1>
-                    Wishing you memorable journeys in Malaysia!
-                </h1>
-                <p>
-                    Making Malaysian travel easy and accessible.
-                </p>
-            </div>
-
-            <div>
+    <header>
+        <div class="navbackground">
+            <div class="navbar">
                 <a href="index.html">
-                    <button class="explore">
-                        <span>Start exploring</span>
-                        <img class="search" src="images/general/search.png" alt="Search">
-                    </button>
+                    <img src="images/general/logo.png" class="logo">
                 </a>
-            </div>
-
-            <hr />
-
-            <div class="footer-menu-container">
-                <div>
-                    <a href="https://www.facebook.com/MalaysiaFoodandTravel"><button class="socialmedia"><img
-                                src="images/general/facebook.png" alt="Facebook" height="25" /></button></a>
-                    <a href="https://www.instagram.com/malaysiafoodandtravel/"><button class="socialmedia"><img
-                                src="images/general/instagram.png" alt="Instagram" height="25" /></button></a>
-                    <a href="https://www.tiktok.com/@malaysiafoodandtravel"><button class="socialmedia"><img
-                                src="images/general/tiktok.png" alt="TikTok" height="25" /></button></a>
+                <!-- Checkbox to toggle menu on mobile -->
+                <input type="checkbox" id="menu-checkbox" style="display: none;">
+                <label for="menu-checkbox" class="menu-toggle">&#9776;</label>
+                <div class="menu">
+                    <!-- Close button for mobile view -->
+                    <label for="menu-checkbox" class="close-btn">&times;</label>
+                    <a href="explore&tips.html">Explore & Tips</a>
+                    <div class="menu-item">
+                        <a href="#">Plan Your Trip</a><img src="images/general/arrow.png" alt="arrow" height="15px">
+                        <div class="submenu">
+                            <a href="transportation.html">Transportation</a>
+                            <a href="accommodation.html">Accommodation</a>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">Places To Go</a><img src="images/general/arrow.png" alt="arrow" height="15px">
+                        <div class="submenu">
+                            <a href="state-penang.html">Penang</a>
+                            <a href="state-perak.html">Perak</a>
+                            <a href="state-pahang.html">Pahang</a>
+                            <a href="state-malacca.html">Malacca</a>
+                        </div>
+                    </div>
+                    <a href="blog.html">Blog Sharing</a>
                 </div>
-
-                <div>
-                    <p>
-                        © 2024 Explore.my
-                    </p>
-                </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </header>
 
     <!------------------------------------------------------------ Hero Section ------------------------------------------------------------>
     <section class="hero">
@@ -260,49 +254,50 @@
                 </button>
             </a>
         </div>
-
     </section>
 
 
     <!--------------------------------------------------- Footer Section -------------------------------------------------->
-    <section class="footer">
-        <div>
-            <h1>
-                Wishing you memorable journeys in Malaysia!
-            </h1>
-            <p>
-                Making Malaysian travel easy and accessible.
-            </p>
-        </div>
-
-        <div>
-            <a href="index.html">
-                <button class="explore">
-                    <span>Start exploring</span>
-                    <img class="search" src="images/general/search.png" alt="Search">
-                </button>
-            </a>
-        </div>
-
-        <hr />
-
-        <div class="footer-menu-container">
+    <div class="footer-background">
+        <section class="footer">
             <div>
-                <a href="https://www.facebook.com/MalaysiaFoodandTravel"><button class="socialmedia"><img
-                            src="images/general/facebook.png" alt="Facebook" height="25" /></button></a>
-                <a href="https://www.instagram.com/malaysiafoodandtravel/"><button class="socialmedia"><img
-                            src="images/general/instagram.png" alt="Instagram" height="25" /></button></a>
-                <a href="https://www.tiktok.com/@malaysiafoodandtravel"><button class="socialmedia"><img
-                            src="images/general/tiktok.png" alt="TikTok" height="25" /></button></a>
-            </div>
-
-            <div>
+                <h1>
+                    Wishing you memorable journeys in Malaysia!
+                </h1>
                 <p>
-                    © 2024 Explore.my
+                    Making Malaysian travel easy and accessible.
                 </p>
             </div>
-        </div>
-    </section>
+
+            <div>
+                <a href="index.html">
+                    <button class="explore">
+                        <span>Start exploring</span>
+                        <img class="search" src="images/general/search.png" alt="Search">
+                    </button>
+                </a>
+            </div>
+
+            <hr />
+
+            <div class="footer-menu-container">
+                <div>
+                    <a href="https://www.facebook.com/MalaysiaFoodandTravel"><button class="socialmedia"><img
+                                src="images/general/facebook.png" alt="Facebook" height="25" /></button></a>
+                    <a href="https://www.instagram.com/malaysiafoodandtravel/"><button class="socialmedia"><img
+                                src="images/general/instagram.png" alt="Instagram" height="25" /></button></a>
+                    <a href="https://www.tiktok.com/@malaysiafoodandtravel"><button class="socialmedia"><img
+                                src="images/general/tiktok.png" alt="TikTok" height="25" /></button></a>
+                </div>
+
+                <div>
+                    <p>
+                        © 2024 Explore.my
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <!--------------------------------------------------- Back To Top Button -------------------------------------------------->
     <button class="back-to-top" onclick="scrollToTop()">
