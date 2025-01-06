@@ -32,7 +32,8 @@
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-/* --------------------------------------------------Button-------------------------------------------------------- */
+
+/* --------------------------------------------------Transportation & Accommodation Buttons-------------------------------------------------------- */
 .button-container {
     position: absolute;
     top: 50%;
@@ -71,13 +72,14 @@
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* -------------------------------------------------------george town------------------------------------------------------------- */
-.georgetown {
+
+/* --------------------------------------------------Chui Chak-------------------------------------------------------- */
+.chuichak {
     padding: 100px 80px;
     background-color: #001421;
 }
 
-.georgetown h2 {
+.chuichak h2 {
     text-align: center;
     font-size: 34px;
     color: #BEB6A7;
@@ -116,11 +118,10 @@
     /* Create two stacked rows */
     gap: 10px;
     /* gap between */
-
 }
 
 
-/* ----------------------------text------------------------------------ */
+/* --------------------------------------------------Text-------------------------------------------------------- */
 .intro {
     flex: 1;
     max-width: 550px;
@@ -157,9 +158,8 @@
 }
 
 
-
-/* -------------------------------------------------------penang hills------------------------------------------------------------- */
-.penanghills {
+/* --------------------------------------------------Pangkor Island-------------------------------------------------------- */
+.pangkor {
     font-family: 'Sweet Sans Pro', sans-serif;
     height: 130vh;
     background-image: url('../images/perak/pulaupangkor.jpg');
@@ -199,15 +199,15 @@
 }
 
 
-/* <!------------------------------------------------------------ Kek Lok Si Temple ------------------------------------------------------------> */
-.klstemple {
+/* --------------------------------------------------Concubine Lane-------------------------------------------------------- */
+.concubinelane {
     padding: 100px 80px;
     background-color: #000000;
 }
 
 
-/* <!------------------------------------------------------------ Penang National Park  ------------------------------------------------------------> */
-.nationalpark {
+/* --------------------------------------------------Tasik Cermin-------------------------------------------------------- */
+.tasikcermin {
     height: 100vh;
     font-family: 'Sweet Sans Pro', sans-serif;
     display: flex;
@@ -217,8 +217,7 @@
     background-color: #03122D;
 }
 
-
-.nationalpark-container {
+.tasikcermin-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -233,8 +232,8 @@
 }
 
 
-/* -------------------------------------------------------gopeng penang hills------------------------------------------------------------- */
-.escapepng {
+/* --------------------------------------------------Gopeng-------------------------------------------------------- */
+.gopeng {
     font-family: 'Sweet Sans Pro', sans-serif;
     height: 130vh;
     background-image: url('../images/perak/gopeng.jpg');
@@ -274,17 +273,13 @@
 }
 
 
-
-
-
-/*------------------- Button style -------------------*/
+/* --------------------------------------------------Gallery Button-------------------------------------------------------- */
 .gallery {
     display: flex;
     justify-content: center;
     text-align: center;
     margin-top: 20px;
     text-decoration: none;
-
 }
 
 .buttongallery {
@@ -300,7 +295,6 @@
     border-radius: 30px;
     cursor: pointer;
     border: none;
-
     transition: background-color 0.3s, transform 0.3s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     /* Add shadow */
@@ -318,10 +312,9 @@
     text-decoration: none;
 }
 
+
+
 /* ---------------------------------------------Mobile Styles----------------------------------------------- */
-
-
-
 @media screen and (max-width: 1170px) {
     ul {
         padding: 0;
@@ -341,8 +334,8 @@
 
 @media (max-width: 1000px) {
 
-    /* -------------------Penanghills-----------------*/
-    .penanghills {
+    /* --------------------------------------------------Pangkor Island-------------------------------------------------------- */
+    .pangkor {
         height: auto;
         display: flex;
         justify-content: center;
@@ -359,8 +352,9 @@
         padding-right: 50px;
     }
 
-    /* -------------------escape-----------------*/
-    .escapepng {
+
+    /* --------------------------------------------------Gopeng-------------------------------------------------------- */
+    .gopeng {
         height: auto;
         display: flex;
         justify-content: center;
@@ -398,11 +392,10 @@
         gap: 0;
         margin-left: 70px;
         margin-right: 70px;
-
     }
 
-    /* -------------------Penanghills-----------------*/
 
+    /* --------------------------------------------------Pangkor Island-------------------------------------------------------- */
     .content2 h3 {
         font-size: 30px;
     }
@@ -411,8 +404,8 @@
         font-size: 18px;
     }
 
-    /* -------------------George Town-----------------*/
 
+    /* --------------------------------------------------Chui Chak-------------------------------------------------------- */
     .content1 {
         flex-direction: column;
         display: flex;
@@ -423,8 +416,7 @@
     }
 
 
-
-    /*--------------- Kl temple------------------- */
+    /* --------------------------------------------------Concubine Lane-------------------------------------------------------- */
     .content3 {
         flex-direction: column;
         display: flex;
@@ -442,12 +434,13 @@
         font-size: 18px;
     }
 
-    /*--------------- National Park------------------- */
-    .nationalpark {
+
+    /* --------------------------------------------------Tasik Cermin-------------------------------------------------------- */
+    .tasikcermin {
         height: auto;
     }
 
-    .nationalpark-container {
+    .tasikcermin-container {
         flex-direction: column;
         align-items: center;
         gap: 40px;
@@ -465,17 +458,14 @@
 
 
 
-    /*----------------------- What to eat----------------------------- */
+    /* --------------------------------------------------What to Eat-------------------------------------------------------- */
     .restaurant {
         background-color: #2A0C08;
         height: fit-content;
-
     }
 
     .content5 {
         display: flex;
-
-
     }
 
     .text {
@@ -483,8 +473,6 @@
         text-align: center;
         align-items: center;
         padding: 20px;
-
-
     }
 
     .text h2 {
@@ -500,7 +488,6 @@
     .restaurantpic {
         display: flex;
         justify-content: center;
-
         margin-top: 50px;
     }
 
@@ -513,8 +500,7 @@
 
 @media (max-width: 650px) {
 
-    /* -------------------Penanghills-----------------*/
-
+    /* --------------------------------------------------Pangkor Island-------------------------------------------------------- */
     .textcontainerright1 {
         width: 100%;
         padding: 10px;
@@ -537,16 +523,16 @@
     }
 
 
-    /* -------------------George Town-----------------*/
+    /* --------------------------------------------------Chui Chak-------------------------------------------------------- */
     .smallerimages {
         display: none;
     }
 
-    .georgetown {
+    .chuichak {
         padding: 50px 20px;
     }
 
-    .georgetown h2 {
+    .chuichak h2 {
         font-size: 24px;
         margin-bottom: 60px;
     }
@@ -575,11 +561,11 @@
         gap: 0;
         margin-left: 30px;
         margin-right: 30px;
-
     }
 
-    /* -------------------National Park-----------------*/
-    .nationalpark-container {
+
+    /* --------------------------------------------------Tasik Cermin-------------------------------------------------------- */
+    .tasikcermin-container {
         gap: 30px;
     }
 
@@ -605,26 +591,14 @@
         padding: 0 10px;
     }
 
-    .penanghills {
+
+    /* --------------------------------------------------Pangkor Island-------------------------------------------------------- */
+    .pangkor {
         height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
         padding-right: 0px;
-    }
-
-    .penanghills-container {
-        flex-direction: column;
-        margin: 50px;
-        width: 100%;
-    }
-
-    .georgetownimage {
-        margin-right: 0;
-        margin-bottom: 20px;
-        width: 100%;
-        height: auto;
-        background-size: cover;
     }
 
     .content2 {
@@ -639,7 +613,8 @@
         font-size: 16px;
     }
 
-    /* -------------------ESCAPE-----------------*/
+
+    /* --------------------------------------------------Gopeng-------------------------------------------------------- */
     .textcontainerright2 {
         width: 100%;
         padding: 10px;
@@ -672,9 +647,8 @@
         padding: 0 0;
     }
 
-    .klstemple {
+    .concubinelane {
         padding: 100px 20px;
-
     }
 
     .textcontainerescape {
