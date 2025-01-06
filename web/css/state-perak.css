@@ -1,18 +1,6 @@
 /* ---------------------------------------------Perak----------------------------------------------- */
 
 
-/* ---------------------------------------------Max Width----------------------------------------------- */
-.space {
-    max-width: 1280px;
-    /* Set the maximum width */
-    width: 100%;
-    margin: 0 auto;
-    /* Center the section horizontally */
-    padding: 20px;
-    /* Add some padding for spacing */
-}
-
-
 /* ---------------------------------------------Max Width Background----------------------------------------------- */
 .chuichakbg {
     background-color: #001421;
@@ -112,6 +100,8 @@
 
 /* --------------------------------------------------Chui Chak-------------------------------------------------------- */
 .chuichak {
+    max-width: 1440px;
+    margin: 0 auto;
     padding: 100px 80px;
     background-color: #001421;
 }
@@ -197,6 +187,8 @@
 
 /* --------------------------------------------------Pangkor Island-------------------------------------------------------- */
 .pangkor {
+    max-width: 1440px;
+    margin: 0 auto;
     font-family: 'Sweet Sans Pro', sans-serif;
     height: 130vh;
     display: flex;
@@ -236,6 +228,8 @@
 
 /* --------------------------------------------------Concubine Lane-------------------------------------------------------- */
 .concubinelane {
+    max-width: 1440px;
+    margin: 0 auto;
     padding: 100px 80px;
     background-color: #000000;
 }
@@ -243,6 +237,8 @@
 
 /* --------------------------------------------------Tasik Cermin-------------------------------------------------------- */
 .tasikcermin {
+    max-width: 1440px;
+    margin: 0 auto;
     height: 100vh;
     font-family: 'Sweet Sans Pro', sans-serif;
     display: flex;
@@ -269,6 +265,8 @@
 
 /* --------------------------------------------------Gopeng-------------------------------------------------------- */
 .gopeng {
+    max-width: 1440px;
+    margin: 0 auto;
     font-family: 'Sweet Sans Pro', sans-serif;
     height: 130vh;
     display: flex;
@@ -348,6 +346,8 @@
 
 /* --------------------------------------------------What to Eat-------------------------------------------------------- */
 .restaurant {
+    max-width: 1440px;
+    margin: 0 auto;
     background-color: #03122D;
     font-family: 'Sweet Sans Pro', sans-serif;
     height: 105vh;
@@ -565,6 +565,7 @@
 
 
 /* ---------------------------------------------Mobile Styles----------------------------------------------- */
+
 @media screen and (max-width: 1170px) {
     ul {
         padding: 0;
@@ -578,10 +579,6 @@
     .buttongallery {
         margin: 0px 0;
         bottom: 0px;
-    }
-
-    .space {
-        padding: 0px;
     }
 }
 

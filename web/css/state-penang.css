@@ -74,9 +74,15 @@
 
 
 /* -------------------------------------------------------george town------------------------------------------------------------- */
+.widthbgcolorbrown {
+    background-color: #2A1A08;
+}
+
 .georgetown {
     padding: 100px 80px;
-    background-color: #2A1A08;
+    max-width: 1440px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .georgetown h2 {
@@ -217,23 +223,30 @@
 
 
 /* <!------------------------------------------------------------ Kek Lok Si Temple ------------------------------------------------------------> */
+.widthbgcolor {
+    background-color: black;
+}
+
 .klstemple {
     padding: 100px 80px;
-    background-color: #000000;
+    max-width: 1440px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
+
 
 
 /* <!------------------------------------------------------------ Penang National Park  ------------------------------------------------------------> */
 .nationalpark {
-    height: 100vh;
     font-family: 'Sweet Sans Pro', sans-serif;
     display: flex;
     align-items: center;
     text-align: center;
-    padding: 100px 0px;
-    background-color: #3B2100;
+    padding: 150px 80px;
+    max-width: 1440px;
+    box-sizing: border-box;
+    margin: 0 auto;
 }
-
 
 .nationalpark-container {
     display: flex;
@@ -925,6 +938,13 @@
 }
 
 
+/* -------------------  Penang National Park -----------------*/
+
+@media screen and (max-width: 500px) {
+    .nationalpark {
+        padding: 150px 10px;
+    }
+}
 
 
 

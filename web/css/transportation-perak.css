@@ -265,6 +265,10 @@ a {
 /* ---------------------------------------------Mobile Styles----------------------------------------------- */
 @media screen and (max-width: 1200px) {
 
+    .space {
+        padding: 0px;
+    }
+
     /* ---------------------------------------------Background Styles----------------------------------------------- */
     body.setbackground {
         background-size: cover;
