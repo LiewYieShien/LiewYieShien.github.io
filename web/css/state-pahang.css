@@ -1153,7 +1153,9 @@ section {
         bottom: 0px;
     }
 
-    .colmartropicale {}
+    .colmartropicale {
+        padding: 70px 50px;
+    }
 
     /* -------------------What To Eat -----------------*/
     .titleof-res h2 {
@@ -1168,7 +1170,7 @@ section {
     .image2 {
         flex: 1;
         display: flex;
-        padding-left: 25px;
+
 
 
     }
