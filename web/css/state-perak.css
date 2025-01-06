@@ -367,6 +367,7 @@
         border-radius: 10px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         margin: 60px;
+        padding-right: 50px;
     }
 
     /* -------------------escape-----------------*/
@@ -384,6 +385,7 @@
         border-radius: 10px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         margin: 60px;
+        padding-right: 50px;
     }
 }
 
@@ -530,6 +532,7 @@
         border-radius: 10px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         margin: 30px;
+        padding-right: 50px;
     }
 
     .content2 {
@@ -654,6 +657,7 @@
         border-radius: 10px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         margin: 30px;
+        padding-right: 50px;
     }
 }
 
