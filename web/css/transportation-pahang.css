@@ -1,5 +1,16 @@
 /* ---------------------------------------------Transportation of Pahang----------------------------------------------- */
 
+/* ---------------------------------------------Max Width----------------------------------------------- */
+.space {
+    max-width: 1280px;
+    /* Set the maximum width */
+    width: 100%;
+    margin: 0 auto;
+    /* Center the section horizontally */
+    padding: 20px;
+    /* Add some padding for spacing */
+}
+
 /* ---------------------------------------------Background Styles----------------------------------------------- */
 body.setbackground {
     background-size: 100%;
@@ -253,6 +264,10 @@ a {
 
 /* ---------------------------------------------Mobile Styles----------------------------------------------- */
 @media screen and (max-width: 1200px) {
+
+    .space {
+        padding: 0px;
+    }
 
     /* ---------------------------------------------Background Styles----------------------------------------------- */
     body.setbackground {
