@@ -4,7 +4,7 @@
     font-family: 'Sweet Sans Pro', sans-serif;
     height: 100vh;
     /* Full screen height */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(2, 12, 22, 0.2)), url('../images/penang/hero.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(2, 12, 22, 0.2)), url('../images/penang/hero.jpg');
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -161,7 +161,7 @@
 .penanghills {
     font-family: 'Sweet Sans Pro', sans-serif;
     height: 100vh;
-    background-image: url('../images/penang/bgpenanghills.png');
+    background-image: url('../images/penang/bgpenanghills.jpg');
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -254,7 +254,7 @@
 .escapepng {
     font-family: 'Sweet Sans Pro', sans-serif;
     height: 100vh;
-    background-image: url('../images/penang/bgescapepng.png');
+    background-image: url('../images/penang/bgescapepng.jpg');
     background-size: cover;
     display: flex;
     flex-direction: column;
