@@ -1,13 +1,8 @@
 /* ---------------------------------------------Transportation----------------------------------------------- */
 
-body {
-    background-color: #CEC2B1;
-    /* Set the overall background color */
-}
-
 /* ---------------------------------------------Max Width----------------------------------------------- */
 .space {
-    max-width: 1440px;
+    max-width: 1280px;
     /* Set the maximum width */
     width: 100%;
     margin: 0 auto;
@@ -56,9 +51,9 @@ body {
     justify-content: center;
     align-items: center;
     gap: 100px;
-    background-color: #CEC2B1;
     font-family: 'Sweet Sans Pro', sans-serif;
     color: #020C16;
+    background-color: #CEC2B1;
 }
 
 .destination-column1 {
@@ -123,6 +118,7 @@ body {
     gap: 60px;
     padding-top: 50px;
     padding-bottom: 130px;
+    background-color: #CEC2B1;
 }
 
 a {
@@ -306,29 +302,28 @@ button.perak:hover {
         align-items: center;
         text-align: center;
         gap: 50px;
+        padding: 15px;
     }
 
     .destination-column1 {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 40px;
         margin-top: 50px;
     }
 
     .destination-column2 {
         display: flex;
         justify-content: center;
-        padding: 10px;
         margin-top: -70px;
     }
 
     .destination-container h1 {
-        font-size: 38px;
+        font-size: 35px;
     }
 
     .destination-container p {
-        font-size: 16px;
+        font-size: 18px;
         margin-top: -20px;
         letter-spacing: 2px;
         font-weight: 300;
@@ -367,9 +362,10 @@ button.perak:hover {
 
     /* ---------------------------------------------States Section Styles----------------------------------------------- */
     .states-container {
-        flex-direction: column;
+        display: flex;
         justify-content: center;
         align-items: center;
+        gap: 40px;
     }
 
     button.malacca {
@@ -379,10 +375,31 @@ button.perak:hover {
         background-color: #E6DFD5;
         border: 0px;
         border-radius: 10px;
-        height: 275px;
-        width: 275px;
+        height: 175px;
+        width: 175px;
         font-family: 'Sweet Sans Pro', sans-serif;
-        font-size: 30px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #020C16;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        /* Vertically aligns text to the bottom */
+        padding-bottom: 20px;
+        cursor: pointer;
+    }
+
+    button.malacca:hover {
+        background:
+            linear-gradient(rgba(2, 12, 22, 0.1), rgba(255, 255, 255, 0.9)), url('../images/transportation/malacca\ button.jpg');
+        background-size: cover;
+        background-color: #E6DFD5;
+        border: 0px;
+        border-radius: 10px;
+        height: 175px;
+        width: 175px;
+        font-family: 'Sweet Sans Pro', sans-serif;
+        font-size: 20px;
         font-weight: 600;
         color: #020C16;
         display: flex;
@@ -400,10 +417,31 @@ button.perak:hover {
         background-color: #E6DFD5;
         border: 0px;
         border-radius: 10px;
-        height: 275px;
-        width: 275px;
+        height: 175px;
+        width: 175px;
         font-family: 'Sweet Sans Pro', sans-serif;
-        font-size: 30px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #020C16;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        /* Vertically aligns text to the bottom */
+        padding-bottom: 20px;
+        cursor: pointer;
+    }
+
+    button.pahang:hover {
+        background:
+            linear-gradient(rgba(2, 12, 22, 0.1), rgba(255, 255, 255, 0.9)), url('../images/transportation/pahang\ button.jpg');
+        background-size: cover;
+        background-color: #E6DFD5;
+        border: 0px;
+        border-radius: 10px;
+        height: 175px;
+        width: 175px;
+        font-family: 'Sweet Sans Pro', sans-serif;
+        font-size: 20px;
         font-weight: 600;
         color: #020C16;
         display: flex;
@@ -421,10 +459,31 @@ button.perak:hover {
         background-color: #E6DFD5;
         border: 0px;
         border-radius: 10px;
-        height: 275px;
-        width: 275px;
+        height: 175px;
+        width: 175px;
         font-family: 'Sweet Sans Pro', sans-serif;
-        font-size: 30px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #020C16;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        /* Vertically aligns text to the bottom */
+        padding-bottom: 20px;
+        cursor: pointer;
+    }
+
+    button.penang:hover {
+        background:
+            linear-gradient(rgba(2, 12, 22, 0.1), rgba(255, 255, 255, 0.9)), url('../images/transportation/penang\ button.jpg');
+        background-size: cover;
+        background-color: #E6DFD5;
+        border: 0px;
+        border-radius: 10px;
+        height: 175px;
+        width: 175px;
+        font-family: 'Sweet Sans Pro', sans-serif;
+        font-size: 20px;
         font-weight: 600;
         color: #020C16;
         display: flex;
@@ -442,10 +501,31 @@ button.perak:hover {
         background-color: #E6DFD5;
         border: 0px;
         border-radius: 10px;
-        height: 275px;
-        width: 275px;
+        height: 175px;
+        width: 175px;
         font-family: 'Sweet Sans Pro', sans-serif;
-        font-size: 30px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #020C16;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        /* Vertically aligns text to the bottom */
+        padding-bottom: 20px;
+        cursor: pointer;
+    }
+
+    button.perak:hover {
+        background:
+            linear-gradient(rgba(2, 12, 22, 0.1), rgba(255, 255, 255, 0.9)), url('../images/transportation/perak\ button.jpg');
+        background-size: cover;
+        background-color: #E6DFD5;
+        border: 0px;
+        border-radius: 10px;
+        height: 175px;
+        width: 175px;
+        font-family: 'Sweet Sans Pro', sans-serif;
+        font-size: 20px;
         font-weight: 600;
         color: #020C16;
         display: flex;
@@ -467,6 +547,19 @@ button.perak:hover {
 
     .hero p {
         font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    /* ---------------------------------------------States Section Styles----------------------------------------------- */
+    .states-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -20px;
+        margin-bottom: -20px;
+        gap: 40px;
     }
 }
 

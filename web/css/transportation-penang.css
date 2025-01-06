@@ -78,7 +78,7 @@ body.setbackground {
     /* Custom font weight and color for the second box */
 }
 
-/* ---------------------------------------------Transportation Section Styles----------------------------------------------- */
+/* ---------------------------------------------Transport Option Styles----------------------------------------------- */
 .alignment {
     flex-direction: column;
     margin-bottom: 120px;
@@ -364,6 +364,8 @@ a {
         margin-top: 40px;
         /* Add spacing above image */
         border-radius: 10px;
+        height: 350px;
+        width: 350px;
     }
 
     .transportation-column {
@@ -422,6 +424,8 @@ a {
         margin-top: 30px;
         /* Add spacing above image */
         border-radius: 10px;
+        height: 350px;
+        width: 350px;
     }
 }
 
@@ -437,5 +441,7 @@ a {
         margin-top: 20px;
         /* Add spacing above image */
         border-radius: 10px;
+        height: 350px;
+        width: 350px;
     }
 }
