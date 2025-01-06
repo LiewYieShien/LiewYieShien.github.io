@@ -198,7 +198,7 @@
 }
 
 .content2 h3 {
-    font-size: 30px;
+    font-size: 35px;
     color: #F6EBDC;
     padding: 0 13px;
 }
@@ -244,7 +244,7 @@
 }
 
 
-/* -------------------------------------------------------penang hills------------------------------------------------------------- */
+/* -------------------------------------------------------gopeng penang hills------------------------------------------------------------- */
 .escapepng {
     font-family: 'Sweet Sans Pro', sans-serif;
     height: 130vh;
@@ -273,7 +273,7 @@
 }
 
 .content2 h3 {
-    font-size: 30px;
+    font-size: 35px;
     color: #F6EBDC;
     padding: 0 13px;
 }
@@ -332,6 +332,26 @@
 
 /* ---------------------------------------------Mobile Styles----------------------------------------------- */
 
+
+
+@media screen and (max-width: 1170px) {
+    ul {
+        padding: 0;
+    }
+
+    .gallery {
+        text-decoration: none;
+        margin-top: 70px;
+    }
+
+    .buttongallery {
+        position: relative;
+        margin: 0px 0;
+        bottom: 0px;
+    }
+}
+
+
 @media (max-width: 1000px) {
 
     /* -------------------Penanghills-----------------*/
@@ -350,12 +370,9 @@
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         margin: 60px;
     }
-}
 
-@media (max-width: 650px) {
-
-    /* -------------------Penanghills-----------------*/
-    .penanghills {
+    /* -------------------escape-----------------*/
+    .escapepng {
         height: auto;
         display: flex;
         justify-content: center;
@@ -363,19 +380,152 @@
         padding-right: 0px;
     }
 
-    .penanghills-container {
-        flex-direction: column;
-        margin: 50px;
+    .textcontainerright2 {
         width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        margin: 60px;
+    }
+}
+
+
+@media screen and (max-width: 920px) {
+
+    .hero h1 {
+        font-size: 80px;
     }
 
-    .georgetownimage {
-        margin-right: 0;
-        margin-bottom: 20px;
-        width: 100%;
-        height: auto;
-        background-size: cover;
+    .hero p {
+        font-size: 24px;
     }
+
+    .button-container {
+        position: absolute;
+        top: 90%;
+        left: 0;
+        right: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+        margin-left: 70px;
+        margin-right: 70px;
+
+    }
+
+    /* -------------------Penanghills-----------------*/
+
+    .content2 h3 {
+        font-size: 30px;
+    }
+
+    .content2 h4 {
+        font-size: 18px;
+    }
+
+    /* -------------------George Town-----------------*/
+
+    .content1 {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .intro h3 {
+        font-size: 30px;
+    }
+
+
+
+    /*--------------- Kl temple------------------- */
+    .content3 {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .intro h3 {
+        font-size: 30px;
+    }
+
+    .intro h4 {
+        font-size: 18px;
+    }
+
+    .intro p {
+        font-size: 18px;
+    }
+
+    /*--------------- National Park------------------- */
+    .nationalpark {
+        height: auto;
+    }
+
+    .nationalpark-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        width: 90%;
+    }
+
+    .content4 {
+        flex-direction: column;
+        display: flex;
+    }
+
+
+
+
+
+
+
+    /*----------------------- What to eat----------------------------- */
+    .restaurant {
+        background-color: #2A0C08;
+        height: fit-content;
+
+    }
+
+    .content5 {
+        display: flex;
+
+
+    }
+
+    .text {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding: 20px;
+
+
+    }
+
+    .text h2 {
+        color: #F6EBDC;
+        font-size: 40px;
+    }
+
+    .text p {
+        color: #AAA297;
+        font-size: 18px;
+    }
+
+    .restaurantpic {
+        display: flex;
+        justify-content: center;
+
+        margin-top: 50px;
+    }
+
+    .restaurantpic img {
+        width: 50%;
+        padding: 20px;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    /* -------------------Penanghills-----------------*/
 
     .textcontainerright1 {
         width: 100%;
@@ -510,228 +660,14 @@
     }
 
     /* -------------------ESCAPE-----------------*/
-    .escapepng {
-        height: auto;
-    }
-
-    .escapepng-container {
-        flex-direction: column;
-        margin: 50px;
+    .textcontainerright2 {
         width: 100%;
-    }
-
-    .escapepngimage {
-        margin-right: 0;
-        margin-bottom: 20px;
-        width: 100%;
-        height: 400px;
-        background-size: cover;
-    }
-
-
-    .buttongallery {
-        font-size: 16px;
-        padding: 10px 20px;
-        border-radius: 20px;
-        bottom: 0px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        margin: 60px;
     }
 }
-
-
-@media screen and (max-width: 1170px) {
-    ul {
-        padding: 0;
-    }
-
-    .escapepng {
-        height: auto;
-    }
-
-    .gallery {
-        text-decoration: none;
-        margin-bottom: 50px;
-    }
-
-    .buttongallery {
-        position: relative;
-        margin: 0px 0;
-        bottom: 0px;
-    }
-}
-
-
-@media screen and (max-width: 920px) {
-
-    .hero h1 {
-        font-size: 80px;
-    }
-
-    .hero p {
-        font-size: 24px;
-    }
-
-    .button-container {
-        position: absolute;
-        top: 90%;
-        left: 0;
-        right: 0;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 0;
-        margin-left: 70px;
-        margin-right: 70px;
-
-    }
-
-    /* -------------------Penanghills-----------------*/
-
-    .content2 h3 {
-        font-size: 30px;
-    }
-
-    .content2 h4 {
-        font-size: 18px;
-    }
-
-    /* -------------------George Town-----------------*/
-
-    .content1 {
-        flex-direction: column;
-        display: flex;
-    }
-
-    .intro h3 {
-        font-size: 30px;
-    }
-
-
-
-    /*--------------- Kl temple------------------- */
-    .content3 {
-        flex-direction: column;
-        display: flex;
-    }
-
-    .intro h3 {
-        font-size: 30px;
-    }
-
-    .intro h4 {
-        font-size: 18px;
-    }
-
-    .intro p {
-        font-size: 18px;
-    }
-
-    /*--------------- National Park------------------- */
-    .nationalpark {
-        height: auto;
-    }
-
-    .nationalpark-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-        width: 90%;
-    }
-
-    .content4 {
-        flex-direction: column;
-        display: flex;
-    }
-
-    /*--------------- Escape penang------------------- */
-    .escapepng {
-        height: auto;
-    }
-
-    .escapepng-container {
-        margin: 50px;
-        flex-direction: column;
-        width: 90%;
-    }
-
-    .escapepngimage {
-        flex: 1;
-        margin-right: 0;
-        margin-bottom: 30px;
-        width: 100%;
-        min-height: 300px;
-        background-size: contain;
-    }
-
-    .textcontainerescape2 {
-        width: 100%;
-        padding: 30px;
-        border-radius: 15px;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
-    }
-
-    .gallery {
-        margin-top: 0px;
-        text-decoration: none;
-        margin-bottom: 50px;
-    }
-
-    .buttongallery {
-        position: relative;
-        margin: 0px 0;
-        bottom: 0px;
-    }
-
-
-
-
-
-
-
-    /*----------------------- What to eat----------------------------- */
-    .restaurant {
-        background-color: #2A0C08;
-        height: fit-content;
-
-    }
-
-    .content5 {
-        display: flex;
-
-
-    }
-
-    .text {
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        padding: 20px;
-
-
-    }
-
-    .text h2 {
-        color: #F6EBDC;
-        font-size: 40px;
-    }
-
-    .text p {
-        color: #AAA297;
-        font-size: 18px;
-    }
-
-    .restaurantpic {
-        display: flex;
-        justify-content: center;
-
-        margin-top: 50px;
-    }
-
-    .restaurantpic img {
-        width: 50%;
-        padding: 20px;
-    }
-}
-
-
 
 
 @media screen and (max-width: 450px) {
