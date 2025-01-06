@@ -18,7 +18,7 @@
 }
 
 .maxwidth {
-    max-width: 1280px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -527,6 +527,49 @@
 
 }
 
+@media screen and (max-width: 1200px) {
+
+    /*----------- encore melaka--------------- */
+    .encoremelaka {
+        display: flex;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 80px;
+        height: 800px;
+    }
+
+
+    .column1 {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+        height: auto;
+        width: 800px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+
+
+    }
+
+    .content2 h3 {
+        font-size: 30px;
+        color: #F6EBDC;
+        padding: 13px;
+    }
+
+    .content2 h4 {
+        font-size: 15px;
+        color: #AAA297;
+        padding: 13px;
+    }
+
+    .content2 p {
+        font-size: 16px;
+        padding: 13px;
+    }
+
+}
 
 
 @media screen and (max-width: 900px) {
