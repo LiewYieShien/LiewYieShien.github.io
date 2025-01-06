@@ -299,20 +299,19 @@
 }
 
 .buttongallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 20px;
     width: auto;
     padding: 15px 30px;
     margin: 40px 0;
-    position: relative;
     bottom: -50px;
-
     background-color: #AAA297;
     border-radius: 30px;
     cursor: pointer;
     border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     transition: background-color 0.3s, transform 0.3s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     /* Add shadow */
@@ -345,7 +344,6 @@
     }
 
     .buttongallery {
-        position: relative;
         margin: 0px 0;
         bottom: 0px;
     }
