@@ -444,12 +444,14 @@
     transform: translate(-50%, -50%);
     width: 100%;
     height: auto;
-    max-width: 800px;
+    max-width: 750px;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     display: flex;
+    border: 40px #BEB6A7;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -461,14 +463,12 @@
     flex-direction: row;
     display: flex;
     border-radius: 10px;
-    box-shadow: 0 4px 8px 0 #BEB6A7(102, 102, 102, 0.3), 0 6px 20px 0 #BEB6A7(113, 111, 111, 0.19);
-    ;
 
 }
 
 .foodimage img {
-    width: 100%;
-    margin-left: 10px;
+    width: 85%;
+    margin-left: 30px;
     margin-right: 10px;
     margin-top: 35px;
     margin-bottom: 10px;
@@ -482,20 +482,20 @@
 
 
 .text h3 {
-    font-size: 30px;
+    font-size: 28px;
     color: #ffffff;
 }
 
 .text h5 {
-    font-size: 20px;
+    font-size: 18px;
     color: #ffffff;
     margin: 0;
 
 }
 
 .text p {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 18px;
+
+    font-size: 16px;
     color: #E6DFD5;
     font-weight: lighter;
     margin-top: 6px;

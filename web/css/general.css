@@ -19,6 +19,10 @@ body {
     padding: 0;
 }
 
+.navbackground {
+    background-color: #020C16;
+}
+
 .navbar {
     z-index: 100000;
     background-color: #020C16;
@@ -27,6 +31,9 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 13px 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+
 }
 
 .navbar a {
