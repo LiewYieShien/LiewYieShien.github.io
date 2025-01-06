@@ -569,7 +569,7 @@ section {
 
 
 /* Popup styles */
-.popup1 {
+.popup {
     display: none;
     position: fixed;
     top: 50%;
@@ -578,43 +578,68 @@ section {
     width: 100%;
     height: auto;
     max-width: 750px;
-    background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     display: flex;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(2, 12, 22, 0.2)), url(../images/pahang/restaurant1\ background.jpg);
-    background: cover;
-
 }
 
-
 .popup-content1 {
-
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(2, 12, 22, 0.2)), url(../images/malacca/restaurant1bg.jpg);
+    background-size: cover;
+    background-position: center;
     padding: 20px;
     text-align: left;
     justify-content: space-between;
     flex-direction: row;
     display: flex;
     border-radius: 10px;
-    border: 40px #BEB6A7;
-    border-width: 50%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-
 }
 
-.mobileimage {
-    display: none;
+.popup-content2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(2, 12, 22, 0.2)), url(../images/pahang/satay\ bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: left;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.restaurantimage {
+.popup-content3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(2, 12, 22, 0.2)), url(../images/malacca/satay\ bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: left;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(2, 12, 22, 0.2)), url(../images/pahang/cendol_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: left;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.foodimage img {
     display: block;
-    width: 80%;
-}
-
-.restaurantimage img {
-    width: 100%;
-    margin-left: 20px;
+    width: 88%;
+    margin-left: 30px;
     margin-right: 10px;
     margin-top: 35px;
     margin-bottom: 10px;
@@ -622,8 +647,11 @@ section {
 }
 
 .text {
-    margin-left: 50px;
+    display: flex;
+    margin-left: 30px;
     color: #ffffff;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -642,7 +670,7 @@ section {
 .text p {
 
     font-size: 16px;
-    color: #E6DFD5;
+    color: #a49e95;
     font-weight: lighter;
     margin-top: 6px;
 }
@@ -666,6 +694,7 @@ section {
 .close-popup img:hover {
     transform: scale(1.1);
     /* 放大 10% */
+
 }
 
 
@@ -1006,94 +1035,13 @@ section {
         justify-content: center;
         gap: 30px
     }
+}
 
-    /*----------------------- popup----------------------------- */
-
-    .popup1 {
-        display: none;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 60%;
-        height: 90%;
-        max-width: 750px;
-        background-color: #ffffff;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        z-index: 1000;
-        display: flex;
-        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(2, 12, 22, 0.2)), url(../images/pahang/restaurant1\ background.jpg);
-
-
+/*----------------------- popup----------------------------- */
+@media (max-width: 750px) {
+    .foodimage img {
+        display: none
     }
-
-    .popup-content1 {
-
-        flex-direction: column;
-
-        height: 100%;
-        padding: 10px;
-        text-align: left;
-        display: flex;
-        border-radius: 10px;
-        border: 40px #BEB6A7;
-        border-width: 50%;
-
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        margin: 20px;
-    }
-
-
-    .restaurantimage {
-        display: none;
-    }
-
-    .mobileimage {
-        display: block;
-    }
-
-    .mobileimage img {
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        border-radius: 10px;
-        margin: 20px;
-    }
-
-    .text {
-        width: 100%;
-        margin-left: 0px;
-        color: #ffffff;
-    }
-
-
-    .text h3 {
-        font-size: 25px;
-        color: #ffffff;
-    }
-
-    .text h5 {
-        font-size: 13px;
-        color: #ffffff;
-        margin: 0;
-
-    }
-
-    .text p {
-
-        font-size: 16px;
-        color: #E6DFD5;
-        font-weight: lighter;
-        margin-top: 6px;
-    }
-
 }
 
 
@@ -1184,6 +1132,22 @@ section {
 
     .biggenting img {
         width: 50%;
+    }
+
+    .buttongallery {
+        font-size: 16px;
+        padding: 10px 20px;
+        border-radius: 20px;
+        bottom: 0px;
+    }
+
+    /* -------------------What To Eat -----------------*/
+    .titleof-res h2 {
+        font-size: 40px;
+    }
+
+    .titleof-res p {
+        font-size: 20px;
     }
 
 
@@ -1277,9 +1241,8 @@ section {
         padding: 0;
     }
 
-    .intro {
-        padding: 0;
-    }
+
+
 
     /*--------------- cameron------------------- */
     .intro {
@@ -1292,7 +1255,8 @@ section {
     }
 
     .intro h4 {
-        font-size: 20px;
+        font-size: 16px;
+        padding: 0;
     }
 
     .intro h3 {

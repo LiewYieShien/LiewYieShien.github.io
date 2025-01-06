@@ -289,7 +289,7 @@
         <div class="content6">
             <div class="titleof-res">
                 <h2>What to eat</h2>
-                <p>Penang is a culinary paradise with must-try dishes showcasing its rich multicultural heritage.</p>
+                <p>Pahang is a culinary paradise with must-try dishes showcasing its rich multicultural heritage.</p>
             </div>
 
 
@@ -300,29 +300,26 @@
                     <div class="text-overlay">Tong Koon Mee Itik</div>
                 </button>
                 <button class="image-button">
-                    <img src="images/penang/restaurant2.png" alt="Curry Mee">
-                    <div class="text-overlay">Curry Mee</div>
+                    <img src="images/pahang/satay zu button.jpg" alt="Curry Mee">
+                    <div class="text-overlay">Terminal Satay Zul</div>
                 </button>
                 <button class="image-button">
-                    <img src="images/penang/restaurant3.png" alt="Tree Monkey">
-                    <div class="text-overlay">Tree Monkey</div>
+                    <img src="images/pahang/curry mee button.jpg" alt="Tree Monkey">
+                    <div class="text-overlay">Hoi Yin Curry Mee</div>
                 </button>
                 <button class="image-button">
-                    <img src="images/penang/restaurant4.png" alt="Char Kway Teow">
-                    <div class="text-overlay">Char Kway Teow</div>
+                    <img src="images/pahang/cendol button.jpg" alt="Char Kway Teow">
+                    <div class="text-overlay">Air Putih Ibrahim Cendol</div>
                 </button>
             </div>
 
 
             <!-- Popups -->
-            <div class="popup1">
+            <div class="popup">
                 <div class="popup-content1">
                     <button class="close-popup"><img src="images/malacca/closebutton.png" alt="close"></button>
-                    <div class=" restaurantimage">
+                    <div class=" foodimage">
                         <img src="images/pahang/duckmee.jpg" alt="duckmee">
-                    </div>
-                    <div class="mobileimage">
-                        <img src="images/pahang/duckmeemobile.jpg" alt="duckmee">
                     </div>
                     <div class="text">
 
@@ -342,36 +339,134 @@
                         <p>RM10– 30 per person</p>
 
 
+
                     </div>
 
                 </div>
             </div>
+
+
+            <div class="popup">
+                <div class="popup-content2">
+                    <button class="close-popup"><img src="images/malacca/closebutton.png" alt="close"></button>
+                    <div class=" foodimage">
+                        <img src="images/pahang/satayzul.jpg" alt="curry mee">
+                    </div>
+                    <div class="text">
+
+                        <h3>Terminal Satay Zul</h3>
+
+                        <h5> Description:</h5>
+                        <p>Fine-dining restaurant serving modern Peranakan cuisine in an elegant setting.</p>
+
+                        <h5>Address:</h5>
+                        <p>7, 7A, 9 & 9A, Stewart Lane, George Town </p>
+
+                        <h5>Operating Hours:</h5>
+                        <p> Monday to Sunday: 12:00 PM – 2:30 PM (Lunch) <br>
+                            Monday to Sunday: 6:30 PM – 10:00 PM (Dinner)</p>
+
+                        <h5>Price Range: </h5>
+                        <p>RM15-40 per person</p>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="popup">
+                <div class="popup-content3">
+                    <button class="close-popup"><img src="images/malacca/closebutton.png" alt="close"></button>
+                    <div class=" foodimage">
+                        <img src="images/pahang/currymee.jpg" alt="curry mee">
+                    </div>
+                    <div class="text">
+
+                        <h3>Ho Yin Curry Mee​</h3>
+
+                        <h5> Description:</h5>
+                        <p>Fine-dining restaurant serving modern Peranakan cuisine in an elegant setting.</p>
+
+                        <h5>Address:</h5>
+                        <p>7, 7A, 9 & 9A, Stewart Lane, George Town </p>
+
+                        <h5>Operating Hours:</h5>
+                        <p> Monday to Sunday: 12:00 PM – 2:30 PM (Lunch) <br>
+                            Monday to Sunday: 6:30 PM – 10:00 PM (Dinner)</p>
+
+                        <h5>Price Range: </h5>
+                        <p>RM15-40 per person</p>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="popup">
+                <div class="popup-content4">
+                    <button class="close-popup"><img src="images/malacca/closebutton.png" alt="close"></button>
+                    <div class=" foodimage">
+                        <img src="images/pahang/cendol.jpg" alt="curry mee">
+                    </div>
+                    <div class="text">
+
+                        <h3>Air Putih Ibrahim Cendol</h3>
+
+                        <h5> Description:</h5>
+                        <p>Fine-dining restaurant serving modern Peranakan cuisine in an elegant setting.</p>
+
+                        <h5>Address:</h5>
+                        <p>7, 7A, 9 & 9A, Stewart Lane, George Town </p>
+
+                        <h5>Operating Hours:</h5>
+                        <p> Monday to Sunday: 12:00 PM – 2:30 PM (Lunch) <br>
+                            Monday to Sunday: 6:30 PM – 10:00 PM (Dinner)</p>
+
+                        <h5>Price Range: </h5>
+                        <p>RM15-40 per person</p>
+
+
+                    </div>
+                </div>
+            </div>
         </div>
+
+
+
+
     </section>
+
     <script>
+        // Ensure popups are hidden when the page loads
         document.addEventListener("DOMContentLoaded", () => {
             const buttons = document.querySelectorAll(".image-button");
-            const popups = document.querySelectorAll(".popup1, .popup2, .popup3, .popup4");
+            const popups = document.querySelectorAll(".popup");
             const closeButtons = document.querySelectorAll(".close-popup");
 
-            // 隐藏所有 popup
-            popups.forEach(popup => popup.style.display = "none");
+            // Hide all popups initially
+            popups.forEach(popup => {
+                popup.style.display = "none";
+            });
 
-            // 点按钮显示 popup
+            // Show the corresponding popup when a button is clicked
             buttons.forEach((button, index) => {
                 button.addEventListener("click", () => {
                     popups[index].style.display = "block";
                 });
             });
 
-            // 点击关闭按钮隐藏 popup
+            // Hide the corresponding popup when the close button is clicked
             closeButtons.forEach((closeButton, index) => {
                 closeButton.addEventListener("click", () => {
                     popups[index].style.display = "none";
                 });
             });
 
-            // 点击 popup 外部关闭
+            // Close popup by clicking outside of its content
             popups.forEach(popup => {
                 popup.addEventListener("click", (e) => {
                     if (e.target === popup) {
@@ -380,6 +475,7 @@
                 });
             });
         });
+
     </script>
     <!--------------------------------------------------- Footer Section -------------------------------------------------->
     <section class="footer">

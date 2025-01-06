@@ -884,30 +884,34 @@
 
 
     /*----------------------- What to eat----------------------------- */
-    .restaurant {
-        background-color: #2A1A08;
-        height: fit-content;
 
+    .restaurant {
+        height: fit-content;
     }
 
-    .content6 {
+    .content5 {
         display: flex;
-
-
     }
 
     .titleof-res {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         text-align: center;
         align-items: center;
-        padding: 20px;
+        width: 100%;
+    }
 
-
+    .restaurantpic {
+        flex-direction: column;
+        gap: 100px;
     }
 
     .titleof-res h2 {
         color: #F6EBDC;
         font-size: 55px;
+        margin: 0;
+
     }
 
     .titleof-res p {
@@ -915,73 +919,13 @@
         font-size: 26px;
     }
 
-    .restaurantpic {
-        flex-direction: column;
-        height: auto;
-        width: 60%;
-        justify-content: center;
-        gap: 30px
-    }
-
-    /*----------------------- popup----------------------------- */
-
-    .popup1 {
-        display: none;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 60%;
-        height: 98%;
-        max-width: 750px;
-        background-color: #ffffff;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        z-index: 1000;
-        display: flex;
-        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(2, 12, 22, 0.2)), url(../images/malacca/restaurant1bg.jpg);
-
-
-    }
-
-    .popup-content1 {
-
-        flex-direction: column;
-        width: 90%;
-        height: auto;
-        padding: 10px;
-        text-align: left;
-        display: flex;
-        border-radius: 10px;
-        border: 40px #BEB6A7;
-        border-width: 50%;
-
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        margin: 20px;
+    .text-overlay {
+        left: 50px;
     }
 
 
-    .restaurantimage img {
-        display: none;
-    }
 
-    .mobileimage {
-        display: none;
-    }
 
-    .mobileimage img {
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        border-radius: 10px;
-        margin: 20px;
-    }
 
     .text {
 
@@ -1011,6 +955,12 @@
         margin-top: 6px;
     }
 
+}
+
+@media (max-width: 750px) {
+    .foodimage img {
+        display: none
+    }
 }
 
 @media screen and (max-width: 600px) {
