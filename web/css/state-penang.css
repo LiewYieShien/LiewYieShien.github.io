@@ -436,8 +436,6 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     display: flex;
-
-
 }
 
 .popup-content1 {
@@ -450,8 +448,44 @@
     flex-direction: row;
     display: flex;
     border-radius: 10px;
-    border: 40px #BEB6A7;
-    border-width: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(2, 12, 22, 0.2)), url(../images/penang/restaurant_bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: left;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(2, 12, 22, 0.2)), url(../images/penang/restaurant_bg3.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: left;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(2, 12, 22, 0.2)), url(../images/penang/restaurant_bg4.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: left;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -733,7 +767,7 @@
 
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
     .foodimage img {
         display: none
     }
