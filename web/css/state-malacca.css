@@ -33,8 +33,8 @@
 
 .hero h1 {
     margin: 0;
-    font-size: 80px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 120px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     letter-spacing: 15px;
 
 }
@@ -68,7 +68,7 @@
 }
 
 .circle-btn img {
-    width: 65%;
+    width: 40px;
     height: auto;
 }
 
@@ -636,12 +636,14 @@
 
     .button-container {
         position: absolute;
-
-        display: flex;
+        top: 90%;
+        left: 0;
+        right: 0;
         flex-direction: row;
         justify-content: space-between;
-        width: 90%;
-        margin: 0 auto;
+        gap: 0;
+        margin-left: 70px;
+        margin-right: 70px;
     }
 
 
@@ -652,9 +654,9 @@
     }
 
     .circle-btn img {
-        width: 100%;
+        width: 40px;
         height: auto;
-        margin-right: 28px;
+        margin-right: 25px;
     }
 
     .button-container .circle-btn:first-child {
@@ -703,12 +705,15 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         padding-left: 60px;
 
     }
 
     .main-image img {
         justify-content: center;
+        align-items: center;
+
     }
 
 
@@ -969,6 +974,12 @@
         margin-right: 0;
     }
 
+    .main-image img {
+        justify-content: center;
+        align-items: center;
+
+    }
+
     .encoremelaka {
         display: flex;
         width: auto;
@@ -1059,7 +1070,13 @@
         gap: 30px;
     }
 
+    .intro h3 {
+        font-size: 24px;
+    }
 
+    .intro h4 {
+        font-size: 19px;
+    }
 }
 
 
