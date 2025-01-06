@@ -417,42 +417,93 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
-    max-width: 400px;
-    background-color: #fff;
+    width: 100%;
+    height: auto;
+    max-width: 750px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     z-index: 1000;
+    display: flex;
+
+
 }
 
-.popup-content {
+.popup-content1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(2, 12, 22, 0.2)), url(../images/penang/restaurant_bg1.jpg);
+    background-size: cover;
+    background-position: center;
     padding: 20px;
-    text-align: center;
+    text-align: left;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    border-radius: 10px;
+    border: 40px #BEB6A7;
+    border-width: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.popup-content h3 {
+
+.foodimage img {
+    width: 88%;
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-top: 35px;
     margin-bottom: 10px;
-    color: #2A1A08;
+    border-radius: 10px;
 }
 
-.popup-content p {
-    color: #AAA297;
+.text {
+    display: flex;
+    margin-left: 30px;
+    color: #ffffff;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.text h3 {
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.text h5 {
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0;
+
+}
+
+.text p {
+
+    font-size: 16px;
+    color: #a49e95;
+    font-weight: lighter;
+    margin-top: 6px;
 }
 
 .close-popup {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #AAA297;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    color: #fff;
+    width: 0px;
+    height: 0px;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
 }
 
-.close-popup:hover {
-    background-color: #2A1A08;
-    color: #F6EBDC;
+.close-popup img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 45px;
+
 }
+
+.close-popup img:hover {
+    transform: scale(1.1);
+    /* 放大 10% */
+
+}
+
 
 
 
