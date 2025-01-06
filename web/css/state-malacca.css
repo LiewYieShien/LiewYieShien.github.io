@@ -436,7 +436,7 @@
 
 
 /* Popup styles */
-.popup1 {
+.popup {
     display: none;
     position: fixed;
     top: 50%;
@@ -445,40 +445,66 @@
     width: 100%;
     height: auto;
     max-width: 750px;
-    background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     display: flex;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(2, 12, 22, 0.2)), url(../images/malacca/restaurant1bg.jpg);
-
-
 }
 
-
 .popup-content1 {
-
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(2, 12, 22, 0.2)), url(../images/malacca/restaurant1bg.jpg);
+    background-size: cover;
+    background-position: center;
     padding: 20px;
     text-align: left;
     justify-content: space-between;
     flex-direction: row;
     display: flex;
     border-radius: 10px;
-    border: 40px #BEB6A7;
-    border-width: 50%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-
 }
 
-.mobileimage {
-    display: none;
+.popup-content2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(2, 12, 22, 0.2)), url(../images/malacca/somtehingbakery\ bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: left;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.restaurantimage {
+.popup-content3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(2, 12, 22, 0.2)), url(../images/malacca/satay\ bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: left;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(2, 12, 22, 0.2)), url(../images/malacca/babakaya_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: left;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.foodimage img {
     display: block;
-}
-
-.restaurantimage img {
     width: 88%;
     margin-left: 30px;
     margin-right: 10px;
@@ -488,19 +514,21 @@
 }
 
 .text {
+    display: flex;
     margin-left: 30px;
     color: #ffffff;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
 .text h3 {
     font-size: 28px;
     color: #ffffff;
-    margin-bottom: 15px;
 }
 
 .text h5 {
-    font-size: 15px;
+    font-size: 18px;
     color: #ffffff;
     margin: 0;
 
@@ -508,73 +536,8 @@
 
 .text p {
 
-    font-size: 15px;
+    font-size: 16px;
     color: #a49e95;
-    ;
-    font-weight: lighter;
-    margin-top: 6px;
-}
-
-.popup2 {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: auto;
-    max-width: 750px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    display: flex;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(2, 12, 22, 0.2)), url(../images/malacca/somtehingbakery\ bg.jpg);
-
-
-}
-
-.mobileimage2 {
-    display: none;
-}
-
-.restaurantimage2 {
-    display: block;
-}
-
-.restaurantimage2 img {
-    width: 92%;
-    margin-left: 30px;
-    margin-right: 10px;
-    margin-top: 35px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-}
-
-.text2 {
-    margin-left: 30px;
-    color: #ffffff;
-}
-
-
-.text2 h3 {
-    font-size: 28px;
-    color: #ffffff;
-    margin-bottom: 15px;
-}
-
-.text2 h5 {
-    font-size: 15px;
-    color: #ffffff;
-    margin: 0;
-
-}
-
-.text2 p {
-
-    font-size: 15px;
-    color: #a49e95;
-
     font-weight: lighter;
     margin-top: 6px;
 }
@@ -600,6 +563,7 @@
     /* 放大 10% */
 
 }
+
 
 @media screen and (max-width: 1100px) {
 
@@ -997,7 +961,7 @@
     }
 
 
-    .restaurantimage {
+    .restaurantimage img {
         display: none;
     }
 
