@@ -450,29 +450,33 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     display: flex;
-    border: 40px #BEB6A7;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
 
 }
 
 .popup-content1 {
-    background-image: url(../images/malacca/restaurant1bg.jpg);
+
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(2, 12, 22, 0.2)), url(../images/malacca/restaurant1bg.jpg);
+
     padding: 20px;
     text-align: left;
     justify-content: space-between;
     flex-direction: row;
     display: flex;
     border-radius: 10px;
+    border: 40px #BEB6A7;
+    border-width: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 
 }
 
 .foodimage img {
-    width: 85%;
+    width: 88%;
     margin-left: 30px;
     margin-right: 10px;
     margin-top: 35px;
     margin-bottom: 10px;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .text {
