@@ -1,6 +1,10 @@
-body {
+body,
+html {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+
+    /* 禁止横向滚动 */
 }
 
 section {
@@ -1138,6 +1142,7 @@ section {
     /*--------------- cameron------------------- */
     .intro {
         padding: 0;
+
     }
 
     .intro ul {
@@ -1145,7 +1150,7 @@ section {
     }
 
     .intro h4 {
-        font-size: 17px;
+        font-size: 20px;
     }
 
     .intro h3 {
