@@ -33,11 +33,8 @@
     color: white;
     display: flex;
     flex-direction: column;
-    /* Stack items vertically */
     align-items: center;
-    /* Center items horizontally */
     gap: 20px;
-    /* Space between child elements */
 }
 
 
@@ -379,6 +376,10 @@
 
 
 /* Button Styles */
+a {
+    text-decoration: none;
+}
+
 .book {
     width: auto;
     padding: 15px 25px;
