@@ -938,6 +938,13 @@
 }
 
 
+/* -------------------  Penang National Park -----------------*/
+
+@media screen and (max-width: 500px) {
+    .nationalpark {
+        padding: 150px 10px;
+    }
+}
 
 
 
