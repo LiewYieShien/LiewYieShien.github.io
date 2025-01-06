@@ -507,6 +507,8 @@ section {
     align-items: center;
     flex-direction: column;
     padding: 80px 50px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .titleof-res {
