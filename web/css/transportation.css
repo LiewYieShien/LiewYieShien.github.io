@@ -40,11 +40,11 @@ body {
 .hero h1 {
     font-size: 80px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: -20px;
 }
 
 .hero p {
     font-size: 25px;
-    margin-top: -70px;
     letter-spacing: 2px;
     font-weight: lighter;
 }
@@ -267,22 +267,6 @@ button.perak:hover {
 
 /* ---------------------------------------------Mobile Styles----------------------------------------------- */
 
-@media screen and (max-width: 400px) {
-
-    /* ---------------------------------------------Hero Section Styles----------------------------------------------- */
-    .hero h1 {
-        font-size: 30px;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    }
-
-    .hero p {
-        font-size: 15px;
-        margin-top: -30px;
-        letter-spacing: 2px;
-        font-weight: lighter;
-    }
-}
-
 @media screen and (max-width: 1300px) {
 
     /* ---------------------------------------------Hero Section Styles----------------------------------------------- */
@@ -310,14 +294,10 @@ button.perak:hover {
 
     .hero h1 {
         font-size: 60px;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     }
 
     .hero p {
-        font-size: 20px;
-        margin-top: -50px;
-        letter-spacing: 2px;
-        font-weight: lighter;
+        font-size: 25px;
     }
 
     /* ---------------------------------------------Destination Section Styles----------------------------------------------- */
@@ -482,14 +462,22 @@ button.perak:hover {
 
     /* ---------------------------------------------Hero Section Styles----------------------------------------------- */
     .hero h1 {
-        font-size: 40px;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        font-size: 35px;
     }
 
     .hero p {
-        font-size: 16px;
-        margin-top: -35px;
-        letter-spacing: 2px;
-        font-weight: lighter;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    /* ---------------------------------------------Hero Section Styles----------------------------------------------- */
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 15px;
     }
 }
