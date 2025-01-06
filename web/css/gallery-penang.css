@@ -28,10 +28,17 @@
 }
 
 /* ---------------------------------------------Gallery Section Styles----------------------------------------------- */
-.states-container {
+.biggestwidth {
     background-color: #39230A;
-    padding: 80px;
 }
+
+.states-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 80px;
+    box-sizing: border-box;
+}
+
 
 .gallery {
     display: flex;
