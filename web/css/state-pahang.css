@@ -49,8 +49,8 @@ section {
 
 .hero h1 {
     margin: 0;
-    font-size: 80px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 120px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     letter-spacing: 15px;
 
 }
@@ -84,7 +84,7 @@ section {
 }
 
 .circle-btn img {
-    width: 65%;
+    width: 40px;
     height: auto;
 
 }
@@ -142,7 +142,7 @@ section {
 }
 
 .main-image {
-    margin-right: -40px;
+    margin-right: -60px;
 }
 
 .main-image img {
@@ -223,8 +223,16 @@ section {
 .image2 {
     flex: 1;
     display: flex;
-    padding-left: 30px;
+    padding-left: 19px;
 
+
+}
+
+.image-genting {
+    flex: 1;
+    display: flex;
+    padding-left: 30px;
+    width: 70%;
 }
 
 .content2 {
@@ -742,9 +750,9 @@ section {
     }
 
     .circle-btn img {
-        width: 100%;
+        width: 40px;
         height: auto;
-        margin-right: 28px;
+        margin-right: 24px;
     }
 
     .button-container .circle-btn:first-child {
@@ -1132,6 +1140,7 @@ section {
 
     .biggenting img {
         width: 50%;
+        margin-left: 50px;
     }
 
     .buttongallery {
@@ -1141,15 +1150,25 @@ section {
         bottom: 0px;
     }
 
+    .colmartropicale {}
+
     /* -------------------What To Eat -----------------*/
     .titleof-res h2 {
         font-size: 40px;
+
     }
 
     .titleof-res p {
         font-size: 20px;
     }
 
+    .image2 {
+        flex: 1;
+        display: flex;
+        padding-left: 25px;
+
+
+    }
 
 }
 
@@ -1176,7 +1195,7 @@ section {
     .textcontainerright1 {
         width: 100%;
         justify-content: left;
-
+        margin-left: 20px;
         border-radius: 15px;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
 
@@ -1208,21 +1227,6 @@ section {
 
 @media screen and (max-width: 400px) {
 
-    .tioman {
-        height: 50%;
-        display: flex;
-        padding-right: 22px;
-        justify-content: center;
-
-    }
-
-    .penanghills-container {
-        width: 100%;
-        height: fit-content;
-        display: flex;
-        margin-left: 0;
-
-    }
 
     .content3 h3 {
         font-size: 20px;
