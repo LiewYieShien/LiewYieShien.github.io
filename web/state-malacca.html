@@ -318,15 +318,13 @@
 
 
             <!-- Popups -->
-            <div class="popup">
+            <div class="popup1">
                 <div class="popup-content1">
                     <button class="close-popup"><img src="images/malacca/closebutton.png" alt="close"></button>
                     <div class=" restaurantimage">
                         <img src="images/malacca/riceball.jpg" alt="chickenrice">
                     </div>
-                    <div class="mobileimage">
-                        <img src="images/malacca/crmobile.jpg" alt="chickenrice">
-                    </div>
+
                     <div class="text">
 
                         <h3>Hoe Kee Chicken Rice</h3>
@@ -352,30 +350,27 @@
                 </div>
             </div>
 
-            <div class="popup">
+            <div class="popup2">
                 <div class="popup-content1">
                     <button class="close-popup"><img src="images/malacca/closebutton.png" alt="close"></button>
-                    <div class=" restaurantimage">
-                        <img src="images/malacca/riceball.jpg" alt="chickenrice">
+                    <div class=" restaurantimage2">
+                        <img src="images/malacca/cake.jpg" alt="chickenrice">
                     </div>
-                    <div class="mobileimage">
-                        <img src="images/malacca/crmobile.jpg" alt="chickenrice">
-                    </div>
-                    <div class="text">
 
-                        <h3>Hoe Kee Chicken Rice</h3>
+                    <div class="text2">
+
+                        <h3>Something Bakery</h3>
 
                         <h5> Description:</h5>
-                        <p>Hoe Kee is known for its smooth chicken and fragrant rice balls. The restaurant has a
-                            charming,
-                            old-school ambiance​</p>
+                        <p>
+                            Something Bakery's French Layer Cake prioritizes premium ingredients for exceptional flavor,
+                            texture, layers, structure, and aftertaste.​</p>
 
                         <h5>Address:</h5>
-                        <p>468, Jalan Hang Jebat, 75200 Melaka</p>
+                        <p>11, Jalan Bukit Cina, Kampung Bukit China, 75100 Melaka</p>
 
                         <h5>Operating Hours:</h5>
-                        <p> Monday to Sunday: 9am–4:30pm
-                            Thursday: Closed</p>
+                        <p> Monday to Sunday: 11am-8.30pm</p>
 
                         <h5>Price Range: </h5>
                         <p>RM15-40 per person</p>
@@ -384,94 +379,37 @@
                     </div>
                 </div>
             </div>
-            <div class="popup">
-                <div class="popup-content1">
-                    <button class="close-popup"><img src="images/malacca/closebutton.png" alt="close"></button>
-                    <div class=" foodimage">
-                        <img src="images/malacca/riceball.jpg" alt="chickenrice">
-                    </div>
-                    <div class="text">
-
-                        <h3>Hoe Kee Chicken Rice</h3>
-
-                        <h5> Description:</h5>
-                        <p>Hoe Kee is known for its smooth chicken and fragrant rice balls. The restaurant has a
-                            charming,
-                            old-school ambiance​</p>
-
-                        <h5>Address:</h5>
-                        <p>468, Jalan Hang Jebat, 75200 Melaka</p>
-
-                        <h5>Operating Hours:</h5>
-                        <p> Monday to Sunday: 9am–4:30pm
-                            Thursday: Closed</p>
-
-                        <h5>Price Range: </h5>
-                        <p>RM15-40 per person</p>
 
 
-                    </div>
-                </div>
-            </div>
-            <div class="popup">
-                <div class="popup-content1">
-                    <button class="close-popup"><img src="images/malacca/closebutton.png" alt="close"></button>
-                    <div class=" foodimage">
-                        <img src="images/malacca/riceball.jpg" alt="chickenrice">
-                    </div>
-                    <div class="text">
-
-                        <h3>Hoe Kee Chicken Rice</h3>
-
-                        <h5> Description:</h5>
-                        <p>Hoe Kee is known for its smooth chicken and fragrant rice balls. The restaurant
-                            has a
-                            charming,
-                            old-school ambiance​</p>
-
-                        <h5>Address:</h5>
-                        <p>468, Jalan Hang Jebat, 75200 Melaka</p>
-
-                        <h5>Operating Hours:</h5>
-                        <p> Monday to Sunday: 9am–4:30pm
-                            Thursday: Closed</p>
-
-                        <h5>Price Range: </h5>
-                        <p>RM15-40 per person</p>
 
 
-                    </div>
-                </div>
-            </div>
+
     </section>
 
     <script>
-        // 確保頁面加載後 popup 是隱藏的
         document.addEventListener("DOMContentLoaded", () => {
             const buttons = document.querySelectorAll(".image-button");
-            const popups = document.querySelectorAll(".popup");
+            const popups = document.querySelectorAll(".popup1, .popup2, .popup3, .popup4");
             const closeButtons = document.querySelectorAll(".close-popup");
 
-            // 隱藏所有 popup
-            popups.forEach(popup => {
-                popup.style.display = "none";
-            });
+            // 隐藏所有 popup
+            popups.forEach(popup => popup.style.display = "none");
 
-            // 點擊按鈕顯示對應的 popup
+            // 点按钮显示 popup
             buttons.forEach((button, index) => {
                 button.addEventListener("click", () => {
                     popups[index].style.display = "block";
                 });
             });
 
-            // 點擊關閉按鈕隱藏對應的 popup
+            // 点击关闭按钮隐藏 popup
             closeButtons.forEach((closeButton, index) => {
                 closeButton.addEventListener("click", () => {
                     popups[index].style.display = "none";
                 });
             });
 
-            // 點擊 popup 外部關閉
+            // 点击 popup 外部关闭
             popups.forEach(popup => {
                 popup.addEventListener("click", (e) => {
                     if (e.target === popup) {
@@ -480,6 +418,7 @@
                 });
             });
         });
+
     </script>
 
     <!--------------------------------------------------- Footer Section -------------------------------------------------->

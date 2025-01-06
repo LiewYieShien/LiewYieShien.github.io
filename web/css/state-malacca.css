@@ -436,7 +436,7 @@
 
 
 /* Popup styles */
-.popup {
+.popup1 {
     display: none;
     position: fixed;
     top: 50%;
@@ -455,9 +455,8 @@
 
 }
 
+
 .popup-content1 {
-
-
 
     padding: 20px;
     text-align: left;
@@ -497,10 +496,11 @@
 .text h3 {
     font-size: 28px;
     color: #ffffff;
+    margin-bottom: 15px;
 }
 
 .text h5 {
-    font-size: 18px;
+    font-size: 15px;
     color: #ffffff;
     margin: 0;
 
@@ -508,8 +508,73 @@
 
 .text p {
 
-    font-size: 16px;
-    color: #E6DFD5;
+    font-size: 15px;
+    color: #a49e95;
+    ;
+    font-weight: lighter;
+    margin-top: 6px;
+}
+
+.popup2 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    max-width: 750px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(2, 12, 22, 0.2)), url(../images/malacca/somtehingbakery\ bg.jpg);
+
+
+}
+
+.mobileimage2 {
+    display: none;
+}
+
+.restaurantimage2 {
+    display: block;
+}
+
+.restaurantimage2 img {
+    width: 92%;
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.text2 {
+    margin-left: 30px;
+    color: #ffffff;
+}
+
+
+.text2 h3 {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.text2 h5 {
+    font-size: 15px;
+    color: #ffffff;
+    margin: 0;
+
+}
+
+.text2 p {
+
+    font-size: 15px;
+    color: #a49e95;
+
     font-weight: lighter;
     margin-top: 6px;
 }
@@ -896,14 +961,14 @@
 
     /*----------------------- popup----------------------------- */
 
-    .popup {
+    .popup1 {
         display: none;
         position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 60%;
-        height: 90%;
+        height: 98%;
         max-width: 750px;
         background-color: #ffffff;
         border-radius: 10px;
@@ -937,7 +1002,7 @@
     }
 
     .mobileimage {
-        display: block;
+        display: none;
     }
 
     .mobileimage img {
@@ -955,7 +1020,7 @@
     }
 
     .text {
-        width: 100%;
+
         margin-left: 0px;
         color: #ffffff;
     }
@@ -976,7 +1041,8 @@
     .text p {
 
         font-size: 16px;
-        color: #E6DFD5;
+        color: #a49e95;
+        ;
         font-weight: lighter;
         margin-top: 6px;
     }
