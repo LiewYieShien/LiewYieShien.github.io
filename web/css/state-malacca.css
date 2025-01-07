@@ -716,6 +716,9 @@
 
     }
 
+    .main-image {
+        margin-right: 0px;
+    }
 
 
     .small-images {
@@ -971,12 +974,14 @@
 @media screen and (max-width: 600px) {
 
     .main-image {
-        margin-right: 0;
+        margin-right: 10px;
+
     }
 
     .main-image img {
         justify-content: center;
         align-items: center;
+
 
     }
 
@@ -1164,5 +1169,21 @@
         font-size: 18px;
     }
 
+    .main-image img {
+        padding-left: 45px;
+    }
+}
 
+@media screen and (max-width: 550px) {
+
+    .main-image img {
+        padding-left: 45px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .main-image img {
+        padding-left: 37px;
+    }
 }
