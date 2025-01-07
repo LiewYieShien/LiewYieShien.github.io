@@ -790,6 +790,11 @@ section {
 
     }
 
+    .image2 {
+        padding-left: 25px;
+        margin-right: 0;
+    }
+
 
 
     .content1 {
@@ -1270,6 +1275,11 @@ section {
 
     .intro h3 {
         font-size: 28px;
+    }
+
+    .image2 {
+        padding-left: 10px;
+        margin-right: 0;
     }
 
     /*--------------- genting ------------------- */
