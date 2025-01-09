@@ -19,9 +19,9 @@
 
 
 <body>
+    <!----------------------------------------------------- Navigation Bar ----------------------------------------------------->
     <header>
-        <!----------------------------------------------------- Nav----------------------------------------------------->
-        <header>
+        <div class="navbackground">
             <div class="navbar">
                 <a href="index.html">
                     <img src="images/general/logo.png" class="logo">
@@ -52,234 +52,236 @@
                     <a href="blog.html">Blog Sharing</a>
                 </div>
             </div>
-
-        </header>
-
-        <!--------------------------------------------------- Hero Section -------------------------------------------------->
-
-        <div class="page1">
-
-            <section class="hero">
-                <!-- Left Content -->
-                <div class="hero-content">
-                    <h1>MALAYSIA</h1>
-                    <p>EXPLORE</p>
-                </div>
-
-                <!-- Right Buttons -->
-                <div class="button-container">
-                    <a href="transportation.html">
-                        <button class="circle-btn transport">
-                            <img src="images/homepage/b-publictransport.png" alt="Transport Icon" />
-                        </button>
-                    </a>
-
-                    <a href="accommodation.html">
-                        <button class="circle-btn hotel">
-                            <img src="images/homepage/b-hotel.png" alt="Hotel Icon" />
-                        </button>
-                    </a>
-                </div>
-            </section>
         </div>
+    </header>
+
+    <!--------------------------------------------------- Hero Section -------------------------------------------------->
+
+    <div class="page1">
+
+        <section class="hero">
+            <!-- Left Content -->
+            <div class="hero-content">
+                <h1>MALAYSIA</h1>
+                <p>EXPLORE</p>
+            </div>
+
+            <!-- Right Buttons -->
+            <div class="button-container">
+                <a href="transportation.html">
+                    <button class="circle-btn transport">
+                        <img src="images/homepage/b-publictransport.png" alt="Transport Icon" />
+                    </button>
+                </a>
+
+                <a href="accommodation.html">
+                    <button class="circle-btn hotel">
+                        <img src="images/homepage/b-hotel.png" alt="Hotel Icon" />
+                    </button>
+                </a>
+            </div>
+        </section>
+    </div>
 
 
 
 
 
-        <!---------------------------------------------------------- Map------------------------------------------------------------>
-        <div class="page">
-            <section class="map">
-                <!-- Title -->
-                <div class="maxwidthwrap">
-                    <div class="map-content">
-                        <p>Discover Malaysia</p>
-                    </div>
-
-                    <!-- Image Container -->
-                    <div class="imagecontainer">
-                        <div class="map-container1">
-                            <a class="location penang" href="state-penang.html">
-                                Penang
-                            </a>
-                            <a class="location pahang" href="state-pahang.html">
-                                Pahang
-                            </a>
-                        </div>
-                        <div class="map-container2">
-                            <a class="location penang" href="state-perak.html">
-                                Perak
-                            </a>
-                            <a class="location pahang" href="state-malacca.html">
-                                Malacca
-                            </a>
-                        </div>
-
-
-                        <!-- Explore More Button -->
-                        <a href="explore&tips.html">
-                            <button class="exploremore">
-                                <span>Explore more</span>
-                                <img class="right" src="images/homepage/b-rightarrow.png" alt="Right arrow">
-                            </button>
-                        </a>
-
-                    </div>
-                </div>
-            </section>
-        </div>
-
-
-
-        <!----------------------------------------------------- Find Your Interest -------------------------------------------------->
-
-        <section class="slider">
+    <!---------------------------------------------------------- Map------------------------------------------------------------>
+    <div class="page">
+        <section class="map">
+            <!-- Title -->
             <div class="maxwidthwrap">
-                <div class="threeslider">
-                    <div class="slide">
-                        <img src="images/homepage/adventure.jpg" alt="Adventure">
-                        <h1>Adventure</h1>
-                        <p>Where Every Journey Reveals a <br> New World of Wonders</p>
-                    </div>
-                    <div class="slide">
-                        <img src="images/homepage/city.jpg" alt="Cityscape">
-                        <h1>Cityscape</h1>
-                        <p>Immerse Yourself in the Thriving <br> Heartbeat of Urban Life</p>
-                    </div>
-                    <div class="slide">
-                        <img src="images/homepage/nature.jpg" alt="Nature">
-                        <h1>Nature</h1>
-                        <p>Let the Wild Landscapes Ignite <br> Your Sense of Discovery</p>
-                    </div>
+                <div class="map-content">
+                    <p>Discover Malaysia</p>
                 </div>
 
+                <!-- Image Container -->
+                <div class="imagecontainer">
+                    <div class="map-container1">
+                        <a class="location penang" href="state-penang.html">
+                            Penang
+                        </a>
+                        <a class="location pahang" href="state-pahang.html">
+                            Pahang
+                        </a>
+                    </div>
+                    <div class="map-container2">
+                        <a class="location penang" href="state-perak.html">
+                            Perak
+                        </a>
+                        <a class="location pahang" href="state-malacca.html">
+                            Malacca
+                        </a>
+                    </div>
 
-                <div class="slider-controls">
-                    <!-- Each button corresponds to a slide -->
-                    <button class="active"></button>
-                    <button></button>
-                    <button></button>
-                </div>
 
-                <div class="nav-buttons">
-                    <button id="prev"><i class="fas fa-chevron-left"></i></button>
-                    <button id="next"><i class="fas fa-chevron-right"></i></button>
+                    <!-- Explore More Button -->
+                    <a href="explore&tips.html">
+                        <button class="exploremore">
+                            <span>Explore more</span>
+                            <img class="right" src="images/homepage/b-rightarrow.png" alt="Right arrow">
+                        </button>
+                    </a>
+
                 </div>
             </div>
         </section>
+    </div>
 
 
 
-        <script>
-            document.addEventListener('DOMContentLoaded', () => { // Ensure the DOM is fully loaded
+    <!----------------------------------------------------- Find Your Interest -------------------------------------------------->
 
-                const slides = document.querySelectorAll('.slide');
-                const buttons = document.querySelectorAll('.slider-controls button');
-                const prevButton = document.getElementById('prev');
-                const nextButton = document.getElementById('next');
-                let currentIndex = 0;
-
-                function updateSlider(index) {
-                    const offset = -index * 100;  // Corrected string interpolation
-                    slides.forEach(slide => {
-                        slide.style.transform = `translateX(${offset}%)`; // Apply translateX based on the index
-                    });
-                    buttons.forEach((button, i) => {
-                        button.classList.toggle('active', i === index);  // Toggle the active class for the button
-                    });
-                }
-
-                buttons.forEach((button, index) => {
-                    button.addEventListener('click', () => {
-                        currentIndex = index;
-                        updateSlider(currentIndex); // Update the slider when a dot is clicked
-                    });
-                });
-
-                prevButton.addEventListener('click', () => {
-                    currentIndex = (currentIndex - 1 + slides.length) % slides.length;  // Loop back to the last slide
-                    updateSlider(currentIndex); // Update the slider when the previous button is clicked
-                });
-
-                nextButton.addEventListener('click', () => {
-                    currentIndex = (currentIndex + 1) % slides.length; // Loop to the first slide after the last
-                    updateSlider(currentIndex); // Update the slider when the next button is clicked
-                });
-
-                // Initialize the first slide
-                updateSlider(currentIndex);
-            });
-        </script>
-
-
-
-        <!--------------------------------------------------- Footer Section -------------------------------------------------->
-        <div class="footer-background">
-            <section class="footer">
-                <div>
-                    <h1>
-                        Wishing you memorable journeys in Malaysia!
-                    </h1>
-                    <p>
-                        Making Malaysian travel easy and accessible.
-                    </p>
+    <section class="slider">
+        <div class="maxwidthwrap">
+            <div class="threeslider">
+                <div class="slide">
+                    <img src="images/homepage/adventure.jpg" alt="Adventure">
+                    <h1>Adventure</h1>
+                    <p>Where Every Journey Reveals a <br> New World of Wonders</p>
                 </div>
-
-                <div>
-                    <a href="index.html">
-                        <button class="explore">
-                            <span>Start exploring</span>
-                            <img class="search" src="images/general/search.png" alt="Search">
-                        </button>
-                    </a>
+                <div class="slide">
+                    <img src="images/homepage/city.jpg" alt="Cityscape">
+                    <h1>Cityscape</h1>
+                    <p>Immerse Yourself in the Thriving <br> Heartbeat of Urban Life</p>
                 </div>
-
-                <hr />
-
-                <div class="footer-menu-container">
-                    <div>
-                        <a href="https://www.facebook.com/MalaysiaFoodandTravel"><button class="socialmedia"><img
-                                    src="images/general/facebook.png" alt="Facebook" height="25" /></button></a>
-                        <a href="https://www.instagram.com/malaysiafoodandtravel/"><button class="socialmedia"><img
-                                    src="images/general/instagram.png" alt="Instagram" height="25" /></button></a>
-                        <a href="https://www.tiktok.com/@malaysiafoodandtravel"><button class="socialmedia"><img
-                                    src="images/general/tiktok.png" alt="TikTok" height="25" /></button></a>
-                    </div>
-
-                    <div>
-                        <p>
-                            © 2024 Explore.my
-                        </p>
-                    </div>
+                <div class="slide">
+                    <img src="images/homepage/nature.jpg" alt="Nature">
+                    <h1>Nature</h1>
+                    <p>Let the Wild Landscapes Ignite <br> Your Sense of Discovery</p>
                 </div>
-            </section>
-                
+            </div>
+
+
+            <div class="slider-controls">
+                <!-- Each button corresponds to a slide -->
+                <button class="active"></button>
+                <button></button>
+                <button></button>
+            </div>
+
+            <div class="nav-buttons">
+                <button id="prev"><i class="fas fa-chevron-left"></i></button>
+                <button id="next"><i class="fas fa-chevron-right"></i></button>
+            </div>
         </div>
+    </section>
 
-        <!--------------------------------------------------- Back To Top Button -------------------------------------------------->
-        <button class="back-to-top" onclick="scrollToTop()">
-            <img class="bttimg" src="images/general/top.png" alt="Back to Top">
-        </button>
 
-        <script>
-            // Show or hide the "Back to Top" button based on scroll position
-            window.addEventListener('scroll', function () {
-                const button = document.querySelector('.back-to-top');
-                if (window.scrollY > 100) { // Show after 100px of scrolling
-                    button.style.display = 'flex';
-                } else {
-                    button.style.display = 'none';
-                }
-            });
 
-            // Smooth scroll to top functionality
-            function scrollToTop() {
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
+    <script>
+        document.addEventListener('DOMContentLoaded', () => { // Ensure the DOM is fully loaded
+
+            const slides = document.querySelectorAll('.slide');
+            const buttons = document.querySelectorAll('.slider-controls button');
+            const prevButton = document.getElementById('prev');
+            const nextButton = document.getElementById('next');
+            let currentIndex = 0;
+
+            function updateSlider(index) {
+                const offset = -index * 100;  // Corrected string interpolation
+                slides.forEach(slide => {
+                    slide.style.transform = `translateX(${offset}%)`; // Apply translateX based on the index
+                });
+                buttons.forEach((button, i) => {
+                    button.classList.toggle('active', i === index);  // Toggle the active class for the button
                 });
             }
-        </script>
+
+            buttons.forEach((button, index) => {
+                button.addEventListener('click', () => {
+                    currentIndex = index;
+                    updateSlider(currentIndex); // Update the slider when a dot is clicked
+                });
+            });
+
+            prevButton.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + slides.length) % slides.length;  // Loop back to the last slide
+                updateSlider(currentIndex); // Update the slider when the previous button is clicked
+            });
+
+            nextButton.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % slides.length; // Loop to the first slide after the last
+                updateSlider(currentIndex); // Update the slider when the next button is clicked
+            });
+
+            // Initialize the first slide
+            updateSlider(currentIndex);
+        });
+    </script>
+
+
+
+    <!--------------------------------------------------- Footer Section -------------------------------------------------->
+    <div class="footer-background">
+        <section class="footer">
+            <div>
+                <h1>
+                    Wishing you memorable journeys in Malaysia!
+                </h1>
+                <p>
+                    Making Malaysian travel easy and accessible.
+                </p>
+            </div>
+
+            <div>
+                <a href="index.html">
+                    <button class="explore">
+                        <span>Start exploring</span>
+                        <img class="search" src="images/general/search.png" alt="Search">
+                    </button>
+                </a>
+            </div>
+
+            <hr />
+
+            <div class="footer-menu-container">
+                <div>
+                    <a href="https://www.facebook.com/MalaysiaFoodandTravel" target="_blank"><button
+                            class="socialmedia"><img src="images/general/facebook.png" alt="Facebook"
+                                height="25" /></button></a>
+                    <a href="https://www.instagram.com/malaysiafoodandtravel/" target="_blank"><button
+                            class="socialmedia"><img src="images/general/instagram.png" alt="Instagram"
+                                height="25" /></button></a>
+                    <a href="https://www.tiktok.com/@malaysiafoodandtravel" target="_blank"><button
+                            class="socialmedia"><img src="images/general/tiktok.png" alt="TikTok"
+                                height="25" /></button></a>
+                </div>
+
+                <div>
+                    <p>
+                        © 2024 Explore.my
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--------------------------------------------------- Back To Top Button -------------------------------------------------->
+    <button class="back-to-top" onclick="scrollToTop()">
+        <img class="bttimg" src="images/general/top.png" alt="Back to Top">
+    </button>
+
+    <script>
+        // Show or hide the "Back to Top" button based on scroll position
+        window.addEventListener('scroll', function () {
+            const button = document.querySelector('.back-to-top');
+            if (window.scrollY > 100) { // Show after 100px of scrolling
+                button.style.display = 'flex';
+            } else {
+                button.style.display = 'none';
+            }
+        });
+
+        // Smooth scroll to top functionality
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
 
 </body>
 

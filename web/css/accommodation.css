@@ -530,44 +530,6 @@ a {
 }
 
 
-/* Button Styles */
-.book2 {
-    width: 170px;
-    padding: 15px 25px;
-    background-color: #49100B;
-    border-radius: 25px;
-    display: flex;
-    cursor: pointer;
-    border: none;
-    margin-top: 25px;
-    z-index: 5;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-/* ----------- Text ---------------- */
-.book2 span {
-    padding-left: 10px;
-    color: #E6DFD5;
-    font-size: 18px;
-}
-
-/* ----------- Icon ---------------- */
-.book2 .right {
-    margin-left: 10px;
-    width: 15px;
-    height: auto;
-}
-
-/* Hover Effect */
-.book2:hover {
-    background-color: #E6DFD5;
-    transform: scale(1.05);
-}
-
-.book2:hover span {
-    color: #9f0d08;
-}
-
 
 /* --------------------------------------------section 6---hotel 3------------------------------------------- */
 
@@ -976,20 +938,7 @@ a {
         height: 18px;
     }
 
-    /* Book Now Button */
-    .book2 {
-        margin-left: 0px;
-        padding: 20px 10px;
-        width: 100%;
-        border-radius: 0px;
-        font-size: 16px;
-    }
 
-
-    .book2:hover {
-        background-color: #E6DFD5;
-        transform: scale(1);
-    }
 
 
     /* -----------------------------------------Section 6------------------------------ */
@@ -1118,11 +1067,6 @@ a {
 
     .r-hoteldetails p {
         font-size: 15px;
-    }
-
-    .book2 {
-        font-size: 14px;
-        padding: 15px 8px;
     }
 
     /* Section 6 */

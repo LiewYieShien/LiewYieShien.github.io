@@ -327,6 +327,7 @@ a {
     margin-left: 60px;
     display: flex;
     width: 50%;
+    padding-bottom: 25px;
     max-width: 1200px;
     border-radius: 20px;
     overflow: hidden;
@@ -404,29 +405,6 @@ a {
     transition: background-color 0.3s, transform 0.3s;
 }
 
-/* ----------- Text ---------------- */
-.book2 span {
-    padding-left: 10px;
-    color: #a0c1cf;
-    font-size: 18px;
-}
-
-/* ----------- Icon ---------------- */
-.book2 .right {
-    margin-left: 10px;
-    width: 15px;
-    height: auto;
-}
-
-/* Hover Effect */
-.book2:hover {
-    background-color: #a0c1cf;
-    transform: scale(1.05);
-}
-
-.book2:hover span {
-    color: #167EC3;
-}
 
 /* -----------------------------------------------hotel 3--------------------------------------------- */
 
@@ -707,20 +685,7 @@ a {
         height: 22px;
     }
 
-    /* Book Now Button */
-    .book2 {
-        margin-left: 0px;
-        padding: 20px 10px;
-        width: 100%;
-        border-radius: 0px;
-        font-size: 16px;
-    }
 
-
-    .book2:hover {
-        background-color: #E6DFD5;
-        transform: scale(1);
-    }
 
 
     /* -----------------------------------------Hotel 3------------------------------ */
@@ -829,10 +794,5 @@ a {
         font-size: 12px;
     }
 
-
-    .book2 {
-        font-size: 14px;
-        padding: 15px 8px;
-    }
 
 }
