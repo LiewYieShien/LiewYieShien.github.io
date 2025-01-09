@@ -36,14 +36,15 @@ section {
 .hero-content {
     max-width: 1280px;
     margin: 0 auto;
+    color: white;
+    text-align: center;
 }
 
 .hero p {
-    font-size: 28px;
-    font-weight: 100;
-    justify-content: center;
-    margin: 0;
-    letter-spacing: 5px;
+    position: relative;
+    top: 30px;
+    font-weight: 200;
+    font-size: 32px;
 
 }
 
@@ -51,7 +52,8 @@ section {
     margin: 0;
     font-size: 120px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    letter-spacing: 15px;
+    letter-spacing: 10px;
+
 
 }
 
