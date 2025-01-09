@@ -991,6 +991,7 @@ section {
         position: relative;
         margin: 0px 0;
         bottom: 0px;
+        margin-top: 60px;
     }
 
     /*------------------- Button style -------------------*/
@@ -1001,9 +1002,6 @@ section {
         height: 20px;
     }
 
-    .buttongallery {
-        margin-top: 60px;
-    }
 
     .buttongallery:hover {
 
