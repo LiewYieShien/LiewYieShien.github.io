@@ -103,7 +103,8 @@ section {
     padding: 50px;
     background-image: url(../images/pahang/cameron-bg.jpg);
     background-size: cover;
-
+    padding-bottom: 100px;
+    padding-top: 60px;
 }
 
 .main-image img {
@@ -205,11 +206,13 @@ section {
 
 /*------------------- Genting highlands-------------------*/
 .genting {
-
     background-color: #102121;
     background-size: cover;
-    padding: 100px 80px px 80px;
-    height: 90vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
 }
 
 .main-image-g img {
@@ -295,6 +298,7 @@ section {
 /*------perak copy----*/
 /* -------------------------------------------------------Tioman------------------------------------------------------------- */
 .tioman {
+    padding: 40px;
     font-family: 'Sweet Sans Pro', sans-serif;
     height: 110vh;
     background-image: url('../images/pahang/tiomanhero.jpg');
@@ -302,14 +306,13 @@ section {
     display: flex;
     justify-content: right;
     align-items: center;
-    padding-right: 100px;
+    padding-right: 60px;
 }
 
 .penanghills-container {
     display: flex;
     align-items: center;
     justify-content: right;
-    margin: 100px 0px;
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
@@ -367,10 +370,11 @@ section {
 /*------------------- colmartropicale-------------------*/
 
 .colmartropicale {
-
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #000000;
-
-    padding: 100px 80px;
 }
 
 .content3 {
@@ -385,9 +389,9 @@ section {
 
 /* -------------------------------------------------------Misty Mountain------------------------------------------------------------- */
 .mistymountain {
-
+    padding-top: 60px;
+    padding-bottom: 60px;
     font-family: 'Sweet Sans Pro', sans-serif;
-
     background-image: url('../images/pahang/mistymoutainhero.jpg');
     background-size: cover;
     display: flex;
@@ -500,6 +504,7 @@ section {
     background-color: #0F2307;
     font-family: 'Sweet Sans Pro', sans-serif;
     height: 110vh;
+    padding-bottom: 35px;
 }
 
 .content6 {
@@ -830,6 +835,7 @@ section {
 
     .genting {
         height: fit-content;
+        padding-top: 30px;
     }
 
     .genting h2 {
@@ -865,18 +871,18 @@ section {
     /*---*/
 
     .tioman {
-        height: auto;
         display: flex;
         justify-content: center;
-
+        align-items: center;
+        padding-right:
     }
 
     .penanghills-container {
         width: 100%;
         display: flex;
         height: fit-content;
-
-
+        display: flex;
+        justify-content: center;
     }
 
 
@@ -944,7 +950,7 @@ section {
 
     .colmartropicale {
         height: 80%;
-
+        padding: 60px;
     }
 
     /*--------------- Escape penang------------------- */
@@ -993,8 +999,11 @@ section {
 
     .search {
         margin-left: 15px;
-
         height: 20px;
+    }
+
+    .buttongallery {
+        margin-top: 60px;
     }
 
     .buttongallery:hover {
@@ -1076,7 +1085,7 @@ section {
         width: 100%;
         height: fit-content;
         display: flex;
-        margin-left: 60px;
+        justify-content: center;
 
 
     }
