@@ -316,8 +316,8 @@
 
 .buttongallery {
     font-size: 20px;
-    width: 20%;
-    padding: 10px;
+    width: auto;
+    padding: 15px 30px;
     margin: 40px;
 
     background-color: #AAA297;
@@ -393,7 +393,7 @@
     justify-content: center;
     flex: 1;
     margin-top: 50px;
-    gap: px;
+    gap: 0px;
 }
 
 .image-button {
@@ -913,6 +913,7 @@
     .restaurantpic {
         flex-direction: column;
         gap: 100px;
+        width: 70%;
     }
 
     .titleof-res h2 {
@@ -1070,9 +1071,9 @@
     .restaurantpic {
         flex-direction: column;
         height: auto;
-        width: 60%;
+        width: 95%;
         justify-content: center;
-        gap: 30px;
+        gap: 40px;
     }
 
     .intro h3 {
@@ -1185,5 +1186,12 @@
 
     .main-image img {
         padding-left: 37px;
+    }
+}
+
+@media screen and (max-width: 465px) {
+
+    .buttongallery {
+        width: 90%;
     }
 }
