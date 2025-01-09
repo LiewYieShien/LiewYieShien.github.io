@@ -728,15 +728,15 @@ section {
     }
 
     .hero h1 {
-        font-size: 50px;
-        letter-spacing: 10px;
+        font-size: 80px;
+        letter-spacing: 8px;
 
         /* Smaller hero heading */
     }
 
     .hero p {
-        font-size: 15px;
-        padding-top: 40px;
+        font-size: 24px;
+
         display: flex;
         justify-content: center;
 
