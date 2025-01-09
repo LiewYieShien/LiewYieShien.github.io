@@ -52,7 +52,7 @@ section {
     margin: 0;
     font-size: 120px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    letter-spacing: 10px;
+
 
 
 }
@@ -729,7 +729,7 @@ section {
 
     .hero h1 {
         font-size: 80px;
-        letter-spacing: 8px;
+
 
         /* Smaller hero heading */
     }
@@ -1302,4 +1302,12 @@ section {
     .biggenting img {
         width: 50%;
     }
+}
+
+@media screen and (max-width: 450px) {
+
+    .hero h1 {
+        font-size: 60px;
+    }
+
 }
