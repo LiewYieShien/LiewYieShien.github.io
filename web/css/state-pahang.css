@@ -464,25 +464,23 @@ section {
     display: flex;
     justify-content: center;
     text-align: center;
-
+    margin-top: 20px;
     text-decoration: none;
 }
 
 .buttongallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 20px;
     width: auto;
     padding: 15px 30px;
     margin: 40px 0;
-    position: relative;
-
-
+    bottom: -50px;
     background-color: #AAA297;
     border-radius: 30px;
     cursor: pointer;
     border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     transition: background-color 0.3s, transform 0.3s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     /* Add shadow */
@@ -982,39 +980,6 @@ section {
         justify-content: center;
         align-items: center;
     }
-
-    .gallery {
-        margin-top: 0px;
-        text-decoration: none;
-        margin-bottom: 50px;
-    }
-
-    .buttongallery {
-        position: relative;
-        margin: 0px 0;
-        bottom: 0px;
-        margin-top: 60px;
-    }
-
-    /*------------------- Button style -------------------*/
-
-
-    .search {
-        margin-left: 15px;
-        height: 20px;
-    }
-
-
-    .buttongallery:hover {
-
-        background-color: #F6EBDC;
-        /* Change to orange on hover */
-        transform: scale(1.1);
-        /* Slightly enlarge on hover */
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
-        /* Enhance shadow on hover */
-        text-decoration: none;
-    }
 }
 
 
@@ -1157,13 +1122,6 @@ section {
     .biggenting img {
         width: 50%;
         margin-left: 50px;
-    }
-
-    .buttongallery {
-        font-size: 16px;
-        padding: 10px 20px;
-        border-radius: 20px;
-        bottom: 0px;
     }
 
     .colmartropicale {
