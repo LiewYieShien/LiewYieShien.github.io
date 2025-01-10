@@ -22,12 +22,17 @@
     margin: 0 auto;
 }
 
+.hero-content {
+    color: white;
+    text-align: center;
+
+}
+
 .hero p {
-    font-size: 28px;
-    font-weight: 100;
-    justify-content: center;
-    margin: 0;
-    letter-spacing: 5px;
+    position: relative;
+    top: 30px;
+    font-weight: 200;
+    font-size: 32px;
 
 }
 
@@ -35,7 +40,7 @@
     margin: 0;
     font-size: 120px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    letter-spacing: 15px;
+    letter-spacing: 10px;
 
 }
 
@@ -389,7 +394,7 @@
     justify-content: center;
     flex: 1;
     margin-top: 50px;
-    gap: px;
+    gap: 0px;
 }
 
 .image-button {
@@ -617,16 +622,14 @@
 
     .hero h1 {
         font-size: 50px;
-        letter-spacing: 10px;
+        letter-spacing: 8px;
 
         /* Smaller hero heading */
     }
 
     .hero p {
-        font-size: 15px;
-        padding-top: 40px;
-        display: flex;
-        justify-content: center;
+        font-size: 24px;
+
 
     }
 
@@ -884,6 +887,7 @@
     .restaurantpic {
         flex-direction: column;
         gap: 100px;
+        width: 70%;
     }
 
     .titleof-res h2 {
@@ -1041,9 +1045,9 @@
     .restaurantpic {
         flex-direction: column;
         height: auto;
-        width: 60%;
+        width: 95%;
         justify-content: center;
-        gap: 30px;
+        gap: 40px;
     }
 
     .intro h3 {
@@ -1157,4 +1161,12 @@
     .main-image img {
         padding-left: 37px;
     }
+}
+
+@media screen and (max-width: 465px) {
+
+    .buttongallery {
+        width: 90%;
+    }
+
 }

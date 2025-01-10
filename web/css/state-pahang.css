@@ -36,14 +36,15 @@ section {
 .hero-content {
     max-width: 1280px;
     margin: 0 auto;
+    color: white;
+    text-align: center;
 }
 
 .hero p {
-    font-size: 28px;
-    font-weight: 100;
-    justify-content: center;
-    margin: 0;
-    letter-spacing: 5px;
+    position: relative;
+    top: 30px;
+    font-weight: 200;
+    font-size: 32px;
 
 }
 
@@ -51,7 +52,8 @@ section {
     margin: 0;
     font-size: 120px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    letter-spacing: 15px;
+
+
 
 }
 
@@ -601,7 +603,7 @@ section {
 }
 
 .popup-content1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(2, 12, 22, 0.2)), url(../images/malacca/restaurant1bg.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(2, 12, 22, 0.2)), url(../images/pahang/duckmee-bg.jpg);
     background-size: cover;
     background-position: center;
     padding: 20px;
@@ -627,7 +629,7 @@ section {
 }
 
 .popup-content3 {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(2, 12, 22, 0.2)), url(../images/malacca/satay\ bg.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(2, 12, 22, 0.2)), url(../images/pahang/currymee-bg.jpg);
     background-size: cover;
     background-position: center;
     padding: 20px;
@@ -726,15 +728,15 @@ section {
     }
 
     .hero h1 {
-        font-size: 50px;
-        letter-spacing: 10px;
+        font-size: 80px;
+
 
         /* Smaller hero heading */
     }
 
     .hero p {
-        font-size: 15px;
-        padding-top: 40px;
+        font-size: 24px;
+
         display: flex;
         justify-content: center;
 
@@ -1053,9 +1055,9 @@ section {
     .restaurantpic {
         flex-direction: column;
         height: auto;
-        width: 60%;
+
         justify-content: center;
-        gap: 30px
+        gap: 40px;
     }
 }
 
@@ -1300,4 +1302,12 @@ section {
     .biggenting img {
         width: 50%;
     }
+}
+
+@media screen and (max-width: 450px) {
+
+    .hero h1 {
+        font-size: 60px;
+    }
+
 }

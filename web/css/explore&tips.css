@@ -312,7 +312,7 @@
     }
 
     .picclimate img {
-        width: 50%;
+
         height: auto;
         margin: 0 auto 10px;
         /* 圖片居中，並與文字留空隙 */
@@ -479,6 +479,7 @@
         /* 保證圖片為塊級元素，避免與其他內容並列 */
         margin-top: 45px;
         border-radius: 16px;
+        padding-right: 30px;
     }
 
     .text,
@@ -567,7 +568,7 @@
 @media screen and (max-width: 470px) {
 
     .picmosque img {
-        margin-left: 55px;
+        margin-left: 43px;
 
     }
 }
@@ -575,7 +576,7 @@
 @media screen and (max-width: 400px) {
 
     .picmosque img {
-        margin-left: 42px;
+        margin-left: 38px;
 
     }
 }
