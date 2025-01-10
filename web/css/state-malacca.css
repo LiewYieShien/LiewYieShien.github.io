@@ -1146,6 +1146,45 @@
     .main-image img {
         padding-left: 45px;
     }
+
+    /*------------------- Button style -------------------*/
+    .gallery {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+        text-decoration: none;
+    }
+
+    .buttongallery {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+        width: auto;
+        padding: 15px 30px;
+        margin: 20px 0;
+        bottom: -50px;
+        background-color: #AAA297;
+        border-radius: 30px;
+        cursor: pointer;
+        border: none;
+        transition: background-color 0.3s, transform 0.3s;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        /* Add shadow */
+    }
+
+    .search {
+        margin-left: 10px;
+        height: 17px;
+    }
+
+    .buttongallery:hover {
+        background-color: #F6EBDC;
+        transform: scale(1.1);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+        text-decoration: none;
+    }
 }
 
 @media screen and (max-width: 550px) {
