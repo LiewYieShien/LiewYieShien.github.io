@@ -309,19 +309,21 @@
 .gallery {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    text-align: center;
+    margin-top: 30px;
     text-decoration: none;
-
 }
 
 .buttongallery {
     font-size: 20px;
-    width: 20%;
-    padding: 10px;
-    margin: 40px;
+    width: auto;
+    padding: 15px 30px;
+    margin: 40px 0;
+    position: relative;
+
 
     background-color: #AAA297;
-    border-radius: 25px;
+    border-radius: 30px;
     cursor: pointer;
     border: none;
     display: flex;
@@ -330,23 +332,17 @@
     transition: background-color 0.3s, transform 0.3s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     /* Add shadow */
-
 }
 
 .search {
-    margin-left: 15px;
-
+    margin-left: 10px;
     height: 20px;
 }
 
 .buttongallery:hover {
-
     background-color: #F6EBDC;
-    /* Change to orange on hover */
     transform: scale(1.1);
-    /* Slightly enlarge on hover */
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
-    /* Enhance shadow on hover */
     text-decoration: none;
 }
 
@@ -845,22 +841,6 @@
 
 
     /*------------------- Button style -------------------*/
-    .gallery {
-        margin-top: 0px;
-        text-decoration: none;
-        margin-bottom: 50px;
-    }
-
-    .buttongallery {
-        position: relative;
-        margin: 0px 0;
-        bottom: 0px;
-        margin-top: 60px;
-    }
-
-    /*------------------- Button style -------------------*/
-
-
     .search {
         margin-left: 15px;
         height: 20px;
@@ -877,6 +857,7 @@
         /* Enhance shadow on hover */
         text-decoration: none;
     }
+
 
 
 
