@@ -10,6 +10,7 @@
         body {
             margin: 0;
             padding: 0;
+            background-color: #F6F5EF;
         }
 
         /* ---------------------------------------------Navigation Bar Styles----------------------------------------------- */
@@ -31,51 +32,67 @@
         }
 
         a:hover {
-            text-decoration: underline;
-            color: #a044fc;
+            color: #F9612B;
 
         }
 
         header {
             display: flex;
-            background-color: aliceblue;
+            background-color: white;
             justify-content: space-between;
             align-items: center;
             padding: 30px;
-            height: 70px
+            height: 55px
         }
 
         .nav-button {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Oxygen', sans-serif;
+            font-weight: lighter;
             color: black;
             text-align: center;
-            font-size: 15px;
+            font-size: 16px;
             margin: 20px;
 
         }
 
         #navbarimg {
-            cursor: pointer
+            cursor: pointer;
+            margin-left: 20px;
+        }
+
+
+
+        #call {
+            display: flex;
         }
 
         button.callnow {
-            display: inline-block;
-            background-color: #a044fc;
-            color: white;
-            font-weight: lighter;
-            border: 1px solid #a044fc;
-            border-radius: 20px;
-            padding: 12px;
-            padding-left: 25px;
-            padding-right: 25px;
+            font-size: 15px;
+            padding: 15px 20px;
+            border-radius: 10px;
+            border: none;
             cursor: pointer;
+            color: white;
+            background-color: #F9612B;
+        }
+
+
+
+        .phonering {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        #phonenumber {
+            padding-left: 10px;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <div id="navbarimg"><img alt="Logo" src="images/linkedin.png" height="50px" /></div>
+        <div id="navbarimg"><img alt="Logo" src="images/logo.png" height="35px" /></div>
         <div id="nav">
 
             <div>
@@ -85,21 +102,28 @@
                 <a href="#" class="nav-button">Services</a>
             </div>
             <div>
-                <a href="#" class="nav-button">About</a>
+                <a href="#" class="nav-button">Work</a>
             </div>
             <div>
-                <a href="#" class="nav-button">Testimonials</a>
-            </div>
-            <div>
-                <a href="#" class="nav-button">Clients</a>
+                <a href="#" class="nav-button">Project Details</a>
             </div>
             <div>
                 <a href="#" class="nav-button">Contact</a>
             </div>
-
-
         </div>
-        <button class="callnow">Call Now</button>
+
+        <div id="call">
+            <div class="phonering">
+                <img src="images/phone-call.png" height="25px" class="icon">
+                <a id="pn" href="#">555-123-4567</a>
+            </div>
+            <button class="callnow">Contact</button>
+
+            <!-- hamburger icon -->
+            <div id="menu-icon">☰</div>
+        </div>
+
+
 
     </header>
 </body>
