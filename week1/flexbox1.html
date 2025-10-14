@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercise 1</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #F6F5EF;
+        }
+
+        .heading {
+            text-align: center;
+            padding-top: 50px;
+            font-family: "archivo", sans-serif;
+            color: #21201E;
+        }
+
+        h1 {
+            line-height: 1;
+            font-size: 55px;
+        }
+
+        h3 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: -10px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container div {
+            width: calc((100% / 3) - 20px);
+            /* subtract gap compensation */
+            display: flex;
+            flex-direction: column;
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #FFFFFF;
+            /* overflow: hidden; */
+            /* Ensures zoomed image stays inside the card */
+        }
+
+        .container div img {
+            margin: 0 auto;
+            display: block;
+        }
+
+        .container div p {
+            text-align: left;
+            margin: 0px 0 20px 0px;
+            /* The order follows the clock: Top → Right → Bottom → Left */
+        }
+
+        h2 {
+            font-family: "archivo", sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            color: #21201E;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        p {
+            font-family: 'Oxygen', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            color: #646463;
+        }
+
+        /* ---------------------------------------------Responsive----------------------------------------------- */
+
+        @media (max-width: 1280px) {
+            h1 {
+                font-size: 40px;
+            }
+
+            .container {
+                margin: 40px 4vw;
+                /* smaller, responsive margin on small screens */
+                gap: 16px;
+                /* optional: reduce gap for mobile */
+            }
+
+            .container div {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 920px) {
+            h1 {
+                font-size: 30px;
+            }
+
+            h3 {
+                font-size: 12px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            .container {
+                flex-direction: column;
+                margin: 24px 8vw;
+                /* smaller, responsive margin on small screens */
+                gap: 16px;
+                /* optional: reduce gap for mobile */
+            }
+
+            .container div {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <div>
+            <h3>
+                Building a better future
+            </h3>
+        </div>
+
+        <div>
+            <h1>
+                We construct & deliver quality projects
+            </h1>
+        </div>
+
+        <div>
+            <p>
+                Meet our customers and explore their success stories with us
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div>
+            <img src="images/1.jpg">
+            <br />
+            <h2>
+                Residential projects
+            </h2>
+            <p>
+                We build sustainable and modern homes for comfortable living.
+            </p>
+        </div>
+
+        <div>
+            <img src="images/2.jpg">
+            <br />
+            <h2>
+                Comercial spaces
+            </h2>
+            <p>
+                We create efficient, inspiring workspaces for businesses of all sizes.
+            </p>
+        </div>
+
+        <div>
+            <img src="images/3.jpg">
+            <br />
+
+            <h2>
+                Infrastructure works
+            </h2>
+            <p>
+                We develop strong, reliable infrastructure for growing communities.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
