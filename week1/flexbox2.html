@@ -1,74 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Home | Explore Malaysia</title>
+    <meta charset="UTF-8">
+    <title>Exercise 2</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&display=swap"
+        rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #F6F5EF;
-        }
-
-        /* ---------------------------------------------Navigation Bar Styles----------------------------------------------- */
+        /* ---------------------------------------------Global Styles----------------------------------------------- */
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            background-color: transperant;
         }
 
-        #nav {
-            display: flex;
-
+        html,
+        body {
+            background-color: #F6F5EF;
+            font-family: 'Oxygen', sans-serif;
         }
 
         a {
             text-decoration: none;
-
+            color: black;
         }
 
         a:hover {
             color: #F9612B;
-
         }
 
+        /* ---------------------------------------------Navigation Bar----------------------------------------------- */
         header {
             display: flex;
             background-color: white;
             justify-content: space-between;
             align-items: center;
-            padding: 30px;
-            height: 55px
-        }
-
-        .nav-button {
-            font-family: 'Oxygen', sans-serif;
-            font-weight: lighter;
-            color: black;
-            text-align: center;
-            font-size: 16px;
-            margin: 20px;
-
+            padding: 20px 30px;
+            height: 65px;
+            position: relative;
+            z-index: 100;
         }
 
         #navbarimg {
             cursor: pointer;
-            margin-left: 20px;
         }
 
-
-
-        #call {
+        #nav {
             display: flex;
+            align-items: center;
         }
 
-        button.callnow {
-            font-size: 15px;
-            padding: 15px 20px;
+        .menu {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .nav-button {
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        /* Call Section */
+        #contact {
+            display: flex;
+            align-items: center;
+        }
+
+        .phone-call {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        #phone-number {
+            font-family: 'Archivo', sans-serif;
+            font-size: 16px;
+            color: black;
+            padding: 0 20px 0 10px;
+        }
+
+        button.call-now {
+            font-size: 14px;
+            font-family: 'Archivo', sans-serif;
+            padding: 10px 16px;
             border-radius: 10px;
             border: none;
             cursor: pointer;
@@ -76,55 +98,95 @@
             background-color: #F9612B;
         }
 
-
-
-        .phonering {
-            display: flex;
-            align-items: center;
-            font-weight: bold;
+        .close-btn {
+            display: none;
         }
 
-        #phonenumber {
-            padding-left: 10px;
+        /* ---------------------------------------------Mobile Menu----------------------------------------------- */
+        .menu-toggle {
+            display: none;
+            font-size: 28px;
+            color: #AAA297;
+            cursor: pointer;
+        }
+
+        #menu-checkbox {
+            display: none;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1280px) {
+            .menu {
+                flex-direction: column;
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #F6F5EF;
+                justify-content: center;
+                align-items: center;
+                z-index: 999;
+            }
+
+            .menu a {
+                font-size: 18px;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            /* Show menu when checked */
+            #menu-checkbox:checked~.menu {
+                display: flex;
+            }
+
+            /* Close button inside menu */
+            .menu label.close-btn {
+                display: block;
+                position: absolute;
+                top: 20px;
+                right: 30px;
+                font-size: 36px;
+                color: #AAA297;
+                cursor: pointer;
+            }
         }
     </style>
 </head>
 
 <body>
     <header>
-        <div id="navbarimg"><img alt="Logo" src="images/logo.png" height="35px" /></div>
-        <div id="nav">
+        <div id="navbarimg">
+            <img alt="Logo" src="images/logo.png" height="35px">
+        </div>
 
-            <div>
+        <div id="nav">
+            <!-- Checkbox to toggle menu on mobile -->
+            <input type="checkbox" id="menu-checkbox">
+            <label for="menu-checkbox" class="menu-toggle">&#9776;</label>
+
+            <div class="menu">
+                <label for="menu-checkbox" class="close-btn">&times;</label>
                 <a href="#" class="nav-button">Home</a>
-            </div>
-            <div>
                 <a href="#" class="nav-button">Services</a>
-            </div>
-            <div>
                 <a href="#" class="nav-button">Work</a>
-            </div>
-            <div>
                 <a href="#" class="nav-button">Project Details</a>
-            </div>
-            <div>
                 <a href="#" class="nav-button">Contact</a>
             </div>
         </div>
 
-        <div id="call">
-            <div class="phonering">
-                <img src="images/phone-call.png" height="25px" class="icon">
-                <a id="pn" href="#">555-123-4567</a>
+        <div id="contact">
+            <div class="phone-call">
+                <img src="images/phone-call.png" height="20px" class="icon">
+                <a id="phone-number" href="#">555-123-4567</a>
             </div>
-            <button class="callnow">Contact</button>
-
-            <!-- hamburger icon -->
-            <div id="menu-icon">☰</div>
+            <button class="call-now">Contact</button>
         </div>
-
-
-
     </header>
 </body>
 
