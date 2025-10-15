@@ -2,226 +2,226 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Exercise 2</title>
+    <meta charset="UTF-8">
+    <title>Exercise 2</title>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Oxygen:wght@300;400;700&display=swap"
-    rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Oxygen:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    /* -------------------------- Global Styles -------------------------- */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    <style>
+        /* -------------------------- Global Styles -------------------------- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-    body {
-      background-color: #F6F5EF;
-      font-family: 'Oxygen', sans-serif;
-    }
+        body {
+            background-color: #F6F5EF;
+            font-family: 'Oxygen', sans-serif;
+        }
 
-    a {
-      text-decoration: none;
-      color: black;
-      transition: color 0.3s ease;
-    }
+        a {
+            text-decoration: none;
+            color: black;
+            transition: color 0.3s ease;
+        }
 
-    a:hover {
-      color: #F9612B;
-    }
+        a:hover {
+            color: #F9612B;
+        }
 
-    /* -------------------------- Header -------------------------- */
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: white;
-      padding: 20px 30px;
-      height: 65px;
-      position: relative;
-      z-index: 100;
-    }
+        /* -------------------------- Header -------------------------- */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 20px 30px;
+            height: 65px;
+            position: relative;
+            z-index: 100;
+        }
 
-    #navbarimg {
-      cursor: pointer;
-    }
+        #navbarimg {
+            cursor: pointer;
+        }
 
-    #nav {
-      display: flex;
-      align-items: center;
-    }
+        #nav {
+            display: flex;
+            align-items: center;
+        }
 
-    .menu {
-      display: flex;
-      align-items: center;
-      gap: 25px;
-    }
+        .menu {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
 
-    .nav-button {
-      font-weight: 700;
-      font-size: 16px;
-    }
+        .nav-button {
+            font-weight: 700;
+            font-size: 16px;
+        }
 
-    /* -------------------------- Contact Section -------------------------- */
-    #contact {
-      display: flex;
-      align-items: center;
-    }
+        /* -------------------------- Contact Section -------------------------- */
+        #contact {
+            display: flex;
+            align-items: center;
+        }
 
-    .phone-call {
-      display: flex;
-      align-items: center;
-      font-weight: bold;
-    }
+        .phone-call {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+        }
 
-    #phone-number {
-      font-family: 'Archivo', sans-serif;
-      font-size: 16px;
-      color: black;
-      padding: 0 20px 0 10px;
-    }
+        #phone-number {
+            font-family: 'Archivo', sans-serif;
+            font-size: 16px;
+            color: black;
+            padding: 0 20px 0 10px;
+        }
 
-    .call-now {
-      font-size: 14px;
-      font-family: 'Archivo', sans-serif;
-      padding: 10px 16px;
-      border-radius: 10px;
-      border: none;
-      cursor: pointer;
-      color: white;
-      background-color: #F9612B;
-      transition: background-color 0.3s ease;
-    }
+        .call-now {
+            font-size: 14px;
+            font-family: 'Archivo', sans-serif;
+            padding: 10px 16px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            color: white;
+            background-color: #F9612B;
+            transition: background-color 0.3s ease;
+        }
 
-    .call-now:hover {
-      background-color: #e4571f;
-    }
+        .call-now:hover {
+            background-color: #e4571f;
+        }
 
-    /* -------------------------- Mobile Menu -------------------------- */
-    #menu-checkbox {
-      display: none;
-    }
+        /* -------------------------- Mobile Menu -------------------------- */
+        #menu-checkbox {
+            display: none;
+        }
 
-    .menu-toggle {
-      display: none;
-      font-size: 28px;
-      color: black;
-      cursor: pointer;
-    }
+        .menu-toggle {
+            display: none;
+            font-size: 28px;
+            color: black;
+            cursor: pointer;
+        }
 
-    .close-btn {
-      display: none;
-    }
+        .close-btn {
+            display: none;
+        }
 
-    /* -------------------------- Responsive -------------------------- */
-    @media (max-width: 980px) {
-      header {
-        padding: 0 20px;
-      }
+        /* -------------------------- Responsive -------------------------- */
+        @media (max-width: 980px) {
+            header {
+                padding: 0 20px;
+            }
 
-      .call-now {
-        display: none;
-      }
+            .call-now {
+                display: none;
+            }
 
-      #navbarimg {
-        order: 1;
-        margin-right: auto;
-      }
+            #navbarimg {
+                order: 1;
+                margin-right: auto;
+            }
 
-      #contact {
-        order: 2;
-        margin-right: 10px;
-      }
+            #contact {
+                order: 2;
+                margin-right: 10px;
+            }
 
-      .menu-toggle {
-        display: block;
-        order: 3;
-        color: #AAA297;
-      }
+            .menu-toggle {
+                display: block;
+                order: 3;
+                color: #AAA297;
+            }
 
-      #nav {
-        order: 3;
-        display: contents;
-      }
+            #nav {
+                order: 3;
+                display: contents;
+            }
 
-      .menu {
-        flex-direction: column;
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #F6F5EF;
-        justify-content: center;
-        align-items: center;
-        z-index: 999;
-      }
+            .menu {
+                flex-direction: column;
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #F6F5EF;
+                justify-content: center;
+                align-items: center;
+                z-index: 999;
+            }
 
-      .menu a {
-        font-size: 18px;
-        padding: 20px;
-        text-align: center;
-      }
+            .menu a {
+                font-size: 18px;
+                padding: 20px;
+                text-align: center;
+            }
 
-      #menu-checkbox:checked~#nav .menu {
-        display: flex;
-      }
+            #menu-checkbox:checked~#nav .menu {
+                display: flex;
+            }
 
-      .close-btn {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 30px;
-        font-size: 36px;
-        color: #AAA297;
-        cursor: pointer;
-      }
-    }
+            .close-btn {
+                display: block;
+                position: absolute;
+                top: 20px;
+                right: 30px;
+                font-size: 36px;
+                color: #AAA297;
+                cursor: pointer;
+            }
+        }
 
-    @media (max-width: 580px) {
-      #contact {
-        display: none;
-      }
-    }
-  </style>
+        @media (max-width: 580px) {
+            #contact {
+                display: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <header>
-    <div id="navbarimg">
-      <img alt="Logo" src="images/logo.png" height="35">
-    </div>
+    <header>
+        <div id="navbarimg">
+            <img alt="Logo" src="images/logo.png" height="35">
+        </div>
 
-    <!-- Hamburger Menu -->
-    <input type="checkbox" id="menu-checkbox">
-    <label for="menu-checkbox" class="menu-toggle">&#9776;</label>
+        <!-- Hamburger Menu -->
+        <input type="checkbox" id="menu-checkbox">
+        <label for="menu-checkbox" class="menu-toggle">&#9776;</label>
 
-    <nav id="nav">
-      <div class="menu">
-        <label for="menu-checkbox" class="close-btn">&times;</label>
-        <a href="#" class="nav-button">Home</a>
-        <a href="#" class="nav-button">Services</a>
-        <a href="#" class="nav-button">Work</a>
-        <a href="#" class="nav-button">Project Details</a>
-        <a href="#" class="nav-button">Contact</a>
-      </div>
-    </nav>
+        <nav id="nav">
+            <div class="menu">
+                <label for="menu-checkbox" class="close-btn">&times;</label>
+                <a href="#" class="nav-button">Home</a>
+                <a href="#" class="nav-button">Services</a>
+                <a href="#" class="nav-button">Work</a>
+                <a href="#" class="nav-button">Project Details</a>
+                <a href="#" class="nav-button">Contact</a>
+            </div>
+        </nav>
 
-    <div id="contact">
-      <div class="phone-call">
-        <img src="images/phone-call.png" height="20" alt="Phone Icon" class="icon">
-        <a id="phone-number" href="#">555-123-4567</a>
-      </div>
-      <button class="call-now">Contact</button>
-    </div>
-  </header>
+        <div id="contact">
+            <div class="phone-call">
+                <img src="images/phone-call.png" height="20" alt="Phone Icon" class="icon">
+                <a id="phone-number" href="#">555-123-4567</a>
+            </div>
+            <button class="call-now">Contact</button>
+        </div>
+    </header>
 </body>
 
 </html>
