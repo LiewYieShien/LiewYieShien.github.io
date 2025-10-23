@@ -1,0 +1,125 @@
+ html,
+ body {
+     margin: 0;
+     padding: 0;
+     font-family: Arial, sans-serif;
+     background-color: #4f0321;
+     color: #fff;
+ }
+
+ .team-container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: flex-start;
+     gap: 50px;
+     padding: 50px 30px;
+     margin: 4rem auto;
+     max-width: 1200px;
+ }
+
+ .team-members {
+     width: 260px;
+     text-align: left;
+     position: relative;
+ }
+
+ /* Staggered effect */
+ .team-members:nth-child(1) {
+     top: 0rem;
+ }
+
+ .team-members:nth-child(2) {
+     top: 3rem;
+ }
+
+ .team-members:nth-child(3) {
+     top: 6rem;
+ }
+
+ .team-members:nth-child(4) {
+     top: 9rem;
+ }
+
+ .team-members h3 {
+     color: #d17070;
+     font-family: "Lora", serif;
+     font-size: 24px;
+     border-bottom: 1px solid #b65252;
+     padding-bottom: 8px;
+     margin-bottom: 20px;
+ }
+
+ .team-members img {
+     width: 100%;
+     height: auto;
+     transition: filter 0.4s ease;
+ }
+
+ .team-members img:hover {
+     filter: grayscale(100%);
+ }
+
+ .role {
+     font-family: "Prompt", sans-serif;
+     font-weight: 300;
+     margin-top: 10px;
+ }
+
+ @media (max-width: 1300px) {
+     .team-container {
+         gap: 30px;
+         /* reduce spacing between cards */
+         padding: 40px 20px;
+     }
+
+     .team-members {
+         width: 220px;
+         /* smaller but still fits 4 in a row */
+     }
+
+     .team-members h3 {
+         font-size: 20px;
+         /* slightly smaller text for balance */
+     }
+ }
+
+ @media (max-width: 1050px) {
+     .team-container {
+         gap: 20px;
+         /* reduce spacing between cards */
+         padding: 30px 15px;
+     }
+
+     .team-members {
+         width: 180px;
+         /* smaller but still fits 4 in a row */
+     }
+
+     .team-members h3 {
+         font-size: 18px;
+         /* slightly smaller text for balance */
+     }
+ }
+
+ @media (max-width: 826px) {
+
+     .team-members:nth-child(1),
+     .team-members:nth-child(2),
+     .team-members:nth-child(3),
+     .team-members:nth-child(4) {
+         top: auto;
+     }
+
+     .team-members {
+         width: 45%;
+         top: 0;
+     }
+ }
+
+ @media (max-width: 500px) {
+     .team-members {
+         width: 90%;
+         top: 0;
+     }
+ }
